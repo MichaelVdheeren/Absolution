@@ -1,0 +1,36 @@
+input[type='text'], input[type='password'], input[type='file'] {
+	padding: 5px;
+	text-shadow: 0px 1px 0px #fff;
+	outline: none;
+	border: 1px solid #a9a9a9; 
+	background: #fafafa url('images/ui-input-text.png') top left repeat-x; 
+	color: #333333;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 1px 1px 0px #efefef;
+	-moz-box-shadow: 1px 1px 0px #efefef;
+	box-shadow:  1px 1px 0px #efefef;
+}
+
+/*
+input[type='text']:hover, input[type='text']:focus,
+input[type='password']:hover, input[type='password']:focus,
+input[type='file']:hover, input[type='file']:focus {
+	-webkit-box-shadow: 0px 0px 5px #217cbf;
+	-moz-box-shadow: 0px 0px 5px #217cbf;
+	box-shadow: 0px 0px 5px #217cbf;
+}
+*/
+
+input[type='button'], input[type='reset'], input[type='submit'] {
+	-moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;
+	border: 1px solid #a9a9a9; background: #dfe0e1 url('images/ui-state-default-fill.png') top left repeat-x; font-weight: bold; color: #333333;
+	cursor: pointer;
+}
+
+input[type='button']:hover, input[type='button']:focus,
+input[type='reset']:hover, input[type='reset']:focus,
+input[type='submit']:hover, input[type='submit']:focus {
+	border: 1px solid #8b9fc2;  background: #217cbf url('images/ui-state-active-fill.png') top left repeat-x; font-weight: bold; color: #ffffff;
+}

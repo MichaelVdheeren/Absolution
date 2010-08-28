@@ -25,3 +25,4 @@
 
 .ui-slider-horizontal .ui-widget-header { background: #bacce2 url('images/ui-slider-horizontal-range.png') top left repeat-x; color: #ffffff; font-weight: bold; }
 .ui-slider-vertical .ui-widget-header { background: #bacce2 url('images/ui-slider-vertical-range.png') top left repeat-y; color: #ffffff; font-weight: bold; }
+.ui-slider-horizontal .ui-slider-handle { border: 1px solid #a9a9a9 !important; background: #dfe0e1 url('images/ui-state-default-fill.png') top left repeat-x !important; }
