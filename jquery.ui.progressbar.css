@@ -7,6 +7,8 @@
  *
  * http://docs.jquery.com/UI/Progressbar#theming
  */
+
 .ui-progressbar { height:2em; text-align: left; }
 .ui-progressbar .ui-progressbar-value {margin: -1px; height:100%; }
+.ui-progressbar .ui-widget-content { background: #cacaca; color: #333333; }
 .ui-progressbar .ui-widget-header { border: 1px solid #8b9fc2; background: #bacce2 url('images/ui-progressbar-fill.png') top left repeat-x; color: #ffffff; font-weight: bold; }
