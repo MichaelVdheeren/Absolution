@@ -5,8 +5,15 @@ http://www.michaelvanderheeren.be
 You are free redistribute or change the theme.
 You can change the theme, but you should keep the references to contributors!
 
-jQuery UI CSS Framework @VERSION
-Copyright 2010, AUTHORS.txt (http://jqueryui.com/about)
+jQuery UI CSS Framework
+Copyright 2010, http://jqueryui.com/about
 Dual licensed under the MIT or GPL Version 2 licenses.
 http://jquery.org/license
 http://docs.jquery.com/UI/Theming/API
+
+***** INSTALL *****
+1. 	Download the theme from the gitHub repository.
+2. 	Add it to your jQuery UI theme folder.
+3. 	Add a text/css type link in the pages where you want to use the theme.
+	You should set the href to the jquery.ui.all.css file!
+	Example: <link type="text/css" href="jquery.ui.all.css" rel="stylesheet" />	
