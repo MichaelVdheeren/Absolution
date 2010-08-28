@@ -23,4 +23,5 @@
 .ui-slider-vertical .ui-slider-range-min { bottom: 0; }
 .ui-slider-vertical .ui-slider-range-max { top: 0; }
 
-.ui-slider-horizontal .ui-widget-header, .ui-slider-vertical .ui-widget-header { background: #bacce2; color: #ffffff; font-weight: bold; }
+.ui-slider-horizontal .ui-widget-header { background: #bacce2 url('images/ui-slider-horizontal-range.png') top left repeat-x; color: #ffffff; font-weight: bold; }
+.ui-slider-vertical .ui-widget-header { background: #bacce2 url('images/ui-slider-vertical-range.png') top left repeat-y; color: #ffffff; font-weight: bold; }
