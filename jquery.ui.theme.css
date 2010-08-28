@@ -13,7 +13,7 @@
 .ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button { font-family: Trebuchet MS, Tahoma, Verdana, Arial, sans-serif; font-size: 1em; }
 .ui-widget-content { border: 1px solid #a9a9a9; background: #eaebec; color: #333333; }
 .ui-widget-content a { color: #333333; }
-.ui-widget-header { border: 1px solid #a9a9a9; background: #d6d6d6 url('images/ui-widget-header-fill.png') top left repeat-x; color: #333333; font-weight: bold; }
+.ui-widget-header { border: 1px solid #a9a9a9; background: #dfe0e1 url('images/ui-widget-header-fill.png') top left repeat-x; color: #333333; font-weight: bold; }
 .ui-widget-header a { color: #333333; }
 
 /* Interaction states

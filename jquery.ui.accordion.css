@@ -9,7 +9,7 @@
  */
 /* IE/Win - Fix animation bug - #4615 */
 .ui-accordion { width: 100%; background: #eaebec }
-.ui-accordion .ui-accordion-header { cursor: pointer; background: #d6d6d6 url('images/ui-accordion.png') top left repeat-x; position: relative; margin-top: 1px; zoom: 1; }
+.ui-accordion .ui-accordion-header { cursor: pointer; background: #dfe0e1 url('images/ui-accordion.png') top left repeat-x; position: relative; margin-top: 1px; zoom: 1; }
 .ui-accordion .ui-accordion-li-fix { display: inline; }
 .ui-accordion .ui-accordion-header a { display: block; font-size: 1em; padding: .5em .5em .5em .7em; }
 .ui-accordion-icons .ui-accordion-header a { padding-left: 2.2em; }

@@ -8,9 +8,11 @@ input[type='text'], input[type='password'], input[type='file'] {
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
+	/*
 	-webkit-box-shadow: 1px 1px 0px #efefef;
 	-moz-box-shadow: 1px 1px 0px #efefef;
 	box-shadow:  1px 1px 0px #efefef;
+	*/
 }
 
 /*

@@ -23,10 +23,14 @@
  */
 .ui-menu {
 	list-style:none;
-	padding: 2px;
+	padding: 5px;
 	margin: 0;
 	display:block;
 	float: left;
+	border-color: #ffffff !important;
+	-webkit-box-shadow: 0px 0px 5px #282425;
+	-moz-box-shadow: 0px 0px 5px #282425;
+	box-shadow: 0px 0px 5px #282425;
 }
 .ui-menu .ui-menu {
 	margin-top: -3px;
@@ -43,11 +47,31 @@
 	text-decoration:none;
 	display:block;
 	padding:.2em .4em;
-	line-height:1.5;
+	line-height:1.7;
 	zoom:1;
 }
 .ui-menu .ui-menu-item a.ui-state-hover,
 .ui-menu .ui-menu-item a.ui-state-active {
 	font-weight: normal;
-	margin: -1px;
+	margin: -1px -6px -1px -6px;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+	padding-left: 9px;
+}
+
+.ui-autocomplete.ui-menu.ui-widget.ui-widget-content {
+	background: #dfe0e1 url('images/ui-autocomplete.png') top left repeat-x;
+}
+
+.ui-autocomplete-input {
+	padding: 5px;
+	text-shadow: 0px 1px 0px #fff;
+	outline: none;
+	border: 1px solid #a9a9a9; 
+	background: #fafafa url('images/ui-input-text.png') top left repeat-x; 
+	color: #333333;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
 }
