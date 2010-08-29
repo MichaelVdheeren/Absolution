@@ -17,16 +17,19 @@
 .ui-accordion .ui-accordion-content { padding: 1em 2.2em; border-top: 0; margin-top: 0px; position: relative; top: 1px; margin-bottom: 0px; overflow: auto; display: none; zoom: 1; }
 .ui-accordion .ui-accordion-content-active { display: block; }
 
-.ui-accordion .ui-accordion-header, .ui-accordion .ui-accordion-header a {
-	color: #333333 !important;
-	border-color: #a9a9a9;
+.ui-accordion .ui-accordion-header {
+	border: solid 1px #a9a9a9;
 	-moz-border-radius: 5px !important; 
 	-webkit-border-radius: 5px !important; 
 	border-radius: 5px !important;
 }
 
+.ui-accordion .ui-accordion-header, .ui-accordion .ui-accordion-header a {
+	color: #333333 !important;
+}
+
 .ui-accordion .ui-accordion-header-active {
-	border-width: 1px !important;
+	border-width: 0px !important;
 }
 
 .ui-accordion .ui-accordion-content {
