@@ -21,16 +21,16 @@
 .ui-dialog .ui-icon-grip-diagonal-se { background-position: -64px -224px; display: none; }
 .ui-draggable .ui-dialog-titlebar { cursor: move; }
 
-.ui-dialog .ui-dialog-titlebar-close { 
+.ui-dialog .ui-dialog-titlebar .ui-dialog-titlebar-close { 
 	border: 1px solid #0b0a0a; background: #3f3f3f url('images/ui-close-state-default-fill.png') top left repeat-x; font-weight: bold; color: #ffffff;
 }
-.ui-dialog .ui-widget-header .ui-icon.ui-state-active, .ui-dialog .ui-widget-header .ui-icon.ui-state-hover, .ui-dialog .ui-widget-header .ui-icon.ui-state-focus { 
+.ui-dialog .ui-dialog-titlebar .ui-state-active, .ui-dialog .ui-dialog-titlebar .ui-state-hover, .ui-dialog .ui-dialog-titlebar .ui-state-focus { 
 	border: 1px solid #0b0a0a; background: #217cbf url('images/ui-state-hover-fill.png') top left repeat-x; font-weight: bold; color: #ffffff;
 }
 
 .ui-dialog .ui-dialog-titlebar-close .ui-icon { background-image: url(images/ui-icons_ffffff_256x240.png); }
 
-.ui-dialog-titlebar.ui-widget-header {
+.ui-dialog .ui-dialog-titlebar {
 	-moz-border-radius-bottomleft: 0px;
 	-webkit-border-bottom-left-radius: 0px;
 	border-bottom-left-radius: 0px;

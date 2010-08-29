@@ -45,9 +45,6 @@ input.text,
 input.email, 
 input.password,
 textarea.uniform {
-  font-size: 12px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: normal;
   padding: 3px;
   color: #777;
   background: url('../images/bg-input-focus.png') repeat-x 0px 0px;
