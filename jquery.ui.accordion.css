@@ -12,7 +12,7 @@
 .ui-accordion .ui-accordion-header { cursor: pointer; background: #dfe0e1 url('images/ui-accordion.png') top left repeat-x; position: relative; margin-top: 1px; zoom: 1; }
 .ui-accordion .ui-accordion-li-fix { display: inline; }
 .ui-accordion .ui-accordion-header a { display: block; font-size: 1em; padding: .5em .5em .5em .7em; }
-.ui-accordion-icons .ui-accordion-header a { padding-left: 2.2em; }
+.ui-accordion-icons .ui-accordion-header a { padding-left: 2.6em; }
 .ui-accordion .ui-accordion-header .ui-icon { position: absolute; left: .5em; top: 50%; margin-top: -8px; }
 .ui-accordion .ui-accordion-content { padding: 1em 2.2em; border-top: 0; margin-top: 0px; position: relative; top: 1px; margin-bottom: 0px; overflow: auto; display: none; zoom: 1; }
 .ui-accordion .ui-accordion-content-active { display: block; }
@@ -38,3 +38,10 @@
 	-webkit-border-radius: 0px !important; 
 	border-radius: 0px !important;
 }
+
+.ui-accordion .ui-accordion-header .ui-icon {
+	background: url('images/ui-accordion-arrow-right.png');
+
+}
+
+.ui-accordion .ui-accordion-header.ui-state-active .ui-icon {background: url('images/ui-accordion-arrow-down.png');}
