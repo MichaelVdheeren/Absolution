@@ -59,3 +59,7 @@
 	border: 0px;
 	border-bottom: 1px solid #b3b3b3 !important;
 }
+
+.ui-dialog .ui-tabs {
+	border: 0px;
+}

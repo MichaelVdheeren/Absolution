@@ -8,7 +8,7 @@
  * http://docs.jquery.com/UI/Tabs#theming
  */
 .ui-tabs { position: relative; padding: 0; zoom: 1; } /* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
-.ui-tabs .ui-tabs-nav { margin: 0; padding: 0;  }
+.ui-tabs .ui-tabs-nav { margin: 0; padding: -1px;  }
 .ui-tabs .ui-tabs-nav li { list-style: none; float: left; position: relative; top: 1px; margin: 0px; border-bottom: 0 !important; padding: 0; white-space: nowrap; }
 .ui-tabs .ui-tabs-nav li a { float: left; padding: .5em 1em; text-decoration: none; }
 .ui-tabs .ui-tabs-nav li.ui-tabs-selected { margin-bottom: 0; padding-bottom: 1px; background: #eaebec; color: #333333 !important }
@@ -27,7 +27,6 @@
 	-moz-border-radius: 0px !important; 
 	-webkit-border-radius: 0px !important; 
 	border-radius: 0px !important;
-	border: 0px !important;
 }
 
 .ui-tabs .ui-tabs-nav li {
