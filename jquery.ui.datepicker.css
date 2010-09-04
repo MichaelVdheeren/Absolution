@@ -22,9 +22,9 @@
 .ui-datepicker select.ui-datepicker-month, 
 .ui-datepicker select.ui-datepicker-year { width: 49%;}
 .ui-datepicker table {width: 100%; font-size: .9em; border-collapse: collapse; margin:0 0 .4em; }
-.ui-datepicker th { padding: .7em .3em; text-align: center; font-weight: bold; border: 0; display: none;  }
-.ui-datepicker td { border: 0; padding: 0px; height: 20px; }
-.ui-datepicker td span, .ui-datepicker td a { display: block; padding: .2em; text-align: center; text-decoration: none; }
+.ui-datepicker th { padding: .7em .3em; text-align: center; font-weight: bold; border: 0;  }
+.ui-datepicker td { border: 0; padding: 0px; }
+.ui-datepicker td span, .ui-datepicker td a { display: block; padding: .6em; text-align: center; text-decoration: none; }
 .ui-datepicker .ui-datepicker-buttonpane { background-image: none; margin: .7em 0 0 0; padding:0 .2em; border-left: 0; border-right: 0; border-bottom: 0; }
 .ui-datepicker .ui-datepicker-buttonpane button { float: right; margin: .5em .2em .4em; cursor: pointer; padding: .2em .6em .3em .6em; width:auto; overflow:visible; }
 .ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current { float:left; }
@@ -80,6 +80,4 @@
 	border-right: 0px;
 }
 
-.ui-datepicker td .ui-state-default {
-	border: 0px !important; background: none !important; font-weight: bold !important;
-}
+.ui-datepicker .ui-state-highlight, .ui-datepicker .ui-widget-content .ui-state-highlight, .ui-datepicker .ui-widget-header .ui-state-highlight  { border: 1px solid #a9a9a9; background: #bbbbbb url('images/ui-progressbar-content-fill.png') top left repeat-x !important; }
