@@ -20,7 +20,11 @@
 .ui-tabs .ui-widget-header {
 	border: 0px;
 	background: none;
-	background: #d6d6d6 url('images/ui-widget-header-fill.png') top left repeat-x;
+	
+	background: #eff0f0;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#dfe0e1));
+	background: -moz-linear-gradient(top, #ffffff,  #dfe0e1);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#dfe0e1');
 }
 
 .ui-tabs {

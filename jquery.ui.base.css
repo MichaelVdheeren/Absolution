@@ -47,7 +47,12 @@
 ----------------------------------*/
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default { 
 	border: 1px solid #a9a9a9; 
-	background: #dfe0e1 url('images/ui-state-default-fill.png') top left repeat-x; 
+	
+	background: #eff0f0;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#dfe0e1));
+	background: -moz-linear-gradient(top, #ffffff,  #dfe0e1);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#dfe0e1');
+
 	font-weight: bold; 
 	color: #333333;
 }
@@ -61,7 +66,12 @@
 .ui-widget-header .ui-state-hover, .ui-state-focus, 
 .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus { 
 	border: 1px solid #8b9fc2; 
-	background: #3b78bd url('images/ui-state-hover-fill.png') top left repeat-x; 
+	
+	background: #409dd0;
+	background: -webkit-gradient(linear, left top, left bottom, from(#7cc5e3), to(#217cbf));
+	background: -moz-linear-gradient(top, #7cc5e3,  #217cbf);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#7cc5e3', endColorstr='#217cbf');
+	
 	font-weight: bold; 
 	color: #ffffff;
 }
@@ -73,7 +83,12 @@
 	
 .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active { 
 	border: 1px solid #8b9fc2;  
-	background: #217cbf url('images/ui-state-active-fill.png') top left repeat-x; 
+	
+	background: #409dd0;
+	background: -webkit-gradient(linear, left top, left bottom, from(#7cc5e3), to(#217cbf));
+	background: -moz-linear-gradient(top, #7cc5e3,  #217cbf);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#7cc5e3', endColorstr='#217cbf');
+
 	font-weight: bold; 
 	color: #ffffff;
 }
