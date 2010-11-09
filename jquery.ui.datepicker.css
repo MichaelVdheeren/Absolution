@@ -13,8 +13,12 @@
 
 .ui-datepicker .ui-datepicker-header { 
 	position:relative; padding:.5em 0.2em;
-	background: #282425 url('images/ui-dialog-header-fill.png') bottom left repeat-x;
 	color: #ffffff;
+	
+	background: #3e3d3e;
+	background: -webkit-gradient(linear, left top, left bottom, from(#57585a), to(#282425));
+	background: -moz-linear-gradient(top, #57585a,  #282425);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#57585a', endColorstr='#282425');
 }
 
 .ui-datepicker .ui-datepicker-header .ui-icon { background-image: url(images/ui-icons_ffffff_256x240.png); }
@@ -28,12 +32,19 @@
 }
 
 .ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next { 
-	background: #3f3f3f url('images/ui-close-state-default-fill.png') top left repeat-x;
+	background: #555557;
+	background: -webkit-gradient(linear, left top, left bottom, from(#898a8c), to(#3f3f3f));
+	background: -moz-linear-gradient(top, #898a8c,  #3f3f3f);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#898a8c', endColorstr='#3f3f3f');
+
 	position:absolute; top: 4px; width: 1.8em; height: 1.8em;
 	border: 1px solid #0b0a0a; 
 }
 .ui-datepicker .ui-datepicker-prev:hover, .ui-datepicker .ui-datepicker-next:hover { 
-	background: #217cbf url('images/ui-state-hover-fill.png') top left repeat-x;
+	background: #409dd0;
+	background: -webkit-gradient(linear, left top, left bottom, from(#7cc5e3), to(#217cbf));
+	background: -moz-linear-gradient(top, #7cc5e3,  #217cbf);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#7cc5e3', endColorstr='#217cbf');
 }
 
 .ui-datepicker table .ui-state-default, .ui-datepicker table .ui-widget-content .ui-state-default, .ui-datepicker table .ui-widget-header .ui-state-default { 
@@ -115,4 +126,7 @@ border: 1px solid #8b9fc2; background: #217cbf url('images/ui-state-hover-fill.p
 	border: 0px;
 }
 
-.ui-datepicker .ui-state-highlight, .ui-datepicker .ui-widget-content .ui-state-highlight, .ui-datepicker .ui-widget-header .ui-state-highlight  { border: 1px solid #a9a9a9; background: #bbbbbb url('images/ui-progressbar-content-fill.png') top left repeat-x !important; }
+.ui-datepicker .ui-state-highlight, .ui-datepicker .ui-widget-content .ui-state-highlight, .ui-datepicker .ui-widget-header .ui-state-highlight
+{
+	border: 1px solid #a9a9a9; background: #bbbbbb url('images/ui-progressbar-content-fill.png') top left repeat-x !important;
+}
