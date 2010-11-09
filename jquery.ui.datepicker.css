@@ -52,8 +52,19 @@
 	background: none;
 }
 
+.ui-datepicker table .ui-state-hover, .ui-datepicker table .ui-widget-content .ui-state-hover, .ui-datepicker table .ui-widget-header .ui-state-hover {
+	border: 1px solid #a9a9a9;
+	color: #000000;
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	background: #eff0f0;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#cacbcc));
+	background: -moz-linear-gradient(top, #ffffff,  #cacbcc);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#cacbcc');
+}
+
 .ui-datepicker table .ui-state-highlight, .ui-datepicker table .ui-widget-content .ui-state-highlight, .ui-datepicker table .ui-widget-header .ui-state-highlight,
-.ui-datepicker table .ui-state-hover, .ui-datepicker table .ui-widget-content .ui-state-hover, .ui-datepicker table .ui-widget-header .ui-state-hover, 
 .ui-datepicker table .ui-state-focus, .ui-datepicker table .ui-widget-content .ui-state-focus, .ui-datepicker table .ui-widget-header .ui-state-focus
 {
 	border: 1px solid #8b9fc2; 
