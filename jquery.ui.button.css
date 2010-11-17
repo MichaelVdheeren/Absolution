@@ -9,7 +9,8 @@
  */
 
 
-.ui-button {
+.ui-button
+{
 	display: inline-block;
 	position: relative;
 	padding: 0;

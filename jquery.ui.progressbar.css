@@ -1,37 +1,26 @@
-/*
- * jQuery UI Progressbar @VERSION
- *
- * Copyright 2010, AUTHORS.txt (http://jqueryui.com/about)
- * Dual licensed under the MIT or GPL Version 2 licenses.
- * http://jquery.org/license
- *
- * http://docs.jquery.com/UI/Progressbar#theming
- */
-
 .ui-progressbar
 {
-	height:2em;
-	text-align: left;
-	
+	height: 2em;
 	background: #eff0f0;
 	background: -webkit-gradient(linear, left top, left bottom, from(#dfe0e1), to(#ffffff));
 	background: -moz-linear-gradient(top, #dfe0e1,  #ffffff);
 	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfe0e1', endColorstr='#ffffff');
-
-	color: #333333;
 }
 
-.ui-progressbar .ui-progressbar-value {
-	margin: -1px;
-	height:100%;
-}
+	.ui-progressbar .ui-progressbar-value
+	{
+		margin: -1px;
+		height:100%;
+	}
 
-.ui-progressbar .ui-widget-header {
-	border: 1px solid #8b9fc2;
-	background: #409dd0;
-	background: -webkit-gradient(linear, left top, left bottom, from(#7cc5e3), to(#217cbf));
-	background: -moz-linear-gradient(top, #7cc5e3,  #217cbf);
-	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#7cc5e3', endColorstr='#217cbf');
-	color: #ffffff;
-	font-weight: bold;
-}
+	.ui-progressbar .ui-widget-header
+	{
+		border: 1px solid #8b9fc2;
+		background: #409dd0;
+		background: -webkit-gradient(linear, left top, left bottom, from(#7cc5e3), to(#217cbf));
+		background: -moz-linear-gradient(top, #7cc5e3,  #217cbf);
+		filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#7cc5e3', endColorstr='#217cbf');
+		color: #ffffff;
+		font-weight: bold;
+		text-align: center;
+	}

@@ -57,7 +57,6 @@
 
 .ui-accordion .ui-accordion-header .ui-icon
 {
-	/*background: url('images/ui-accordion-arrow-right.png');*/
 	width: 14px; height: 14px;
 	border: 1px solid #a9a9a9 !important; 
 	-moz-border-radius: 7px; -webkit-border-radius: 7px; border-radius: 7px;
@@ -75,8 +74,8 @@
 	border: 1px solid #8b9fc2 !important; 
 }
 
-.ui-accordion .ui-accordion-header.ui-state-active .ui-icon, .ui-accordion .ui-accordion-header.ui-state-hover.ui-state-active .ui-icon
+.ui-accordion .ui-accordion-header.ui-state-active .ui-icon, 
+.ui-accordion .ui-accordion-header.ui-state-hover.ui-state-active .ui-icon
 {
-	/*background: url('images/ui-accordion-arrow-down.png');*/
 	background-position: -65px 0;
 }

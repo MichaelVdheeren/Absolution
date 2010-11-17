@@ -23,27 +23,27 @@
 .ui-dialog .ui-dialog-titlebar .ui-dialog-titlebar-close
 { 
 	border: 1px solid #0b0a0a;
-	
-	background: #555557;
+	background: #898a8c;
 	background: -webkit-gradient(linear, left top, left bottom, from(#898a8c), to(#3f3f3f));
 	background: -moz-linear-gradient(top, #898a8c,  #3f3f3f);
 	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#898a8c', endColorstr='#3f3f3f');
-
-	font-weight: bold;
-	color: #ffffff;
 }
 
-.ui-dialog .ui-dialog-titlebar .ui-state-active, .ui-dialog .ui-dialog-titlebar .ui-state-hover, .ui-dialog .ui-dialog-titlebar .ui-state-focus
+.ui-dialog .ui-dialog-titlebar .ui-dialog-titlebar-close.ui-state-hover,
+.ui-dialog .ui-dialog-titlebar .ui-dialog-titlebar-close.ui-state-focus
 { 
-	border: 1px solid #0b0a0a;
-	
-	background: #409dd0;
+	background: #7cc5e3;
 	background: -webkit-gradient(linear, left top, left bottom, from(#7cc5e3), to(#217cbf));
 	background: -moz-linear-gradient(top, #7cc5e3,  #217cbf);
 	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#7cc5e3', endColorstr='#217cbf');
-	
-	font-weight: bold;
-	color: #ffffff;
+}
+
+.ui-dialog .ui-dialog-titlebar .ui-dialog-titlebar-close.ui-state-active
+{ 
+	background: #217cbf;
+	background: -webkit-gradient(linear, left top, left bottom, from(#217cbf), to(#7cc5e3));
+	background: -moz-linear-gradient(top, #217cbf,  #7cc5e3);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#217cbf', endColorstr='#7cc5e3');
 }
 
 .ui-dialog .ui-dialog-titlebar-close .ui-icon

@@ -8,108 +8,95 @@
 
 /* Component containers
 ----------------------------------*/
-.ui-widget { 
+.ui-widget
+{ 
 	font-family: Trebuchet MS, Tahoma, Verdana, Arial, sans-serif; 
 	font-size: 1.1em;
 }
+	
+	.ui-widget a {
+		color: inherit;
+	}
 
-	.ui-widget .ui-widget { 
+	.ui-widget .ui-widget
+	{ 
 		font-size: 1em;
 	}
 
-	.ui-widget input, .ui-widget select, 
-	.ui-widget textarea, .ui-widget button { 
-		font-family: Trebuchet MS, Tahoma, Verdana, Arial, sans-serif; font-size: 1em;
+	.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button
+	{ 
+		font-family: inherit;
+		font-size: 1em;
 	}
 	
-.ui-widget-content {
+.ui-widget-content
+{
 	border: 1px solid #a9a9a9; 
 	background: #eaebec; 
-	color: #333333;
 }
-
-	.ui-widget-content a { 
-		color: inherit;
-	}
 	
-.ui-widget-header { 
+.ui-widget-header
+{ 
+	font-weight: bold;
 	border: 1px solid #a9a9a9; 
-	
 	background: #eff0f0;
 	background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#dfe0e1));
 	background: -moz-linear-gradient(top, #ffffff,  #dfe0e1);
 	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#dfe0e1');
-
-	color: #333333; 
-	font-weight: bold;
 }
-
-	.ui-widget-header a {
-		color: inherit;
-	}
 
 /* Interaction states
 ----------------------------------*/
-.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default { 
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default
+{ 
+	font-weight: bold; 
+	color: #333333;
 	border: 1px solid #a9a9a9; 
-	
 	background: #eff0f0;
 	background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#dfe0e1));
 	background: -moz-linear-gradient(top, #ffffff,  #dfe0e1);
 	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#dfe0e1');
-
-	font-weight: bold; 
-	color: #333333;
 }
-
-	.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited {
-		color: #333333; 
-		text-decoration: none; 
-	}
 	
-.ui-state-hover, .ui-widget-content .ui-state-hover, 
-.ui-widget-header .ui-state-hover, .ui-state-focus, 
-.ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus { 
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, 
+.ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus
+{ 
+	font-weight: bold; 
+	color: #ffffff;
 	border: 1px solid #8b9fc2; 
-	
 	background: #409dd0;
 	background: -webkit-gradient(linear, left top, left bottom, from(#7cc5e3), to(#217cbf));
 	background: -moz-linear-gradient(top, #7cc5e3,  #217cbf);
 	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#7cc5e3', endColorstr='#217cbf');
+}
 	
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active
+{ 
 	font-weight: bold; 
 	color: #ffffff;
-}
-
-	.ui-state-hover a, .ui-state-hover a:hover { 
-		color: #ffffff;
-		text-decoration: none;
-	}
-	
-.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active { 
 	border: 1px solid #8b9fc2;  
-	
 	background: #409dd0;
 	background: -webkit-gradient(linear, left top, left bottom, from(#217cbf), to(#7cc5e3));
 	background: -moz-linear-gradient(top, #217cbf,  #7cc5e3);
 	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#217cbf', endColorstr='#7cc5e3');
-
-	font-weight: bold; 
-	color: #ffffff;
 }
 
-.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited { 
-	color: #ffffff;
+.ui-state-default a, .ui-state-hover a, .ui-state-active a
+{
+	color: inherit; 
 	text-decoration: none;
 }
 
-.ui-widget :active { outline: none; }
+.ui-widget:active
+{ 
+	outline: none; 
+}
 
 /* Interaction Cues
 ----------------------------------*/
-.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight  {border: 1px solid #8b9fc2; background: #87c4e2; color: #363636; }
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight  {border: 1px solid #8b9fc2; background: #7cc5e3; }
 .ui-state-highlight a, .ui-widget-content .ui-state-highlight a,.ui-widget-header .ui-state-highlight a { color: inherit; }
-.ui-state-error, .ui-widget-content .ui-state-error, .ui-widget-header .ui-state-error {border: 1px solid #953737; background: #f35757; color: #363636; }
+.ui-state-error, .ui-widget-content .ui-state-error, .ui-widget-header .ui-state-error {border: 1px solid #953737; background: #f35757; }
 .ui-state-error a, .ui-widget-content .ui-state-error a, .ui-widget-header .ui-state-error a { color: inherit; }
 .ui-state-error-text, .ui-widget-content .ui-state-error-text, .ui-widget-header .ui-state-error-text { color: #363636; }
 .ui-priority-primary, .ui-widget-content .ui-priority-primary, .ui-widget-header .ui-priority-primary { font-weight: bold; }
@@ -304,7 +291,6 @@
 .ui-icon-grip-solid-horizontal { background-position: -48px -224px; }
 .ui-icon-gripsmall-diagonal-se { background-position: -64px -224px; }
 .ui-icon-grip-diagonal-se { background-position: -80px -224px; }
-
 
 /* Misc visuals
 ----------------------------------*/
