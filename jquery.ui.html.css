@@ -30,7 +30,6 @@ textarea, input[type='text'], input[type='password'], input[type='file']
 	background: -webkit-gradient(linear, left top, left bottom, from(#edeff0), to(#ffffff));
 	background: -moz-linear-gradient(top, #edeff0, #ffffff);
 	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#edeff0', endColorstr='#ffffff');
-
 }
 
 input[type='text']:hover, input[type='text']:focus,
@@ -47,13 +46,8 @@ input[type='file']:hover, input[type='file']:focus
 input[type='button'], input[type='reset'], input[type='submit']
 {
 	-moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;
-	border: 1px solid #a9a9a9; 
-	
-	background: #eff0f0;
-	background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#dfe0e1));
-	background: -moz-linear-gradient(top, #ffffff,  #dfe0e1);
-	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#dfe0e1');
-
+	border-width: 1px;
+	border-style: solid;
 	font-weight: bold; 
 	color: inherit;
 	cursor: pointer;
@@ -71,3 +65,36 @@ input[type='submit']:hover, input[type='submit']:focus
 	font-weight: bold;
 	color: #ffffff;
 }
+
+/*
+label:HOVER + input[type=text],
+label:HOVER + input[type=password],
+label:HOVER + input[type=submit],
+label:HOVER + .selector,
+label:HOVER + textarea {
+	box-shadow: 0 0 0.2em #37c, 0 0 0.2em #37c;
+	-moz-box-shadow: 0 0 0.2em #37c, 0 0 0.2em #37c;
+	-webkit-box-shadow: 0 0 0.2em #37c, 0 0 0.2em #37c;
+}
+
+input[type=text]:HOVER,
+input[type=password]:HOVER,
+input[type=submit]:HOVER,
+.selector:HOVER,
+textarea:HOVER {
+	box-shadow: 0 0 0.2em #37c, 0 0 0.2em #37c;
+	-moz-box-shadow: 0 0 0.2em #37c, 0 0 0.2em #37c;
+	-webkit-box-shadow: 0 0 0.2em #37c, 0 0 0.2em #37c;
+}
+	
+input[type=text]:FOCUS,
+input[type=password]:FOCUS,
+input[type=submit]:FOCUS,
+.selector:FOCUS,
+textarea:FOCUS {
+	box-shadow: 0 0 0.2em #37c, 0 0 0.2em #37c;
+	-moz-box-shadow: 0 0 0.2em #37c, 0 0 0.2em #37c;
+	-webkit-box-shadow: 0 0 0.2em #37c, 0 0 0.2em #37c;
+	border-color: #37c;
+}
+*/

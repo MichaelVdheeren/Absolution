@@ -7,37 +7,81 @@
  *
  * http://docs.jquery.com/UI/Tabs#theming
  */
-.ui-tabs { position: relative; padding: 0; zoom: 1; } /* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
-.ui-tabs .ui-tabs-nav { margin: 0; padding: -1px;  }
-.ui-tabs .ui-tabs-nav li { list-style: none; float: left; position: relative; top: 1px; margin: 0px; border-bottom: 0 !important; padding: 0; white-space: nowrap; }
-.ui-tabs .ui-tabs-nav li a { float: left; padding: .5em 1em; text-decoration: none; }
-.ui-tabs .ui-tabs-nav li.ui-tabs-selected { margin-bottom: 0; padding-bottom: 1px; background: #eaebec; color: #333333 !important }
-.ui-tabs .ui-tabs-nav li.ui-tabs-selected a, .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .ui-tabs .ui-tabs-nav li.ui-state-processing a { cursor: text; color: #333333 !important }
-.ui-tabs .ui-tabs-nav li a, .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a { cursor: pointer; } /* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
-.ui-tabs .ui-tabs-panel { display: block; border-width: 0px; border-top-width: 1px !important; padding: 1em 1.4em; -moz-border-radius: 0px; -webkit-border-radius: 0px; border-radius: 0px; }
-.ui-tabs .ui-tabs-hide { display: none !important; }
-
-.ui-tabs .ui-widget-header {
-	border: 0px;
-	background: none;
-	
-	background: #eff0f0;
-	background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#dfe0e1));
-	background: -moz-linear-gradient(top, #ffffff,  #dfe0e1);
-	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#dfe0e1');
+.ui-tabs
+{
+	position: relative;
+	padding: 0; zoom: 1;
+	-moz-border-radius: 0px; 
+	-webkit-border-radius: 0px; 
+	border-radius: 0px;
 }
 
-.ui-tabs {
-	-moz-border-radius: 0px !important; 
-	-webkit-border-radius: 0px !important; 
-	border-radius: 0px !important;
+.ui-tabs .ui-tabs-nav
+{ 
+	margin: 0; 
+	padding: -1px;
 }
 
-.ui-tabs .ui-tabs-nav li {
-	-moz-border-radius: 0px !important; 
-	-webkit-border-radius: 0px !important; 
-	border-radius: 0px !important;
+.ui-tabs .ui-tabs-nav li
+{ 
+	list-style: none; 
+	float: left; 
+	position: relative; 
+	top: 0px; 
+	margin: 0px;
+	border-bottom: 1px; 
+	padding: 0; 
+	white-space: nowrap;
+	-moz-border-radius: 0px; 
+	-webkit-border-radius: 0px; 
+	border-radius: 0px;
 	border-width: 0px; 
-	border-right-width: 1px !important;
+	border-right-width: 1px;
 	border-color: #b3b3b3;
+}
+
+.ui-tabs .ui-tabs-nav li a
+{
+	float: left;
+	padding: .5em 1em;
+	text-decoration: none;
+}
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected
+{
+	margin-bottom: 0px;
+	top: 1px;
+	padding-bottom: 0px;
+	background: #eeeeee;
+	color: #333333 !important;
+}
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected a, 
+.ui-tabs .ui-tabs-nav li.ui-state-disabled a, 
+.ui-tabs .ui-tabs-nav li.ui-state-processing a
+{
+	cursor: text;
+	color: #333333 !important
+}
+
+.ui-tabs .ui-tabs-nav li a, /* obsolete, but required to overcome bug in Opera */
+.ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a
+{
+	cursor: pointer;
+} 
+
+.ui-tabs .ui-tabs-panel
+{ 
+	display: block; 
+	border-width: 0px; 
+	border-top-width: 1px !important; 
+	padding: 1em 1.4em; 
+	-moz-border-radius: 0px; 
+	-webkit-border-radius: 0px; 
+	border-radius: 0px;
+}
+
+.ui-tabs .ui-tabs-hide
+{
+	display: none !important;
 }

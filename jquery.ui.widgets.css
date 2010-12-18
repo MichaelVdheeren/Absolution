@@ -1,3 +1,4 @@
+/* Widgets */
 @import url("jquery.ui.core.css");
 @import url("jquery.ui.resizable.css");
 @import url("jquery.ui.selectable.css");
@@ -11,3 +12,6 @@
 @import url("jquery.ui.progressbar.css");
 @import url("jquery.ui.uniform.css");
 @import url("jquery.ui.html.css");
+
+/* Needed for the colors */
+@import url("colors/jquery.ui.colors.blue.css");

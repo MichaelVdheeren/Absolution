@@ -1,84 +1,87 @@
-/*
- * jQuery UI Dialog @VERSION
- *
- * Copyright 2010, AUTHORS.txt (http://jqueryui.com/about)
- * Dual licensed under the MIT or GPL Version 2 licenses.
- * http://jquery.org/license
- *
- * http://docs.jquery.com/UI/Dialog#theming
- */
-.ui-dialog { position: absolute; padding: 0.0em; width: 300px; overflow: hidden; border-color: #ffffff !important }
-.ui-dialog .ui-dialog-title { float: left; margin: .1em 16px .2em 0; } 
-.ui-dialog .ui-dialog-titlebar-close { position: absolute; right: .3em; top: 50%; width: 19px; margin: -10px 0 0 0; padding: 0px; height: 18px; }
-.ui-dialog .ui-dialog-titlebar-close span { display: block; margin: 1px; }
-.ui-dialog .ui-dialog-titlebar-close:hover, .ui-dialog .ui-dialog-titlebar-close:focus { padding: 0; }
-.ui-dialog .ui-dialog-content { position: relative; border: 0; padding: 1em; overflow: auto; zoom: 1; }
-.ui-dialog .ui-dialog-buttonpane { text-align: left; border-width: 1px 0 0 0; margin: .5em 0 0 0; padding: .3em 0.3em .5em .4em; background: #f4f4f5; }
-.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset { float: right; }
-.ui-dialog .ui-dialog-buttonpane button { margin: .5em .4em .5em 0; cursor: pointer; font-weight: normal }
-.ui-dialog .ui-resizable-se { width: 14px; height: 14px; right: 1px; bottom: 1px; display: none; }
-.ui-dialog .ui-icon-grip-diagonal-se { background-position: -64px -224px; display: none; }
-.ui-draggable .ui-dialog-titlebar { cursor: move; }
-
-.ui-dialog .ui-dialog-titlebar .ui-dialog-titlebar-close
-{ 
-	border: 1px solid #0b0a0a;
-	background: #898a8c;
-	background: -webkit-gradient(linear, left top, left bottom, from(#898a8c), to(#3f3f3f));
-	background: -moz-linear-gradient(top, #898a8c,  #3f3f3f);
-	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#898a8c', endColorstr='#3f3f3f');
-}
-
-.ui-dialog .ui-dialog-titlebar .ui-dialog-titlebar-close.ui-state-hover,
-.ui-dialog .ui-dialog-titlebar .ui-dialog-titlebar-close.ui-state-focus
-{ 
-	background: #7cc5e3;
-	background: -webkit-gradient(linear, left top, left bottom, from(#7cc5e3), to(#217cbf));
-	background: -moz-linear-gradient(top, #7cc5e3,  #217cbf);
-	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#7cc5e3', endColorstr='#217cbf');
-}
-
-.ui-dialog .ui-dialog-titlebar .ui-dialog-titlebar-close.ui-state-active
-{ 
-	background: #217cbf;
-	background: -webkit-gradient(linear, left top, left bottom, from(#217cbf), to(#7cc5e3));
-	background: -moz-linear-gradient(top, #217cbf,  #7cc5e3);
-	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#217cbf', endColorstr='#7cc5e3');
-}
-
-.ui-dialog .ui-dialog-titlebar-close .ui-icon
+.ui-dialog
 {
-	background-image: url(images/ui-icons_ffffff_256x240.png);
+	position: absolute;
+	padding: 0.0em;
+	width: 300px;
+	overflow: hidden;
 }
+.ui-dialog .ui-dialog-title
+{
+	float: left;
+	margin: .1em 16px .2em 0;
+} 
+.ui-dialog .ui-dialog-titlebar-close
+{
+	position: absolute;
+	right: .6em;
+	top: 50%;
+	width: 19px;
+	margin: -10px 0 0 0;
+	padding: 0px;
+	height: 18px;
+	border-width: 1px;
+	border-style: solid;
+}
+.ui-dialog .ui-dialog-titlebar-close span
+{
+	display: block;
+	margin: 1px;
+}
+.ui-dialog .ui-dialog-titlebar-close:hover, 
+.ui-dialog .ui-dialog-titlebar-close:focus
+{
+	padding: 0;
+}
+.ui-dialog .ui-dialog-content
+{
+	position: relative;
+	border-width: 0px;
+	padding: 1em;
+	overflow: auto;
+	zoom: 1;
+}
+.ui-dialog .ui-dialog-buttonpane
+{
+	text-align: left;
+	border-width: 1px 0 0 0;
+	margin: .5em 0 0 0;
+	padding: .3em .3em .5em .4em;
+}
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset { float: right; }
+.ui-dialog .ui-dialog-buttonpane button
+{
+	margin: .5em .4em .5em 0;
+	cursor: pointer;
+	font-weight: normal
+}
+.ui-dialog .ui-resizable-se
+{
+	width: 14px;
+	height: 14px;
+	right: 1px;
+	bottom: 1px;
+	display: none;
+}
+.ui-dialog .ui-icon-grip-diagonal-se
+{ 
+	background-position: -64px -224px;
+	display: none;
+}
+.ui-draggable .ui-dialog-titlebar { cursor: move; }
 
 .ui-dialog .ui-dialog-titlebar
 {
-	padding: .5em 1em .3em; position: relative;
-	
+	padding: .5em 1em .3em;
+	position: relative;
 	-moz-border-radius-bottomleft: 0px;
 	-webkit-border-bottom-left-radius: 0px;
 	border-bottom-left-radius: 0px;
-	
 	-moz-border-radius-bottomright: 0px;
 	-webkit-border-bottom-right-radius: 0px;
 	border-bottom-right-radius: 0px;
-	
-	background: #3e3d3e;
-	background: -webkit-gradient(linear, left top, left bottom, from(#57585a), to(#282425));
-	background: -moz-linear-gradient(top, #57585a,  #282425);
-	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#57585a', endColorstr='#282425');
-	
 	border: 0px;
-	font-size: 2em;
-	color: #ffffff;
+	font-size: 1.5em;
 	font-weight: normal;
-}
-
-.ui-dialog
-{
-	-webkit-box-shadow: 0px 0px 5px #282425;
-	-moz-box-shadow: 0px 0px 5px #282425;
-	box-shadow: 0px 0px 5px #282425;
 }
 
 .ui-dialog .ui-dialog-content .ui-tabs
@@ -90,7 +93,7 @@
 {
 	margin: 1em -1em 1em -1em;
 	border: 0px;
-	border-top: 1px solid #b3b3b3 !important;
+	border-top: 1px solid #c1c1c1 !important;
 }
 
 .ui-dialog .ui-tabs

@@ -1,81 +1,75 @@
-/*
- * jQuery UI Accordion @VERSION
- *
- * Copyright 2010, AUTHORS.txt (http://jqueryui.com/about)
- * Dual licensed under the MIT or GPL Version 2 licenses.
- * http://jquery.org/license
- *
- * http://docs.jquery.com/UI/Accordion#theming
- */
-/* IE/Win - Fix animation bug - #4615 */
-.ui-accordion { width: 100%; }
-.ui-accordion .ui-accordion-header
-{
-	cursor: pointer; 
-	position: relative; 
-	margin-top: 1px; 
-	zoom: 1;
+.ui-accordion	{ width: 100%; }
 	
-	background: #eff0f0;
-	background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#dfe0e1));
-	background: -moz-linear-gradient(top, #ffffff,  #dfe0e1);
-	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#dfe0e1');
-}
+	.ui-accordion .ui-accordion-header
+	{
+		cursor: pointer; 
+		position: relative; 
+		margin-top: 1px; 
+		zoom: 1;
+		border: solid 1px #a9a9a9;
+		-moz-border-radius: 5px; 
+		-webkit-border-radius: 5px; 
+		border-radius: 5px;
+	}
+	
+		.ui-accordion .ui-accordion-header a
+		{
+			display: block;
+			font-size: 1em;
+			padding: .5em .5em .5em .7em;
+			color: inherit;
+		}
+		
+		.ui-accordion .ui-accordion-header .ui-icon
+		{
+			position: absolute; 
+			left: .5em; 
+			top: 50%; 
+			margin-top: -7px;
+			width: 13px; height: 13px;
+			border: 1px solid #a9a9a9; 
+			-moz-border-radius: 7px;
+			-webkit-border-radius: 7px;
+			border-radius: 7px;
+			background: #ffffff url(images/ui-icons_222222_256x240.png);
+			background-position: -34px -2px;
+			-webkit-box-shadow: inset 0 -6px 5px rgba(0,0,0,.1);
+			-moz-box-shadow: inset 0 -6px 5px rgba(0,0,0,.1);
+			box-shadow: inset 0 -6px 5px rgba(0,0,0,.1);
+		}
+		
+	.ui-accordion .ui-accordion-content
+	{
+		border-width: 0px;
+		-moz-border-radius: 0px; 
+		-webkit-border-radius: 0px; 
+		border-radius: 0px;
+		background: none;
+		padding: 1em 2.2em; 
+		border-top: 0; 
+		margin-top: 0px; 
+		position: relative; 
+		top: 1px; 
+		margin-bottom: 0px; 
+		overflow: auto; 
+		display: none; 
+		zoom: 1;
+	}
 
-.ui-accordion .ui-accordion-li-fix { display: inline; }
-.ui-accordion .ui-accordion-header a { display: block; font-size: 1em; padding: .5em .5em .5em .7em; }
-.ui-accordion-icons .ui-accordion-header a { padding-left: 2.6em; }
-.ui-accordion .ui-accordion-header .ui-icon { position: absolute; left: .5em; top: 50%; margin-top: -7px; }
-.ui-accordion .ui-accordion-content { padding: 1em 2.2em; border-top: 0; margin-top: 0px; position: relative; top: 1px; margin-bottom: 0px; overflow: auto; display: none; zoom: 1; }
-.ui-accordion .ui-accordion-content-active { display: block; }
+	.ui-accordion .ui-accordion-li-fix 	{ display: inline; }
+	.ui-accordion-icons .ui-accordion-header a	{ padding-left: 2.6em; }
+	.ui-accordion .ui-accordion-content-active	{ display: block; }
+	.ui-accordion .ui-accordion-header-active	{ border-width: 0px; }
 
-.ui-accordion, .ui-accordion .ui-accordion-content {
-	background: none;
-}
-
-.ui-accordion .ui-accordion-header {
-	border: solid 1px #a9a9a9;
-	-moz-border-radius: 5px !important; 
-	-webkit-border-radius: 5px !important; 
-	border-radius: 5px !important;
-}
-
-.ui-accordion .ui-accordion-header, .ui-accordion .ui-accordion-header a {
-	color: #333333 !important;
-}
-
-.ui-accordion .ui-accordion-header-active {
-	border-width: 0px !important;
-}
-
-.ui-accordion .ui-accordion-content {
-	border-width: 0px !important;
-	-moz-border-radius: 0px !important; 
-	-webkit-border-radius: 0px !important; 
-	border-radius: 0px !important;
-}
-
-.ui-accordion .ui-accordion-header .ui-icon
-{
-	width: 14px; height: 14px;
-	border: 1px solid #a9a9a9 !important; 
-	-moz-border-radius: 7px; -webkit-border-radius: 7px; border-radius: 7px;
-	background: #ffffff url(images/ui-icons_409dd0_256x240.png);
-	background-position: -33px -1px;
-	-webkit-box-shadow: inset 0 -1px 2px rgba(0,0,0,.2);
-	-moz-box-shadow: inset 0 -1px 2px rgba(0,0,0,.2);
-	box-shadow: inset 0 -1px 2px rgba(0,0,0,.2);
-}
-
-.ui-accordion .ui-accordion-header.ui-state-hover .ui-icon
-{
-	background: #7cc5e3 url(images/ui-icons_ffffff_256x240.png);
-	background-position: -33px -1px;
-	border: 1px solid #8b9fc2 !important; 
-}
-
-.ui-accordion .ui-accordion-header.ui-state-active .ui-icon, 
-.ui-accordion .ui-accordion-header.ui-state-hover.ui-state-active .ui-icon
-{
-	background-position: -65px 0;
-}
+	.ui-accordion .ui-accordion-header.ui-state-hover .ui-icon
+	{
+		background: #5e9ae2 url(images/ui-icons_ffffff_256x240.png);
+		background-position: -34px -2px;
+		border: 1px solid #2e63a5; 
+	}
+	
+	.ui-accordion .ui-accordion-header.ui-state-active .ui-icon, 
+	.ui-accordion .ui-accordion-header.ui-state-hover.ui-state-active .ui-icon
+	{
+		background-position: -66px -1px;
+	}

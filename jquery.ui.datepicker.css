@@ -1,97 +1,71 @@
-/*
- * jQuery UI Datepicker @VERSION
- *
- * Copyright 2010, AUTHORS.txt (http://jqueryui.com/about)
- * Dual licensed under the MIT or GPL Version 2 licenses.
- * http://jquery.org/license
- *
- * http://docs.jquery.com/UI/Datepicker#theming
- */
-.ui-datepicker { width: 17em; padding: 0; border-color: #ffffff !important;-webkit-box-shadow: 0px 0px 5px #282425;
-	-moz-box-shadow: 0px 0px 5px #282425;
-	box-shadow: 0px 0px 5px #282425; }
+.ui-datepicker
+{ 
+	width: 17em;
+	padding: 0;
+}
 
-.ui-datepicker .ui-datepicker-header { 
-	position:relative; padding:.5em 0.2em;
-	color: #ffffff;
+	.ui-datepicker .ui-datepicker-header { 
+		position:relative; 
+		padding:.5em 0.2em;
+		border-width: 0px 0px 1px 0px;
+		border-style: solid;
+		border-color: #c1c1c1;
+		-moz-border-radius-bottomleft: 0px;
+		-webkit-border-bottom-left-radius: 0px;
+		border-bottom-left-radius: 0px;
+		-moz-border-radius-bottomright: 0px;
+		-webkit-border-bottom-right-radius: 0px;
+		border-bottom-right-radius: 0px;
+	}
+
+	.ui-datepicker .ui-datepicker-prev,
+	.ui-datepicker .ui-datepicker-next
+	{ 
+		position:absolute; 
+		top: 4px; 
+		width: 1.8em; 
+		height: 1.8em;
+		border-width: 1px;
+		border-style: solid;
+		cursor: pointer;
+	}
 	
-	background: #3e3d3e;
-	background: -webkit-gradient(linear, left top, left bottom, from(#57585a), to(#282425));
-	background: -moz-linear-gradient(top, #57585a,  #282425);
-	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#57585a', endColorstr='#282425');
-}
+		.ui-datepicker .ui-datepicker-prev .ui-icon {
+			background-position: -96px 0;
+		}
+		
+		.ui-datepicker .ui-datepicker-next .ui-icon {
+			background-position: -32px 0;
+		}
 
-.ui-datepicker .ui-datepicker-header .ui-icon { background-image: url(images/ui-icons_ffffff_256x240.png); }
 
-.ui-datepicker .ui-datepicker-prev .ui-icon {
-	background-position: -96px 0;
-}
 
-.ui-datepicker .ui-datepicker-next .ui-icon {
-	background-position: -32px 0;
-}
-
-.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next { 
-	background: #555557;
-	background: -webkit-gradient(linear, left top, left bottom, from(#898a8c), to(#3f3f3f));
-	background: -moz-linear-gradient(top, #898a8c,  #3f3f3f);
-	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#898a8c', endColorstr='#3f3f3f');
-
-	position:absolute; top: 4px; width: 1.8em; height: 1.8em;
-	border: 1px solid #0b0a0a; 
-}
-.ui-datepicker .ui-datepicker-prev:hover, .ui-datepicker .ui-datepicker-next:hover { 
-	background: #409dd0;
-	background: -webkit-gradient(linear, left top, left bottom, from(#7cc5e3), to(#217cbf));
-	background: -moz-linear-gradient(top, #7cc5e3,  #217cbf);
-	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#7cc5e3', endColorstr='#217cbf');
-}
-
-.ui-datepicker table .ui-state-default, .ui-datepicker table .ui-widget-content .ui-state-default, .ui-datepicker table .ui-widget-header .ui-state-default { 
-	border: 1px #eaebec solid;
+.ui-datepicker table .ui-state-default,
+.ui-datepicker table .ui-widget-content .ui-state-default,
+.ui-datepicker table .ui-widget-header .ui-state-default
+{ 
+	border: 1px #eeeeee solid;
 	background: none;
 }
 
-.ui-datepicker table .ui-state-hover, .ui-datepicker table .ui-widget-content .ui-state-hover, .ui-datepicker table .ui-widget-header .ui-state-hover {
-	border: 1px solid #8b9fc2;
-	color: #ffffff;
+.ui-datepicker table .ui-state-hover,
+.ui-datepicker table .ui-widget-content .ui-state-hover,
+.ui-datepicker table .ui-widget-header .ui-state-hover,
+.ui-datepicker table .ui-state-active,
+.ui-datepicker table .ui-widget-content .ui-state-active,
+.ui-datepicker table .ui-widget-header .ui-state-active,
+.ui-datepicker table .ui-state-highlight,
+.ui-datepicker table .ui-widget-content .ui-state-highlight,
+.ui-datepicker table .ui-widget-header .ui-state-highlight,
+.ui-datepicker table .ui-state-focus,
+.ui-datepicker table .ui-widget-content .ui-state-focus,
+.ui-datepicker table .ui-widget-header .ui-state-focus
+{
+	border-width: 1px;
+	border-style: solid;
 	-moz-border-radius: 5px; 
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
-	
-	background: #409dd0;
-	background: -webkit-gradient(linear, left top, left bottom, from(#7cc5e3), to(#217cbf));
-	background: -moz-linear-gradient(top, #7cc5e3,  #217cbf);
-	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#7cc5e3', endColorstr='#217cbf');
-}
-
-.ui-datepicker table .ui-state-highlight, .ui-datepicker table .ui-widget-content .ui-state-highlight, .ui-datepicker table .ui-widget-header .ui-state-highlight,
-.ui-datepicker table .ui-state-focus, .ui-datepicker table .ui-widget-content .ui-state-focus, .ui-datepicker table .ui-widget-header .ui-state-focus
-{
-	font-weight: bold; 
-	-moz-border-radius: 5px; 
-	-webkit-border-radius: 5px;
-	border-radius: 5px;
-	border: 1px solid #a9a9a9;
-	color: #000000;
-	background: #eff0f0;
-	background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#dfe0e1));
-	background: -moz-linear-gradient(top, #ffffff,  #dfe0e1);
-	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#dfe0e1');
-}
-
-.ui-datepicker table .ui-state-active, .ui-datepicker table .ui-widget-content .ui-state-active, .ui-datepicker table .ui-widget-header .ui-state-active
-{
-	border: 1px solid #8b9fc2; 
-	font-weight: bold;
-	color: #ffffff;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	border-radius: 5px;
-	background: #409dd0;
-	background: -webkit-gradient(linear, left top, left bottom, from(#217cbf), to(#7cc5e3));
-	background: -moz-linear-gradient(top, #217cbf,  #7cc5e3);
-	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#217cbf', endColorstr='#7cc5e3');
 }
 
 .ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-prev:hover { left: 4px; }
@@ -113,7 +87,7 @@
 /* with multiple calendars */
 .ui-datepicker.ui-datepicker-multi { width:auto; }
 .ui-datepicker-multi .ui-datepicker-group { float:left; }
-.ui-datepicker-multi .ui-datepicker-group table { width:95%; margin:0 auto .4em; }
+.ui-datepicker-multi .ui-datepicker-group table { width:100%; margin:0 auto .4em; }
 .ui-datepicker-multi-2 .ui-datepicker-group { width:50%; }
 .ui-datepicker-multi-3 .ui-datepicker-group { width:33.4%; }
 .ui-datepicker-multi-4 .ui-datepicker-group { width:25%; }
@@ -146,14 +120,4 @@
     left: -4px; /*must have*/
     width: 200px; /*must have*/
     height: 200px; /*must have*/
-}
-
-.ui-datepicker .ui-widget-header {
-	-moz-border-radius-bottomleft: 0px;
-	-webkit-border-bottom-left-radius: 0px;
-	border-bottom-left-radius: 0px;
-	-moz-border-radius-bottomright: 0px;
-	-webkit-border-bottom-right-radius: 0px;
-	border-bottom-right-radius: 0px;
-	border: 0px;
 }
