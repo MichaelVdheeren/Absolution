@@ -20,7 +20,7 @@
 	/* Widget: HTML */
 	input[type='button'], input[type='reset'], input[type='submit'],
 	/* Widget: Uniform */
-	div.selector span,div.uploader span.action, div.button, div.selector, div.checker, div.radio
+	div.selector span,div.uploader span.action, div.button, div.checker, div.radio
 	{
 		color: #333333;
 		border-color: #c1c1c1;

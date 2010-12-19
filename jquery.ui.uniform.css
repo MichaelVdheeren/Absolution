@@ -1,17 +1,13 @@
 /* Global Declaration */
 
-.selector, 
-.radio, 
-.checker, 
-.uploader,
-.button, 
-.selector *, 
-.radio *, 
-.checker *, 
-.uploader *,
-.button *{
-  margin: 0;
-  padding: 0;
+.selector, .selector *,
+.radio, .radio *,
+.checker, .checker *,
+.uploader, .uploader *,
+.button, .button *
+{
+	margin: 0;
+	padding: 0;
 }
 
 .selector, 
@@ -64,23 +60,22 @@ textarea.uniform:focus
  *  *************************************  */
 
 div.selector {
-	-moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;
-	border: 1px solid #a9a9a9;
-	
-	width: 190px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	border: 1px solid #c1c1c1;
 	position: relative;
 	overflow: hidden;
-	background: #f2f2f2 url(images/ui-icons_222222_256x240.png) -125px 2px;
-	-webkit-box-shadow: inset 0 -10px 9px rgba(0,0,0,.03);
-	-moz-box-shadow: inset 0 -10px 9px rgba(0,0,0,.03);
-	box-shadow: inset 0 -10px 9px rgba(0,0,0,.03);
-	height: 20px;
+	background: #ffffff url('images/selector.png') right center no-repeat;
+	-webkit-box-shadow: inset 0 -10px 9px rgba(0,0,0,.05);
+	-moz-box-shadow: inset 0 -10px 9px rgba(0,0,0,.05);
+	box-shadow: inset 0 -10px 9px rgba(0,0,0,.05);
 }
 
 div.selector span {
 	-moz-border-radius-topleft: 4px; -webkit-border-top-left-radius: 4px; border-top-left-radius: 4px;
 	-moz-border-radius-bottomleft: 4px; -webkit-border-bottom-left-radius: 4px; border-bottom-left-radius: 4px;
-	border-right: 1px solid #a9a9a9;
+	border-right: 1px solid #c1c1c1;
 	display: block;
 	overflow: hidden;
 	text-overflow: ellipsis;
@@ -93,7 +88,7 @@ div.selector select {
 	top: 0px;
 	left: 0px;
 	position: absolute;
-	height: 25px;
+	height: 100%;
 	border: 1px solid;
 	background: none;
 	width: 100%;
@@ -101,13 +96,16 @@ div.selector select {
 	filter: alpha(opacity:0);
 }
 
+div.selector.focus,
+div.selector.hover,
+div.selector:hover,
 div.selector.focus:active,
 div.selector.focus.active,
 div.selector:hover:active,
 div.selector.active:hover,
 div.selector:active, 
 div.selector.active {
-	border: 1px solid #8b9fc2;
+	border: 1px solid #2e63a5;
 }
 
 div.selector.disabled {
@@ -123,30 +121,37 @@ div.selector.disabled span {
  *  *************************************  */
 
 div.checker {
-  width: 12px;
-  height: 12px;
-  padding: 2px;
-  background: #eff0f0;
-  border: 1px solid #a9a9a9;
-  position: relative;
+	margin-top: -0.3em;
+	margin-right: 0.3em;
+	width: 1em;
+	height: 1em;
+	padding: 0.2em;
+	background: #eff0f0;
+	border: 1px solid #a9a9a9;
+	position: relative;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
 }
 
 div.checker input {
-  width: 12px;
-  height: 12px;
-  opacity: 0;
-  filter: alpha(opacity:0);
-  display: inline-block;
-  background: none;
+	width: 1em;
+	height: 1em;
+	opacity: 0;
+	filter: alpha(opacity:0);
+	display: inline-block;
+	background: none;
 }
 
 div.checker span {
-	height: 12px;
-	width: 12px;
-
+	width: 1em;
+	height: 1em;
 	display: -moz-inline-box;
-  display: inline-block;
-  text-align: center;
+	display: inline-block;
+	text-align: center;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
 }
 
 div.checker:active span, 
@@ -167,7 +172,7 @@ div.checker.focus.active span {
 }
 
 div.checker span.checked {
-		background: #5e9ae2;
+	background: #5e9ae2;
 	-webkit-box-shadow: inset 0 -6px 5px rgba(0,0,0,.2);
 	-moz-box-shadow: inset 0 -6px 5px rgba(0,0,0,.2);
 	box-shadow: inset 0 -6px 5px rgba(0,0,0,.2);
@@ -207,30 +212,35 @@ div.checker.disabled.active span.checked {
  *  *************************************  */
 
 div.radio {
-	width: 11px; height: 11px;
-	padding: 2px;
+	margin-top: -0.3em;
+	margin-right: 0.3em;
+	width: 1em; height: 1em;
+	padding: 0.2em;
 	background: #eff0f0;
 	border: 1px solid #a9a9a9;
-	-moz-border-radius: 7px; -webkit-border-radius: 7px; border-radius: 7px;
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	border-radius: 7px;
 	position: relative;
 }
 
 div.radio input {
-  width: 11px; height: 11px;
-   opacity: 0;
-  filter: alpha(opacity:0);
-  text-align: center;
-  display: inline-block;
-  background: none;
+	width: 1em; height: 1em;
+	opacity: 0;
+	filter: alpha(opacity:0);
+	text-align: center;
+	display: inline-block;
+	background: none;
 }
 
 div.radio span {
-	width: 11px; height: 11px;
-
-	-moz-border-radius: 7px; -webkit-border-radius: 7px; border-radius: 7px;
+	width: 1em; height: 1em;
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	border-radius: 7px;
 	display: -moz-inline-box;
-	  display: inline-block;
-	  text-align: center;
+	display: inline-block;
+	text-align: center;
 }
 
 div.radio:active span, 
@@ -290,12 +300,12 @@ div.radio.disabled.active span.checked {
 
 div.uploader {
 	-moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;
-	border: 1px solid #a9a9a9;
-  	cursor: pointer;
+	border: 1px solid #c1c1c1;
+	cursor: pointer;
 	position: relative;
-  overflow: hidden;
-  cursor: default;
-  background: #eff0f0;
+	overflow: hidden;
+	cursor: default;
+	background: #eff0f0;
 	background: -webkit-gradient(linear, left top, left bottom, from(#edeff0), to(#ffffff));
 	background: -moz-linear-gradient(top, #edeff0, #ffffff);
 	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#edeff0', endColorstr='#ffffff');
@@ -303,39 +313,38 @@ div.uploader {
 
 div.uploader span.action {
 	line-height: 100%;
-	padding: 5px !important;
+	padding: 5px;
 	-moz-border-radius-topright: 4px; -webkit-border-top-right-radius: 4px; border-top-right-radius: 4px;
 	-moz-border-radius-bottomright: 4px; -webkit-border-bottom-right-radius: 4px; border-bottom-right-radius: 4px;
-	min-width: 20%;
-  text-align: center;
-  font-weight: bold;
-  float: left;
-  display: inline;
-  padding: 2px 0px;
-  overflow: hidden;
-  cursor: pointer;
+	text-align: center;
+	float: right;
+	display: inline;
+	overflow: hidden;
+	cursor: pointer;
+	font: inherit;
+	border-left: solid 1px #bbb;
 }
 
 div.uploader span.filename {
 	line-height: 100%;
 	padding: 5px !important;
-	
-	
+	font: inherit;
 	color: #777;
-  border-right: solid 1px #bbb;
-  padding: 0px 10px;
-  float: left;
-  display: block;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  cursor: default;
+	padding: 0px 10px;
+	float: left;
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	cursor: default;
 }
 
 div.uploader.focus,
 div.uploader.hover,
 div.uploader:hover {
-
+ 	border-width: 1px;
+	border-style: solid;
+	border-color: #2e63a5;
 }
 
 div.uploader.focus span.action,
@@ -343,7 +352,7 @@ div.uploader.hover span.action,
 div.uploader:hover span.action,
 div.uploader.active span.action,
 div.uploader:active span.action {
-	border-width: 0px !important;
+	
 }
 
 div.uploader.focus.active span.action,
@@ -374,10 +383,10 @@ div.uploader input {
   right: 0;
   bottom: 0;
   float: right;
-  height: 25px;
+  height: 100%;
   border: none;
   cursor: default;
-  width: 190px;
+  width: 100%;
 }
 
 /*  *************************************  *
@@ -408,13 +417,13 @@ div.button:disabled span {
 }
 
 div.button span {
-  font-weight: bold;
-  font-family: inherit;
-  padding: 5px;
-  display: -moz-inline-box;
-  display: inline-block;
-  line-height: 1;
-  text-align: center;
+	font-weight: bold;
+	font-family: inherit;
+	padding: 5px;
+	display: -moz-inline-box;
+	display: inline-block;
+	line-height: 1;
+	text-align: center;
 }
 
 div.button a,

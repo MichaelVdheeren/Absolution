@@ -1,6 +1,7 @@
 .ui-progressbar
 {
 	height: 2em;
+	margin: 5px 0px;
 }
 
 	.ui-progressbar .ui-progressbar-value
