@@ -7,9 +7,7 @@
 	.ui-datepicker .ui-datepicker-header { 
 		position:relative; 
 		padding:.5em 0.2em;
-		border-width: 0px 0px 1px 0px;
-		border-style: solid;
-		border-color: #c1c1c1;
+		border: none;
 		-moz-border-radius-bottomleft: 0px;
 		-webkit-border-bottom-left-radius: 0px;
 		border-bottom-left-radius: 0px;

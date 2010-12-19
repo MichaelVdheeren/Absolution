@@ -73,7 +73,7 @@ div.selector {
 	background: #f2f2f2 url(images/ui-icons_222222_256x240.png) -125px 2px;
 	-webkit-box-shadow: inset 0 -10px 9px rgba(0,0,0,.03);
 	-moz-box-shadow: inset 0 -10px 9px rgba(0,0,0,.03);
-	box-shadow: inset 0 -10px 9px rgba(0,0,0,.02);
+	box-shadow: inset 0 -10px 9px rgba(0,0,0,.03);
 	height: 20px;
 }
 
@@ -386,7 +386,9 @@ div.uploader input {
 
 div.button, div.button span
 {
-	-moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
 }
 
 div.button{
