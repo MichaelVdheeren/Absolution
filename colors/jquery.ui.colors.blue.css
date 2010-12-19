@@ -133,6 +133,27 @@ input.text, input.email, input.password, textarea.uniform
 	filter:  progid:DXImageTransform.Microsoft.gradient(GradientType='0', startColorstr='#5e9ae2', endColorstr='#3570b8');
 }
 
+
+.ui-slider-horizontal .ui-slider-handle:hover,
+.ui-slider-vertical .ui-slider-handle:hover
+{ 
+	border-color:  #c1c1c1;
+	background: #eff0f0;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#cacbcc));
+	background: -moz-linear-gradient(top, #ffffff,  #cacbcc);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#cacbcc');
+}
+
+.ui-slider-horizontal .ui-slider-handle:active, .ui-slider-horizontal .ui-slider-handle:focus
+.ui-slider-vertical .ui-slider-handle:active, .ui-slider-vertical .ui-slider-handle:focus
+{ 
+	border-color:  #c1c1c1;
+	background: #eff0f0;
+	background: -webkit-gradient(linear, left top, left bottom, from(#cacbcc), to(#ffffff));
+	background: -moz-linear-gradient(top, #cacbcc,  #ffffff);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#cacbcc', endColorstr='#ffffff');
+}
+
 .ui-progressbar .ui-widget-header
 {
 	border-color: #2e63a5;
