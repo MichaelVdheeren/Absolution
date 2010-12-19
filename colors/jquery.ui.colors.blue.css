@@ -14,7 +14,9 @@
 	.ui-autocomplete.ui-menu.ui-widget.ui-widget-content,
 	/* Widget: Accordion, both default and active header */
 	.ui-accordion .ui-accordion-header,
-	.ui-accordion .ui-accordion-header-active,
+	.ui-accordion .ui-accordion-header.ui-state-active,
+	.ui-accordion .ui-accordion-header.ui-state-hover,
+	.ui-accordion .ui-accordion-header.ui-state-focus,
 	/* Widget: HTML */
 	input[type='button'], input[type='reset'], input[type='submit'],
 	/* Widget: Uniform */
