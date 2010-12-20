@@ -199,13 +199,15 @@ input.text, input.email, input.password, textarea.uniform
 		background: #f7f7f8;
 	}
 	
-	.ui-datepicker .ui-icon, .ui-dialog .ui-dialog-titlebar-close .ui-icon {
+	.ui-datepicker .ui-icon, .ui-dialog .ui-dialog-titlebar-close .ui-icon,
+	.wijmo-wijdialog-captionbutton .ui-icon {
 		background-image: url(../images/ui-icons_ffffff_256x240.png);
 	}
 	
 	
 	.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next,
-	.ui-dialog .ui-dialog-titlebar .ui-dialog-titlebar-close {
+	.ui-dialog .ui-dialog-titlebar .ui-dialog-titlebar-close,
+	.wijmo-wijdialog-captionbutton {
 		background: #6a6b6e;
 		border-color: #000000;
 		background: -webkit-gradient(linear, left top, left bottom, from(#6a6b6e), to(#3e3e3e));
