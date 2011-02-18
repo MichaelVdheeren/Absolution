@@ -16,7 +16,7 @@ legend
 	font-size: 1.1em;
 }
 
-textarea, input[type='text'], input[type='password'], input[type='file']
+.wijmo-wijtextbox.ui-widget, textarea, input[type='text'], input[type='password'], input[type='file']
 {
 	padding: 5px;
 	text-shadow: 0px 1px 0px #fff;
