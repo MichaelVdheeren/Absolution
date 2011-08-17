@@ -16,4 +16,9 @@ http://docs.jquery.com/UI/Theming/API
 2. 	Add it to your jQuery UI theme folder.
 3. 	Add a text/css type link in the pages where you want to use the theme.
 	You should set the href to the jquery.ui.all.css file!
-	Example: <link type="text/css" href="jquery.ui.all.css" rel="stylesheet" />	
+	Example: <link type="text/css" href="jquery.ui.all.css" rel="stylesheet" />
+
+***** FLATTR *****
+Support the development of this theme!
+
+[![Flattr this git repo](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=MichaelVdheeren&url=https://github.com/michaelvanderheeren/Absolution&title=Absolution&language=en_GB&tags=github&category=software)
