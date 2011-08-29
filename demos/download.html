@@ -1,0 +1,161 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>jQuery UI Example Page</title>
+		<link rel="stylesheet/less" type="text/css" href="../development/absolution.blue.less">
+		<script type="text/javascript" src="js/less.js"></script>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.js"></script>
+		<script type="text/javascript" src="js/jquery-uniform.js"></script>
+		<script type="text/javascript">
+			$(function(){			
+				// Dialog			
+				$('#dialog').dialog({
+					autoOpen: false,
+					width: 400,
+					buttons: {
+						"Confirm": function() { 
+							$(this).dialog("close"); 
+						}, 
+						"Cancel": function() { 
+							$(this).dialog("close"); 
+						} 
+					}
+				});
+			
+				$("#dialog").bind('dialogopen', function() { 
+			        $('#tabs').tabs();
+					$("#accordion-downloads, #accordion-options").accordion({ 
+						collapsible: true, 
+						header: "h3",
+						autoHeight: false
+					});
+			    });
+				
+			    $("#dialog").bind('dialogclose', function() { 
+			        /* your function */
+			        /* destroy tabs to avoid problems on re-open */ 
+			        $("#tabs").tabs('destroy');
+					$('#accordion-downloads, #accordion-options').accordion('destroy');
+			        /* destroy dialog to avoid problems on re-open */ 
+			        $("#dialog").tabs('destroy'); 
+			    });
+				
+				// Dialog Link				
+				$('#dialog').dialog('open');
+				
+				$( "button").button();
+				$("input:file, input:checkbox, input:radio, select").uniform();
+				
+				$( ".progressbar" ).progressbar({
+					value: 37
+				});
+				
+				$( "button.delete" ).button({
+            		icons: {
+                	primary: "ui-icon-trash"
+					},
+            		text: false
+            	});
+				
+				$( "button.inspect" ).button({
+            		icons: {
+                	primary: "ui-icon-folder-open"
+					},
+        			text: false
+            	});
+			});
+			
+		</script>
+		<style type="text/css">
+			/*demo page css*/
+			body { font: 65% "Trebuchet MS", sans-serif; margin: 50px;}
+			form input, div.uploader, div.selector { float: right; width: 74%; }
+			form label { float: left; display: block; margin: 7px 0px 7px 0px; width: 24% }
+			ul { margin: 0; padding: 0; }
+			ul li { margin: 0; padding: 5px; list-style: none; border-bottom: 1px solid #c1c1c1; }
+			ul li.last { border: none; }
+			#accordion-downloads ul li { line-height: 26px; }
+			span.options { float: right; display: block; }
+		</style>
+	</head>
+	<body>
+		<button onclick="$('#dialog').dialog('open');">Show the dialog</button>
+		
+		<div id="dialog" title="Download Files">
+			<div id="tabs"> 
+		        <ul> 
+		            <li><a href="#downloads">Downloads</a></li> 
+		            <li><a href="#options">Options</a></li>
+		        </ul> 
+		        <div id="downloads"> 
+		            <div id="accordion-downloads">
+						<h3><a href="#">Add Download</a></h3>
+						<div>
+							<p>Note that this download manager does not work. It is an UI example! Please specify your torrent file.</p>
+							<form action="">
+								<label>File:</label><input type="file">
+							</form>
+						</div>
+						<h3><a href="#">Current Downloads</a></h3>
+						<div>
+							<ul>
+								<li>
+									jQuery Absolution Theme
+									<span class="options">
+										<button class="inspect">Inspect</button>
+										<button class="delete">Delete</button>
+									</span>
+									<div class="progressbar"></div>
+								</li>
+								<li>
+									jQuery Absolution Theme
+									<span class="options">
+										<button class="inspect">Inspect</button>
+										<button class="delete">Delete</button>
+									</span>
+									<div class="progressbar"></div>
+								</li>
+								<li class="last">
+									jQuery Absolution Theme
+									<span class="options">
+										<button class="inspect">Inspect</button>
+										<button class="delete">Delete</button>
+									</span>
+									<div class="progressbar"></div>
+								</li>
+							</ul>
+						</div>
+					</div>
+		        </div> 
+		        <div id="options"> 
+		            <div id="accordion-options">
+						<form action="">
+							<h3><a href="#">General</a></h3>
+							<div>
+								<p><input type="radio" name="proxy"> Don't use a proxy</p>
+								<p><input type="radio" name="proxy"> Use a proxy.</p>
+								<p><label>Type:</label><select><option>HTTP</option><option>Sock4</option></select></p>
+								<p><label>Route:</label><input type="text"></p>
+								<p><label>Username:</label><input type="text"></p>
+								<p><label>Password:</label><input type="text"></p>
+							</div>
+							<h3><a href="#">Download</a></h3>
+							<div>
+								<p><input type="radio" name="folder"> Save inside default folder</p>
+								<p><input type="radio" name="folder"> Save inside other folder</p>
+								<p style="padding-bottom: 30px;"><label>Folder:</label><input type="file" /></p>
+							</div>
+							<h3><a href="#">Upload</a></h3>
+							<div>
+								<p><input type="checkbox"> Allow upload of completed files</p>
+								<p><label>Max. uploads:</label><input type="text"></p>
+								<p><label>Max. bitrate:</label><input type="text"></p>
+							</div>
+						</form>
+					</div>
+		        </div>
+		    </div>
+		</div>	
+	</body>
+</html>

@@ -1,0 +1,25 @@
+.ui-progressbar
+{
+	height: 2em;
+	margin: 5px 0px;
+	
+	.ui-progressbar-value {
+		margin: -1px;
+		height:100%;
+	}
+	
+	.ui-widget-header {
+		border-width: 1px;
+		border-style: solid;
+		font-weight: bold;
+		text-align: center;
+	}
+	
+	.ui-widget-header {
+		color: @hoverStateTextColor;
+		border-color: @hoverStateBorderColor; 
+		.gradientTopToBottom(@hoverStateStartColor, @hoverStateEndColor);
+	}
+
+	.gradientTopToBottom(#dfe0e1, #ffffff);
+}

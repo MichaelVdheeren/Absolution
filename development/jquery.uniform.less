@@ -1,3 +1,44 @@
+input.text, input.email, input.password, textarea.uniform
+{
+	border-color: #a9a9a9;
+	.gradientTopToBottom(#eff0f0, #ffffff);
+}
+
+input.text:focus, input.email:focus, input.password:focus, textarea.uniform:focus
+{
+	.gradientTopToBottom(#dfe0e1, #ffffff);
+}
+
+	div.selector span,div.uploader span.action, div.button, div.checker, div.radio
+	{
+		color: @defaultStateTextColor;
+	border-color: @defaultStateBorderColor; 
+	.gradientTopToBottom(@defaultStateStartColor, @defaultStateEndColor);
+	}
+	
+		/* Widget: Uniform */
+	div.uploader.focus span.action, div.uploader.hover span.action, div.uploader:hover span.action,
+	div.button.focus, div.button:focus, div.button:hover, div.button.hover,
+	div.selector.focus span, div.selector.hover span, div.selector:hover span
+	{ 
+		color: @hoverStateTextColor;
+		border-color: @hoverStateBorderColor; 
+		.gradientTopToBottom(@hoverStateStartColor, @hoverStateEndColor);
+	}
+	
+		div.uploader.active span.action, div.uploader:active span.action,
+	div.button.active, div.button:active,
+	div.selector.focus:active span,
+	div.selector:hover:active span,
+	div.selector.active:hover span,
+	div.selector.focus.active span
+	{
+		color: @activeStateTextColor;
+		border-color: @activeStateBorderColor; 
+		.gradientTopToBottom(@activeStateStartColor, @activeStateEndColor);
+	}
+
+
 /* Global Declaration */
 
 .selector, .selector *,
@@ -94,7 +135,7 @@ div.selector select {
 	background: none;
 	width: 100%;
 	opacity: 0;
-	filter: alpha(opacity:0);
+	filter: ~"alpha(opacity:0)";
 }
 
 div.selector.focus,
@@ -139,7 +180,7 @@ div.checker input {
 	width: 1em;
 	height: 1em;
 	opacity: 0;
-	filter: alpha(opacity:0);
+	filter: ~"alpha(opacity:0)";
 	display: inline-block;
 	background: none;
 }
@@ -228,7 +269,7 @@ div.radio {
 div.radio input {
 	width: 1em; height: 1em;
 	opacity: 0;
-	filter: alpha(opacity:0);
+	filter: ~"alpha(opacity:0)";
 	text-align: center;
 	display: inline-block;
 	background: none;
@@ -309,7 +350,7 @@ div.uploader {
 	background: #eff0f0;
 	background: -webkit-gradient(linear, left top, left bottom, from(#edeff0), to(#ffffff));
 	background: -moz-linear-gradient(top, #edeff0, #ffffff);
-	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#edeff0', endColorstr='#ffffff');
+	filter: ~"progid:DXImageTransform.Microsoft.gradient(startColorstr='#edeff0', endColorstr='#ffffff')";
 }
 
 div.uploader span.action {
@@ -378,7 +419,7 @@ div.uploader.disabled span.filename {
 
 div.uploader input {
   opacity: 0;
-  filter: alpha(opacity:0);
+  filter: ~"alpha(opacity:0)";
   position: absolute;
   top: 0;
   right: 0;
@@ -396,9 +437,7 @@ div.uploader input {
 
 div.button, div.button span
 {
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	border-radius: 5px;
+	.border-radius;
 }
 
 div.button{

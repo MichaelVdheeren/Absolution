@@ -1,0 +1,97 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>jQuery UI Example Page</title>
+		<link rel="stylesheet/less" type="text/css" href="../development/absolution.blue.less">
+		<script type="text/javascript" src="js/less.js"></script>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.js"></script>
+		<script type="text/javascript" src="js/jquery-uniform.js"></script>
+		<script type="text/javascript">
+			$(function(){			
+				// Dialog			
+				$('#dialog').dialog({
+					autoOpen: false,
+					width: 400,
+					buttons: {
+						"Confirm": function() { 
+							$(this).dialog("close"); 
+						}, 
+						"Cancel": function() { 
+							$(this).dialog("close"); 
+						} 
+					}
+				});
+				
+				$(function() {
+					$('#birthdayPicker').datepicker({
+						showButtonPanel: false
+					});
+				});
+			
+				$("#dialog").bind('dialogopen', function() { 
+			        $("#accordion").accordion({ 
+						collapsible: true, 
+						header: "h3",
+						autoHeight: false
+					}); 
+			    });
+				
+			    $("#dialog").bind('dialogclose', function() { 
+			        /* your function */
+			        /* destroy tabs to avoid problems on re-open */ 
+			        $("#accordion").accordion('destroy'); 
+			        /* destroy dialog to avoid problems on re-open */ 
+			        $("#dialog").tabs('destroy'); 
+			    });
+				
+				// Dialog Link
+				$('#birthday').datepicker({});
+				
+				$('#dialog').dialog('open');
+				
+				$( "button").button();
+			
+			});
+			
+		</script>
+		<style type="text/css">
+			/*demo page css*/
+			body { font: 65% "Trebuchet MS", sans-serif; margin: 50px;}
+			form input { float: right; width: 60%; }
+			form label { float: left; display: block; margin: 7px 0px 7px 0px; width: 38% }
+			form textarea { width: 100%; height: 70px; }
+		</style>
+	</head>
+	<body>
+		<button onclick="$('#dialog').dialog('open');">Show the dialog</button>
+		
+		<div id="dialog" title="User Registration">
+			<div id="accordion">
+				<form action="">
+					<h3><a href="#">Registery Information</a></h3>
+					<div>
+						<label>Login:</label><input type="text">
+						<label>E-mail:</label><input type="text">
+						<label>Password:</label><input type="text">
+						<label>Password (x2):</label><input type="text">
+					</div>
+					<h3><a href="#">Personal Information</a></h3>
+					<div>
+						<label>Name:</label><input type="text">
+						<label>Surname:</label><input type="text">
+						<label>Birthday:</label><input id="birthday" type="text">
+						<label>Street:</label><input type="text">
+						<label>City:</label><input type="text">
+					</div>
+					<h3><a href="#">Additional Information</a></h3>
+					<div>
+						<textarea>Here you can enter some additional information</textarea>
+					</div>
+				</form>
+			</div>
+		</div>	
+	</body>
+</html>
+
+

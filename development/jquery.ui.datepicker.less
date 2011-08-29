@@ -1,10 +1,10 @@
-.ui-datepicker
-{ 
+.ui-datepicker { 
 	width: 17em;
 	padding: 0;
-}
-
-	.ui-datepicker .ui-datepicker-header { 
+	border-color: #ffffff;
+	.box-shadow(0px,0px,5px,#282425);
+	
+	.ui-datepicker-header { 
 		position:relative; 
 		padding:.5em 0.2em;
 		border: none;
@@ -14,11 +14,16 @@
 		-moz-border-radius-bottomright: 0px;
 		-webkit-border-bottom-right-radius: 0px;
 		border-bottom-right-radius: 0px;
+		.gradientTopToBottom(@titleBarStartColor, @titleBarEndColor);
+		color: @titleBarTextColor;
+		
+		.ui-icon {
+			background-image: url(../images/ui-icons_ffffff_256x240.png);
+		}
 	}
-
-	.ui-datepicker .ui-datepicker-prev,
-	.ui-datepicker .ui-datepicker-next
-	{ 
+	
+	.ui-datepicker-prev,
+	.ui-datepicker-next { 
 		position:absolute; 
 		top: 4px; 
 		width: 1.8em; 
@@ -26,44 +31,83 @@
 		border-width: 1px;
 		border-style: solid;
 		cursor: pointer;
-	}
-	
-		.ui-datepicker .ui-datepicker-prev .ui-icon {
-			background-position: -96px 0;
+		border-color: #000000;
+		.gradientTopToBottom(#6a6b6e, #3e3e3e);
+		color: #ffffff;
+		
+		&:hover {
+			color: @hoverStateTextColor;
+			border-color: @hoverStateBorderColor; 
+			.gradientTopToBottom(@hoverStateStartColor, @hoverStateEndColor);
 		}
 		
-		.ui-datepicker .ui-datepicker-next .ui-icon {
-			background-position: -32px 0;
+		&:active {
+			color: @activeStateTextColor;
+			border-color: @activeStateBorderColor; 
+			.gradientTopToBottom(@activeStateStartColor, @activeStateEndColor);
 		}
-
-
-
-.ui-datepicker table .ui-state-default,
-.ui-datepicker table .ui-widget-content .ui-state-default,
-.ui-datepicker table .ui-widget-header .ui-state-default
-{ 
-	border: 1px #eeeeee solid;
-	background: none;
+	}
+	
+	.ui-datepicker-prev .ui-icon {
+		background-position: -96px 0;
+	}
+	
+	.ui-datepicker-next .ui-icon {
+		background-position: -32px 0;
+	}
 }
 
-.ui-datepicker table .ui-state-hover,
-.ui-datepicker table .ui-widget-content .ui-state-hover,
-.ui-datepicker table .ui-widget-header .ui-state-hover,
-.ui-datepicker table .ui-state-active,
-.ui-datepicker table .ui-widget-content .ui-state-active,
-.ui-datepicker table .ui-widget-header .ui-state-active,
-.ui-datepicker table .ui-state-highlight,
-.ui-datepicker table .ui-widget-content .ui-state-highlight,
-.ui-datepicker table .ui-widget-header .ui-state-highlight,
-.ui-datepicker table .ui-state-focus,
-.ui-datepicker table .ui-widget-content .ui-state-focus,
-.ui-datepicker table .ui-widget-header .ui-state-focus
-{
-	border-width: 1px;
-	border-style: solid;
-	-moz-border-radius: 5px; 
-	-webkit-border-radius: 5px;
-	border-radius: 5px;
+.ui-datepicker table {
+	.ui-state-default,
+	.ui-widget-content .ui-state-default,
+	.ui-widget-header .ui-state-default {
+		border: 1px #eeeeee solid;
+		background: none;
+	}
+	
+	.ui-state-highlight, 
+	.ui-widget-content .ui-state-highlight, 
+	.ui-widget-header .ui-state-highlight {
+		border-width: 1px;
+		border-style: solid;
+		.border-radius(5px);
+		color: @defaultStateTextColor;
+		border-color: @defaultStateBorderColor; 
+		.gradientTopToBottom(@defaultStateStartColor, @defaultStateEndColor);
+	}
+	
+	.ui-state-focus, 
+	.ui-widget-content .ui-state-focus, 
+	.ui-widget-header .ui-state-focus {
+		border-width: 1px;
+		border-style: solid;
+		.border-radius(5px);
+		color: @defaultStateTextColor;
+		border-color: @defaultStateBorderColor; 
+		.gradientTopToBottom(@defaultStateStartColor, @defaultStateEndColor);
+	}
+	
+	.ui-state-hover,
+	.ui-widget-content .ui-state-hover,
+	.ui-widget-header .ui-state-hover {
+		border-width: 1px;
+		border-style: solid;
+		.border-radius(5px);
+		color: @hoverStateTextColor;
+		border-color: @hoverStateBorderColor; 
+		.gradientTopToBottom(@hoverStateStartColor, @hoverStateEndColor);
+	}
+	
+	.ui-state-active,
+	.ui-widget-content .ui-state-active,
+	.ui-widget-header .ui-state-active {
+		border-width: 1px;
+		border-style: solid;
+		.border-radius(5px);
+		color: @activeStateTextColor;
+		border-color: @activeStateBorderColor; 
+		.gradientTopToBottom(@activeStateStartColor, @activeStateEndColor);
+	}
 }
 
 .ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-prev:hover { left: 4px; }
@@ -109,8 +153,6 @@
 
 /* IE6 IFRAME FIX (taken from datepicker 1.5.3 */
 .ui-datepicker-cover {
-    display: none; /*sorry for IE5*/
-    display/**/: block; /*sorry for IE5*/
     position: absolute; /*must have*/
     z-index: -1; /*must have*/
     filter: mask(); /*must have*/

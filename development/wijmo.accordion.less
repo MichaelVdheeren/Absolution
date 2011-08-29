@@ -1,0 +1,56 @@
+.ui-accordion-top {
+	.ui-accordion-header.ui-state-hover .ui-icon {
+		background: #5e9ae2 url(images/ui-icons_ffffff_256x240.png);
+		background-position: -34px -2px;
+		border: 1px solid @hoverStateBorderColor; 
+	}
+	
+	.ui-accordion-header.ui-state-active .ui-icon, 
+	.ui-accordion-header.ui-state-hover.ui-state-active .ui-icon {
+		background-position: -1px -2px;
+	}
+}
+
+.ui-accordion-left, .ui-accordion-right {
+	.ui-accordion-header .ui-icon {
+		top: 1em; 
+		left: 50%;
+		margin-left: -7px;
+		background-position: -66px -1px;
+	}
+	
+	.ui-accordion-header,
+	.ui-accordion-header.ui-state-active,
+	.ui-accordion-header.ui-state-hover,
+	.ui-accordion-header.ui-state-focus {
+		color: @defaultStateTextColor;
+		border-color: @defaultStateBorderColor; 
+		.gradientLeftToRight(@defaultStateStartColor, @defaultStateEndColor);
+	}
+}
+
+.ui-accordion-right {
+	.ui-accordion-header.ui-state-hover .ui-icon {
+		background: #5e9ae2 url(images/ui-icons_ffffff_256x240.png);
+		background-position: -66px -1px;
+		border: 1px solid @hoverStateBorderColor; 
+	}
+	
+	.ui-accordion-header.ui-state-active .ui-icon,
+	.ui-accordion-header.ui-state-hover.ui-state-active .ui-icon {
+		background-position: -34px -2px;
+	}
+}
+
+.ui-accordion-left {
+	.ui-accordion-header.ui-state-hover .ui-icon {
+		background: #5e9ae2 url(images/ui-icons_ffffff_256x240.png);
+		background-position: -66px -1px;
+		border: 1px solid @hoverStateBorderColor; 
+	}
+	
+	.ui-accordion-header.ui-state-active .ui-icon,
+	.ui-accordion-header.ui-state-hover.ui-state-active .ui-icon {
+		background-position: -98px -2px;
+	}
+}

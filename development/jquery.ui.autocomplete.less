@@ -1,0 +1,65 @@
+.ui-autocomplete { position: absolute; cursor: default; }	
+
+/* workarounds */
+* html .ui-autocomplete { width:1px; } /* without this, the menu expands to 100% in IE6 */
+
+.ui-menu {
+	list-style:none;
+	padding: 5px;
+	margin: 0;
+	display:block;
+	float: left;
+	border-color: #ffffff !important;
+	.box-shadow(0px,0px,5px,#282425);
+	
+	.ui-menu {
+		margin-top: -3px;
+	}
+	
+	.ui-menu-item {
+		margin:0;
+		padding: 0;
+		zoom: 1;
+		float: left;
+		clear: left;
+		width: 100%;
+		
+		a {
+			text-decoration:none;
+			display:block;
+			padding:.2em .4em;
+			line-height:1.7;
+			zoom:1;
+			
+			&.ui-state-hover,
+			&.ui-state-active {
+				font-weight: normal;
+				margin: -1px -6px -1px -6px;
+				.border-radius(0px);
+				padding-left: 9px;
+			}
+		}
+	}
+}
+
+.ui-autocomplete-input
+{
+	padding: 5px;
+	text-shadow: 0px 1px 0px #fff;
+	outline: none;
+	border: 1px solid #a9a9a9;
+	
+	.border-radius(5px);
+	.gradientTopToBottom(#eff0f0, #ffffff);
+	
+	&:hover,
+	&:focus {
+		.gradientTopToBottom(#dfe0e1, #ffffff);
+	}
+}
+
+.ui-autocomplete.ui-menu.ui-widget.ui-widget-content {
+	color: @defaultStateTextColor;
+	border-color: @defaultStateBorderColor; 
+	.gradientTopToBottom(@defaultStateStartColor, @defaultStateEndColor);
+}

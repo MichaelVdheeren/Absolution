@@ -1,0 +1,108 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>jQuery UI Example Page</title>
+		<link rel="stylesheet/less" type="text/css" href="../development/absolution.blue.less">
+		<script type="text/javascript" src="js/less.js"></script>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.js"></script>
+		<script type="text/javascript" src="js/jquery-uniform.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				// Dialog			
+				$('#dialog').dialog({
+					autoOpen: false,
+					width: 400,
+					buttons: {
+						"Ok": function() { 
+							$(this).dialog("close"); 
+						},
+						"Apply": function() { 
+						}, 
+						"Cancel": function() { 
+							$(this).dialog("close"); 
+						} 
+					}
+				});
+				
+				$("#dialog").bind('dialogopen', function() { 
+			        $("#accordion").accordion({ 
+						collapsible: false, 
+						header: "h3",
+						autoHeight: false
+					}); 
+			    });
+				
+			    $("#dialog").bind('dialogclose', function() { 
+			        /* your function */
+			        /* destroy tabs to avoid problems on re-open */ 
+			        $("#accordion").accordion('destroy'); 
+			        /* destroy dialog to avoid problems on re-open */ 
+			        $("#dialog").tabs('destroy'); 
+			    });
+				
+				// setup master volume
+				$( "#master" ).slider({
+					value: 60,
+					orientation: "horizontal",
+					range: "min",
+					animate: true
+				});
+				// setup graphic EQ
+				$( "#eq > span" ).each(function() {
+					// read initial values from markup and remove that
+					var value = parseInt( $( this ).text(), 10 );
+					$( this ).empty().slider({
+						value: value,
+						range: "min",
+						animate: true,
+						orientation: "vertical"
+					});
+				});
+			
+				$('#dialog').dialog('open');
+				
+				$( "button").button();
+			});
+			
+		</script>
+		<style type="text/css">
+			/*demo page css*/
+			body { font: 65% "Trebuchet MS", sans-serif; margin: 50px;}
+			form input { float: right; width: 60%; }
+			form label { float: left; display: block; margin: 7px 0px 7px 0px; width: 38% }
+			form textarea { width: 100%; height: 70px; }
+			#eq span { height:120px; float:left; margin:14px }
+			#master { width: 100%; }
+		</style>
+	</head>
+	<body>
+		<button onclick="$('#dialog').dialog('open');">Show the dialog</button>
+		
+		<div id="dialog" title="Volume Settings">
+			<div id="accordion">
+				<h3><a href="#">Master Volume</a></h3>
+				<div>
+					<div id="master" style="width:260px; margin:15px;"></div>
+				</div>
+				<h3><a href="#">Graphic Equalizer</a></h3>
+				<div>
+					<div id="eq">
+						<span>88</span>
+						<span>77</span>
+						<span>55</span>
+						<span>33</span>
+						<span>40</span>
+						<span>45</span>
+						<span>70</span>
+						<span>70</span>
+						<span>70</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</body>
+</html>
+
+
