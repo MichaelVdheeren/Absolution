@@ -1,8 +1,2231 @@
-@import "wijmo.accordion.less";
-@import "wijmo.expander.less";
-
-.wijmo-wijdialog-captionbutton
+.ui-helper-horizontal > DIV,
+.ui-helper-horizontal > LI,
+.ui-helper-horizontal > SPAN,
+.ui-helper-horizontal > LABEL,
+.ui-helper-horizontal > H1,
+.ui-helper-horizontal > H2,
+.ui-helper-horizontal > H3,
+.ui-helper-horizontal > H4
 {
+    float: left;
+    clear: none;
+    display: block;
+}
+
+
+/* WijSplitter
+----------------------------------*/
+
+.wijmo-wijsplitter-vertical
+{
+    overflow: hidden; /* fixed bug for IE6.7 */
+    position: relative;
+}
+.wijmo-wijsplitter-v-panel1
+{
+    float: left;
+    position: relative;
+}
+.wijmo-wijsplitter-v-panel1-content
+{
+    position: relative;
+}
+.wijmo-wijsplitter-v-bar
+{
+    float: left;
+    position: relative;
+    font-size: 1px;
+    width: 2px;
+    z-index: 99;
+}
+
+.wijmo-wijsplitter-vertical .ui-resizable-e
+{
+    right: -7px;
+    width: 10px;
+    z-index: 999;
+    display: block;
+    background-color: white;
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+    opacity: 0;
+}
+
+*html .wijmo-wijsplitter-vertical .ui-resizable-e
+{
+    right: -4px;
+}
+
+* + html .wijmo-wijsplitter-vertical .ui-resizable-e
+{
+    right: -4px;
+}
+
+.wijmo-wijsplitter-v-expander
+{
+    position: absolute;
+    z-index: 999;
+}
+
+.wijmo-wijsplitter-v-expanded .wijmo-wijsplitter-v-expander
+{
+    border-right: medium none;
+    overflow: hidden;
+    padding: 12px 0;
+    left: -8px;
+    width: 6px;
+    z-index: 999;
+}
+.wijmo-wijsplitter-v-expanded .wijmo-wijsplitter-v-expander .ui-icon
+{
+    margin-left: -6px;
+}
+
+.wijmo-wijsplitter-v-collapsed .wijmo-wijsplitter-v-expander
+{
+    border-left: medium none;
+    overflow: hidden;
+    padding: 12px 0;
+    right: -8px;
+    width: 6px;
+    z-index: 999;
+}
+.wijmo-wijsplitter-v-collapsed .wijmo-wijsplitter-v-expander .ui-icon
+{
+    margin-left: -6px;
+}
+
+.wijmo-wijsplitter-v-panel2
+{
+    float: left;
+}
+.wijmo-wijsplitter-v-panel2-content
+{
+    position: relative;
+}
+.wijmo-wijsplitter-v-resize-helper
+{
+    border-right: dotted 1px black;
+    overflow: hidden;
+    border-bottom: dotted 0 black;
+}
+
+.wijmo-wijsplitter-horizontal
+{
+    overflow: hidden; /* fixed bug for IE6.7 */
+    position: relative;
+}
+.wijmo-wijsplitter-h-panel1
+{
+    position: relative;
+}
+.wijmo-wijsplitter-h-panel1-content
+{
+    overflow: auto;
+    position: relative;
+}
+.wijmo-wijsplitter-h-bar
+{
+    position: relative;
+    font-size: 1px;
+    height: 2px;
+    z-index: 999;
+}
+
+.wijmo-wijsplitter-horizontal .ui-resizable-s
+{
+    bottom: -7px;
+    height: 10px;
+    z-index: 999;
+    display: block;
+    background-color: white;
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+    opacity: 0;
+}
+
+*html .wijmo-wijsplitter-horizontal .ui-resizable-s
+{
+    bottom: -4px;
+}
+
+* + html .wijmo-wijsplitter-horizontal .ui-resizable-s
+{
+    bottom: -4px;
+}
+
+.wijmo-wijsplitter-h-expander
+{
+    position: absolute;
+    z-index: 999;
+}
+
+
+.wijmo-wijsplitter-h-expanded .wijmo-wijsplitter-h-expander
+{
+    border-bottom: none;
+    height: 8px;
+    overflow: hidden;
+    padding: 0 10px;
+    top: -10px;
+    z-index: 999;
+}
+
+.wijmo-wijsplitter-h-expanded .wijmo-wijsplitter-h-expander .ui-icon
+{
+    margin-top: -4px;
+}
+
+.wijmo-wijsplitter-h-collapsed .wijmo-wijsplitter-h-expander
+{
+    border-top: none;
+    height: 8px;
+    overflow: hidden;
+    padding: 0 10px;
+    bottom: -10px;
+    z-index: 999;
+}
+.wijmo-wijsplitter-h-collapsed .wijmo-wijsplitter-h-expander .ui-icon
+{
+    margin-top: -4px;
+}
+.wijmo-wijsplitter-h-panel2
+{
+}
+.wijmo-wijsplitter-h-panel2-content
+{
+    overflow: auto;
+    position: relative;
+}
+.wijmo-wijsplitter-h-resize-helper
+{
+    border-bottom: dotted 1px black;
+    overflow: hidden;
+    border-right: dotted 0 black;
+}
+
+
+
+.wijmo-wijprogressbar
+{
+    moz-user-select: none;
+    text-align: left;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+
+.wijmo-wijprogressbar .ui-progressbar-value
+{
+    position: absolute;
+    border-width: 0;
+    margin: 0;
+}
+
+div.wijmo-wijprogressbar-east
+{
+    width: 200px;
+    height: 1.1em;
+}
+div.wijmo-wijprogressbar-west
+{
+    width: 200px;
+    height: 1.1em;
+}
+div.wijmo-wijprogressbar-south
+{
+    height: 200px;
+    width: 1.1em;
+    line-height: 100%;
+}
+
+div.wijmo-wijprogressbar-north
+{
+    height: 200px;
+    width: 1.1em;
+    line-height: 100%;
+}
+
+.wijmo-wijprogressbar-east .ui-progressbar-value
+{
+    left: 0;
+    height: 100%;
+}
+.wijmo-wijprogressbar-west .ui-progressbar-value
+{
+    right: 0;
+    height: 100%;
+}
+.wijmo-wijprogressbar-south .ui-progressbar-value
+{
+    top: 0;
+    width: 100%;
+}
+
+.wijmo-wijprogressbar-north .ui-progressbar-value
+{
+    bottom: 0;
+    width: 100%;
+}
+
+.wijmo-wijprogressbar .ui-progressbar-label
+{
+    display: block;
+    position:absolute;
+    text-align: center;
+    width: 100%;
+    height:100%;
+}
+
+.wijmo-wijprogressbar .wijmo-wijprogressbar-lb-west
+{
+    left:0;
+    width:auto;
+}
+
+.wijmo-wijprogressbar .wijmo-wijprogressbar-lb-east
+{
+    right:0;
+    width:auto;
+}
+
+.wijmo-wijprogressbar .wijmo-wijprogressbar-lb-south
+{
+    bottom: 0;
+    height:auto;
+}
+
+.wijmo-wijprogressbar .wijmo-wijprogressbar-lb-north
+{
+    top: 0;
+    height:auto;
+}
+
+.wijmo-wijprogressbar-east .wijmo-wijprogressbar-lb-running,
+.wijmo-wijprogressbar-west .wijmo-wijprogressbar-lb-running
+{
+    display:inline;
+    width:auto;
+}
+
+.wijmo-wijprogressbar-north .wijmo-wijprogressbar-lb-running,
+.wijmo-wijprogressbar-south .wijmo-wijprogressbar-lb-running
+{
+    height:auto;
+}
+
+.wijmo-wijprogressbar-north .ui-progressbar-label,
+.wijmo-wijprogressbar-south .ui-progressbar-label
+{
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+}.wijmo-wijdialog-captionbutton
+{
+    height: 18px;
+    padding: 1px;
+    width: 19px;
+    display: inline-block; /*margin-right:.2em;*/
+    outline: none;
+    text-align: left;
+}
+.wijmo-wijdialog-captionbutton:hover, .wijmo-wijdialog-captionbutton .ui-state-focus
+{
+    padding: 0;
+}
+.wijmo-wijdialog-captionbutton .ui-icon
+{
+    margin: 1px;
+}
+.wijmo-wijdialog .wijmo-wijdialog-hasframe
+{
+    padding: 0;
+}
+.wijmo-wijdialog-defaultdockingzone
+{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+}
+
+.ui-dialog-titlebar
+{
+    /* extend jquery.ui.dialog.css*/
+    text-align: right;
+}
+
+/* for ie 6 minimize*/
+* html .wijmo-wijdialog-defaultdockingzone .ui-dialog-titlebar
+{
+    float: left;
+}
+/* SuperPanel
+----------------------------------*/
+.wijmo-wijsuperpanel
+{
+    overflow: hidden;
+    outline: none;
+    background-image: none;
+}
+.wijmo-wijsuperpanel-statecontainer
+{
+    overflow: hidden;
+    position: relative;
+    zoom:1;
+}
+.wijmo-wijsuperpanel-contentwrapper
+{
+    position: absolute;
+    overflow: hidden;
+
+}
+.wijmo-wijsuperpanel-hbarcontainer, .wijmo-wijsuperpanel-vbarcontainer
+{
+    font-size: 0px;
+    border:0;
+}
+.wijmo-wijsuperpanel-templateouterwrapper
+{
+    position: relative; 
+/*    overflow:auto; */
+    zoom: 1;
+}
+
+.wijmo-wijsuperpanel-vbarcontainer .ui-state-default, .wijmo-wijsuperpanel-hbarcontainer .ui-state-default
+{
+    width: 16px;
+    height: 16px;
+    position: absolute;
+}
+.wijmo-wijsuperpanel .wijmo-wijsuperpanel-vbarcontainer
+{
+    position: absolute;
+    width: 18px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    border: none;
+}
+.wijmo-wijsuperpanel .wijmo-wijsuperpanel-hbarcontainer
+{
+    position: absolute;
+    height: 18px;
+    padding-left: 18px;
+    padding-right: 18px;
+    border: none;
+}
+.wijmo-wijsuperpanel-handle
+{
+    position: absolute;
+    font-size:0px;
+    overflow:hidden;
+}
+.wijmo-wijsuperpanel-handle *
+{
+    font-size:0px;
+}
+.wijmo-wijsuperpanel-helper
+{
+    border-style: dotted;
+    background: transparent;
+}
+
+.wijmo-wijsuperpanel-button
+{
+    position: absolute;
+    padding: 4px;
+}
+.wijmo-wijsuperpanel .ui-icon-gripsmall-diagonal-se
+{
+    background: none;
+    width: 7px;
+    height: 7px;
+}
+.wijmo-wijsuperpanel-hbar-buttonleft
+{
+    left: 0;
+}
+.wijmo-wijsuperpanel-hbar-buttonright
+{
+    right: 0;
+}
+.wijmo-wijsuperpanel-vbar-buttontop
+{
+    top: 0;
+}
+.wijmo-wijsuperpanel-vbar-buttonbottom
+{
+    bottom: 0;
+}
+.wijmo-wijtextbox
+{
+	outline:none;
+	margin: 0;
+	padding:5px;
+}
+
+.wijmo-wijdropdown
+{
+    display: inline-block;
+    position: relative;
+    width: auto;
+    zoom: 1;
+    *display: inline;
+    width:200px;
+    /*z-index: 101;*/
+}
+
+
+
+
+.wijmo-wijdropdown div.wijmo-dropdown-trigger
+{
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+    cursor: pointer;
+    width: 16px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0 3px;
+}
+
+.wijmo-wijdropdown .wijmo-dropdown-trigger .ui-icon
+{
+    margin-top: 3px;
+}
+
+.wijmo-wijdropdown label.wijmo-dropdown-label
+{
+    display: block;
+    padding: 3px 26px 3px 5px;
+    width: auto;
+    border: none;
+}
+
+.wijmo-wijdropdown .wijmo-dropdown
+{
+    position: absolute; height:250px;
+}
+
+.wijmo-wijdropdown .wijmo-dropdown .wijmo-dropdown-list
+{
+    padding: 0.4em;
+    border: 0 none;
+}
+
+.wijmo-wijdropdown .wijmo-dropdown .wijmo-dropdown-item
+{
+border:1px solid transparent;
+cursor:pointer;
+font-weight:normal;
+margin:1px 0;
+padding:3px 5px;
+text-align:left;
+*border-color: white;
+*filter: ~"chroma(color=white)";
+
+}
+
+/*
+.wijmo-wijdropdown .wijmo-dropdown .wijmo-dropdown-optgroup .wijmo-dropdown-items
+{
+    margin-left: 15%;
+}*/
+
+.wijmo-wijdropdown .wijmo-dropdown .wijmo-dropdown-optgroup .wijmo-dropdown-items li
+{
+    padding-left: 10px;
+}
+
+.wijmo-wijdropdown .wijmo-dropdown .wijmo-optgroup-header
+{
+    font-style: italic;
+}
+.wijmo-checkbox
+{
+    position: relative; /*float: left;*/
+    margin: 3px 0;
+    line-height: 16px;
+    width: 16px;
+}
+.wijmo-checkbox .wijmo-checkbox-inputwrapper
+{
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+.wijmo-checkbox label
+{
+    display: block;
+    position: relative;
+    margin: 0;
+    cursor: pointer;
+    z-index: 1;
+    padding: 0 0 0 1.4em;
+    outline: none;
+    margin: 0 3px;
+    width: 8em;
+}
+.wijmo-checkbox .wijmo-checkbox-box
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    margin-right: 3px;
+}
+
+.wijmo-checkbox .wijmo-checkbox-relative
+{
+    position: relative;
+    float: left;
+    margin-right: 3px;    
+}
+.wijmo-wijradio
+{
+    position: relative; /*float: left;*/
+    margin: 3px 0;
+    width: 16px;
+    line-height: 16px;
+}
+.wijmo-wijradio .wijmo-wijradio-inputwrapper
+{
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+.wijmo-wijradio label
+{
+    display: block;
+    position: relative;
+    margin: 0;
+    cursor: pointer;
+    z-index: 1;
+    padding: 0 0 0 1.4em;
+    outline: none;
+    margin: 0 3px;
+    width: 8em;
+}
+.wijmo-wijradio .wijmo-wijradio-box
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+.wijmo-wijradio .wijmo-wijradio-relative
+{
+    position: relative;
+    float: left;
+    margin-right: 3px;   
+}
+
+.wijmo-wijlist-list
+{
+    cursor: default;
+    overflow: hidden;
+}
+.wijmo-wijlist-ul
+{
+    list-style: none;
+    padding: 2px;
+    margin: 0;
+    display: block;
+    border: 0px;
+    overflow: hidden;
+}
+.wijmo-wijlist-ul .wijmo-wijlist-item
+{
+    margin: 1px 0;
+    padding: 3px 5px;
+    /*white-space: nowrap;*/
+    cursor: pointer;
+    text-align: left;
+    font-weight: normal;
+    border: solid 1px transparent;
+}
+.wijmo-wijlist-ul .wijmo-wijlist-item.ui-state-hover
+{
+    font-weight: normal;
+}
+
+.wijmo-wijlist .ui-resizable-se
+{
+    width: 7px;
+    height: 7px;
+    background: none;
+}
+.wijmo-wijcalendar
+{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    display:block;
+}
+
+.wijmo-wijcalendar-header
+{
+    position: relative;
+}
+
+.wijmo-wijcalendar-header-inner
+{
+    margin: 0 1.8em;
+    line-height: 1.8em;
+}
+
+.wijmo-wijcalendar .ui-datepicker-header
+{
+    padding: 1px;
+}
+
+.wijmo-wijcalendar .ui-datepicker-header .ui-state-default
+{
+    border-color: transparent;
+    background: none;
+    color: inherit;
+}
+
+.wijmo-wijcalendar .wijmo-wijcalendar-table
+{
+    table-layout: fixed;
+}
+
+.wijmo-wijcalendar-prevpreview-button, .wijmo-wijcalendar-nextpreview-button
+{
+    width: 16px;
+    margin-top: 35%;
+    float: left;
+}
+
+.wijmo-wijcalendar-nextpreview-button
+{
+    float: right;
+}
+
+.wijmo-wijcalendar-preview-wrapper .wijmo-wijcalendar
+{
+    float: left;
+    width: 18em;
+}
+
+.wijmo-wijcalendar-preview-wrapper .wijmo-wijcalendar .ui-datepicker-calendar
+{
+    width: 80%;
+    float: left;
+}
+
+.wijmo-wijcalendar-title, .wijmo-wijcalendar-selectable
+{
+    cursor: pointer;
+}
+
+.ui-datepicker-other-month
+{
+    text-align: right;
+}
+
+.wijmo-wijcalendar-mygrid td span, .wijmo-wijcalendar-mygrid td a
+{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 0;
+}
+
+.wijmo-wijcalendar-mygrid .ui-state-default a, .wijmo-wijcalendar-mygrid .ui-state-default a:hover, .wijmo-wijcalendar-mygrid .ui-state-hover a, .wijmo-wijcalendar-mygrid .ui-state-hover a:hover
+{
+    color: inherit;
+}
+
+.ui-header-custom img, .ui-footer-custom img
+{
+    width: 100%;
+}
+
+.wijmo-wijcalendar table.wijmo-wijcalendar-mygrid
+{
+    margin-top: 2px;
+    border-collapse: separate;
+    table-layout: fixed;
+}
+
+.wijmo-wijcalendar table.wijmo-wijcalendar-mygrid .ui-datepicker-week-day
+{
+    cursor: pointer;
+}
+
+.wijmo-wijcalendar-aniwrapper
+{
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+.wijmo-wijcalendar-multi-aniwrapper
+{
+    position: absolute;
+    overflow: hidden;
+}
+
+.ui-datepicker-rtl .ui-datepicker-prev .ui-icon, .ui-datepicker-rtl .ui-datepicker-next .ui-icon
+{
+    direction: rtl;
+}
+
+.wijmo-wijtooltip {
+    position: absolute;
+    z-index: 9999;
+    margin:0;
+}
+
+
+.wijmo-wijtooltip .wijmo-wijtooltip-close
+{
+    background:none repeat scroll 0 0 transparent;
+border:medium none;
+display:block;
+height:16px;
+position:absolute;
+right:3px;
+top:3px;
+width:16px;
+    }
+
+.wijmo-wijtooltip .wijmo-wijtooltip-title
+{
+    background:none repeat scroll 0 0 transparent;
+border:medium none;
+color:inherit;
+padding:0.4em;
+}
+.wijmo-wijtooltip .wijmo-wijtooltip-container
+{
+    padding: 1em;
+    overflow: hidden;
+}
+
+.wijmo-wijtooltip {
+    border-width: 2px;
+}
+
+.wijmo-wijtooltip .wijmo-wijtooltip-pointer, .wijmo-wijtooltip .wijmo-wijtooltip-pointer-inner {
+    background: none;
+    height: 0;
+    position: absolute;
+    width: 0;
+}
+
+.wijmo-wijtooltip-arrow-tr .wijmo-wijtooltip-pointer, .wijmo-wijtooltip-arrow-tc .wijmo-wijtooltip-pointer, .wijmo-wijtooltip-arrow-tl .wijmo-wijtooltip-pointer {
+    border-bottom-width: 14px;
+    border-top: 0 none;
+    top: -14px;
+	
+}
+
+.wijmo-wijtooltip-arrow-tr .wijmo-wijtooltip-pointer {
+    border-left: 18px dashed transparent;
+    border-right: 0 none;
+    right: 10px;
+}
+
+.wijmo-wijtooltip-arrow-tc .wijmo-wijtooltip-pointer {
+    border-left: 10px dashed transparent;
+    border-right: 10px dashed transparent;
+    left: 50%;
+    margin-left: -10px;
+}
+
+.wijmo-wijtooltip-arrow-tl .wijmo-wijtooltip-pointer {
+    border-left: 0 none;
+    border-right: 18px dashed transparent;
+    left: 10px;
+}
+
+.wijmo-wijtooltip-arrow-tr .wijmo-wijtooltip-pointer-inner, .wijmo-wijtooltip-arrow-tc .wijmo-wijtooltip-pointer-inner, .wijmo-wijtooltip-arrow-tl .wijmo-wijtooltip-pointer-inner {
+    border-bottom-color: inherit;
+    border-bottom-style: solid;
+    border-bottom-width: 10px;    
+    bottom: -14px;
+	*font-size:0;line-height:0;
+}
+
+.wijmo-wijtooltip-arrow-tr .wijmo-wijtooltip-pointer-inner {
+    border-left: 12px dashed transparent;
+    border-right: 0 none;
+    right: 2px;
+}
+
+.wijmo-wijtooltip-arrow-tc .wijmo-wijtooltip-pointer-inner {
+    border-left: 8px dashed transparent;
+    border-right: 8px dashed transparent;
+    left: -8px;
+}
+
+.wijmo-wijtooltip-arrow-tl .wijmo-wijtooltip-pointer-inner {
+    border-left: 0 none;
+    border-right-style: dashed;
+    border-right-color: inherit;
+    border-right-width: 12px;
+    left: 2px;
+}
+
+.wijmo-wijtooltip-arrow-rb .wijmo-wijtooltip-pointer, .wijmo-wijtooltip-arrow-rc .wijmo-wijtooltip-pointer, .wijmo-wijtooltip-arrow-rt .wijmo-wijtooltip-pointer {
+    border-left-width: 14px;
+    border-right: 0 none;
+    right: -14px;
+}
+
+.wijmo-wijtooltip-arrow-rb .wijmo-wijtooltip-pointer {
+    border-bottom: 0 none;
+    border-top: 18px dashed transparent;
+    bottom: 10px;
+}
+
+.wijmo-wijtooltip-arrow-rc .wijmo-wijtooltip-pointer {
+    border-bottom: 10px dashed transparent;
+    border-top: 10px dashed transparent;
+    bottom: 50%;
+    margin-bottom: -10px;
+}
+
+.wijmo-wijtooltip-arrow-rt .wijmo-wijtooltip-pointer {
+    border-bottom: 18px dashed transparent;
+    border-top: 0 none;
+    top: 10px;
+}
+
+.wijmo-wijtooltip-arrow-rb .wijmo-wijtooltip-pointer-inner, .wijmo-wijtooltip-arrow-rc .wijmo-wijtooltip-pointer-inner, .wijmo-wijtooltip-arrow-rt .wijmo-wijtooltip-pointer-inner {
+    border-left-color: inherit;
+    border-left-style: solid;
+    border-left-width: 10px;
+    left: -14px;
+	*font-size:0;line-height:0;
+}
+
+
+.wijmo-wijtooltip-arrow-rb .wijmo-wijtooltip-pointer-inner {
+    border-bottom: 0 none;
+    border-top-style: dashed;
+    border-top-color: inherit;
+    border-top-width: 12px;
+    bottom: 2px;
+}
+
+.wijmo-wijtooltip-arrow-rc .wijmo-wijtooltip-pointer-inner {
+    border-bottom: 8px dashed transparent;
+    border-top: 8px dashed transparent;
+    bottom: -8px;
+}
+
+.wijmo-wijtooltip-arrow-rt .wijmo-wijtooltip-pointer-inner {
+    border-bottom-style: dashed;
+    border-bottom-color: inherit;
+    border-bottom-width: 12px;
+    border-top: 0 none;
+    top: 2px;
+}
+
+.wijmo-wijtooltip-arrow-br .wijmo-wijtooltip-pointer, .wijmo-wijtooltip-arrow-bc .wijmo-wijtooltip-pointer, .wijmo-wijtooltip-arrow-bl .wijmo-wijtooltip-pointer {
+    border-bottom: 0 none;
+    border-top-width: 14px;
+    bottom: -14px;
+	
+}
+
+.wijmo-wijtooltip-arrow-br .wijmo-wijtooltip-pointer {
+    border-left: 18px dashed transparent;
+    border-right: 0 none;
+    right: 10px;
+}
+
+.wijmo-wijtooltip-arrow-bc .wijmo-wijtooltip-pointer {
+    border-left: 10px dashed transparent;
+    border-right: 10px dashed transparent;
+    left: 50%;
+    margin-left: -10px;
+}
+
+.wijmo-wijtooltip-arrow-bl .wijmo-wijtooltip-pointer {
+    border-left: 0 none;
+    border-right: 18px dashed transparent;
+    left: 10px;
+}
+
+.wijmo-wijtooltip-arrow-br .wijmo-wijtooltip-pointer-inner, .wijmo-wijtooltip-arrow-bc .wijmo-wijtooltip-pointer-inner, .wijmo-wijtooltip-arrow-bl .wijmo-wijtooltip-pointer-inner {
+    border-top-color: inherit;
+    border-top-style: solid;
+    border-top-width: 10px;
+    top: -14px;
+	*font-size:0;line-height:0;
+}
+
+.wijmo-wijtooltip-arrow-br .wijmo-wijtooltip-pointer-inner {
+    border-left: 12px dashed transparent;
+    border-right: 0 none;
+    right: 2px;
+}
+
+.wijmo-wijtooltip-arrow-bc .wijmo-wijtooltip-pointer-inner {
+    border-left: 8px dashed transparent;
+    border-right: 8px dashed transparent;
+    left: -8px;
+}
+
+.wijmo-wijtooltip-arrow-bl .wijmo-wijtooltip-pointer-inner {
+    border-left: 0 none;
+    border-right: 12px dashed transparent;
+    left: 2px;
+}
+
+.wijmo-wijtooltip-arrow-lb .wijmo-wijtooltip-pointer, .wijmo-wijtooltip-arrow-lc .wijmo-wijtooltip-pointer, .wijmo-wijtooltip-arrow-lt .wijmo-wijtooltip-pointer {
+    border-left: 0 none;
+    border-right-width: 14px;
+    left: -14px;
+}
+
+.wijmo-wijtooltip-arrow-lb .wijmo-wijtooltip-pointer {
+    border-bottom: 0 none;
+    border-top: 18px dashed transparent;
+    bottom: 10px;
+}
+
+.wijmo-wijtooltip-arrow-lc .wijmo-wijtooltip-pointer {
+    border-bottom: 10px dashed transparent;
+    border-top: 10px dashed transparent;
+    bottom: 50%;
+    margin-bottom: -10px;
+}
+
+.wijmo-wijtooltip-arrow-lt .wijmo-wijtooltip-pointer {
+    border-bottom: 18px dashed transparent;
+    border-top: 0 none;
+    top: 10px;
+}
+
+.wijmo-wijtooltip-arrow-lb .wijmo-wijtooltip-pointer-inner, .wijmo-wijtooltip-arrow-lc .wijmo-wijtooltip-pointer-inner, .wijmo-wijtooltip-arrow-lt .wijmo-wijtooltip-pointer-inner {
+    border-right-color: inherit;
+    border-right-style: solid;
+    border-right-width: 10px;
+    right: -14px;
+	*font-size:0;line-height:0;
+}
+
+.wijmo-wijtooltip-arrow-lb .wijmo-wijtooltip-pointer-inner {
+    border-bottom: 0 none;
+    border-top: 12px dashed transparent;
+    bottom: 2px;
+}
+
+.wijmo-wijtooltip-arrow-lc .wijmo-wijtooltip-pointer-inner {
+    border-bottom: 8px dashed transparent;
+    border-top: 8px dashed transparent;
+    bottom: -8px;
+}
+
+.wijmo-wijtooltip-arrow-lt .wijmo-wijtooltip-pointer-inner {
+    border-bottom-style: dashed;
+    border-bottom-color: inherit;
+    border-bottom-width: 12px;
+    border-top: 0 none;
+    top: 2px;
+}
+.wijmo-wijmenu {
+width:150px;
+padding:0.3em;
+position:relative;
+}
+
+.wijmo-wijmenu .wijmo-wijsuperpanel {
+border:none;
+background: inherit;
+padding:0;
+}
+
+.wijmo-wijmenu-list {
+position:static;
+}
+
+.wijmo-wijmenu .wijmo-wijmenu-parent .wijmo-wijmenu-child {
+display:none;
+width:150px;
+padding:0.3em;
+}
+
+.wijmo-wijmenu .wijmo-wijmenu-parent {
+position:relative;
+}
+
+.wijmo-wijmenu .wijmo-wijmenu-child {
+position:relative;
+left:150px;
+top:0;
+}
+
+.wijmo-wijmenu .wijmo-wijmenu-item {
+width:100%;
+float:left;
+clear:both;
+margin:1px 0;
+padding:0;
+}
+
+.wijmo-wijmenu .wijmo-wijmenu-list .wijmo-wijmenu-item {
+background:none;
+border:none;
+}
+
+.wijmo-wijmenu .wijmo-wijmenu-link {
+display:block;
+width:92%;
+outline:none;
+text-decoration:none;
+font-weight:400;
+border:solid 1px transparent;
+float:left;
+line-height:16px;
+padding:0.3em;
+}
+
+.wijmo-wijmenu-horizontal {
+width:auto;
+}
+
+.wijmo-wijmenu-horizontal .wijmo-wijmenu-item {
+width:auto;
+clear:none;
+margin-right:3px;
+}
+
+.wijmo-wijmenu-horizontal .wijmo-wijmenu-child .wijmo-wijmenu-item {
+width:100%;
+}
+
+.wijmo-wijmenu-horizontal .wijmo-wijmenu-child {
+top:25px;
+left:0;
+}
+
+.wijmo-wijmenu-horizontal .wijmo-wijmenu-link {
+width:auto;
+padding:0.4em 0.3em;
+}
+
+.wijmo-wijmenu-horizontal .wijmo-wijmenu-child .wijmo-wijmenu-link {
+width:92%;
+}
+
+.wijmo-wijmenu .wijmo-wijmenu-list .ui-widget-header {
+clear:both;
+float:left;
+width:98%;
+font-size:12px;
+margin:1px 0;
+}
+
+.wijmo-wijmenu-horizontal .ui-widget-header {
+clear:none;
+width:auto;
+margin:0 3px 0 0;
+}
+
+.wijmo-wijmenu .ui-widget-header h1,.wijmo-wijmenu .ui-widget-header h2,.wijmo-wijmenu .ui-widget-header h3,.wijmo-wijmenu .ui-widget-header h4,.wijmo-wijmenu .ui-widget-header h5,.wijmo-wijmenu .ui-widget-header h6 {
+float:left;
+display:block;
+font-size:1em;
+margin:0 auto;
+padding:0.3em 3%;
+}
+
+.wijmo-wijmenu-horizontal .ui-widget-header h1,.wijmo-wijmenu-horizontal .ui-widget-header h2,.wijmo-wijmenu-horizontal .ui-widget-header h3,.wijmo-wijmenu-horizontal .ui-widget-header h4,.wijmo-wijmenu-horizontal .ui-widget-header h5,.wijmo-wijmenu-horizontal .ui-widget-header h6 {
+padding:0.4em 0.3em;
+}
+
+.wijmo-wijmenu a.ui-state-default:link,.wijmo-wijmenu a.ui-state-default:visited,.wijmo-wijmenu a.ui-state-default:hover,.wijmo-wijmenu a.ui-state-default:active,.wijmo-wijmenu a.ui-state-hover:link,.wijmo-wijmenu a.ui-state-hover:visited,.wijmo-wijmenu a.ui-state-hover:hover,.wijmo-wijmenu a.ui-state-hover:active,.wijmo-wijmenu a.ui-state-active:link,.wijmo-wijmenu a.ui-state-active:visited,.wijmo-wijmenu a.ui-state-active:hover,.wijmo-wijmenu a.ui-state-active:active {
+font-weight:400;
+border-style:solid;
+}
+
+.wijmo-wijmenu .wijmo-wijmenu-child .ui-state-hover {
+font-weight:400;
+}
+
+.wijmo-wijmenu .wijmo-wijmenu-separator {
+clear:both;
+float:left;
+height:1px;
+text-indent:-9999px;
+width:98%;
+margin:1px 0;
+font-size:0;
+}
+
+.wijmo-wijmenu-horizontal .wijmo-wijmenu-separator {
+height:auto;
+clear:none;
+width:1px;
+text-indent:-9999px;
+margin:0 3px 0 0;
+padding:0.4em 0;
+}
+
+.wijmo-wijmenu-horizontal .wijmo-wijmenu-child .wijmo-wijmenu-separator {
+clear:both;
+float:left;
+height:1px;
+text-indent:-9999px;
+width:98%;
+margin:1px 0;
+padding:0;
+}
+
+.wijmo-wijmenu .wijmo-wijmenu-group {
+clear:both;
+float:left;
+width:98%;
+margin:3px 0;
+padding:0 0.4em;
+}
+
+.wijmo-wijmenu-ipod {
+width:180px;
+}
+
+.wijmo-wijmenu-container {
+overflow:hidden;
+}
+
+.wijmo-wijmenu-ipod .wijmo-wijmenu-list {
+background:inherit;
+position:absolute;
+border-width:0;
+-moz-box-shadow: none;
+-webkit-box-shadow:none;
+}
+
+.wijmo-wijmenu-breadcrumb {
+margin:0;
+padding:0;
+}
+
+.wijmo-wijmenu-footer {
+margin-top:3px;
+}
+
+.wijmo-wijmenu-footer .ui-icon {
+margin:3px 0;
+}
+
+.wijmo-wijmenu-header {
+margin-bottom:3px;
+}
+
+.wijmo-wijmenu-breadcrumb li {
+float:left;
+list-style:none;
+font-size:.9em;
+margin:0;
+padding:0 .2em;
+}
+
+.wijmo-wijmenu-breadcrumb li.wijmo-wijmenu-prev-list,.wijmo-wijmenu-breadcrumb li.wijmo-wijmenu-current-crumb {
+clear:left;
+float:none;
+opacity:1;
+}
+
+.wijmo-wijmenu-breadcrumb li.wijmo-wijmenu-current-crumb {
+padding-top:.2em;
+}
+
+.wijmo-wijmenu-footer a:link,.wijmo-wijmenu-footer a:visited {
+float:left;
+width:100%;
+text-decoration:none;
+}
+
+.wijmo-wijmenu-footer a span {
+float:left;
+cursor:pointer;
+}
+
+.wijmo-wijmenu-breadcrumb .wijmo-wijmenu-prev-list a:link,.wijmo-wijmenu-breadcrumb .wijmo-wijmenu-prev-list a:visited,.wijmo-wijmenu-breadcrumb .wijmo-wijmenu-prev-list a:hover,.wijmo-wijmenu-breadcrumb .wijmo-wijmenu-prev-list a:active {
+background-image:none;
+text-decoration:none;
+}
+
+.wijmo-wijmenu-breadcrumb .wijmo-wijmenu-prev-list a {
+float:left;
+padding-right:.4em;
+}
+
+.wijmo-wijmenu-breadcrumb .wijmo-wijmenu-current-crumb a:link,.wijmo-wijmenu-breadcrumb .wijmo-wijmenu-current-crumb a:visited,.wijmo-wijmenu-breadcrumb .wijmo-wijmenu-current-crumb a:hover,.wijmo-wijmenu-breadcrumb .wijmo-wijmenu-current-crumb a:active {
+display:block;
+background-image:none;
+font-size:1.3em;
+text-decoration:none;
+}
+
+.wijmo-wijmenu .wijmo-wijmenu-parent .ui-icon,.wijmo-wijmenu-horizontal .wijmo-wijmenu-child .ui-icon,.wijmo-wijmenu-ipod .ui-icon-triangle-1-e {
+float:right;
+}
+
+.wijmo-wijmenu .wijmo-wijmenu-item .wijmo-wijmenu-text,.wijmo-wijmenu-horizontal .wijmo-wijmenu-parent .ui-icon,.wijmo-wijmenu-breadcrumb a,.wijmo-wijmenu-breadcrumb span,.wijmo-wijmenu-breadcrumb .wijmo-wijmenu-prev-list a .ui-icon {
+float:left;
+}
+
+.wijmo-wijmenu .wijmo-wijmenu-link .wijmo-wijmenu-icon-left {
+display:inline-block;
+float:left;
+}
+
+.wijmo-wijmenu .wijmo-wijmenu-link .wijmo-wijmenu-icon-right {
+display:inline-block;
+float:right;
+}
+
+.wijmo-wijpager .ui-icon
+{
+    cursor: pointer;
+}
+.wijmo-wijpager .ui-list
+{
+    float: left;
+    padding: 1px;
+    margin: 0;
+}
+.wijmo-wijpager .ui-list .ui-page
+{
+    float: left;
+    height: auto;
+    line-height: 16px;
+    list-style: none outside none;
+    margin: 0 1px;
+    width: auto;
+}
+.wijmo-wijpager .ui-list .ui-page span
+{
+    margin: 2px;
+}
+
+.wijmo-wijpager .ui-list .ui-page a, .wijmo-wijpager .ui-list .ui-state-active span
+{
+    padding: 2px 5px;
+    display: block;
+    margin: 0;
+}
+.wijmo-wijpager .ui-list
+{
+    background: none;
+    border: none;
+}
+/* wijcombobox
+ ----------------------------------*/
+.wijmo-wijcombobox
+{
+    position: relative;
+}
+.wijmo-wijcombobox-wrapper
+{
+    float: left;
+}
+/* wijcombobox textbox
+ ----------------------------------*/
+.wijmo-wijcombobox-input
+{
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    color: inherit;
+    padding: 3px 5px 3px 5px;
+    outline: none;
+}
+
+.wijmo-wijcombobox .wijmo-wijcombobox-label
+{
+    background: transparent;
+    border: none;
+    font-weight: normal;
+    position: absolute;
+    white-space: nowrap;
+}
+.wijmo-wijcombobox-loading
+{
+    background: transparent url('images/ui-anim_basic_16x16.gif') right center no-repeat;
+}
+/* dropdown list trigger
+ ----------------------------------*/
+.wijmo-wijcombobox .wijmo-wijcombobox-trigger
+{
+    position: absolute;
+    top: 0px;
+    font-size: 0px;
+    width: 20px;
+    cursor: pointer;
+}
+/* dropdown list
+----------------------------------*/
+.wijmo-wijcombobox-list
+{
+    position: absolute;
+    overflow: hidden;
+}
+.wijmo-wijcombobox-ul .wijmo-wijcombobox-item
+{
+    margin: 0;
+    padding: .2em .4em;
+    line-height: 1.5;
+    white-space: nowrap;
+}
+.wijmo-wijcombobox-ul .wijmo-wijcombobox-item.ui-state-hover, .wijmo-wijcombobox-ul .wijmo-wijcombobox-item.ui-state-active
+{
+    font-weight: normal;
+    margin: -1px;
+}
+
+.wijmo-wijcombobox-ul .wijmo-wijlist-item-selected
+{
+    font-style: italic;
+}
+/* multiple columns
+----------------------------------*/
+.wijmo-wijcombobox-multicolumn .wijmo-wijcombobox-row, .wijmo-wijcombobox-multicolumn .wijmo-wijcombobox-rowheader
+{
+    list-style: none none outside;
+    padding: 0px;
+    margin: 0;
+    border: 0px;
+    overflow: hidden;
+    width: 10000px;
+}
+.wijmo-wijcombobox-multicolumn .wijmo-wijcombobox-cell
+{
+    float: left;
+    overflow: hidden;
+    border-width: 0;
+    text-align: center;
+    width: 100px;
+}
+.wijmo-wijcombobox-multicolumn .wijmo-wijcombobox-rowheader .wijmo-wijcombobox-cell
+{
+    border-right-width: 1px;
+}
+.wijmo-wijcombobox-multicolumn .wijmo-wijcombobox-row .wijmo-wijcombobox-cell
+{
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+}
+.wijmo-wijcombobox-multicolumn .wijmo-wijsuperpanel-header
+{
+    border-width: 0px;
+    border-bottom-width: 1px;
+}
+.wijmo-wijcombobox-multicolumn .wijmo-wijlist-item, .wijmo-wijcombobox-multicolumn .wijmo-wijlist-ul
+{
+    padding: 0px;
+    border: 0px;
+}
+.wijmo-wijcombobox-multicolumn .wijmo-wijcombobox-active-prev .wijmo-wijcombobox-cell
+{
+    border-bottom-width: 0px;
+}
+.wijmo-wijcombobox-multicolumn .wijmo-wijcombobox-row .ui-state-hover
+{
+    border-top-width: 1px;
+}
+.wijmo-wijcombobox-multicolumn .wijmo-wijlist-item-first .ui-state-hover
+{
+    border-top-width: 0px;
+}
+
+.wijmo-wijlist-ul .wijmo-wijlist-item
+{
+    cursor: pointer;
+}
+.wijmo-wijinput
+{
+    position: relative;
+    width: 150px;
+}
+
+.wijmo-wijinput-wrapper
+{
+    float: left;
+    margin-right: 0;
+    width: 100%;
+}
+
+.wijmo-wijinput-input
+{
+    background: none;
+    border: 0 none;
+    color: inherit;
+    float: right;
+    outline: none;
+    margin: 0;
+    line-height: 16px;
+    height: 16px;
+    padding: 5px;
+}
+
+.wijmo-wijinput .wijmo-wijinput-trigger
+{
+    position: absolute;
+    right: 0;
+    width: 16px;
+    cursor: pointer;
+    padding: 0 3px;
+    height: 100%;
+}
+
+.wijmo-wijinput .wijmo-wijinput-trigger .ui-icon
+{
+    margin-top: 40%;
+}
+
+.ui-input-trigger-right .wijmo-wijinput-input, .ui-input-spinner-right .wijmo-wijinput-input
+{
+    padding: 5px 25px 5px 5px;
+}
+.ui-input-trigger-left .wijmo-wijinput-input, .ui-input-spinner-left .wijmo-wijinput-input
+{
+    padding: 5px 5px 5px 25px;
+}
+
+.ui-input-trigger-right .wijmo-wijinput-trigger
+{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.ui-input-trigger-left .wijmo-wijinput-trigger
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.ui-input-trigger-right .wijmo-wijinput-trigger
+{
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+}
+
+.ui-input-trigger-left .wijmo-wijinput-trigger
+{
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+}
+
+.wijmo-wijinput .wijmo-wijinput-spinner
+{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 17px;
+    cursor: pointer;
+    height: 100%;
+}
+
+.ui-input-spinner-left .wijmo-wijinput-spinner
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.wijmo-wijinput-spinup
+{
+    border-bottom: none;
+    display: block;
+    height: 50%;
+    width: 16px;
+    position: relative;
+}
+
+
+.wijmo-wijinput-spindown
+{
+    border-top: none;
+    display: block;
+    height: 50%;
+    width: 16px;
+    position: relative;
+}
+
+
+
+.ui-input-spinner-right .wijmo-wijinput-spinup
+{
+    border-right: none;
+    border-top: none;
+}
+.ui-input-spinner-right .wijmo-wijinput-spindown
+{
+    border-right: none;
+    border-bottom: none;
+}
+
+.ui-input-spinner-left .wijmo-wijinput-spinup
+{
+    border-left: none;
+    border-top: none;
+}
+
+.ui-input-spinner-left .wijmo-wijinput-spindown
+{
+    border-left: none;
+    border-bottom: none;
+}
+
+.wijmo-wijinput-numeric
+{
+    text-align: right;
+}
+
+.wijmo-wijinput-date, .wijmo-wijinput-mask
+{
+    float: left;
+}
+
+.ui-input-spinner-trigger-right .wijmo-wijinput-spinner
+{
+    right: 23px;
+}
+
+.ui-input-spinner-trigger-right .wijmo-wijinput-input
+{
+    padding: 5px 42px 5px 5px;
+}
+
+.ui-input-spinner-trigger-right .wijmo-wijinput-spinup, .ui-input-spinner-trigger-right .wijmo-wijinput-spindown, .ui-input-spinner-trigger-right .wijmo-wijinput-trigger
+{
+    border-top: none;
+    border-right: none;
+}
+
+.ui-input-spinner-trigger-left .wijmo-wijinput-trigger
+{
+    left: 0;
+}
+.ui-input-spinner-trigger-left .wijmo-wijinput-spinner
+{
+    left: 23px;
+}
+
+.ui-input-spinner-trigger-left .wijmo-wijinput-input
+{
+    padding: 5px 5px 5px 42px;
+}
+
+.ui-input-spinner-trigger-left .wijmo-wijinput-spinup, .ui-input-spinner-trigger-left .wijmo-wijinput-spindown, .ui-input-spinner-trigger-left .wijmo-wijinput-trigger
+{
+    border-top: none;
+    border-left: none;
+}
+.wijmo-wijgrid
+{
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    overflow: hidden;
+}
+
+.wijmo-wijgrid-loading
+{
+    background: transparent url('images/ui-anim_basic_16x16.gif') left top no-repeat;
+    min-height: 16px;
+    min-width: 16px;
+}
+
+.wijmo-wijgrid .wijmo-wijsuperpanel
+{
+    border: 0;
+}
+
+.wijmo-wijgrid .wijmo-wijgrid-table .wijmo-wijgrid-filter-trigger
+{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 16px;
+    width: 16px;
+    display: block;
+    padding: 5px 3px;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+
+.wijmo-wijgrid .wijmo-wijgrid-table .wijmo-wijgrid-filter-input
+{
+    width: auto;
+    height: 16px;
+    border: none;
+    padding: 5px 3px;
+    overflow: visible; /* ie6 padding issue fix */
+    color: inherit;
+    outline: none;
+    position: relative;
+    z-index: 5;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    background: none;
+}
+
+
+.wijmo-wijgrid .wijmo-wijgrid-filter
+{
+    position: relative;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+}
+
+.wijmo-wijgrid .wijmo-wijgrid-filter .wijmo-wijinput
+{
+    border: none;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+
+.wijmo-wijgrid-filtericon
+{
+    background: url('images/filterop.png') no-repeat;
+    text-indent: -9999px;
+    overflow: hidden;
+    height: 16px;
+    width: 16px;
+    display: none;
+}
+.filter-nofilter
+{
+    background-position: 0 0px;
+}
+
+.filter-contains
+{
+    background-position: 0 -16px;
+}
+
+.filter-notcontain
+{
+    background-position: 0 -32px;
+}
+
+.filter-beginswith
+{
+    background-position: 0 -48px;
+}
+
+.filter-endswith
+{
+    background-position: 0 -64px;
+}
+
+.filter-equals
+{
+    background-position: 0 -80px;
+}
+
+.filter-notequal
+{
+    background-position: 0 -96px;
+}
+
+.filter-greater
+{
+    background-position: 0 -112px;
+}
+
+.filter-less
+{
+    background-position: 0 -128px;
+}
+
+.filter-greaterorequal
+{
+    background-position: 0 -144px;
+}
+
+.filter-lessorequal
+{
+    background-position: 0 -160px;
+}
+
+.filter-isempty
+{
+    background-position: 0 -176px;
+}
+
+.filter-notisempty
+{
+    background-position: 0 -192px;
+}
+
+.filter-isnull
+{
+    background-position: 0 -208px;
+}
+
+.filter-notisnull
+{
+    background-position: 0 -224px;
+}
+
+.wijmo-wijpager .ui-icon
+{
+    cursor: pointer;
+}
+
+.wijmo-wijgrid .wijmo-wijgrid-grouptogglebtn
+{
+    float: left;
+    cursor: pointer;
+    margin-top: 3px;
+}
+
+.wijmo-wijgrid .wijmo-wijgrid-table
+{
+    border-collapse: collapse;
+    outline: none;
+}
+
+.wijmo-wijgrid-rowheader
+{
+    width: 21px;
+}
+
+.wijmo-wijgrid .wijmo-wijgrid-header, .wijmo-wijgrid .wijmo-wijgrid-footer
+{
+    border-left: none !important;
+    border-top: none !important;
+    border-bottom: none !important;
+    padding: 0.2em;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+
+.wijmo-wijgrid tr.wijmo-wijgrid-row
+{
+    border-bottom: none;
+}
+
+.wijmo-wijgrid tr.wijmo-wijgrid-row td
+{
+    border: none;
+    border-right-color: inherit;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-top-color: inherit;
+    border-top-style: solid;
+    border-top-width: 1px;
+    text-align: left;
+    overflow: hidden;
+}
+
+.wijmo-wijgrid .wijgridtd
+{
+    font-weight: normal;
+    padding: 0px;
+}
+
+.wijmo-wijgrid .wijgridth
+{
+    padding: 0px;
+}
+
+.wijmo-wijgrid .wijmo-wijgrid-headerrow .wijmo-c1basefield
+{
+    zoom: 1;
+    overflow: hidden;
+    border-left: 0;
+    border-top: 0;
+    padding: 0px;
+    position: relative;
+}
+
+.wijmo-wijgrid .wijmo-wijgrid-headerrow .wijmo-wijgrid-headertext
+{
+    padding: 0.5em 1em;
+    display: block;
+    text-align: center;
+    position: relative;
+}
+.wijmo-wijgrid .wijmo-wijgrid-headerrow .ui-icon
+{
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -8px;
+    z-index: 99;
+}
+
+.wijmo-wijgrid .wijmo-wijgrid-filterrow
+{
+}
+
+.wijmo-wijgrid .wijmo-wijgrid-filterrow td
+{
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: inherit;
+}
+
+
+.wijmo-wijgrid .wijmo-wijpager
+{
+    display: block;
+    position: relative;
+}
+
+.wijmo-wijgrid-resizehandle
+{
+    position: absolute;
+    z-index: 99999;
+}
+
+/* 
+ *    Scrolling
+ */
+
+.wijmo-wijgrid-v-splitter, .wijmo-wijgrid-h-splitter
+{
+    background-color: white;
+    width: 4px;
+    height: 4px;
+    position: absolute;
+    z-index: 10;
+    display: none;
+}
+.wijmo-wijgrid-splits-enabled .wijmo-wijgrid-v-splitter
+{
+    border-right: 1px solid #000000;
+    display: block;
+    cursor: w-resize;
+}
+.wijmo-wijgrid-splits-enabled .wijmo-wijgrid-h-splitter
+{
+    border-bottom: 1px solid #000000;
+    display: block;
+    cursor: n-resize;
+}
+.wijmo-wijgrid-splits-enabled .wijmo-wijgrid-v-splitter.ui-draggable-dragging, .wijmo-wijgrid-splits-enabled .wijmo-wijgrid-h-splitter.ui-draggable-dragging
+{
+    background-color: #626262;
+}
+
+.wijmo-wijgrid-filterlist
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100;
+}
+.wijmo-wijgrid-scroller
+{
+    overflow: hidden;
+}
+.wijmo-wijgrid-fixedview
+{
+    position: relative;
+}
+
+.wijmo-wijgrid-scroller
+{
+    border: 0px;
+}
+
+.wijmo-wijgrid .wijmo-wijsuperpanel-vbar-buttontop
+{
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    top: -1px;
+}
+
+.wijmo-wijgrid .wijmo-wijsuperpanel-vbar-buttonbottom
+{
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    bottom: -1px;
+}
+
+.wijmo-wijgrid .wijgridinput
+{
+    width: 100%;
+    margin: 0;
+    border: none;
+    padding: 0;
+    text-align: inherit;
+}
+
+.wijmo-wijgrid tr.wijmo-wijgrid-row td.wijdata-type-currency, .wijmo-wijgrid tr.wijmo-wijgrid-row td.wijdata-type-number, .wijmo-wijgrid tr.wijmo-wijgrid-row td.wijdata-type-date
+{
+    text-align: right;
+}
+
+.wijmo-wijgrid tr.wijmo-wijgrid-row td.wijdata-type-boolean
+{
+    text-align: center;
+}
+
+.wijmo-wijgrid .wijmo-wijgrid-innercell
+{
+    padding: 1px 2px;
+}
+
+.wijmo-wijgrid .wijmo-wijcombobox-wrapper
+{
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    border-top: 0;
+    border-bottom: 0;
+    border-left: 0;
+}
+
+.wijmo-wijgrid .wijmo-wijcombobox .wijmo-wijcombobox-trigger
+{
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    border-top: 0;
+    border-bottom: 0;
+    border-right: 0;
+}
+
+.wijmo-wijgrid .wijmo-wijcombobox-input
+{
+    padding: 0;
+}
+
+.wijmo-wijgrid .ui-input-trigger-right .wijmo-wijinput-input, .wijmo-wijgrid .ui-input-spinner-right .wijmo-wijinput-input
+{
+    padding: 0px 25px 0px 5px;
+}
+
+.wijmo-wijgrid .wijmo-wijinput
+{
+    border: none;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+
+.wijmo-wijgrid .wijmo-wijinput-spinup
+{
+    height: 7px;
+}
+
+.wijmo-wijgrid .wijmo-wijinput-spindown
+{
+    height: 7px;
+}
+
+.wijmo-wijgrid .wijmo-wijinput-spinner .ui-icon-triangle-1-n
+{
+    background-position: 0 -20px;
+}
+
+.wijmo-wijgrid .wijmo-wijinput-spinner .ui-icon-triangle-1-s
+{
+    background-position: -64px -20px;
+}
+
+/* drag-n-drop *** */
+.wijmo-wijgrid-dnd-arrow-top, .wijmo-wijgrid-dnd-arrow-bottom
+{
+    z-index: 1000;
+    width: 16px;
+    height: 16px;
+}
+
+.wijmo-wijgrid-dnd-arrow-top .ui-icon
+{
+    position: absolute;
+    top: -4px;
+}
+
+.wijmo-wijgrid-dnd-arrow-bottom .ui-icon
+{
+    position: absolute;
+    top: 4px;
+}
+
+.wijmo-wijgrid-dnd-helper
+{
+    border: 1px solid #F0F0F0 !important;
+    filter: alpha(opacity=70) !important;
+    -moz-opacity: 0.7;
+    opacity: 0.7;
+    z-index: 1000;
+}
+
+.wijmo-wijgrid th.ui-draggable
+{
+    cursor: pointer;
+}
+/* *** drag-n-drop */
+
+.wijmo-wijgrid-footerrow
+{
+    text-align: right;
+}
+
+.wijmo-wijgrid-group-button
+{
+    float: left;
+    padding: 0.4em 1.4em 0.4em 0.4em;
+    position: relative;
+    margin: 0.4em;
+    text-decoration: none;
+}
+.wijmo-wijgrid-group-button-close
+{
+    float: right;
+    margin: 0 3px 0 24px;
+    padding: 1px;
+    position: absolute;
+    right: -14px;
+    top: -7px;
+    .border-radius(15px);
+}
+.wijmo-wijgrid-group-button-sort {
+    position: absolute;
+    right: 3px;
+    top: 25%;
+}
+.wijmo-wijgrid-group-area
+{
+    height: 35px;
+}
+
+.wijmo-wijupload ul
+{
+	margin: 0;
+	padding: 0;
+}
+
+.wijmo-wijupload li
+{
+	list-style: none outside none;
+	position: relative;
+	padding: 5px 110px 5px 5px;
+	width: 100%;
+}
+
+.wijmo-wijupload .wijmo-wijupload-buttonContainer
+{
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.wijmo-wijupload .wijmo-wijupload-file
+{
+	display: block;
+	padding: 0.4em;
+	line-height: 1.4
+}
+
+.wijmo-wijupload .wijmo-wijupload-loading
+{
+	width: 16px;
+	height: 16px;
+	background-image: url("images/ui-anim_basic_16x16.gif");
+	display: block;
+	float: left;
+	top: 25%;
+	left: -10px;
+	position: relative;
+}
+
+.wijmo-wijupload .ui-button
+{
+	margin: 2px;
+}
+.wijmo-wijwizard
+{
+	position: relative;
+}
+
+.wijmo-wijwizard-steps li
+{
+	float: left;
+	padding: 0.4em;
+	margin: 0 3px 0 0;
+}
+
+.wijmo-wijwizard-steps h1
+{
+	margin: 0;
+	padding: 0;
+	font-size: 24px;
+}
+
+.wijmo-wijwizard-content
+{
+	margin: 3px 0;
+}
+
+.wijmo-wijwizard .wijmo-wijwizard-panel 
+{ 
+	display: block; 
+	border-width: 0; 
+	padding: 1em 1.4em; 
+	background: none; 
+}
+
+.wijmo-wijwizard .wijmo-wijwizard-hide 
+{ 
+	display: none !important; 
+}
+
+.wijmo-wijwizard-buttons
+{
+	float: right;
+}
+.wijmo-wijwizard-next, .wijmo-wijwizard-prev
+{
+	display: block;
+	position: absolute;
+	padding: 3px 0;
+}
+.wijmo-wijwizard-next
+{
+	right: 0;
+	top: 49%;
+}
+
+.wijmo-wijwizard-prev
+{
+	left: 0;
+	top: 49%;
+}
+
+.wijmo-wijdialog-captionbutton {
 	border-width: 1px;
 	border-style: solid;
 	border-color: #000000;
@@ -16,3 +2239,8 @@
 
 .ui-datepicker-title.wijmo-wijcalendar-title { line-height: 2.3em; }
 
+@import "wijmo.accordion.less";
+@import "wijmo.tabs.less";
+@import "wijmo.tree.less";
+@import "wijmo.expander.less";
+@import "wijmo.slider.less";

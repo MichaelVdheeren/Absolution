@@ -6,41 +6,43 @@
 	.ui-tabs-nav { 
 		margin: 0; 
 		padding: -1px;
+		.border-radius(0px);
+		border-bottom: 1px solid @defaultStateBorderColor; 
 		
 		li { 
 			list-style: none; 
 			float: left; 
-			position: relative; 
-			top: 0px; 
-			margin: 0px;
-			border-bottom: 1px; 
+			position: relative;
+			top: 0px;
+			margin: 0px; 
 			padding: 0; 
 			white-space: nowrap;
 			border-width: 0px; 
-			border-right-width: 1px;
-			border-color: #b3b3b3;
-			
+			border-right: 1px solid @defaultStateBorderColor;
 			.border-radius(0px);
 			
 			a {
 				float: left;
-				padding: .5em 1em;
+				padding: .3em 1em;
 				text-decoration: none;
+				color: inherit;
 			}
 			
+			&.ui-state-hover {
+				color: inherit;
+				.gradientTopToBottom(#dadada,#b0b0b0);
+			}
+			
+			&.ui-state-active,
 			&.ui-tabs-selected {
-				margin-bottom: 0px;
-				top: 1px;
-				padding-bottom: 0px;
-				background: #eeeeee;
-				color: #333333 !important;
+				color: inherit;
+				.gradientTopToBottom(#bcbcbc,#e4e4e4);
 			}
 			
 			&.ui-tabs-selected a, 
 			&.ui-state-disabled a, 
 			&.ui-state-processing a {
 				cursor: text;
-				color: #333333 !important;
 			}
 		}
 	}
@@ -48,13 +50,12 @@
 	.ui-tabs-panel { 
 		display: block; 
 		border-width: 0px; 
-		border-top-width: 1px !important; 
 		padding: 1em 1.4em; 
 		.border-radius(0px);
 	}
 	
 	.ui-tabs-hide {
-		display: none !important;
+		display: none;
 	}
 	
 	.ui-widget-header {
