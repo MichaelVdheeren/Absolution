@@ -26,7 +26,10 @@
 
 .ui-accordion-right .ui-accordion-header a,
 .ui-accordion-left .ui-accordion-header a {
-    padding: 2.2em 0 0 0;
+    .rotate-text();
+    position: absolute;
+    top: 2.5em; 
+	left: -0.7em;
     text-align: center;
 }
 
@@ -49,10 +52,6 @@
 		left: 50%;
 		margin-left: -7px;
 		background-position: -66px -1px;
-	}
-	
-	.ui-accordion-header a {
-		.rotate-text();
 	}
 	
 	.ui-accordion-header,

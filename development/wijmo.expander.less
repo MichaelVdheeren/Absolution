@@ -106,11 +106,6 @@
     border-right: none;
 }
 
-.ui-expander-right .ui-expander-header a
-{
-    padding: 2.2em 0 0 0;
-}
-
 .ui-expander-left .ui-expander-header
 {
     margin: 0 1px;
@@ -139,11 +134,6 @@
 .ui-expander-left .ui-state-active
 {
     border-left: none;
-}
-
-.ui-expander-left .ui-expander-header a
-{
-    padding: 2.2em 0 0 0;
 }
 
 .ui-expander-left .ui-expander-header .ui-icon
@@ -239,8 +229,11 @@
 	}
 	
 	.ui-expander-header a {
+		padding:0;
 		.rotate-text();
-		padding: 0;
+		position: absolute;
+    	top: 2.5em; 
+		left: -1.6em;
 	}
 	
 	.ui-expander-header,
