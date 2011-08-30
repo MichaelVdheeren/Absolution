@@ -1,5 +1,4 @@
-.wijmo-wijprogressbar
-{
+.wijmo-wijprogressbar {
     moz-user-select: none;
     text-align: left;
     float: left;
@@ -7,22 +6,20 @@
     overflow: hidden;
 }
 
-.wijmo-wijprogressbar .ui-progressbar-value
-{
+.wijmo-wijprogressbar .ui-progressbar-value {
     position: absolute;
     margin: -1px;
+    height:100%;
 }
 
 div.wijmo-wijprogressbar-east,
-div.wijmo-wijprogressbar-west
-{
+div.wijmo-wijprogressbar-west {
     width: 200px;
     height: 1.1em;
 }
 
 div.wijmo-wijprogressbar-south,
-div.wijmo-wijprogressbar-north
-{
+div.wijmo-wijprogressbar-north {
     height: 200px;
     width: 1.1em;
     line-height: 100%;
@@ -32,32 +29,31 @@ div.wijmo-wijprogressbar-north
 		border-color: @hoverStateBorderColor; 
 		.gradientLeftToRight(@hoverStateStartColor, @hoverStateEndColor);
     }
+    
+    .gradientLeftToRight(#dfe0e1, #ffffff);
 }
 
-.wijmo-wijprogressbar-east .ui-progressbar-value
-{
+.wijmo-wijprogressbar-east .ui-progressbar-value {
     left: 0;
     height: 100%;
 }
-.wijmo-wijprogressbar-west .ui-progressbar-value
-{
+
+.wijmo-wijprogressbar-west .ui-progressbar-value {
     right: 0;
     height: 100%;
 }
-.wijmo-wijprogressbar-south .ui-progressbar-value
-{
+
+.wijmo-wijprogressbar-south .ui-progressbar-value {
     top: 0;
     width: 100%;
 }
 
-.wijmo-wijprogressbar-north .ui-progressbar-value
-{
+.wijmo-wijprogressbar-north .ui-progressbar-value {
     bottom: 0;
     width: 100%;
 }
 
-.wijmo-wijprogressbar .ui-progressbar-label
-{
+.wijmo-wijprogressbar .ui-progressbar-label {
     display: block;
     position:absolute;
     text-align: center;
@@ -65,45 +61,38 @@ div.wijmo-wijprogressbar-north
     height:100%;
 }
 
-.wijmo-wijprogressbar .wijmo-wijprogressbar-lb-west
-{
+.wijmo-wijprogressbar .wijmo-wijprogressbar-lb-west {
     left:0;
     width:auto;
 }
 
-.wijmo-wijprogressbar .wijmo-wijprogressbar-lb-east
-{
+.wijmo-wijprogressbar .wijmo-wijprogressbar-lb-east {
     right:0;
     width:auto;
 }
 
-.wijmo-wijprogressbar .wijmo-wijprogressbar-lb-south
-{
+.wijmo-wijprogressbar .wijmo-wijprogressbar-lb-south {
     bottom: 0;
     height:auto;
 }
 
-.wijmo-wijprogressbar .wijmo-wijprogressbar-lb-north
-{
+.wijmo-wijprogressbar .wijmo-wijprogressbar-lb-north {
     top: 0;
     height:auto;
 }
 
 .wijmo-wijprogressbar-east .wijmo-wijprogressbar-lb-running,
-.wijmo-wijprogressbar-west .wijmo-wijprogressbar-lb-running
-{
+.wijmo-wijprogressbar-west .wijmo-wijprogressbar-lb-running {
     display:inline;
     width:auto;
 }
 
 .wijmo-wijprogressbar-north .wijmo-wijprogressbar-lb-running,
-.wijmo-wijprogressbar-south .wijmo-wijprogressbar-lb-running
-{
+.wijmo-wijprogressbar-south .wijmo-wijprogressbar-lb-running {
     height:auto;
 }
 
 .wijmo-wijprogressbar-north .ui-progressbar-label,
-.wijmo-wijprogressbar-south .ui-progressbar-label
-{
+.wijmo-wijprogressbar-south .ui-progressbar-label {
     .rotate-text();
 }
