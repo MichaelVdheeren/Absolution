@@ -15,8 +15,7 @@
 .ui-state-error,.ui-widget-content .ui-state-error,.ui-widget-header .ui-state-error{border:1px solid #953737;background:#f35757;}
 .ui-state-error a,.ui-widget-content .ui-state-error a,.ui-widget-header .ui-state-error a{color:inherit;}
 .ui-state-error-text,.ui-widget-content .ui-state-error-text,.ui-widget-header .ui-state-error-text{color:#363636;}
-.ui-priority-primary,.ui-widget-content .ui-priority-primary,.ui-widget-header .ui-priority-primary{font-weight:bold;}
-.ui-priority-secondary,.ui-widget-content .ui-priority-secondary,.ui-widget-header .ui-priority-secondary{opacity:.7;filter:alpha(opacity=70);font-weight:normal;}
+.ui-priority-secondary,.ui-widget-content .ui-priority-secondary,.ui-widget-header .ui-priority-secondary{opacity:.7;filter:alpha(opacity=70);}
 .ui-state-disabled,.ui-widget-content .ui-state-disabled,.ui-widget-header .ui-state-disabled{opacity:.35;filter:alpha(opacity=35);background-image:none;}
 .ui-icon{width:16px;height:16px;background-image:url(images/ui-icons_222222_256x240.png);}
 .ui-widget-content .ui-icon{background-image:url(images/ui-icons_222222_256x240.png);}
@@ -416,30 +415,6 @@ div.button{cursor:pointer;position:relative;}
 .wijmo-wijsplitter-h-collapsed .wijmo-wijsplitter-h-expander .ui-icon{margin-top:-4px;}
 .wijmo-wijsplitter-h-panel2-content{overflow:auto;position:relative;}
 .wijmo-wijsplitter-h-resize-helper{border-bottom:dotted 1px black;overflow:hidden;border-right:dotted 0 black;}
-.wijmo-wijprogressbar{moz-user-select:none;text-align:left;float:left;position:relative;overflow:hidden;}
-.wijmo-wijprogressbar .ui-progressbar-value{position:absolute;border-width:0;margin:0;}
-div.wijmo-wijprogressbar-east{width:200px;height:1.1em;}
-div.wijmo-wijprogressbar-west{width:200px;height:1.1em;}
-div.wijmo-wijprogressbar-south{height:200px;width:1.1em;line-height:100%;}
-div.wijmo-wijprogressbar-north{height:200px;width:1.1em;line-height:100%;}
-.wijmo-wijprogressbar-east .ui-progressbar-value{left:0;height:100%;}
-.wijmo-wijprogressbar-west .ui-progressbar-value{right:0;height:100%;}
-.wijmo-wijprogressbar-south .ui-progressbar-value{top:0;width:100%;}
-.wijmo-wijprogressbar-north .ui-progressbar-value{bottom:0;width:100%;}
-.wijmo-wijprogressbar .ui-progressbar-label{display:block;position:absolute;text-align:center;width:100%;height:100%;}
-.wijmo-wijprogressbar .wijmo-wijprogressbar-lb-west{left:0;width:auto;}
-.wijmo-wijprogressbar .wijmo-wijprogressbar-lb-east{right:0;width:auto;}
-.wijmo-wijprogressbar .wijmo-wijprogressbar-lb-south{bottom:0;height:auto;}
-.wijmo-wijprogressbar .wijmo-wijprogressbar-lb-north{top:0;height:auto;}
-.wijmo-wijprogressbar-east .wijmo-wijprogressbar-lb-running,.wijmo-wijprogressbar-west .wijmo-wijprogressbar-lb-running{display:inline;width:auto;}
-.wijmo-wijprogressbar-north .wijmo-wijprogressbar-lb-running,.wijmo-wijprogressbar-south .wijmo-wijprogressbar-lb-running{height:auto;}
-.wijmo-wijprogressbar-north .ui-progressbar-label,.wijmo-wijprogressbar-south .ui-progressbar-label{-webkit-transform:rotate(-90deg);-moz-transform:rotate(-90deg);}
-.wijmo-wijdialog-captionbutton{height:18px;padding:1px;width:19px;display:inline-block;outline:none;text-align:left;}
-.wijmo-wijdialog-captionbutton:hover,.wijmo-wijdialog-captionbutton .ui-state-focus{padding:0;}
-.wijmo-wijdialog-captionbutton .ui-icon{margin:1px;}
-.wijmo-wijdialog .wijmo-wijdialog-hasframe{padding:0;}
-.wijmo-wijdialog-defaultdockingzone{position:fixed;bottom:0px;left:0px;}
-* html .wijmo-wijdialog-defaultdockingzone .ui-dialog-titlebar{float:left;}
 .wijmo-wijsuperpanel{overflow:hidden;outline:none;background-image:none;}
 .wijmo-wijsuperpanel-statecontainer{overflow:hidden;position:relative;zoom:1;}
 .wijmo-wijsuperpanel-contentwrapper{position:absolute;overflow:hidden;}
@@ -482,26 +457,6 @@ div.wijmo-wijprogressbar-north{height:200px;width:1.1em;line-height:100%;}
 .wijmo-wijlist-ul .wijmo-wijlist-item{margin:1px 0;padding:3px 5px;cursor:pointer;text-align:left;font-weight:normal;border:solid 1px transparent;}
 .wijmo-wijlist-ul .wijmo-wijlist-item.ui-state-hover{font-weight:normal;}
 .wijmo-wijlist .ui-resizable-se{width:7px;height:7px;background:none;}
-.wijmo-wijcalendar{-webkit-user-select:none;-moz-user-select:none;display:block;}
-.wijmo-wijcalendar-header{position:relative;}
-.wijmo-wijcalendar-header-inner{margin:0 1.8em;line-height:1.8em;}
-.wijmo-wijcalendar .ui-datepicker-header{padding:1px;}
-.wijmo-wijcalendar .ui-datepicker-header .ui-state-default{border-color:transparent;background:none;color:inherit;}
-.wijmo-wijcalendar .wijmo-wijcalendar-table{table-layout:fixed;}
-.wijmo-wijcalendar-prevpreview-button,.wijmo-wijcalendar-nextpreview-button{width:16px;margin-top:35%;float:left;}
-.wijmo-wijcalendar-nextpreview-button{float:right;}
-.wijmo-wijcalendar-preview-wrapper .wijmo-wijcalendar{float:left;width:18em;}
-.wijmo-wijcalendar-preview-wrapper .wijmo-wijcalendar .ui-datepicker-calendar{width:80%;float:left;}
-.wijmo-wijcalendar-title,.wijmo-wijcalendar-selectable{cursor:pointer;}
-.ui-datepicker-other-month{text-align:right;}
-.wijmo-wijcalendar-mygrid td span,.wijmo-wijcalendar-mygrid td a{display:block;text-align:center;text-decoration:none;padding:0;}
-.wijmo-wijcalendar-mygrid .ui-state-default a,.wijmo-wijcalendar-mygrid .ui-state-default a:hover,.wijmo-wijcalendar-mygrid .ui-state-hover a,.wijmo-wijcalendar-mygrid .ui-state-hover a:hover{color:inherit;}
-.ui-header-custom img,.ui-footer-custom img{width:100%;}
-.wijmo-wijcalendar table.wijmo-wijcalendar-mygrid{margin-top:2px;border-collapse:separate;table-layout:fixed;}
-.wijmo-wijcalendar table.wijmo-wijcalendar-mygrid .ui-datepicker-week-day{cursor:pointer;}
-.wijmo-wijcalendar-aniwrapper{position:relative;left:0;top:0;}
-.wijmo-wijcalendar-multi-aniwrapper{position:absolute;overflow:hidden;}
-.ui-datepicker-rtl .ui-datepicker-prev .ui-icon,.ui-datepicker-rtl .ui-datepicker-next .ui-icon{direction:rtl;}
 .wijmo-wijtooltip{position:absolute;z-index:9999;margin:0;}
 .wijmo-wijtooltip .wijmo-wijtooltip-close{background:none repeat scroll 0 0 transparent;border:medium none;display:block;height:16px;position:absolute;right:3px;top:3px;width:16px;}
 .wijmo-wijtooltip .wijmo-wijtooltip-title{background:none repeat scroll 0 0 transparent;border:medium none;color:inherit;padding:0.4em;}
@@ -725,8 +680,6 @@ div.wijmo-wijprogressbar-north{height:200px;width:1.1em;line-height:100%;}
 .wijmo-wijwizard-next,.wijmo-wijwizard-prev{display:block;position:absolute;padding:3px 0;}
 .wijmo-wijwizard-next{right:0;top:49%;}
 .wijmo-wijwizard-prev{left:0;top:49%;}
-.wijmo-wijdialog-captionbutton{border-width:1px;border-style:solid;border-color:#000000;background:#a8a9ac;filter:expression("progid:DXImageTransform.Microsoft.gradient(startColorstr='#6a6b6e',endColorstr='#3e3e3e')");-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr='#6a6b6e',endColorstr='#3e3e3e')";background:-moz-linear-gradient(0% 100% 90deg, #3e3e3e, #6a6b6e);background:-webkit-gradient(linear, left top, left bottom, from(#6a6b6e), to(#3e3e3e));background:-o-linear-gradient(0% 100% 90deg, #3e3e3e, #6a6b6e);color:#ffffff;}.wijmo-wijdialog-captionbutton .ui-icon{background-image:url(images/ui-icons_ffffff_256x240.png);}
-.ui-datepicker-title.wijmo-wijcalendar-title{line-height:2.3em;}
 .ui-accordion a{outline:none;}
 .ui-accordion-right .ui-accordion-header,.ui-accordion-left .ui-accordion-header{margin-top:0;margin-left:1px;width:2em;height:12em;overflow:hidden;}
 .ui-accordion-right .ui-accordion-content,.ui-accordion-left .ui-accordion-content{margin:0;height:200px;width:36em;height:12em;padding:0 2.2em;top:0;padding:1px;border:none;}
@@ -815,7 +768,52 @@ wijmo-wijtree a.ui-state-default:link,wijmo-wijtree a.ui-state-default:visited,w
 .wijmo-wijslider-vertical{position:relative;}
 .wijmo-wijslider-vertical .wijmo-wijslider-decbutton{position:absolute;top:0px;bottom:auto;cursor:pointer;}
 .wijmo-wijslider-vertical .wijmo-wijslider-incbutton{position:absolute;top:auto;bottom:0px;cursor:pointer;}
-fieldset{padding:5px;text-shadow:0px 1px 0px #fff;outline:none;border:1px solid #c1c1c1;border-radius:5px;-webkit-border-radius:5px;-moz-border-radius:5px;margin:0px;}
-legend{font-weight:bold;font-size:1.1em;}
+.wijmo-wijdialog .wijmo-wijdialog-hasframe{padding:0;}
+.wijmo-wijdialog-defaultdockingzone{position:fixed;bottom:0px;left:0px;}
+* html .wijmo-wijdialog-defaultdockingzone .ui-dialog-titlebar{float:left;}
+.wijmo-wijdialog-captionbutton{display:inline-block;outline:none;border:1px solid #000000;background:#a8a9ac;filter:expression("progid:DXImageTransform.Microsoft.gradient(startColorstr='#6a6b6e',endColorstr='#3e3e3e')");-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr='#6a6b6e',endColorstr='#3e3e3e')";background:-moz-linear-gradient(0% 100% 90deg, #3e3e3e, #6a6b6e);background:-webkit-gradient(linear, left top, left bottom, from(#6a6b6e), to(#3e3e3e));background:-o-linear-gradient(0% 100% 90deg, #3e3e3e, #6a6b6e);color:#ffffff;}.wijmo-wijdialog-captionbutton .ui-icon{margin:1px;background-image:url(images/ui-icons_ffffff_256x240.png);}
+.wijmo-wijcalendar{-webkit-user-select:none;-moz-user-select:none;display:block;}
+.wijmo-wijcalendar-header{position:relative;}
+.wijmo-wijcalendar-header-inner{margin:0 1.8em;line-height:1.8em;}
+.wijmo-wijcalendar .ui-datepicker-header{padding:1px;}
+.wijmo-wijcalendar .ui-datepicker-header .ui-state-default{border-color:transparent;background:none;color:inherit;}
+.wijmo-wijcalendar .wijmo-wijcalendar-table{table-layout:fixed;}
+.wijmo-wijcalendar-prevpreview-button,.wijmo-wijcalendar-nextpreview-button{width:16px;margin-top:35%;float:left;}
+.wijmo-wijcalendar-nextpreview-button{float:right;}
+.wijmo-wijcalendar-preview-wrapper .wijmo-wijcalendar{float:left;width:18em;}
+.wijmo-wijcalendar-preview-wrapper .wijmo-wijcalendar .ui-datepicker-calendar{width:80%;float:left;}
+.wijmo-wijcalendar-title,.wijmo-wijcalendar-selectable{cursor:pointer;}
+.ui-datepicker-other-month{text-align:right;}
+.wijmo-wijcalendar-mygrid td span,.wijmo-wijcalendar-mygrid td a{display:block;text-align:center;text-decoration:none;padding:0;}
+.wijmo-wijcalendar-mygrid .ui-state-default a,.wijmo-wijcalendar-mygrid .ui-state-default a:hover,.wijmo-wijcalendar-mygrid .ui-state-hover a,.wijmo-wijcalendar-mygrid .ui-state-hover a:hover{color:inherit;}
+.ui-header-custom img,.ui-footer-custom img{width:100%;}
+.wijmo-wijcalendar table.wijmo-wijcalendar-mygrid{margin-top:2px;border-collapse:separate;table-layout:fixed;}
+.wijmo-wijcalendar table.wijmo-wijcalendar-mygrid .ui-datepicker-week-day{cursor:pointer;}
+.wijmo-wijcalendar-aniwrapper{position:relative;left:0;top:0;}
+.wijmo-wijcalendar-multi-aniwrapper{position:absolute;overflow:hidden;}
+.ui-datepicker-rtl .ui-datepicker-prev .ui-icon,.ui-datepicker-rtl .ui-datepicker-next .ui-icon{direction:rtl;}
+.wijmo-wijcalendar-header{position:relative;border:none;-moz-border-radius-bottomleft:0px;-webkit-border-bottom-left-radius:0px;border-bottom-left-radius:0px;-moz-border-radius-bottomright:0px;-webkit-border-bottom-right-radius:0px;border-bottom-right-radius:0px;background:#747073;filter:expression("progid:DXImageTransform.Microsoft.gradient(startColorstr='#4c4c4e',endColorstr='#282425')");-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr='#4c4c4e',endColorstr='#282425')";background:-moz-linear-gradient(0% 100% 90deg, #282425, #4c4c4e);background:-webkit-gradient(linear, left top, left bottom, from(#4c4c4e), to(#282425));background:-o-linear-gradient(0% 100% 90deg, #282425, #4c4c4e);color:#ffffff;}
+.wijmo-wijcalendar .ui-datepicker-group .ui-datepicker-header{border-radius:0px;-webkit-border-radius:0px;-moz-border-radius:0px;}
+.ui-datepicker-title.wijmo-wijcalendar-title{line-height:2.3em;}
+.wijmo-wijprogressbar{moz-user-select:none;text-align:left;float:left;position:relative;overflow:hidden;}
+.wijmo-wijprogressbar .ui-progressbar-value{position:absolute;border-width:0;margin:0;}
+div.wijmo-wijprogressbar-east{width:200px;height:1.1em;}
+div.wijmo-wijprogressbar-west{width:200px;height:1.1em;}
+div.wijmo-wijprogressbar-south{height:200px;width:1.1em;line-height:100%;}
+div.wijmo-wijprogressbar-north{height:200px;width:1.1em;line-height:100%;}
+.wijmo-wijprogressbar-east .ui-progressbar-value{left:0;height:100%;}
+.wijmo-wijprogressbar-west .ui-progressbar-value{right:0;height:100%;}
+.wijmo-wijprogressbar-south .ui-progressbar-value{top:0;width:100%;}
+.wijmo-wijprogressbar-north .ui-progressbar-value{bottom:0;width:100%;}
+.wijmo-wijprogressbar .ui-progressbar-label{display:block;position:absolute;text-align:center;width:100%;height:100%;}
+.wijmo-wijprogressbar .wijmo-wijprogressbar-lb-west{left:0;width:auto;}
+.wijmo-wijprogressbar .wijmo-wijprogressbar-lb-east{right:0;width:auto;}
+.wijmo-wijprogressbar .wijmo-wijprogressbar-lb-south{bottom:0;height:auto;}
+.wijmo-wijprogressbar .wijmo-wijprogressbar-lb-north{top:0;height:auto;}
+.wijmo-wijprogressbar-east .wijmo-wijprogressbar-lb-running,.wijmo-wijprogressbar-west .wijmo-wijprogressbar-lb-running{display:inline;width:auto;}
+.wijmo-wijprogressbar-north .wijmo-wijprogressbar-lb-running,.wijmo-wijprogressbar-south .wijmo-wijprogressbar-lb-running{height:auto;}
+.wijmo-wijprogressbar-north .ui-progressbar-label,.wijmo-wijprogressbar-south .ui-progressbar-label{-webkit-transform:rotate(-90deg);-moz-transform:rotate(-90deg);}
+fieldset{padding:5px;text-shadow:0px 1px 0px #fff;outline:none;border:1px solid #a9a9a9;border-radius:5px;-webkit-border-radius:5px;-moz-border-radius:5px;margin:0px;}
+legend{font-size:1.1em;}
 .wijmo-wijtextbox.ui-widget,textarea,input[type='text'],input[type='password'],input[type='file']{padding:5px;text-shadow:0px 1px 0px #fff;outline:none;border:1px solid #a9a9a9;color:#333333;border-radius:5px;-webkit-border-radius:5px;-moz-border-radius:5px;background:#ffffff;filter:expression("progid:DXImageTransform.Microsoft.gradient(startColorstr='#edeff0',endColorstr='#ffffff')");-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr='#edeff0',endColorstr='#ffffff')";background:-moz-linear-gradient(0% 100% 90deg, #ffffff, #edeff0);background:-webkit-gradient(linear, left top, left bottom, from(#edeff0), to(#ffffff));background:-o-linear-gradient(0% 100% 90deg, #ffffff, #edeff0);}.wijmo-wijtextbox.ui-widget:hover,textarea:hover,input[type='text']:hover,input[type='password']:hover,input[type='file']:hover,.wijmo-wijtextbox.ui-widget:focus,textarea:focus,input[type='text']:focus,input[type='password']:focus,input[type='file']:focus{background:#ffffff;filter:expression("progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfe0e1',endColorstr='#ffffff')");-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfe0e1',endColorstr='#ffffff')";background:-moz-linear-gradient(0% 100% 90deg, #ffffff, #dfe0e1);background:-webkit-gradient(linear, left top, left bottom, from(#dfe0e1), to(#ffffff));background:-o-linear-gradient(0% 100% 90deg, #ffffff, #dfe0e1);}
-input[type='button'],input[type='reset'],input[type='submit']{border-radius:5px;-webkit-border-radius:5px;-moz-border-radius:5px;border-width:1px;border-style:solid;font-weight:bold;cursor:pointer;color:#333333;border-color:#a9a9a9;background:#ffffff;filter:expression("progid:DXImageTransform.Microsoft.gradient(startColorstr='#fdfdfd',endColorstr='#ececec')");-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr='#fdfdfd',endColorstr='#ececec')";background:-moz-linear-gradient(0% 100% 90deg, #ececec, #fdfdfd);background:-webkit-gradient(linear, left top, left bottom, from(#fdfdfd), to(#ececec));background:-o-linear-gradient(0% 100% 90deg, #ececec, #fdfdfd);}input[type='button']:hover,input[type='reset']:hover,input[type='submit']:hover,input[type='button']:focus,input[type='reset']:focus,input[type='submit']:focus{font-weight:bold;color:#ffffff;border-color:#2e63a5;background:#93ffff;filter:expression("progid:DXImageTransform.Microsoft.gradient(startColorstr='#5e9ae2',endColorstr='#3570b8')");-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr='#5e9ae2',endColorstr='#3570b8')";background:-moz-linear-gradient(0% 100% 90deg, #3570b8, #5e9ae2);background:-webkit-gradient(linear, left top, left bottom, from(#5e9ae2), to(#3570b8));background:-o-linear-gradient(0% 100% 90deg, #3570b8, #5e9ae2);}
+input[type='button'],input[type='reset'],input[type='submit']{border-radius:5px;-webkit-border-radius:5px;-moz-border-radius:5px;border-width:1px;border-style:solid;cursor:pointer;color:#333333;border-color:#a9a9a9;background:#ffffff;filter:expression("progid:DXImageTransform.Microsoft.gradient(startColorstr='#fdfdfd',endColorstr='#ececec')");-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr='#fdfdfd',endColorstr='#ececec')";background:-moz-linear-gradient(0% 100% 90deg, #ececec, #fdfdfd);background:-webkit-gradient(linear, left top, left bottom, from(#fdfdfd), to(#ececec));background:-o-linear-gradient(0% 100% 90deg, #ececec, #fdfdfd);}input[type='button']:hover,input[type='reset']:hover,input[type='submit']:hover,input[type='button']:focus,input[type='reset']:focus,input[type='submit']:focus{color:#ffffff;border-color:#2e63a5;background:#93ffff;filter:expression("progid:DXImageTransform.Microsoft.gradient(startColorstr='#5e9ae2',endColorstr='#3570b8')");-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr='#5e9ae2',endColorstr='#3570b8')";background:-moz-linear-gradient(0% 100% 90deg, #3570b8, #5e9ae2);background:-webkit-gradient(linear, left top, left bottom, from(#5e9ae2), to(#3570b8));background:-o-linear-gradient(0% 100% 90deg, #3570b8, #5e9ae2);}

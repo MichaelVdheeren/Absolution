@@ -2,13 +2,12 @@ fieldset {
 	padding: 5px;
 	text-shadow: 0px 1px 0px #fff;
 	outline: none;
-	border: 1px solid #c1c1c1;
+	border: 1px solid @defaultStateBorderColor;
 	.border-radius;
 	margin: 0px;
 }
 
 legend {
-	font-weight: bold;
 	font-size: 1.1em;
 }
 
@@ -35,7 +34,6 @@ input[type='submit'] {
 	.border-radius(5px);
 	border-width: 1px;
 	border-style: solid;
-	font-weight: bold; 
 	cursor: pointer;
 	
 	color: @defaultStateTextColor;
@@ -43,46 +41,8 @@ input[type='submit'] {
 	.gradientTopToBottom(@defaultStateStartColor, @defaultStateEndColor);
 	
 	&:hover, &:focus {
-		//border: 1px solid #8b9fc2;
-		font-weight: bold;
-		//color: #ffffff;
-		//.gradientTopToBottom(#7cc5e3,#217cbf);
-		
 		color: @hoverStateTextColor;
 		border-color: @hoverStateBorderColor; 
 		.gradientTopToBottom(@hoverStateStartColor, @hoverStateEndColor);
 	}
 }
-
-/*
-label:HOVER + input[type=text],
-label:HOVER + input[type=password],
-label:HOVER + input[type=submit],
-label:HOVER + .selector,
-label:HOVER + textarea {
-	box-shadow: 0 0 0.2em #37c, 0 0 0.2em #37c;
-	-moz-box-shadow: 0 0 0.2em #37c, 0 0 0.2em #37c;
-	-webkit-box-shadow: 0 0 0.2em #37c, 0 0 0.2em #37c;
-}
-
-input[type=text]:HOVER,
-input[type=password]:HOVER,
-input[type=submit]:HOVER,
-.selector:HOVER,
-textarea:HOVER {
-	box-shadow: 0 0 0.2em #37c, 0 0 0.2em #37c;
-	-moz-box-shadow: 0 0 0.2em #37c, 0 0 0.2em #37c;
-	-webkit-box-shadow: 0 0 0.2em #37c, 0 0 0.2em #37c;
-}
-	
-input[type=text]:FOCUS,
-input[type=password]:FOCUS,
-input[type=submit]:FOCUS,
-.selector:FOCUS,
-textarea:FOCUS {
-	box-shadow: 0 0 0.2em #37c, 0 0 0.2em #37c;
-	-moz-box-shadow: 0 0 0.2em #37c, 0 0 0.2em #37c;
-	-webkit-box-shadow: 0 0 0.2em #37c, 0 0 0.2em #37c;
-	border-color: #37c;
-}
-*/
