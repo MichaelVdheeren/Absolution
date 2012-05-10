@@ -4,6 +4,7 @@
 { 
 	font-family: Trebuchet MS, Tahoma, Verdana, Arial, sans-serif; 
 	font-size: 1.1em;
+	color: @font;
 	
 	a { color: inherit; }
 	.ui-widget { font-size: 1em; }
@@ -19,7 +20,7 @@
 	
 .ui-widget-content {
 	border-color: @defaultStateBorderColor; 
-	background: #eeeeee;
+	background: #f9f9f9;
 	border-style: solid;
 	border-width: 1px;
 }
@@ -86,10 +87,42 @@
 
 /* Interaction Cues
 ----------------------------------*/
-.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight  {border: 1px solid #8b9fc2; background: #7cc5e3; }
-.ui-state-highlight a, .ui-widget-content .ui-state-highlight a,.ui-widget-header .ui-state-highlight a { color: inherit; }
-.ui-state-error, .ui-widget-content .ui-state-error, .ui-widget-header .ui-state-error {border: 1px solid #953737; background: #f35757; }
-.ui-state-error a, .ui-widget-content .ui-state-error a, .ui-widget-header .ui-state-error a { color: inherit; }
+.ui-state-success, .ui-widget-content .ui-state-success, .ui-widget-header .ui-state-success
+{
+	border: 1px solid #627D3F;
+	background: #90A960;
+	.gradientTopToBottom(#90A960, #76954E);
+}
+
+.ui-state-warning, .ui-widget-content .ui-state-warning, .ui-widget-header .ui-state-warning
+{
+	border: 1px solid #997233;
+	background: #DAB151;
+	.gradientTopToBottom(#DAB151, #CB9940);
+}
+
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight
+{
+	border: 1px solid #2E63A5;
+	background: #49A7DB;
+	.gradientTopToBottom(#49A7DB, #447BC6);
+}
+
+.ui-state-error, .ui-widget-content .ui-state-error, .ui-widget-header .ui-state-error
+{
+	border: 1px solid #A1474B;
+	background: #C36468;
+	.gradientTopToBottom(#C36468, #B85155);
+}
+
+.ui-state-success a, .ui-widget-content .ui-state-success a,.ui-widget-header .ui-state-success a,
+.ui-state-warning a, .ui-widget-content .ui-state-warning a,.ui-widget-header .ui-state-warning a,
+.ui-state-highlight a, .ui-widget-content .ui-state-highlight a,.ui-widget-header .ui-state-highlight a,
+.ui-state-error a, .ui-widget-content .ui-state-error a, .ui-widget-header .ui-state-error a
+{
+	color: inherit;
+}
+
 .ui-state-error-text, .ui-widget-content .ui-state-error-text, .ui-widget-header .ui-state-error-text { color: #363636; }
 
 .ui-priority-secondary,

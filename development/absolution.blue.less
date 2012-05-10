@@ -1,21 +1,35 @@
 // Color information
-@defaultStateStartColor: 	#fdfdfd;
-@defaultStateEndColor: 		#ececec;
-@defaultStateTextColor: 	#333333;
-@defaultStateBorderColor:	#a9a9a9;
+@font:						#243314;
 
-@hoverStateStartColor: 		#5e9ae2;
-@hoverStateEndColor: 		#3570b8;
-@hoverStateTextColor: 		#ffffff;
-@hoverStateBorderColor:		#2e63a5;
+@default-state-top:			#F5F5F5;
+@default-state-bottom:		#E3E3E3;
+@default-state-text:		@font;
+@default-state-border:		#ABABAB;
+
+@hover-state-top:			#ECECEC;
+@hover-state-bottom:		#DCDCDC;
+@hover-state-text:			@font;
+@hover-state-border:		#ABABAB;
+
+
+// Legacy!!!
+@defaultStateStartColor: 	@default-state-top;
+@defaultStateEndColor: 		@default-state-bottom;
+@defaultStateTextColor: 	@default-state-text;
+@defaultStateBorderColor:	@default-state-border;
+
+@hoverStateStartColor: 		@hover-state-top;
+@hoverStateEndColor: 		@hover-state-bottom;
+@hoverStateTextColor: 		@hover-state-text;
+@hoverStateBorderColor:		@hover-state-border;
 
 @focusStateStartColor: 		@hoverStateStartColor;
 @focusStateEndColor: 		@hoverStateEndColor;
 @focusStateTextColor: 		@hoverStateTextColor;
 @focusStateBorderColor:		@hoverStateBorderColor;
 
-@activeStateStartColor: 	#3570b8;
-@activeStateEndColor: 		#5e9ae2;
+@activeStateStartColor: 	#447BC6;
+@activeStateEndColor: 		#49A7DB;
 @activeStateTextColor: 		#ffffff;
 @activeStateBorderColor:	#2e63a5;
 
