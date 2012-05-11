@@ -13,14 +13,22 @@
 				$('#dialog').dialog({
 					autoOpen: false,
 					width: 400,
-					buttons: {
-						"Confirm": function() { 
-							$(this).dialog("close"); 
-						}, 
-						"Cancel": function() { 
-							$(this).dialog("close"); 
-						} 
-					}
+					buttons: [
+						{
+							text: "Confirm",
+							"class": "ui-state-highlight",
+							click: function() { 
+								$(this).dialog("close");
+							}
+						},						
+						{
+							text: "Cancel",
+							"class": "ui-state-error",
+							click: function() { 
+								$(this).dialog("close");
+							}
+						}
+					]
 				});
 			
 				$("#dialog").bind('dialogopen', function() { 

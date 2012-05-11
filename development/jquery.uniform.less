@@ -1,14 +1,3 @@
-input.text, input.email, input.password, textarea.uniform
-{
-	border-color: #a9a9a9;
-	.gradientTopToBottom(#eff0f0, #ffffff);
-}
-
-input.text:focus, input.email:focus, input.password:focus, textarea.uniform:focus
-{
-	.gradientTopToBottom(#dfe0e1, #ffffff);
-}
-
 	div.selector span,div.uploader span.action, div.button
 	{
 		color: @defaultStateTextColor;
@@ -69,36 +58,12 @@ input.text:focus, input.email:focus, input.password:focus, textarea.uniform:focu
 	outline: 0;
 }
 
-/* INPUT & TEXTAREA */
-
-input.text,
-input.email, 
-input.password,
-textarea.uniform
-{
-	padding: 3px;
-	border-style: solid;
-	border-width: 1px;
-	.border-radius(3px);
-	outline: 0;
-}
-
-input.text:focus,
-input.email:focus,
-input.password:focus,
-textarea.uniform:focus
-{
-	-webkit-box-shadow: 0px 0px 4px rgba(0,0,0,0.3);
-	-moz-box-shadow: 0px 0px 4px rgba(0,0,0,0.3);
-	box-shadow: 0px 0px 4px rgba(0,0,0,0.3);
-}
-
 /*  *************************************  *
 	  Select 
  *  *************************************  */
 
 div.selector {
-	.border-radius(5px);
+	.border-radius;
 	border: 1px solid #c1c1c1;
 	position: relative;
 	overflow: hidden;
@@ -250,11 +215,17 @@ div.radio {
 	margin-right: 0.3em;
 	width: 1em; height: 1em;
 	padding: 0.2em;
-	border-color: #a9a9a9;
-	.gradientTopToBottom(#eff0f0, #ffffff);
-	border: 1px solid #a9a9a9;
-	.border-radius(7px);
+	.border-radius(2em);
 	position: relative;
+	
+	border: 1px solid @default-state-border;
+	background-color: @input-bg;
+	.gradientTopToBottom(@input-bg,lighten(@input-bg, @gradient-percentage));
+	
+	&:hover, &:focus {
+		.box-shadow(0,0,3px,#49A7DB);
+		//.gradientTopToBottom(#F8F8F8,#FEFEFE);
+	}
 }
 
 div.radio input {
@@ -291,7 +262,7 @@ div.radio.active.focus span {
 }
 
 div.radio span.checked {
-	background: #5e9ae2;
+	background: @highlight-state-bg;
 	.box-shadow-inset(0,-6px,5px,rgba(0,0,0,.2));
 }
 

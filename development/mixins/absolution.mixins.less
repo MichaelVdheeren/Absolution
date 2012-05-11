@@ -1,4 +1,4 @@
-.border-radius (@radius: 5px) {
+.border-radius (@radius: @border-radius) {
 	border-radius: @radius;
 	-webkit-border-radius: @radius;
 	-moz-border-radius: @radius;
@@ -14,6 +14,12 @@
 	-webkit-box-shadow: inset @arguments;
 	-moz-box-shadow: inset @arguments;
 	box-shadow: inset @arguments;
+}
+
+.text-shadow (@x: 0, @y: 0, @color: #000) {
+	text-shadow: @arguments;
+	-webkit-text-shadow: @arguments;
+	-moz-text-shadow: @arguments;
 }
 
 .rotate-text() {

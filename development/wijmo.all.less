@@ -207,103 +207,6 @@
 
 
 
-/* SuperPanel
-----------------------------------*/
-.wijmo-wijsuperpanel
-{
-    overflow: hidden;
-    outline: none;
-    background-image: none;
-}
-.wijmo-wijsuperpanel-statecontainer
-{
-    overflow: hidden;
-    position: relative;
-    zoom:1;
-}
-.wijmo-wijsuperpanel-contentwrapper
-{
-    position: absolute;
-    overflow: hidden;
-
-}
-.wijmo-wijsuperpanel-hbarcontainer, .wijmo-wijsuperpanel-vbarcontainer
-{
-    font-size: 0px;
-    border:0;
-}
-.wijmo-wijsuperpanel-templateouterwrapper
-{
-    position: relative; 
-/*    overflow:auto; */
-    zoom: 1;
-}
-
-.wijmo-wijsuperpanel-vbarcontainer .ui-state-default, .wijmo-wijsuperpanel-hbarcontainer .ui-state-default
-{
-    width: 16px;
-    height: 16px;
-    position: absolute;
-}
-.wijmo-wijsuperpanel .wijmo-wijsuperpanel-vbarcontainer
-{
-    position: absolute;
-    width: 18px;
-    padding-top: 18px;
-    padding-bottom: 18px;
-    border: none;
-}
-.wijmo-wijsuperpanel .wijmo-wijsuperpanel-hbarcontainer
-{
-    position: absolute;
-    height: 18px;
-    padding-left: 18px;
-    padding-right: 18px;
-    border: none;
-}
-.wijmo-wijsuperpanel-handle
-{
-    position: absolute;
-    font-size:0px;
-    overflow:hidden;
-}
-.wijmo-wijsuperpanel-handle *
-{
-    font-size:0px;
-}
-.wijmo-wijsuperpanel-helper
-{
-    border-style: dotted;
-    background: transparent;
-}
-
-.wijmo-wijsuperpanel-button
-{
-    position: absolute;
-    padding: 4px;
-}
-.wijmo-wijsuperpanel .ui-icon-gripsmall-diagonal-se
-{
-    background: none;
-    width: 7px;
-    height: 7px;
-}
-.wijmo-wijsuperpanel-hbar-buttonleft
-{
-    left: 0;
-}
-.wijmo-wijsuperpanel-hbar-buttonright
-{
-    right: 0;
-}
-.wijmo-wijsuperpanel-vbar-buttontop
-{
-    top: 0;
-}
-.wijmo-wijsuperpanel-vbar-buttonbottom
-{
-    bottom: 0;
-}
 .wijmo-wijtextbox
 {
 	outline:none;
@@ -1026,41 +929,6 @@ display:inline-block;
 float:right;
 }
 
-.wijmo-wijpager .ui-icon
-{
-    cursor: pointer;
-}
-.wijmo-wijpager .ui-list
-{
-    float: left;
-    padding: 1px;
-    margin: 0;
-}
-.wijmo-wijpager .ui-list .ui-page
-{
-    float: left;
-    height: auto;
-    line-height: 16px;
-    list-style: none outside none;
-    margin: 0 1px;
-    width: auto;
-}
-.wijmo-wijpager .ui-list .ui-page span
-{
-    margin: 2px;
-}
-
-.wijmo-wijpager .ui-list .ui-page a, .wijmo-wijpager .ui-list .ui-state-active span
-{
-    padding: 2px 5px;
-    display: block;
-    margin: 0;
-}
-.wijmo-wijpager .ui-list
-{
-    background: none;
-    border: none;
-}
 /* wijcombobox
  ----------------------------------*/
 .wijmo-wijcombobox
@@ -1187,6 +1055,7 @@ float:right;
 {
     position: relative;
     width: 150px;
+    border: 0px;
 }
 
 .wijmo-wijinput-wrapper
@@ -1960,11 +1829,10 @@ float:right;
 
 
 
-@import "wijmo.accordion.less";
 @import "wijmo.tabs.less";
 @import "wijmo.tree.less";
 @import "wijmo.expander.less";
 @import "wijmo.slider.less";
-@import "wijmo.dialog.less";
-@import "wijmo.calendar.less";
-@import "wijmo.progressbar.less";
+@import "dialog.less";
+@import "wijmo.pager.less";
+@import "superpanel.less";

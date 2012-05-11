@@ -35,9 +35,10 @@
 
 .ui-slider-horizontal { 
 	height: .6em;
+	.gradientTopToBottom(@progressbar-back-top, @progressbar-back-bottom);
 	
 	.ui-slider-handle { 
-		top: -.4em;
+		top: -.43em;
 		margin-left: -.6em;
 	}
 	
@@ -48,7 +49,10 @@
 	
 	.ui-widget-header { 
 		color: #ffffff;
-		.gradientTopToBottom(#5e9ae2, #3570b8);
+		border: 1px solid @progressbar-front-border;
+		margin: -1px 0px 0px -1px;
+		.gradientTopToBottom(@progressbar-front-top, @progressbar-front-bottom);
+		.border-radius;
 	}
 
 	
@@ -61,9 +65,10 @@
 .ui-slider-vertical {
 	width: .6em;
 	height: 100px; 
+	.gradientLeftToRight(@progressbar-back-top, @progressbar-back-bottom);
 	
 	.ui-slider-handle {
-		left: -.4em;
+		left: -.43em;
 		margin-left: 0;
 		margin-bottom: -.6em;
 	}
@@ -75,7 +80,10 @@
 	
 	.ui-widget-header {
 		color: #ffffff;
-		.gradientLeftToRight(#5e9ae2, #3570b8);
+		margin: 0px 0px -1px -1px;
+		border: 1px solid @progressbar-front-border;
+		.gradientLeftToRight(@progressbar-front-top, @progressbar-front-bottom);
+		.border-radius;
 	}
 	
 	.ui-slider-range-min { bottom: 0; }

@@ -1,21 +1,59 @@
-.wijmo-wijprogressbar {
+.wijmo-wijprogressbar,
+.ui-progressbar
+{
+	height: 2em;
+	margin: 5px 0px;
+	
+	.ui-progressbar-value
+	{
+		margin: -1px;
+		height: 100%;
+	}
+	
+	.ui-widget-header
+	{
+		border-width: 1px;
+		border-style: solid;
+		font-weight: bold;
+		text-align: center;
+	}
+	
+	.ui-widget-header
+	{
+		color: @hoverStateTextColor;
+		border-color: @progressbar-front-border;
+		.gradientTopToBottom(@progressbar-front-top, @progressbar-front-bottom);
+	}
+
+	.gradientTopToBottom(@progressbar-back-top, @progressbar-back-bottom);
+}
+
+
+.wijmo-wijprogressbar
+{
     moz-user-select: none;
     text-align: left;
     float: left;
     position: relative;
-    overflow: hidden;
-}
-
-.wijmo-wijprogressbar .ui-progressbar-value {
-    position: absolute;
-    margin: -1px;
-    height:100%;
+    
+    .ui-progressbar-value
+    {
+        position: absolute;
+    }
 }
 
 div.wijmo-wijprogressbar-east,
 div.wijmo-wijprogressbar-west {
     width: 200px;
     height: 1.1em;
+    
+    .ui-widget-header {
+    	color: @hoverStateTextColor;
+    	border-color: @progressbar-front-border;
+    	.gradientTopToBottom(@progressbar-front-top, @progressbar-front-bottom);
+    }
+    
+    .gradientTopToBottom(@progressbar-back-top, @progressbar-back-bottom);
 }
 
 div.wijmo-wijprogressbar-south,
@@ -26,11 +64,11 @@ div.wijmo-wijprogressbar-north {
     
     .ui-widget-header {
     	color: @hoverStateTextColor;
-		border-color: @hoverStateBorderColor; 
-		.gradientLeftToRight(@hoverStateStartColor, @hoverStateEndColor);
+		border-color: @progressbar-front-border;
+		.gradientLeftToRight(@progressbar-front-top, @progressbar-front-bottom);
     }
     
-    .gradientLeftToRight(#dfe0e1, #ffffff);
+    .gradientLeftToRight(@progressbar-back-top, @progressbar-back-bottom);
 }
 
 .wijmo-wijprogressbar-east .ui-progressbar-value {

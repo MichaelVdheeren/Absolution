@@ -13,7 +13,7 @@
 	.box-shadow(0px,0px,5px,#282425);
 	
 	.ui-menu {
-		margin-top: -3px;
+		margin-top: 10px;
 	}
 	
 	.ui-menu-item {
@@ -30,18 +30,28 @@
 			padding:.2em .4em;
 			line-height:1.7;
 			zoom:1;
+
+			font-weight: normal;
+			margin: 0px -6px 0px -6px;
+			.border-radius(0px);
+			padding-left: 9px;
 			
-			&.ui-state-hover,
-			&.ui-state-active {
-				font-weight: normal;
-				margin: -1px -6px -1px -6px;
-				.border-radius(0px);
-				padding-left: 9px;
-			}
+			.ui-state-hover(@highlight-state-text, darken(@highlight-state-bg, 0.5*@gradient-percentage));
+			.ui-state-focus(@highlight-state-text, darken(@highlight-state-bg, 0.5*@gradient-percentage));
+			.ui-state-active(@highlight-state-text, @highlight-state-bg);
+			.ui-state-disabled(@highlight-state-text, @highlight-state-bg);
+		}
+		
+		a.ui-state-hover,
+		a.ui-state-focus
+		{ 
+			margin: -1px -6px -1px -6px;
+			border: 1px solid @highlight-state-border;
 		}
 	}
 }
 
+/*
 .ui-autocomplete-input
 {
 	padding: 5px;
@@ -57,9 +67,10 @@
 		.gradientTopToBottom(#dfe0e1, #ffffff);
 	}
 }
+*/
 
 .ui-autocomplete.ui-menu.ui-widget.ui-widget-content {
-	color: @defaultStateTextColor;
-	border-color: @defaultStateBorderColor; 
-	.gradientTopToBottom(@defaultStateStartColor, @defaultStateEndColor);
+	color: @default-state-text; 
+	border-color: @default-state-border; 
+	background: white;
 }
