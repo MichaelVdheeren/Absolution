@@ -4,7 +4,7 @@
 	padding: 0.0em;
 	width: 300px;
 	overflow: hidden;
-	border-color: #2F2F2F;
+	border: 2px solid #2F2F2F;
 	.box-shadow(0px,0px,5px,#282425);
 	
 	.ui-dialog-title
@@ -104,21 +104,12 @@
 			}
 			
 			.ui-state-highlight;
-			border-color: #000000;
+			.ui-state-hover(@highlight-state-text, darken(@highlight-state-bg, 0.5*@gradient-percentage));
+			.ui-state-focus(@highlight-state-text, darken(@highlight-state-bg, 0.5*@gradient-percentage));
+			.ui-state-active(@highlight-state-text, @highlight-state-bg);
+			.ui-state-disabled(@highlight-state-text, @highlight-state-bg);
 			
-//			&.ui-state-active
-//			{
-//				color: @activeStateTextColor;
-//				border-color: @activeStateBorderColor; 
-//				.gradientTopToBottom(@activeStateStartColor, @activeStateEndColor);
-//			}
-//			
-//			&.ui-state-hover, &.ui-state-focus
-//			{ 
-//				color: @hoverStateTextColor;
-//				border-color: @hoverStateBorderColor; 
-//				.gradientTopToBottom(@hoverStateStartColor, @hoverStateEndColor);
-//			}
+			border-color: #000000;
 		}
 	}
 	

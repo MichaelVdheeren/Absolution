@@ -18,37 +18,35 @@
 	}
 }
 	
-.ui-widget-content {
+.ui-widget-content
+{
 	border-color: @default-state-border; 
 	background: @widget-content-bg;
 	border-style: solid;
 	border-width: 1px;
 }
 	
-.ui-widget-header {
+.ui-widget-header
+{
 	border-style: solid;
 	border-width: 1px;
+	.ui-state-default;
 }
 
 .ui-state-default,
 .ui-widget-content .ui-state-default,
-.ui-widget-header .ui-state-default,
-.ui-widget-header {
+.ui-widget-header .ui-state-default
+{
 	color: @default-state-text;
 	border-color: @default-state-border;
 	background-color: @default-state-bg;
 	.gradientTopToBottom(@default-state-bg, darken(@default-state-bg, @gradient-percentage));
-	
-	.ui-state-hover(@default-state-text, darken(@default-state-bg, 0.5*@gradient-percentage));
-	.ui-state-focus(@default-state-text, darken(@default-state-bg, 0.5*@gradient-percentage));
-	.ui-state-active(@default-state-text, @default-state-bg);
-	.ui-state-disabled(@default-state-text, @default-state-bg);
 }
 
 .ui-state-hover(@text, @bg)
 {
 	&:hover,
-	&.ui-state-hover
+	.ui-state-hover
 	{
 		color: @text;
 		background-color: @bg;
@@ -59,7 +57,7 @@
 .ui-state-focus(@text, @bg)
 {
 	&:focus,
-	&.ui-state-focus
+	.ui-state-focus
 	{ 
 		color: @text;
 		background-color: @bg;
@@ -70,7 +68,7 @@
 .ui-state-active(@text, @bg)
 {
 	&:active,
-	&.ui-state-active
+	.ui-state-active
 	{ 
 		text-shadow: none;
 		color: @text;
@@ -81,7 +79,7 @@
 
 .ui-state-disabled(@text, @bg)
 {
-	&.ui-state-disabled
+	.ui-state-disabled
 	{ 
 		text-shadow: none;
 		color: lighten(@text,50%);
@@ -134,12 +132,6 @@
 	border: 1px solid @success-state-border;
 	background: @success-state-bg;
 	.gradientTopToBottom(@success-state-bg, darken(@success-state-bg, @gradient-percentage));
-	
-	.ui-state-hover(@success-state-text, darken(@success-state-bg, 0.5*@gradient-percentage));
-	.ui-state-focus(@success-state-text, darken(@success-state-bg, 0.5*@gradient-percentage));
-	.ui-state-active(@success-state-text, @success-state-bg);
-	.ui-state-disabled(@success-state-text, @success-state-bg);
-	
 	a { color: inherit }
 }
 
@@ -153,12 +145,6 @@
 	border: 1px solid @warning-state-border;
 	background: @warning-state-bg;
 	.gradientTopToBottom(@warning-state-bg, darken(@warning-state-bg, @gradient-percentage));
-	
-	.ui-state-hover(@warning-state-text, darken(@warning-state-bg, 0.5*@gradient-percentage));
-	.ui-state-focus(@warning-state-text, darken(@warning-state-bg, 0.5*@gradient-percentage));
-	.ui-state-active(@warning-state-text, @warning-state-bg);
-	.ui-state-disabled(@warning-state-text, @warning-state-bg);
-	
 	a { color: inherit }
 }
 
@@ -172,12 +158,6 @@
 	border: 1px solid @highlight-state-border;
 	background: @highlight-state-bg;
 	.gradientTopToBottom(@highlight-state-bg, darken(@highlight-state-bg, @gradient-percentage));
-	
-	.ui-state-hover(@highlight-state-text, darken(@highlight-state-bg, 0.5*@gradient-percentage));
-	.ui-state-focus(@highlight-state-text, darken(@highlight-state-bg, 0.5*@gradient-percentage));
-	.ui-state-active(@highlight-state-text, @highlight-state-bg);
-	.ui-state-disabled(@highlight-state-text, @highlight-state-bg);
-	
 	a { color: inherit }
 }
 
@@ -191,12 +171,6 @@
 	border: 1px solid @error-state-border;
 	background: @error-state-bg;
 	.gradientTopToBottom(@error-state-bg, darken(@error-state-bg, @gradient-percentage));
-	
-	.ui-state-hover(@error-state-text, darken(@error-state-bg, 0.5*@gradient-percentage));
-	.ui-state-focus(@error-state-text, darken(@error-state-bg, 0.5*@gradient-percentage));
-	.ui-state-active(@error-state-text, @error-state-bg);
-	.ui-state-disabled(@error-state-text, @error-state-bg);
-	
 	a { color: inherit }
 }
 

@@ -20,6 +20,8 @@
 	text-shadow: @arguments;
 	-webkit-text-shadow: @arguments;
 	-moz-text-shadow: @arguments;
+	filter: "progid:DXImageTransform.Microsoft.DropShadow(OffX='@{x}', OffY='@{y}', Color='@{color}')";
+	-ms-filter: "progid:DXImageTransform.Microsoft.DropShadow(OffX='@{x}', OffY='@{y}', Color='@{color}')";
 }
 
 .rotate-text() {

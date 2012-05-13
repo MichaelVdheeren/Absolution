@@ -1,8 +1,10 @@
-	div.selector span,div.uploader span.action, div.button
+div.selector span,div.uploader span.action, div.button
 	{
-		color: @defaultStateTextColor;
-		border-color: @defaultStateBorderColor; 
-		.gradientTopToBottom(@defaultStateStartColor, @defaultStateEndColor);
+		.ui-state-default;
+		border: none;
+//		color: @defaultStateTextColor;
+//		border-color: @defaultStateBorderColor; 
+//		.gradientTopToBottom(@defaultStateStartColor, @defaultStateEndColor);
 	}
 	
 	div.uploader.focus span.action, div.uploader.hover span.action, div.uploader:hover span.action,
@@ -14,8 +16,7 @@
 		.gradientTopToBottom(@hoverStateStartColor, @hoverStateEndColor);
 	}
 	
-		div.uploader.active span.action, div.uploader:active span.action,
-	div.button.active, div.button:active,
+	div.uploader.active span.action, div.uploader:active span.action,
 	div.selector.focus:active span,
 	div.selector:hover:active span,
 	div.selector.active:hover span,
@@ -64,24 +65,18 @@
 
 div.selector {
 	.border-radius;
-	border: 1px solid #c1c1c1;
+	border: 1px solid @default-state-border;
 	position: relative;
 	overflow: hidden;
-	background: #ffffff url('images/selector.png') right center no-repeat;
-	-webkit-box-shadow: inset 0 -10px 9px rgba(0,0,0,.05);
-	-moz-box-shadow: inset 0 -10px 9px rgba(0,0,0,.05);
-	box-shadow: inset 0 -10px 9px rgba(0,0,0,.05);
-	margin: 2px -2px;
+	background: @default-state-bg url('images/selector.png') right center no-repeat;
+	-webkit-box-shadow: inset 0 -10px 15px rgba(0,0,0,.10);
+	-moz-box-shadow: inset 0 -10px 15px rgba(0,0,0,.10);
+	box-shadow: inset 0 -10px 15px rgba(0,0,0,.10);
+	margin: 2px -2px 2px 0px;
 }
 
 div.selector span {
-	-moz-border-radius-topleft: 4px; 
-	-webkit-border-top-left-radius: 4px; 
-	border-top-left-radius: 4px;
-	-moz-border-radius-bottomleft: 4px; 
-	-webkit-border-bottom-left-radius: 4px; 
-	border-bottom-left-radius: 4px;
-	border-right: 1px solid #c1c1c1;
+	border-right: inherit;
 	display: block;
 	overflow: hidden;
 	text-overflow: ellipsis;
@@ -100,26 +95,6 @@ div.selector select {
 	width: 100%;
 	opacity: 0;
 	filter: ~"alpha(opacity:0)";
-}
-
-div.selector.focus,
-div.selector.hover,
-div.selector:hover,
-div.selector.focus:active,
-div.selector.focus.active,
-div.selector:hover:active,
-div.selector.active:hover,
-div.selector:active, 
-div.selector.active {
-	border: 1px solid #2e63a5;
-}
-
-div.selector.disabled {
-
-}
-
-div.selector.disabled span {
-
 }
 
 /*  *************************************  *
@@ -300,23 +275,17 @@ div.radio.disabled.active span.checked {
 
 div.uploader {
 	.border-radius(5px);
-	border: 1px solid #c1c1c1;
+	border: 1px solid @default-state-border;
 	cursor: pointer;
 	position: relative;
 	overflow: hidden;
 	cursor: default;
-	.gradientTopToBottom(#eff0f0,#ffffff);
+	padding: 0px !important;
 }
 
 div.uploader span.action {
 	line-height: 100%;
 	padding: 5px;
-	-moz-border-radius-topright: 4px;
-	-webkit-border-top-right-radius: 4px;
-	border-top-right-radius: 4px;
-	-moz-border-radius-bottomright: 4px;
-	-webkit-border-bottom-right-radius: 4px;
-	border-bottom-right-radius: 4px;
 	text-align: center;
 	float: right;
 	display: inline;
@@ -340,33 +309,6 @@ div.uploader span.filename {
 	cursor: default;
 }
 
-div.uploader.focus,
-div.uploader.hover,
-div.uploader:hover {
- 	border-width: 1px;
-	border-style: solid;
-	border-color: #2e63a5;
-}
-
-div.uploader.focus span.action,
-div.uploader.hover span.action,
-div.uploader:hover span.action,
-div.uploader.active span.action,
-div.uploader:active span.action {
-	
-}
-
-div.uploader.focus.active span.action,
-div.uploader:focus.active span.action,
-div.uploader.focus:active span.action,
-div.uploader:focus:active span.action {
-
-}
-
-div.uploader.disabled {
-
-}
-
 div.uploader.disabled span.action {
   color: #aaa;
 }
@@ -388,50 +330,4 @@ div.uploader input {
   border: none;
   cursor: default;
   width: 100%;
-}
-
-/*  *************************************  *
-	  Button 
- *  *************************************  */
-
-div.button, div.button span
-{
-	.border-radius;
-}
-
-div.button{
-	border-style: solid;
-	border-width: 1px;
-}
-
-div.button.disabled,
-div.button:disabled {
-
-}
-
-div.button.disabled span,
-div.button:disabled span {
-  color: #bbb;
-  cursor: default;
-}
-
-div.button span {
-	font-weight: bold;
-	font-family: inherit;
-	padding: 5px;
-	display: -moz-inline-box;
-	display: inline-block;
-	line-height: 1;
-	text-align: center;
-}
-
-div.button a,
-div.button button,
-div.button input {
-  position: absolute;
-}
-
-div.button {
-  cursor: pointer;
-  position: relative;
 }

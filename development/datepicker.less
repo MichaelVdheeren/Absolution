@@ -2,6 +2,7 @@
 	width: 17em;
 	padding: 0;
 	border-color: #2F2F2F;
+	border-width: 2px;
 	.box-shadow(0px,0px,5px,#282425);
 	
 	.ui-datepicker-header { 
@@ -28,6 +29,10 @@
 		cursor: pointer;
 		
 		.ui-state-highlight;
+		.ui-state-hover(@highlight-state-text, darken(@highlight-state-bg, 0.5*@gradient-percentage));
+		.ui-state-focus(@highlight-state-text, darken(@highlight-state-bg, 0.5*@gradient-percentage));
+		.ui-state-active(@highlight-state-text, @highlight-state-bg);
+		.ui-state-disabled(@highlight-state-text, @highlight-state-bg);
 		border-color: #000000;
 	}
 	
@@ -42,74 +47,78 @@
 
 .ui-datepicker table
 {
-	.ui-state-disabled,
-	.ui-widget-content .ui-state-disabled,
-	.ui-widget-header .ui-state-disabled
-	{
-		background: none;
-		border: 0px;
-	}
-
-	.ui-state-default,
-	.ui-widget-content .ui-state-default,
-	.ui-widget-header .ui-state-default,
-	.wijmo-wijcalendar .ui-datepicker-header .ui-state-default
-	{
-		background: #dddddd;
-		background: none;
-		.border-radius(2em);
-		margin: 2px;
+	border-collapse:collapse;
+//	.ui-state-default,
+//	.ui-widget-content .ui-state-default,
+//	.ui-widget-header .ui-state-default,
+//	.wijmo-wijcalendar .ui-datepicker-header .ui-state-default
+//	{
+//		background: none;
+//		.border-radius;
+//	}
+	
+	th {
+		border: 1px solid #E0DCE0;
+		border-bottom: 1px solid #a9a9a9;
+		background: #E0DCE0;
 	}
 	
-	.ui-state-highlight, 
-	.ui-widget-content .ui-state-highlight, 
-	.ui-widget-header .ui-state-highlight
-	{
-		border-width: 1px;
-		border-style: solid;
-		color: @defaultStateTextColor;
-		border-color: @defaultStateBorderColor; 
-		.gradientTopToBottom(@defaultStateStartColor, @defaultStateEndColor);
+	td {
+		border: 1px solid @default-state-border;
+		
+		.ui-state-disabled(@default-state-text, @default-state-bg);
 	}
 	
-	.ui-state-focus, 
-	.ui-widget-content .ui-state-focus, 
-	.ui-widget-header .ui-state-focus
-	{
-		border-width: 1px;
-		border-style: solid;
-		color: @defaultStateTextColor;
-		border-color: @defaultStateBorderColor; 
-		.gradientTopToBottom(@defaultStateStartColor, @defaultStateEndColor);
+	tr:first-child th,
+	tr:last-child td,
+	tr td:first-child,
+	tr th:first-child,
+	tr td:last-child,
+	tr th:last-child {
+	  border-right: 0;
 	}
 	
-	.ui-state-hover,
-	.ui-widget-content .ui-state-hover,
-	.ui-widget-header .ui-state-hover
-	{
-		border-width: 1px;
-		border-style: solid;
-		color: @hoverStateTextColor;
-		border-color: @hoverStateBorderColor; 
-		.gradientTopToBottom(@hoverStateStartColor, @hoverStateEndColor);
+	td.ui-datepicker-today {
+		background-color: @default-state-bg;
+		.gradientTopToBottom(@default-state-bg, darken(@default-state-bg, @gradient-percentage));
+		.ui-state-hover(@default-state-text, darken(@default-state-bg, 0.5*@gradient-percentage));
+		.ui-state-focus(@default-state-text, darken(@default-state-bg, 0.5*@gradient-percentage));
 	}
 	
-	.ui-state-active,
-	.ui-widget-content .ui-state-active,
-	.ui-widget-header .ui-state-active
-	{
-		border-width: 1px;
-		border-style: solid;
-		color: @activeStateTextColor;
-		border-color: @activeStateBorderColor; 
-		.gradientTopToBottom(@activeStateStartColor, @activeStateEndColor);
+	td.ui-datepicker-today a.ui-state-default.ui-state-highlight:not(.ui-state-active) {
+		background: url(images/corner.png) top right no-repeat;
 	}
-}
-
-
-.ui-datepicker-calendar th {
-	border-bottom: 1px solid #a9a9a9;
-	background: #E0DCE0;
+	
+	td a {
+		&.ui-state-default {
+			padding-top: 6px;
+			padding-bottom: 6px;
+			border: none;
+			color: @default-state-text;
+			.border-radius(0px);
+			text-shadow: none;
+			
+			background-color: @default-state-bg;
+			.gradientTopToBottom(@default-state-bg, darken(@default-state-bg, @gradient-percentage));
+			
+			.ui-state-hover(@default-state-text, darken(@default-state-bg, 0.5*@gradient-percentage));
+			.ui-state-focus(@default-state-text, darken(@default-state-bg, 0.5*@gradient-percentage));
+		}
+		
+		&.ui-state-active {
+			.ui-state-highlight;
+			.border-radius();
+			position:relative;
+			margin: -2px;
+			padding-top: 7px;
+			padding-bottom: 7px;
+			.box-shadow(0px,0px,4px,@default-state-border);
+			
+			&.ui-state-hover {
+				.ui-state-highlight;
+			}
+		}
+	}
 }
 
 .ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-prev:hover { left: 4px; }
@@ -120,18 +129,18 @@
 .ui-datepicker select.ui-datepicker-month-year {width: 100%;}
 .ui-datepicker select.ui-datepicker-month, 
 .ui-datepicker select.ui-datepicker-year { width: 49%;}
-.ui-datepicker table {width: 100%; font-size: .9em; border-collapse: collapse; margin:0 0 .4em; }
+.ui-datepicker table {width: 100%; font-size: .9em; border-collapse: collapse; margin:0; }
 .ui-datepicker th { padding: .7em .3em; text-align: center; font-weight: bold; }
 .ui-datepicker td { border: 0; padding: 0px; }
 .ui-datepicker td span, .ui-datepicker td a { display: block; padding: .6em; text-align: center; text-decoration: none; }
-.ui-datepicker .ui-datepicker-buttonpane { margin: .7em 0 0 0; padding:0 .2em; border-left: 0; border-right: 0; border-bottom: 0; }
+.ui-datepicker .ui-datepicker-buttonpane { margin: 0 0 0 0; padding:0 .2em; border: 0px; }
 .ui-datepicker .ui-datepicker-buttonpane button { float: right; margin: .5em .2em .4em; cursor: pointer; padding: .2em .6em .3em .6em; width:auto; overflow:visible; }
 .ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current { float:left; }
 
 /* with multiple calendars */
 .ui-datepicker.ui-datepicker-multi { width:auto; }
 .ui-datepicker-multi .ui-datepicker-group { float:left; }
-.ui-datepicker-multi .ui-datepicker-group table { width:100%; margin:0 auto .4em; }
+.ui-datepicker-multi .ui-datepicker-group table { width:100%; margin:0 auto 0; }
 .ui-datepicker-multi-2 .ui-datepicker-group { width:50%; }
 .ui-datepicker-multi-3 .ui-datepicker-group { width:33.4%; }
 .ui-datepicker-multi-4 .ui-datepicker-group { width:25%; }
@@ -294,12 +303,7 @@
 .wijmo-wijcalendar-header {
 	position:relative;
 	border: none;
-	-moz-border-radius-bottomleft: 0px;
-	-webkit-border-bottom-left-radius: 0px;
-	border-bottom-left-radius: 0px;
-	-moz-border-radius-bottomright: 0px;
-	-webkit-border-bottom-right-radius: 0px;
-	border-bottom-right-radius: 0px;
+	.border-radius(0px);
 	.gradientTopToBottom(@dialog-title-bg, darken(@dialog-title-bg,@gradient-percentage));
 	color: @titleBarTextColor;
 }
