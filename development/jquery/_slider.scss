@@ -1,0 +1,128 @@
+.ui-slider {
+	position: relative; text-align: left;
+	
+	.ui-slider-handle {
+		position: absolute;
+		z-index: 2;
+		width: 1.2em;
+		height: 1.2em;
+		cursor: default;
+		
+		@extend .ui-state-default;
+		@include ui-state-interactions($default-state-text, $default-state-bg);
+	}
+	
+	.ui-slider-range {
+		position: absolute;
+		z-index: 1;
+		font-size: .7em;
+		display: block;
+		border: 0;
+		background-position: 0 0;
+	}
+}
+
+.ui-slider-horizontal { 
+	height: .6em;
+	@include gradientTopToBottom($progressbar-back-top, $progressbar-back-bottom);
+	
+	.ui-slider-handle { 
+		top: -.43em;
+		margin-left: -.6em;
+	}
+	
+	.ui-slider-range {
+		top: 0;
+		height: 100%;
+	}
+	
+	.ui-widget-header { 
+		color: #ffffff;
+		border: 1px solid $progressbar-front-border;
+		margin: -1px 0px 0px -1px;
+		@include gradientTopToBottom($progressbar-front-top, $progressbar-front-bottom);
+		@include border-radius;
+	}
+
+	
+	.ui-slider-range-min { left: 0; }
+	.ui-slider-range-max { right: 0; }
+	.ui-widget-header { font-weight: bold; }
+	.ui-slider-handle { @include border-radius(0.7em); }
+}
+
+.ui-slider-vertical {
+	width: .6em;
+	height: 100px; 
+	@include gradientLeftToRight($progressbar-back-top, $progressbar-back-bottom);
+	
+	.ui-slider-handle {
+		left: -.43em;
+		margin-left: 0;
+		margin-bottom: -.6em;
+	}
+	
+	.ui-slider-range {
+		left: 0;
+		width: 100%;
+	}
+	
+	.ui-widget-header {
+		color: #ffffff;
+		margin: 0px 0px -1px -1px;
+		border: 1px solid $progressbar-front-border;
+		@include gradientLeftToRight($progressbar-front-top, $progressbar-front-bottom);
+		@include border-radius;
+	}
+	
+	.ui-slider-range-min { bottom: 0; }
+	.ui-slider-range-max { top: 0; }
+	.ui-widget-header { font-weight: bold; }
+	.ui-slider-handle { @include border-radius(0.7em); }
+}
+
+  /* WijSlider  horizontal
+----------------------------------*/
+.wijmo-wijslider-horizontal
+{
+	position: relative;
+}
+        
+.wijmo-wijslider-horizontal .wijmo-wijslider-decbutton
+{
+    position: absolute;
+    left: 0px;
+    right: auto;
+    cursor:pointer;
+}
+
+.wijmo-wijslider-horizontal .wijmo-wijslider-incbutton
+{
+    position: absolute;
+    left: auto;
+    right: 0px;
+    cursor:pointer;
+}
+
+  /* WijSlider  vertical
+----------------------------------*/
+.wijmo-wijslider-vertical
+{
+	position: relative;
+}
+        
+.wijmo-wijslider-vertical .wijmo-wijslider-decbutton
+{
+    position: absolute;
+    top: 0px;
+    bottom: auto;
+    cursor:pointer;
+}
+
+.wijmo-wijslider-vertical .wijmo-wijslider-incbutton
+{
+    position: absolute;
+    top: auto;
+    bottom: 0px;
+    cursor:pointer;
+}

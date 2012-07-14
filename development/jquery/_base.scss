@@ -1,0 +1,105 @@
+/* Component containers
+----------------------------------*/
+.ui-widget
+{ 
+	font-family: $font-family; 
+	font-size: $font-size;
+	color: $font-color;
+	
+	a { color: inherit; }
+	.ui-widget { font-size: 1em; }
+	
+	input,
+	select,
+	textarea,
+	button { 
+		font-family: inherit;
+		font-size: 1em;
+	}
+}
+	
+.ui-widget-content
+{
+	border: 1px solid $default-state-border; 
+	background: $widget-content-bg;
+}
+	
+.ui-widget-header
+{
+	color: $default-state-text;
+	border: 1px solid $default-state-border;
+	background-color: $default-state-bg;
+	@include gradientTopToBottom($default-state-bg, darken($default-state-bg, $gradient-percentage));
+}
+
+@import "interaction";
+
+.ui-priority-primary,
+.ui-widget-content .ui-priority-primary,
+.ui-widget-header .ui-priority-primary
+{
+	text-shadow: 0 -1px 1px darken($highlight-state-border, $gradient-percentage);
+	
+	color: $highlight-state-text;
+	border: 1px solid $highlight-state-border;
+	background: $highlight-state-bg;
+	@include gradientTopToBottom($highlight-state-bg, darken($highlight-state-bg, $gradient-percentage));
+	a { color: inherit }
+}
+
+.ui-priority-secondary,
+.ui-widget-content .ui-priority-secondary,
+.ui-widget-header .ui-priority-secondary
+{
+	opacity: .7;
+	filter:Alpha(Opacity=70);
+}
+
+.ui-widget-shadow {
+	@include box-shadow(0px,0px,5px,#282425);
+}
+
+@import "icons";
+
+/* Corner radius */
+.ui-corner-all,
+.ui-corner-top,
+.ui-corner-left,
+.ui-corner-tl {
+	-moz-border-radius-topleft: $border-radius;
+	-webkit-border-top-left-radius: $border-radius;
+	border-top-left-radius: $border-radius;
+}
+
+.ui-corner-all,
+.ui-corner-top,
+.ui-corner-right,
+.ui-corner-tr {
+	-moz-border-radius-topright: $border-radius;
+	-webkit-border-top-right-radius: $border-radius;
+	border-top-right-radius: $border-radius;
+}
+
+.ui-corner-all,
+.ui-corner-bottom,
+.ui-corner-left,
+.ui-corner-bl {
+	-moz-border-radius-bottomleft: $border-radius;
+	-webkit-border-bottom-left-radius: $border-radius;
+	border-bottom-left-radius: $border-radius;
+}
+
+.ui-corner-all,
+.ui-corner-bottom,
+.ui-corner-right,
+.ui-corner-br {
+	-moz-border-radius-bottomright: $border-radius;
+	-webkit-border-bottom-right-radius: $border-radius;
+	border-bottom-right-radius: $border-radius;
+}
+
+/* Overlays */
+.ui-widget-overlay { 
+	background: #999999; 
+	opacity: .50;filter:Alpha(Opacity=50);
+}

@@ -1,0 +1,39 @@
+.wijmo-wijpager
+{
+	.ui-icon
+	{
+	    cursor: pointer;
+	}
+	
+	.ui-list
+	{
+	    float: left;
+	    padding: 1px;
+	    margin: 0;
+	    background: none;
+	    border: none;
+	    
+	    .ui-page
+	    {
+	        float: left;
+	        height: auto;
+	        line-height: 16px;
+	        list-style: none outside none;
+	        margin: 0 1px;
+	        width: auto;
+	        
+	        span
+	        {
+	            margin: 2px;
+	        }
+	    }
+	    
+	    .ui-page a,
+	    .ui-state-active span
+	    {
+	        padding: 2px 5px;
+	        display: block;
+	        margin: 0;
+	    }
+	}
+}

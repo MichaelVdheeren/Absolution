@@ -2,8 +2,7 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 		<title>jQuery UI Example Page</title>
-		<link rel="stylesheet/less" type="text/css" href="../development/absolution.blue.less">
-		<script type="text/javascript" src="js/less.js"></script>
+		<link rel="stylesheet" type="text/css" href="../compiled/absolution.blue.css">
 		<script type="text/javascript" src="js/jquery.js"></script>
 		<script type="text/javascript" src="js/jquery-ui.js"></script>
 		<script type="text/javascript" src="js/jquery-uniform.js"></script>
@@ -13,16 +12,29 @@
 				$('#dialog').dialog({
 					autoOpen: false,
 					width: 400,
-					buttons: {
-						"Ok": function() { 
-							$(this).dialog("close"); 
+					buttons: [
+						{
+							text: "Ok",
+							"class": "ui-state-success",
+							click: function() { 
+								$(this).dialog("close");
+							}
 						},
-						"Apply": function() { 
-						}, 
-						"Cancel": function() { 
-							$(this).dialog("close"); 
-						} 
-					}
+						{
+							text: "Apply",
+							"class": "ui-state-highlight",
+							click: function() {
+							},
+							disabled: true
+						},							
+						{
+							text: "Cancel",
+							"class": "ui-state-error",
+							click: function() { 
+								$(this).dialog("close");
+							}
+						}
+					]
 				});
 				
 				$("#dialog").bind('dialogopen', function() { 

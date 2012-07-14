@@ -2,8 +2,7 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 		<title>jQuery UI Example Page</title>
-		<link rel="stylesheet/less" type="text/css" href="../development/absolution.blue.less">
-		<script type="text/javascript" src="js/less.js"></script>
+		<link rel="stylesheet" type="text/css" href="../compiled/absolution.blue.css">
 		<script type="text/javascript" src="js/jquery.js"></script>
 		<script type="text/javascript" src="js/jquery-ui.js"></script>
 		<script type="text/javascript" src="js/jquery-uniform.js"></script>
@@ -13,14 +12,22 @@
 				$('#dialog').dialog({
 					autoOpen: false,
 					width: 400,
-					buttons: {
-						"Confirm": function() { 
-							$(this).dialog("close"); 
-						}, 
-						"Cancel": function() { 
-							$(this).dialog("close"); 
-						} 
-					}
+					buttons: [
+						{
+							text: "Confirm",
+							"class": "ui-state-highlight",
+							click: function() { 
+								$(this).dialog("close");
+							}
+						},						
+						{
+							text: "Cancel",
+							"class": "ui-state-error",
+							click: function() { 
+								$(this).dialog("close");
+							}
+						}
+					]
 				});
 				
 				$(function() {
@@ -69,7 +76,7 @@
 		<div id="dialog" title="User Registration">
 			<div id="accordion">
 				<form action="">
-					<h3><a href="#">Registery Information</a></h3>
+					<h3><a href="#">Registry Information</a></h3>
 					<div>
 						<label>Login:</label><input type="text">
 						<label>E-mail:</label><input type="text">

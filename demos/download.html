@@ -2,8 +2,7 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 		<title>jQuery UI Example Page</title>
-		<link rel="stylesheet/less" type="text/css" href="../development/absolution.blue.less">
-		<script type="text/javascript" src="js/less.js"></script>
+		<link rel="stylesheet" type="text/css" href="../compiled/absolution.blue.css">
 		<script type="text/javascript" src="js/jquery.js"></script>
 		<script type="text/javascript" src="js/jquery-ui.js"></script>
 		<script type="text/javascript" src="js/jquery-uniform.js"></script>
@@ -13,14 +12,22 @@
 				$('#dialog').dialog({
 					autoOpen: false,
 					width: 400,
-					buttons: {
-						"Confirm": function() { 
-							$(this).dialog("close"); 
-						}, 
-						"Cancel": function() { 
-							$(this).dialog("close"); 
-						} 
-					}
+					buttons: [
+						{
+							text: "Confirm",
+							"class": "ui-state-highlight",
+							click: function() { 
+								$(this).dialog("close");
+							}
+						},						
+						{
+							text: "Cancel",
+							"class": "ui-state-error",
+							click: function() { 
+								$(this).dialog("close");
+							}
+						}
+					]
 				});
 			
 				$("#dialog").bind('dialogopen', function() { 
@@ -76,6 +83,7 @@
 			ul li { margin: 0; padding: 5px; list-style: none; border-bottom: 1px solid #c1c1c1; }
 			ul li.last { border: none; }
 			#accordion-downloads ul li { line-height: 26px; }
+			#accordion-downloads ul li * { line-height: 1.1em; }
 			span.options { float: right; display: block; }
 		</style>
 	</head>

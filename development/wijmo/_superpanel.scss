@@ -1,0 +1,125 @@
+/* SuperPanel
+----------------------------------*/
+.wijmo-wijsuperpanel
+{
+    overflow: hidden;
+    outline: none;
+    background-image: none;
+    
+    .wijmo-wijsuperpanel-vbarcontainer,
+    .wijmo-wijsuperpanel-hbarcontainer
+    {
+        position: absolute;
+        border: none;
+        padding: 3px;
+    }
+    
+    .wijmo-wijsuperpanel-vbarcontainer
+    {
+        width: 8px;
+    }
+    
+    .wijmo-wijsuperpanel-hbarcontainer
+    {
+        height: 8px;
+    }
+    
+    .ui-icon-gripsmall-diagonal-se
+    {
+        background: none;
+        width: 7px;
+        height: 7px;
+    }
+}
+
+.wijmo-wijsuperpanel-statecontainer
+{
+    overflow: hidden;
+    position: relative;
+    zoom:1;
+    background: #f2f2f2;
+}
+
+.wijmo-wijsuperpanel-contentwrapper
+{
+    position: absolute;
+    overflow: hidden;
+    background: #ffffff;
+
+}
+
+.wijmo-wijsuperpanel-hbarcontainer,
+.wijmo-wijsuperpanel-vbarcontainer,
+.wijmo-wijsuperpanel-hbarcontainer:hover,
+.wijmo-wijsuperpanel-vbarcontainer:hover,
+.wijmo-wijsuperpanel-hbarcontainer:active,
+.wijmo-wijsuperpanel-vbarcontainer:active
+{
+    font-size: 0px;
+    border:0;
+    background: none;
+}
+
+.wijmo-wijsuperpanel-templateouterwrapper
+{
+    position: relative; 
+/*    overflow:auto; */
+    zoom: 1;
+}
+
+.wijmo-wijsuperpanel-handle
+{
+    position: absolute;
+    font-size:0px;
+    overflow:hidden;
+    @include border-radius(5px);
+    
+    span.ui-icon
+    {
+    	background: none;
+    	width:  8px;
+    	height: 8px;
+    }
+    
+    &.ui-state-default
+    {
+    	background: none;
+    	border: 0px;
+    	background-color: #C2C2C2;
+    	
+    	&.ui-state-active,
+    	&.ui-state-hover
+    	{
+    		background: none;
+    		border: 0px;
+    		background-color: #7D7D7D;
+    	}
+    }
+    
+    *
+    {
+        font-size:0px;
+    }
+}
+
+.wijmo-wijsuperpanel-helper
+{
+    border-style: dotted;
+    background: transparent;
+}
+
+.wijmo-wijsuperpanel-button
+{
+    position: absolute;
+    padding: 4px;
+}
+
+.wijmo-wijsuperpanel-hbar-buttonleft,
+.wijmo-wijsuperpanel-hbar-buttonright,
+.wijmo-wijsuperpanel-vbar-buttontop,
+.wijmo-wijsuperpanel-vbar-buttonbottom
+{
+    height: 0px;
+    width: 0px;
+    display: none;
+}
