@@ -11,20 +11,19 @@
     display: block;
     border: 0px;
     overflow: hidden;
-}
-.wijmo-wijlist-ul .wijmo-wijlist-item
-{
-    margin: 1px 0;
-    padding: 3px 5px;
-    /*white-space: nowrap;*/
-    cursor: pointer;
-    text-align: left;
-    font-weight: normal;
-    border: solid 1px transparent;
-}
-.wijmo-wijlist-ul .wijmo-wijlist-item.ui-state-hover
-{
-    font-weight: normal;
+    
+    .wijmo-wijlist-item
+    {
+        margin: 1px 0;
+        padding: 3px 5px;
+        /*white-space: nowrap;*/
+        cursor: pointer;
+        text-align: left;
+        font-weight: normal;
+        border: solid 1px transparent;
+        
+        &.ui-state-hover{font-weight: normal;}
+    }
 }
 
 .wijmo-wijlist .ui-resizable-se
@@ -32,9 +31,4 @@
     width: 7px;
     height: 7px;
     background: none;
-}
-
-.wijmo-wijlist-ul .wijmo-wijlist-item
-{
-    cursor: pointer;
 }

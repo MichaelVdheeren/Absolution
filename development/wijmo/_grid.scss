@@ -4,6 +4,79 @@
     -webkit-border-radius: 0;
     border-radius: 0;
     overflow: hidden;
+    
+    .wijmo-wijsuperpanel
+    {
+        border: 0;
+    }
+    
+    .wijmo-wijgrid-table 
+    {
+    	.wijmo-wijgrid-filter-trigger
+    	{
+    	    position: absolute;
+    	    right: 0;
+    	    top: 0;
+    	    height: 16px;
+    	    width: 16px;
+    	    display: block;
+    	    padding: 5px 3px;
+    	    border-top: none;
+    	    border-right: none;
+    	    border-bottom: none;
+    	    -moz-border-radius: 0;
+    	    -webkit-border-radius: 0;
+    	    border-radius: 0;
+    	}
+    	
+    	.wijmo-wijgrid-filter-input
+    	{
+    	    width: auto;
+    	    height: 16px;
+    	    border: none;
+    	    padding: 5px 3px;
+    	    overflow: visible; /* ie6 padding issue fix */
+    	    color: inherit;
+    	    outline: none;
+    	    position: relative;
+    	    z-index: 5;
+    	    -moz-border-radius: 0;
+    	    -webkit-border-radius: 0;
+    	    border-radius: 0;
+    	    background: none;
+    	}
+    }
+    
+    .wijmo-wijgrid-filter
+    {
+        position: relative;
+        -moz-border-radius: 0;
+        -webkit-border-radius: 0;
+        border-radius: 0;
+        border-top: none;
+        border-left: none;
+        border-bottom: none;
+        
+        .wijmo-wijinput
+        {
+            border: none;
+            -moz-border-radius: 0;
+            -webkit-border-radius: 0;
+            border-radius: 0;
+        }
+    }
+    
+    .wijmo-wijgrid-header,
+    .wijmo-wijgrid-footer
+    {
+        border-left: none !important;
+        border-top: none !important;
+        border-bottom: none !important;
+        padding: 0.2em;
+        -moz-border-radius: 0;
+        -webkit-border-radius: 0;
+        border-radius: 0;
+    }
 }
 
 .wijmo-wijgrid-loading
@@ -11,65 +84,6 @@
     background: transparent url('images/ui-anim_basic_16x16.gif') left top no-repeat;
     min-height: 16px;
     min-width: 16px;
-}
-
-.wijmo-wijgrid .wijmo-wijsuperpanel
-{
-    border: 0;
-}
-
-.wijmo-wijgrid .wijmo-wijgrid-table .wijmo-wijgrid-filter-trigger
-{
-    position: absolute;
-    right: 0;
-    top: 0;
-    height: 16px;
-    width: 16px;
-    display: block;
-    padding: 5px 3px;
-    border-top: none;
-    border-right: none;
-    border-bottom: none;
-    -moz-border-radius: 0;
-    -webkit-border-radius: 0;
-    border-radius: 0;
-}
-
-.wijmo-wijgrid .wijmo-wijgrid-table .wijmo-wijgrid-filter-input
-{
-    width: auto;
-    height: 16px;
-    border: none;
-    padding: 5px 3px;
-    overflow: visible; /* ie6 padding issue fix */
-    color: inherit;
-    outline: none;
-    position: relative;
-    z-index: 5;
-    -moz-border-radius: 0;
-    -webkit-border-radius: 0;
-    border-radius: 0;
-    background: none;
-}
-
-
-.wijmo-wijgrid .wijmo-wijgrid-filter
-{
-    position: relative;
-    -moz-border-radius: 0;
-    -webkit-border-radius: 0;
-    border-radius: 0;
-    border-top: none;
-    border-left: none;
-    border-bottom: none;
-}
-
-.wijmo-wijgrid .wijmo-wijgrid-filter .wijmo-wijinput
-{
-    border: none;
-    -moz-border-radius: 0;
-    -webkit-border-radius: 0;
-    border-radius: 0;
 }
 
 .wijmo-wijgrid-filtericon
@@ -81,80 +95,21 @@
     width: 16px;
     display: none;
 }
-.filter-nofilter
-{
-    background-position: 0 0px;
-}
-
-.filter-contains
-{
-    background-position: 0 -16px;
-}
-
-.filter-notcontain
-{
-    background-position: 0 -32px;
-}
-
-.filter-beginswith
-{
-    background-position: 0 -48px;
-}
-
-.filter-endswith
-{
-    background-position: 0 -64px;
-}
-
-.filter-equals
-{
-    background-position: 0 -80px;
-}
-
-.filter-notequal
-{
-    background-position: 0 -96px;
-}
-
-.filter-greater
-{
-    background-position: 0 -112px;
-}
-
-.filter-less
-{
-    background-position: 0 -128px;
-}
-
-.filter-greaterorequal
-{
-    background-position: 0 -144px;
-}
-
-.filter-lessorequal
-{
-    background-position: 0 -160px;
-}
-
-.filter-isempty
-{
-    background-position: 0 -176px;
-}
-
-.filter-notisempty
-{
-    background-position: 0 -192px;
-}
-
-.filter-isnull
-{
-    background-position: 0 -208px;
-}
-
-.filter-notisnull
-{
-    background-position: 0 -224px;
-}
+.filter-nofilter {background-position: 0 0px;}
+.filter-contains {background-position: 0 -16px;}
+.filter-notcontain {background-position: 0 -32px;}
+.filter-beginswith {background-position: 0 -48px;}
+.filter-endswith {background-position: 0 -64px;}
+.filter-equals {background-position: 0 -80px;}
+.filter-notequal {background-position: 0 -96px;}
+.filter-greater {background-position: 0 -112px;}
+.filter-less {background-position: 0 -128px;}
+.filter-greaterorequal {background-position: 0 -144px;}
+.filter-lessorequal {background-position: 0 -160px;}
+.filter-isempty {background-position: 0 -176px;}
+.filter-notisempty {background-position: 0 -192px;}
+.filter-isnull {background-position: 0 -208px;}
+.filter-notisnull {background-position: 0 -224px;}
 
 .wijmo-wijpager .ui-icon
 {
@@ -179,16 +134,7 @@
     width: 21px;
 }
 
-.wijmo-wijgrid .wijmo-wijgrid-header, .wijmo-wijgrid .wijmo-wijgrid-footer
-{
-    border-left: none !important;
-    border-top: none !important;
-    border-bottom: none !important;
-    padding: 0.2em;
-    -moz-border-radius: 0;
-    -webkit-border-radius: 0;
-    border-radius: 0;
-}
+
 
 .wijmo-wijgrid tr.wijmo-wijgrid-row
 {

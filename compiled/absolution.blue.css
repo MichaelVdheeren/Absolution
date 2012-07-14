@@ -2431,7 +2431,7 @@ button:last-child {
 }
 
 /* workarounds */
-/* line 138, ../development/jquery/_button.scss */
+/* line 137, ../development/jquery/_button.scss */
 button.ui-button::-moz-focus-inner,
 button::-moz-focus-inner {
   border: 0;
@@ -4494,7 +4494,6 @@ div.uploader input {
   border: 0px;
   overflow: hidden;
 }
-
 /* line 16, ../development/wijmo/_list.scss */
 .wijmo-wijlist-ul .wijmo-wijlist-item {
   margin: 1px 0;
@@ -4505,22 +4504,16 @@ div.uploader input {
   font-weight: normal;
   border: solid 1px transparent;
 }
-
-/* line 26, ../development/wijmo/_list.scss */
+/* line 25, ../development/wijmo/_list.scss */
 .wijmo-wijlist-ul .wijmo-wijlist-item.ui-state-hover {
   font-weight: normal;
 }
 
-/* line 31, ../development/wijmo/_list.scss */
+/* line 30, ../development/wijmo/_list.scss */
 .wijmo-wijlist .ui-resizable-se {
   width: 7px;
   height: 7px;
   background: none;
-}
-
-/* line 38, ../development/wijmo/_list.scss */
-.wijmo-wijlist-ul .wijmo-wijlist-item {
-  cursor: pointer;
 }
 
 /* line 1, ../development/wijmo/_tooltip.scss */
@@ -4823,39 +4816,39 @@ div.uploader input {
   padding: 0.3em;
   position: relative;
 }
-
-/* line 7, ../development/wijmo/_menu.scss */
+/* line 6, ../development/wijmo/_menu.scss */
 .wijmo-wijmenu .wijmo-wijsuperpanel {
   border: none;
   background: inherit;
   padding: 0;
 }
 
-/* line 13, ../development/wijmo/_menu.scss */
+/* line 15, ../development/wijmo/_menu.scss */
+.wijmo-wijmenu
 .wijmo-wijmenu-list {
   position: static;
 }
 
-/* line 17, ../development/wijmo/_menu.scss */
+/* line 19, ../development/wijmo/_menu.scss */
 .wijmo-wijmenu .wijmo-wijmenu-parent .wijmo-wijmenu-child {
   display: none;
   width: 150px;
   padding: 0.3em;
 }
 
-/* line 23, ../development/wijmo/_menu.scss */
+/* line 25, ../development/wijmo/_menu.scss */
 .wijmo-wijmenu .wijmo-wijmenu-parent {
   position: relative;
 }
 
-/* line 27, ../development/wijmo/_menu.scss */
+/* line 29, ../development/wijmo/_menu.scss */
 .wijmo-wijmenu .wijmo-wijmenu-child {
   position: relative;
   left: 150px;
   top: 0;
 }
 
-/* line 33, ../development/wijmo/_menu.scss */
+/* line 35, ../development/wijmo/_menu.scss */
 .wijmo-wijmenu .wijmo-wijmenu-item {
   width: 100%;
   float: left;
@@ -4864,13 +4857,13 @@ div.uploader input {
   padding: 0;
 }
 
-/* line 41, ../development/wijmo/_menu.scss */
+/* line 43, ../development/wijmo/_menu.scss */
 .wijmo-wijmenu .wijmo-wijmenu-list .wijmo-wijmenu-item {
   background: none;
   border: none;
 }
 
-/* line 46, ../development/wijmo/_menu.scss */
+/* line 48, ../development/wijmo/_menu.scss */
 .wijmo-wijmenu .wijmo-wijmenu-link {
   display: block;
   width: 92%;
@@ -4883,41 +4876,41 @@ div.uploader input {
   padding: 0.3em;
 }
 
-/* line 58, ../development/wijmo/_menu.scss */
+/* line 60, ../development/wijmo/_menu.scss */
 .wijmo-wijmenu-horizontal {
   width: auto;
 }
 
-/* line 62, ../development/wijmo/_menu.scss */
+/* line 64, ../development/wijmo/_menu.scss */
 .wijmo-wijmenu-horizontal .wijmo-wijmenu-item {
   width: auto;
   clear: none;
   margin-right: 3px;
 }
 
-/* line 68, ../development/wijmo/_menu.scss */
+/* line 70, ../development/wijmo/_menu.scss */
 .wijmo-wijmenu-horizontal .wijmo-wijmenu-child .wijmo-wijmenu-item {
   width: 100%;
 }
 
-/* line 72, ../development/wijmo/_menu.scss */
+/* line 74, ../development/wijmo/_menu.scss */
 .wijmo-wijmenu-horizontal .wijmo-wijmenu-child {
   top: 25px;
   left: 0;
 }
 
-/* line 77, ../development/wijmo/_menu.scss */
+/* line 79, ../development/wijmo/_menu.scss */
 .wijmo-wijmenu-horizontal .wijmo-wijmenu-link {
   width: auto;
   padding: 0.4em 0.3em;
 }
 
-/* line 82, ../development/wijmo/_menu.scss */
+/* line 84, ../development/wijmo/_menu.scss */
 .wijmo-wijmenu-horizontal .wijmo-wijmenu-child .wijmo-wijmenu-link {
   width: 92%;
 }
 
-/* line 86, ../development/wijmo/_menu.scss */
+/* line 88, ../development/wijmo/_menu.scss */
 .wijmo-wijmenu .wijmo-wijmenu-list .ui-widget-header {
   clear: both;
   float: left;
@@ -4926,14 +4919,14 @@ div.uploader input {
   margin: 1px 0;
 }
 
-/* line 94, ../development/wijmo/_menu.scss */
+/* line 96, ../development/wijmo/_menu.scss */
 .wijmo-wijmenu-horizontal .ui-widget-header {
   clear: none;
   width: auto;
   margin: 0 3px 0 0;
 }
 
-/* line 100, ../development/wijmo/_menu.scss */
+/* line 102, ../development/wijmo/_menu.scss */
 .wijmo-wijmenu .ui-widget-header h1, .wijmo-wijmenu .ui-widget-header h2, .wijmo-wijmenu .ui-widget-header h3, .wijmo-wijmenu .ui-widget-header h4, .wijmo-wijmenu .ui-widget-header h5, .wijmo-wijmenu .ui-widget-header h6 {
   float: left;
   display: block;
@@ -4942,23 +4935,23 @@ div.uploader input {
   padding: 0.3em 3%;
 }
 
-/* line 108, ../development/wijmo/_menu.scss */
+/* line 110, ../development/wijmo/_menu.scss */
 .wijmo-wijmenu-horizontal .ui-widget-header h1, .wijmo-wijmenu-horizontal .ui-widget-header h2, .wijmo-wijmenu-horizontal .ui-widget-header h3, .wijmo-wijmenu-horizontal .ui-widget-header h4, .wijmo-wijmenu-horizontal .ui-widget-header h5, .wijmo-wijmenu-horizontal .ui-widget-header h6 {
   padding: 0.4em 0.3em;
 }
 
-/* line 112, ../development/wijmo/_menu.scss */
+/* line 114, ../development/wijmo/_menu.scss */
 .wijmo-wijmenu a.ui-state-default:link, .wijmo-wijmenu .ui-slider a.ui-slider-handle:link, .ui-slider .wijmo-wijmenu a.ui-slider-handle:link, .wijmo-wijmenu .ui-tabs a.ui-widget-header:link, .ui-tabs .wijmo-wijmenu a.ui-widget-header:link, .wijmo-wijmenu a.ui-state-default:visited, .wijmo-wijmenu .ui-slider a.ui-slider-handle:visited, .ui-slider .wijmo-wijmenu a.ui-slider-handle:visited, .wijmo-wijmenu .ui-tabs a.ui-widget-header:visited, .ui-tabs .wijmo-wijmenu a.ui-widget-header:visited, .wijmo-wijmenu a.ui-state-default:hover, .wijmo-wijmenu .ui-slider a.ui-slider-handle:hover, .ui-slider .wijmo-wijmenu a.ui-slider-handle:hover, .wijmo-wijmenu .ui-tabs a.ui-widget-header:hover, .ui-tabs .wijmo-wijmenu a.ui-widget-header:hover, .wijmo-wijmenu a.ui-state-default:active, .wijmo-wijmenu .ui-slider a.ui-slider-handle:active, .ui-slider .wijmo-wijmenu a.ui-slider-handle:active, .wijmo-wijmenu .ui-tabs a.ui-widget-header:active, .ui-tabs .wijmo-wijmenu a.ui-widget-header:active, .wijmo-wijmenu a.ui-state-hover:link, .wijmo-wijmenu a.ui-state-hover:visited, .wijmo-wijmenu a.ui-state-hover:hover, .wijmo-wijmenu a.ui-state-hover:active, .wijmo-wijmenu a.ui-state-active:link, .wijmo-wijmenu a.ui-state-active:visited, .wijmo-wijmenu a.ui-state-active:hover, .wijmo-wijmenu a.ui-state-active:active {
   font-weight: 400;
   border-style: solid;
 }
 
-/* line 117, ../development/wijmo/_menu.scss */
+/* line 119, ../development/wijmo/_menu.scss */
 .wijmo-wijmenu .wijmo-wijmenu-child .ui-state-hover {
   font-weight: 400;
 }
 
-/* line 121, ../development/wijmo/_menu.scss */
+/* line 123, ../development/wijmo/_menu.scss */
 .wijmo-wijmenu .wijmo-wijmenu-separator {
   clear: both;
   float: left;
@@ -4969,7 +4962,7 @@ div.uploader input {
   font-size: 0;
 }
 
-/* line 131, ../development/wijmo/_menu.scss */
+/* line 133, ../development/wijmo/_menu.scss */
 .wijmo-wijmenu-horizontal .wijmo-wijmenu-separator {
   height: auto;
   clear: none;
@@ -4979,7 +4972,7 @@ div.uploader input {
   padding: 0.4em 0;
 }
 
-/* line 140, ../development/wijmo/_menu.scss */
+/* line 142, ../development/wijmo/_menu.scss */
 .wijmo-wijmenu-horizontal .wijmo-wijmenu-child .wijmo-wijmenu-separator {
   clear: both;
   float: left;
@@ -4990,7 +4983,7 @@ div.uploader input {
   padding: 0;
 }
 
-/* line 150, ../development/wijmo/_menu.scss */
+/* line 152, ../development/wijmo/_menu.scss */
 .wijmo-wijmenu .wijmo-wijmenu-group {
   clear: both;
   float: left;
@@ -4999,17 +4992,17 @@ div.uploader input {
   padding: 0 0.4em;
 }
 
-/* line 158, ../development/wijmo/_menu.scss */
+/* line 160, ../development/wijmo/_menu.scss */
 .wijmo-wijmenu-ipod {
   width: 180px;
 }
 
-/* line 162, ../development/wijmo/_menu.scss */
+/* line 164, ../development/wijmo/_menu.scss */
 .wijmo-wijmenu-container {
   overflow: hidden;
 }
 
-/* line 166, ../development/wijmo/_menu.scss */
+/* line 168, ../development/wijmo/_menu.scss */
 .wijmo-wijmenu-ipod .wijmo-wijmenu-list {
   background: inherit;
   position: absolute;
@@ -5018,28 +5011,28 @@ div.uploader input {
   -webkit-box-shadow: none;
 }
 
-/* line 174, ../development/wijmo/_menu.scss */
+/* line 176, ../development/wijmo/_menu.scss */
 .wijmo-wijmenu-breadcrumb {
   margin: 0;
   padding: 0;
 }
 
-/* line 179, ../development/wijmo/_menu.scss */
+/* line 181, ../development/wijmo/_menu.scss */
 .wijmo-wijmenu-footer {
   margin-top: 3px;
 }
 
-/* line 183, ../development/wijmo/_menu.scss */
+/* line 185, ../development/wijmo/_menu.scss */
 .wijmo-wijmenu-footer .ui-icon {
   margin: 3px 0;
 }
 
-/* line 187, ../development/wijmo/_menu.scss */
+/* line 189, ../development/wijmo/_menu.scss */
 .wijmo-wijmenu-header {
   margin-bottom: 3px;
 }
 
-/* line 191, ../development/wijmo/_menu.scss */
+/* line 193, ../development/wijmo/_menu.scss */
 .wijmo-wijmenu-breadcrumb li {
   float: left;
   list-style: none;
@@ -5048,44 +5041,44 @@ div.uploader input {
   padding: 0 .2em;
 }
 
-/* line 199, ../development/wijmo/_menu.scss */
+/* line 201, ../development/wijmo/_menu.scss */
 .wijmo-wijmenu-breadcrumb li.wijmo-wijmenu-prev-list, .wijmo-wijmenu-breadcrumb li.wijmo-wijmenu-current-crumb {
   clear: left;
   float: none;
   opacity: 1;
 }
 
-/* line 205, ../development/wijmo/_menu.scss */
+/* line 207, ../development/wijmo/_menu.scss */
 .wijmo-wijmenu-breadcrumb li.wijmo-wijmenu-current-crumb {
   padding-top: .2em;
 }
 
-/* line 209, ../development/wijmo/_menu.scss */
+/* line 211, ../development/wijmo/_menu.scss */
 .wijmo-wijmenu-footer a:link, .wijmo-wijmenu-footer a:visited {
   float: left;
   width: 100%;
   text-decoration: none;
 }
 
-/* line 215, ../development/wijmo/_menu.scss */
+/* line 217, ../development/wijmo/_menu.scss */
 .wijmo-wijmenu-footer a span {
   float: left;
   cursor: pointer;
 }
 
-/* line 220, ../development/wijmo/_menu.scss */
+/* line 222, ../development/wijmo/_menu.scss */
 .wijmo-wijmenu-breadcrumb .wijmo-wijmenu-prev-list a:link, .wijmo-wijmenu-breadcrumb .wijmo-wijmenu-prev-list a:visited, .wijmo-wijmenu-breadcrumb .wijmo-wijmenu-prev-list a:hover, .wijmo-wijmenu-breadcrumb .wijmo-wijmenu-prev-list a:active {
   background-image: none;
   text-decoration: none;
 }
 
-/* line 225, ../development/wijmo/_menu.scss */
+/* line 227, ../development/wijmo/_menu.scss */
 .wijmo-wijmenu-breadcrumb .wijmo-wijmenu-prev-list a {
   float: left;
   padding-right: .4em;
 }
 
-/* line 230, ../development/wijmo/_menu.scss */
+/* line 232, ../development/wijmo/_menu.scss */
 .wijmo-wijmenu-breadcrumb .wijmo-wijmenu-current-crumb a:link, .wijmo-wijmenu-breadcrumb .wijmo-wijmenu-current-crumb a:visited, .wijmo-wijmenu-breadcrumb .wijmo-wijmenu-current-crumb a:hover, .wijmo-wijmenu-breadcrumb .wijmo-wijmenu-current-crumb a:active {
   display: block;
   background-image: none;
@@ -5093,23 +5086,23 @@ div.uploader input {
   text-decoration: none;
 }
 
-/* line 237, ../development/wijmo/_menu.scss */
+/* line 239, ../development/wijmo/_menu.scss */
 .wijmo-wijmenu .wijmo-wijmenu-parent .ui-icon, .wijmo-wijmenu-horizontal .wijmo-wijmenu-child .ui-icon, .wijmo-wijmenu-ipod .ui-icon-triangle-1-e {
   float: right;
 }
 
-/* line 241, ../development/wijmo/_menu.scss */
+/* line 243, ../development/wijmo/_menu.scss */
 .wijmo-wijmenu .wijmo-wijmenu-item .wijmo-wijmenu-text, .wijmo-wijmenu-horizontal .wijmo-wijmenu-parent .ui-icon, .wijmo-wijmenu-breadcrumb a, .wijmo-wijmenu-breadcrumb span, .wijmo-wijmenu-breadcrumb .wijmo-wijmenu-prev-list a .ui-icon {
   float: left;
 }
 
-/* line 245, ../development/wijmo/_menu.scss */
+/* line 247, ../development/wijmo/_menu.scss */
 .wijmo-wijmenu .wijmo-wijmenu-link .wijmo-wijmenu-icon-left {
   display: inline-block;
   float: left;
 }
 
-/* line 250, ../development/wijmo/_menu.scss */
+/* line 252, ../development/wijmo/_menu.scss */
 .wijmo-wijmenu .wijmo-wijmenu-link .wijmo-wijmenu-icon-right {
   display: inline-block;
   float: right;
@@ -6124,20 +6117,11 @@ button {
   border-radius: 0;
   overflow: hidden;
 }
-
-/* line 10, ../development/wijmo/_grid.scss */
-.wijmo-wijgrid-loading {
-  background: transparent url("images/ui-anim_basic_16x16.gif") left top no-repeat;
-  min-height: 16px;
-  min-width: 16px;
-}
-
-/* line 17, ../development/wijmo/_grid.scss */
+/* line 9, ../development/wijmo/_grid.scss */
 .wijmo-wijgrid .wijmo-wijsuperpanel {
   border: 0;
 }
-
-/* line 22, ../development/wijmo/_grid.scss */
+/* line 16, ../development/wijmo/_grid.scss */
 .wijmo-wijgrid .wijmo-wijgrid-table .wijmo-wijgrid-filter-trigger {
   position: absolute;
   right: 0;
@@ -6153,8 +6137,7 @@ button {
   -webkit-border-radius: 0;
   border-radius: 0;
 }
-
-/* line 39, ../development/wijmo/_grid.scss */
+/* line 33, ../development/wijmo/_grid.scss */
 .wijmo-wijgrid .wijmo-wijgrid-table .wijmo-wijgrid-filter-input {
   width: auto;
   height: 16px;
@@ -6171,8 +6154,7 @@ button {
   border-radius: 0;
   background: none;
 }
-
-/* line 57, ../development/wijmo/_grid.scss */
+/* line 51, ../development/wijmo/_grid.scss */
 .wijmo-wijgrid .wijmo-wijgrid-filter {
   position: relative;
   -moz-border-radius: 0;
@@ -6182,125 +6164,16 @@ button {
   border-left: none;
   border-bottom: none;
 }
-
-/* line 68, ../development/wijmo/_grid.scss */
+/* line 61, ../development/wijmo/_grid.scss */
 .wijmo-wijgrid .wijmo-wijgrid-filter .wijmo-wijinput {
   border: none;
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
   border-radius: 0;
 }
-
-/* line 76, ../development/wijmo/_grid.scss */
-.wijmo-wijgrid-filtericon {
-  background: url("images/filterop.png") no-repeat;
-  text-indent: -9999px;
-  overflow: hidden;
-  height: 16px;
-  width: 16px;
-  display: none;
-}
-
-/* line 85, ../development/wijmo/_grid.scss */
-.filter-nofilter {
-  background-position: 0 0px;
-}
-
-/* line 90, ../development/wijmo/_grid.scss */
-.filter-contains {
-  background-position: 0 -16px;
-}
-
-/* line 95, ../development/wijmo/_grid.scss */
-.filter-notcontain {
-  background-position: 0 -32px;
-}
-
-/* line 100, ../development/wijmo/_grid.scss */
-.filter-beginswith {
-  background-position: 0 -48px;
-}
-
-/* line 105, ../development/wijmo/_grid.scss */
-.filter-endswith {
-  background-position: 0 -64px;
-}
-
-/* line 110, ../development/wijmo/_grid.scss */
-.filter-equals {
-  background-position: 0 -80px;
-}
-
-/* line 115, ../development/wijmo/_grid.scss */
-.filter-notequal {
-  background-position: 0 -96px;
-}
-
-/* line 120, ../development/wijmo/_grid.scss */
-.filter-greater {
-  background-position: 0 -112px;
-}
-
-/* line 125, ../development/wijmo/_grid.scss */
-.filter-less {
-  background-position: 0 -128px;
-}
-
-/* line 130, ../development/wijmo/_grid.scss */
-.filter-greaterorequal {
-  background-position: 0 -144px;
-}
-
-/* line 135, ../development/wijmo/_grid.scss */
-.filter-lessorequal {
-  background-position: 0 -160px;
-}
-
-/* line 140, ../development/wijmo/_grid.scss */
-.filter-isempty {
-  background-position: 0 -176px;
-}
-
-/* line 145, ../development/wijmo/_grid.scss */
-.filter-notisempty {
-  background-position: 0 -192px;
-}
-
-/* line 150, ../development/wijmo/_grid.scss */
-.filter-isnull {
-  background-position: 0 -208px;
-}
-
-/* line 155, ../development/wijmo/_grid.scss */
-.filter-notisnull {
-  background-position: 0 -224px;
-}
-
-/* line 160, ../development/wijmo/_grid.scss */
-.wijmo-wijpager .ui-icon {
-  cursor: pointer;
-}
-
-/* line 165, ../development/wijmo/_grid.scss */
-.wijmo-wijgrid .wijmo-wijgrid-grouptogglebtn {
-  float: left;
-  cursor: pointer;
-  margin-top: 3px;
-}
-
-/* line 172, ../development/wijmo/_grid.scss */
-.wijmo-wijgrid .wijmo-wijgrid-table {
-  border-collapse: collapse;
-  outline: none;
-}
-
-/* line 178, ../development/wijmo/_grid.scss */
-.wijmo-wijgrid-rowheader {
-  width: 21px;
-}
-
-/* line 183, ../development/wijmo/_grid.scss */
-.wijmo-wijgrid .wijmo-wijgrid-header, .wijmo-wijgrid .wijmo-wijgrid-footer {
+/* line 71, ../development/wijmo/_grid.scss */
+.wijmo-wijgrid .wijmo-wijgrid-header,
+.wijmo-wijgrid .wijmo-wijgrid-footer {
   border-left: none !important;
   border-top: none !important;
   border-bottom: none !important;
@@ -6310,12 +6183,127 @@ button {
   border-radius: 0;
 }
 
-/* line 194, ../development/wijmo/_grid.scss */
+/* line 83, ../development/wijmo/_grid.scss */
+.wijmo-wijgrid-loading {
+  background: transparent url("images/ui-anim_basic_16x16.gif") left top no-repeat;
+  min-height: 16px;
+  min-width: 16px;
+}
+
+/* line 90, ../development/wijmo/_grid.scss */
+.wijmo-wijgrid-filtericon {
+  background: url("images/filterop.png") no-repeat;
+  text-indent: -9999px;
+  overflow: hidden;
+  height: 16px;
+  width: 16px;
+  display: none;
+}
+
+/* line 98, ../development/wijmo/_grid.scss */
+.filter-nofilter {
+  background-position: 0 0px;
+}
+
+/* line 99, ../development/wijmo/_grid.scss */
+.filter-contains {
+  background-position: 0 -16px;
+}
+
+/* line 100, ../development/wijmo/_grid.scss */
+.filter-notcontain {
+  background-position: 0 -32px;
+}
+
+/* line 101, ../development/wijmo/_grid.scss */
+.filter-beginswith {
+  background-position: 0 -48px;
+}
+
+/* line 102, ../development/wijmo/_grid.scss */
+.filter-endswith {
+  background-position: 0 -64px;
+}
+
+/* line 103, ../development/wijmo/_grid.scss */
+.filter-equals {
+  background-position: 0 -80px;
+}
+
+/* line 104, ../development/wijmo/_grid.scss */
+.filter-notequal {
+  background-position: 0 -96px;
+}
+
+/* line 105, ../development/wijmo/_grid.scss */
+.filter-greater {
+  background-position: 0 -112px;
+}
+
+/* line 106, ../development/wijmo/_grid.scss */
+.filter-less {
+  background-position: 0 -128px;
+}
+
+/* line 107, ../development/wijmo/_grid.scss */
+.filter-greaterorequal {
+  background-position: 0 -144px;
+}
+
+/* line 108, ../development/wijmo/_grid.scss */
+.filter-lessorequal {
+  background-position: 0 -160px;
+}
+
+/* line 109, ../development/wijmo/_grid.scss */
+.filter-isempty {
+  background-position: 0 -176px;
+}
+
+/* line 110, ../development/wijmo/_grid.scss */
+.filter-notisempty {
+  background-position: 0 -192px;
+}
+
+/* line 111, ../development/wijmo/_grid.scss */
+.filter-isnull {
+  background-position: 0 -208px;
+}
+
+/* line 112, ../development/wijmo/_grid.scss */
+.filter-notisnull {
+  background-position: 0 -224px;
+}
+
+/* line 115, ../development/wijmo/_grid.scss */
+.wijmo-wijpager .ui-icon {
+  cursor: pointer;
+}
+
+/* line 120, ../development/wijmo/_grid.scss */
+.wijmo-wijgrid .wijmo-wijgrid-grouptogglebtn {
+  float: left;
+  cursor: pointer;
+  margin-top: 3px;
+}
+
+/* line 127, ../development/wijmo/_grid.scss */
+.wijmo-wijgrid .wijmo-wijgrid-table {
+  border-collapse: collapse;
+  outline: none;
+}
+
+/* line 133, ../development/wijmo/_grid.scss */
+.wijmo-wijgrid-rowheader {
+  width: 21px;
+}
+
+/* line 140, ../development/wijmo/_grid.scss */
 .wijmo-wijgrid tr.wijmo-wijgrid-row {
   border-bottom: none;
 }
 
-/* line 199, ../development/wijmo/_grid.scss */
+/* line 145, ../development/wijmo/_grid.scss */
 .wijmo-wijgrid tr.wijmo-wijgrid-row td {
   border: none;
   border-right-color: inherit;
@@ -6328,18 +6316,18 @@ button {
   overflow: hidden;
 }
 
-/* line 212, ../development/wijmo/_grid.scss */
+/* line 158, ../development/wijmo/_grid.scss */
 .wijmo-wijgrid .wijgridtd {
   font-weight: normal;
   padding: 0px;
 }
 
-/* line 218, ../development/wijmo/_grid.scss */
+/* line 164, ../development/wijmo/_grid.scss */
 .wijmo-wijgrid .wijgridth {
   padding: 0px;
 }
 
-/* line 223, ../development/wijmo/_grid.scss */
+/* line 169, ../development/wijmo/_grid.scss */
 .wijmo-wijgrid .wijmo-wijgrid-headerrow .wijmo-c1basefield {
   zoom: 1;
   overflow: hidden;
@@ -6349,7 +6337,7 @@ button {
   position: relative;
 }
 
-/* line 233, ../development/wijmo/_grid.scss */
+/* line 179, ../development/wijmo/_grid.scss */
 .wijmo-wijgrid .wijmo-wijgrid-headerrow .wijmo-wijgrid-headertext {
   padding: 0.5em 1em;
   display: block;
@@ -6357,7 +6345,7 @@ button {
   position: relative;
 }
 
-/* line 240, ../development/wijmo/_grid.scss */
+/* line 186, ../development/wijmo/_grid.scss */
 .wijmo-wijgrid .wijmo-wijgrid-headerrow .ui-icon {
   width: 16px;
   height: 16px;
@@ -6368,20 +6356,20 @@ button {
   z-index: 99;
 }
 
-/* line 255, ../development/wijmo/_grid.scss */
+/* line 201, ../development/wijmo/_grid.scss */
 .wijmo-wijgrid .wijmo-wijgrid-filterrow td {
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: inherit;
 }
 
-/* line 263, ../development/wijmo/_grid.scss */
+/* line 209, ../development/wijmo/_grid.scss */
 .wijmo-wijgrid .wijmo-wijpager {
   display: block;
   position: relative;
 }
 
-/* line 269, ../development/wijmo/_grid.scss */
+/* line 215, ../development/wijmo/_grid.scss */
 .wijmo-wijgrid-resizehandle {
   position: absolute;
   z-index: 99999;
@@ -6390,7 +6378,7 @@ button {
 /* 
  *    Scrolling
  */
-/* line 279, ../development/wijmo/_grid.scss */
+/* line 225, ../development/wijmo/_grid.scss */
 .wijmo-wijgrid-v-splitter, .wijmo-wijgrid-h-splitter {
   background-color: white;
   width: 4px;
@@ -6400,26 +6388,26 @@ button {
   display: none;
 }
 
-/* line 288, ../development/wijmo/_grid.scss */
+/* line 234, ../development/wijmo/_grid.scss */
 .wijmo-wijgrid-splits-enabled .wijmo-wijgrid-v-splitter {
   border-right: 1px solid #000000;
   display: block;
   cursor: w-resize;
 }
 
-/* line 294, ../development/wijmo/_grid.scss */
+/* line 240, ../development/wijmo/_grid.scss */
 .wijmo-wijgrid-splits-enabled .wijmo-wijgrid-h-splitter {
   border-bottom: 1px solid #000000;
   display: block;
   cursor: n-resize;
 }
 
-/* line 300, ../development/wijmo/_grid.scss */
+/* line 246, ../development/wijmo/_grid.scss */
 .wijmo-wijgrid-splits-enabled .wijmo-wijgrid-v-splitter.ui-draggable-dragging, .wijmo-wijgrid-splits-enabled .wijmo-wijgrid-h-splitter.ui-draggable-dragging {
   background-color: #626262;
 }
 
-/* line 305, ../development/wijmo/_grid.scss */
+/* line 251, ../development/wijmo/_grid.scss */
 .wijmo-wijgrid-filterlist {
   position: absolute;
   left: 0;
@@ -6427,22 +6415,22 @@ button {
   z-index: 100;
 }
 
-/* line 312, ../development/wijmo/_grid.scss */
+/* line 258, ../development/wijmo/_grid.scss */
 .wijmo-wijgrid-scroller {
   overflow: hidden;
 }
 
-/* line 316, ../development/wijmo/_grid.scss */
+/* line 262, ../development/wijmo/_grid.scss */
 .wijmo-wijgrid-fixedview {
   position: relative;
 }
 
-/* line 321, ../development/wijmo/_grid.scss */
+/* line 267, ../development/wijmo/_grid.scss */
 .wijmo-wijgrid-scroller {
   border: 0px;
 }
 
-/* line 326, ../development/wijmo/_grid.scss */
+/* line 272, ../development/wijmo/_grid.scss */
 .wijmo-wijgrid .wijmo-wijsuperpanel-vbar-buttontop {
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
@@ -6450,7 +6438,7 @@ button {
   top: -1px;
 }
 
-/* line 334, ../development/wijmo/_grid.scss */
+/* line 280, ../development/wijmo/_grid.scss */
 .wijmo-wijgrid .wijmo-wijsuperpanel-vbar-buttonbottom {
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
@@ -6458,7 +6446,7 @@ button {
   bottom: -1px;
 }
 
-/* line 342, ../development/wijmo/_grid.scss */
+/* line 288, ../development/wijmo/_grid.scss */
 .wijmo-wijgrid .wijgridinput {
   width: 100%;
   margin: 0;
@@ -6467,22 +6455,22 @@ button {
   text-align: inherit;
 }
 
-/* line 351, ../development/wijmo/_grid.scss */
+/* line 297, ../development/wijmo/_grid.scss */
 .wijmo-wijgrid tr.wijmo-wijgrid-row td.wijdata-type-currency, .wijmo-wijgrid tr.wijmo-wijgrid-row td.wijdata-type-number, .wijmo-wijgrid tr.wijmo-wijgrid-row td.wijdata-type-date {
   text-align: right;
 }
 
-/* line 356, ../development/wijmo/_grid.scss */
+/* line 302, ../development/wijmo/_grid.scss */
 .wijmo-wijgrid tr.wijmo-wijgrid-row td.wijdata-type-boolean {
   text-align: center;
 }
 
-/* line 361, ../development/wijmo/_grid.scss */
+/* line 307, ../development/wijmo/_grid.scss */
 .wijmo-wijgrid .wijmo-wijgrid-innercell {
   padding: 1px 2px;
 }
 
-/* line 366, ../development/wijmo/_grid.scss */
+/* line 312, ../development/wijmo/_grid.scss */
 .wijmo-wijgrid .wijmo-wijcombobox-wrapper {
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
@@ -6492,7 +6480,7 @@ button {
   border-left: 0;
 }
 
-/* line 376, ../development/wijmo/_grid.scss */
+/* line 322, ../development/wijmo/_grid.scss */
 .wijmo-wijgrid .wijmo-wijcombobox .wijmo-wijcombobox-trigger {
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
@@ -6502,17 +6490,17 @@ button {
   border-right: 0;
 }
 
-/* line 386, ../development/wijmo/_grid.scss */
+/* line 332, ../development/wijmo/_grid.scss */
 .wijmo-wijgrid .wijmo-wijcombobox-input {
   padding: 0;
 }
 
-/* line 391, ../development/wijmo/_grid.scss */
+/* line 337, ../development/wijmo/_grid.scss */
 .wijmo-wijgrid .ui-input-trigger-right .wijmo-wijinput-input, .wijmo-wijgrid .ui-input-spinner-right .wijmo-wijinput-input {
   padding: 0px 25px 0px 5px;
 }
 
-/* line 396, ../development/wijmo/_grid.scss */
+/* line 342, ../development/wijmo/_grid.scss */
 .wijmo-wijgrid .wijmo-wijinput {
   border: none;
   -moz-border-radius: 0;
@@ -6520,47 +6508,47 @@ button {
   border-radius: 0;
 }
 
-/* line 404, ../development/wijmo/_grid.scss */
+/* line 350, ../development/wijmo/_grid.scss */
 .wijmo-wijgrid .wijmo-wijinput-spinup {
   height: 7px;
 }
 
-/* line 409, ../development/wijmo/_grid.scss */
+/* line 355, ../development/wijmo/_grid.scss */
 .wijmo-wijgrid .wijmo-wijinput-spindown {
   height: 7px;
 }
 
-/* line 414, ../development/wijmo/_grid.scss */
+/* line 360, ../development/wijmo/_grid.scss */
 .wijmo-wijgrid .wijmo-wijinput-spinner .ui-icon-triangle-1-n {
   background-position: 0 -20px;
 }
 
-/* line 419, ../development/wijmo/_grid.scss */
+/* line 365, ../development/wijmo/_grid.scss */
 .wijmo-wijgrid .wijmo-wijinput-spinner .ui-icon-triangle-1-s {
   background-position: -64px -20px;
 }
 
 /* drag-n-drop *** */
-/* line 425, ../development/wijmo/_grid.scss */
+/* line 371, ../development/wijmo/_grid.scss */
 .wijmo-wijgrid-dnd-arrow-top, .wijmo-wijgrid-dnd-arrow-bottom {
   z-index: 1000;
   width: 16px;
   height: 16px;
 }
 
-/* line 432, ../development/wijmo/_grid.scss */
+/* line 378, ../development/wijmo/_grid.scss */
 .wijmo-wijgrid-dnd-arrow-top .ui-icon {
   position: absolute;
   top: -4px;
 }
 
-/* line 438, ../development/wijmo/_grid.scss */
+/* line 384, ../development/wijmo/_grid.scss */
 .wijmo-wijgrid-dnd-arrow-bottom .ui-icon {
   position: absolute;
   top: 4px;
 }
 
-/* line 444, ../development/wijmo/_grid.scss */
+/* line 390, ../development/wijmo/_grid.scss */
 .wijmo-wijgrid-dnd-helper {
   border: 1px solid #F0F0F0 !important;
   filter: alpha(opacity=70) !important;
@@ -6569,18 +6557,18 @@ button {
   z-index: 1000;
 }
 
-/* line 453, ../development/wijmo/_grid.scss */
+/* line 399, ../development/wijmo/_grid.scss */
 .wijmo-wijgrid th.ui-draggable {
   cursor: pointer;
 }
 
 /* *** drag-n-drop */
-/* line 459, ../development/wijmo/_grid.scss */
+/* line 405, ../development/wijmo/_grid.scss */
 .wijmo-wijgrid-footerrow {
   text-align: right;
 }
 
-/* line 464, ../development/wijmo/_grid.scss */
+/* line 410, ../development/wijmo/_grid.scss */
 .wijmo-wijgrid-group-button {
   float: left;
   padding: 0.4em 1.4em 0.4em 0.4em;
@@ -6589,7 +6577,7 @@ button {
   text-decoration: none;
 }
 
-/* line 472, ../development/wijmo/_grid.scss */
+/* line 418, ../development/wijmo/_grid.scss */
 .wijmo-wijgrid-group-button-close {
   float: right;
   margin: 0 3px 0 24px;
@@ -6602,14 +6590,14 @@ button {
   -moz-border-radius: 15px;
 }
 
-/* line 481, ../development/wijmo/_grid.scss */
+/* line 427, ../development/wijmo/_grid.scss */
 .wijmo-wijgrid-group-button-sort {
   position: absolute;
   right: 3px;
   top: 25%;
 }
 
-/* line 487, ../development/wijmo/_grid.scss */
+/* line 433, ../development/wijmo/_grid.scss */
 .wijmo-wijgrid-group-area {
   height: 35px;
 }
@@ -6620,15 +6608,28 @@ button {
   width: 150px;
   border: 0px;
 }
+/* line 8, ../development/wijmo/_input.scss */
+.wijmo-wijinput .wijmo-wijinput-trigger {
+  position: absolute;
+  right: 0;
+  width: 16px;
+  cursor: pointer;
+  padding: 0 3px;
+  height: 100%;
+}
+/* line 16, ../development/wijmo/_input.scss */
+.wijmo-wijinput .wijmo-wijinput-trigger .ui-icon {
+  margin-top: 40%;
+}
 
-/* line 9, ../development/wijmo/_input.scss */
+/* line 21, ../development/wijmo/_input.scss */
 .wijmo-wijinput-wrapper {
   float: left;
   margin-right: 0;
   width: 100%;
 }
 
-/* line 16, ../development/wijmo/_input.scss */
+/* line 28, ../development/wijmo/_input.scss */
 .wijmo-wijinput-input {
   background: none;
   border: 0 none;
@@ -6641,60 +6642,47 @@ button {
   padding: 5px;
 }
 
-/* line 29, ../development/wijmo/_input.scss */
-.wijmo-wijinput .wijmo-wijinput-trigger {
-  position: absolute;
-  right: 0;
-  width: 16px;
-  cursor: pointer;
-  padding: 0 3px;
-  height: 100%;
-}
-
-/* line 39, ../development/wijmo/_input.scss */
-.wijmo-wijinput .wijmo-wijinput-trigger .ui-icon {
-  margin-top: 40%;
-}
-
-/* line 44, ../development/wijmo/_input.scss */
-.ui-input-trigger-right .wijmo-wijinput-input, .ui-input-spinner-right .wijmo-wijinput-input {
+/* line 42, ../development/wijmo/_input.scss */
+.ui-input-trigger-right .wijmo-wijinput-input,
+.ui-input-spinner-right .wijmo-wijinput-input {
   padding: 5px 25px 5px 5px;
 }
 
-/* line 48, ../development/wijmo/_input.scss */
-.ui-input-trigger-left .wijmo-wijinput-input, .ui-input-spinner-left .wijmo-wijinput-input {
+/* line 47, ../development/wijmo/_input.scss */
+.ui-input-trigger-left .wijmo-wijinput-input,
+.ui-input-spinner-left .wijmo-wijinput-input {
   padding: 5px 5px 5px 25px;
 }
 
-/* line 53, ../development/wijmo/_input.scss */
+/* line 52, ../development/wijmo/_input.scss */
 .ui-input-trigger-right .wijmo-wijinput-trigger {
   position: absolute;
   right: 0;
   top: 0;
 }
 
-/* line 59, ../development/wijmo/_input.scss */
+/* line 58, ../development/wijmo/_input.scss */
 .ui-input-trigger-left .wijmo-wijinput-trigger {
   position: absolute;
   left: 0;
   top: 0;
 }
 
-/* line 65, ../development/wijmo/_input.scss */
+/* line 64, ../development/wijmo/_input.scss */
 .ui-input-trigger-right .wijmo-wijinput-trigger {
   border-right: none;
   border-top: none;
   border-bottom: none;
 }
 
-/* line 72, ../development/wijmo/_input.scss */
+/* line 71, ../development/wijmo/_input.scss */
 .ui-input-trigger-left .wijmo-wijinput-trigger {
   border-left: none;
   border-top: none;
   border-bottom: none;
 }
 
-/* line 79, ../development/wijmo/_input.scss */
+/* line 78, ../development/wijmo/_input.scss */
 .wijmo-wijinput .wijmo-wijinput-spinner {
   position: absolute;
   right: 0;
@@ -6704,14 +6692,14 @@ button {
   height: 100%;
 }
 
-/* line 89, ../development/wijmo/_input.scss */
+/* line 88, ../development/wijmo/_input.scss */
 .ui-input-spinner-left .wijmo-wijinput-spinner {
   position: absolute;
   left: 0;
   top: 0;
 }
 
-/* line 96, ../development/wijmo/_input.scss */
+/* line 95, ../development/wijmo/_input.scss */
 .wijmo-wijinput-spinup {
   border-bottom: none;
   display: block;
@@ -6720,7 +6708,7 @@ button {
   position: relative;
 }
 
-/* line 106, ../development/wijmo/_input.scss */
+/* line 105, ../development/wijmo/_input.scss */
 .wijmo-wijinput-spindown {
   border-top: none;
   display: block;
@@ -6729,73 +6717,77 @@ button {
   position: relative;
 }
 
-/* line 117, ../development/wijmo/_input.scss */
+/* line 116, ../development/wijmo/_input.scss */
 .ui-input-spinner-right .wijmo-wijinput-spinup {
   border-right: none;
   border-top: none;
 }
 
-/* line 122, ../development/wijmo/_input.scss */
+/* line 121, ../development/wijmo/_input.scss */
 .ui-input-spinner-right .wijmo-wijinput-spindown {
   border-right: none;
   border-bottom: none;
 }
 
-/* line 128, ../development/wijmo/_input.scss */
+/* line 127, ../development/wijmo/_input.scss */
 .ui-input-spinner-left .wijmo-wijinput-spinup {
   border-left: none;
   border-top: none;
 }
 
-/* line 134, ../development/wijmo/_input.scss */
+/* line 133, ../development/wijmo/_input.scss */
 .ui-input-spinner-left .wijmo-wijinput-spindown {
   border-left: none;
   border-bottom: none;
 }
 
-/* line 140, ../development/wijmo/_input.scss */
+/* line 139, ../development/wijmo/_input.scss */
 .wijmo-wijinput-numeric {
   text-align: right;
 }
 
-/* line 145, ../development/wijmo/_input.scss */
+/* line 144, ../development/wijmo/_input.scss */
 .wijmo-wijinput-date, .wijmo-wijinput-mask {
   float: left;
 }
 
-/* line 150, ../development/wijmo/_input.scss */
+/* line 149, ../development/wijmo/_input.scss */
 .ui-input-spinner-trigger-right .wijmo-wijinput-spinner {
   right: 23px;
 }
 
-/* line 155, ../development/wijmo/_input.scss */
+/* line 154, ../development/wijmo/_input.scss */
 .ui-input-spinner-trigger-right .wijmo-wijinput-input {
   padding: 5px 42px 5px 5px;
 }
 
-/* line 160, ../development/wijmo/_input.scss */
-.ui-input-spinner-trigger-right .wijmo-wijinput-spinup, .ui-input-spinner-trigger-right .wijmo-wijinput-spindown, .ui-input-spinner-trigger-right .wijmo-wijinput-trigger {
+/* line 161, ../development/wijmo/_input.scss */
+.ui-input-spinner-trigger-right .wijmo-wijinput-spinup,
+.ui-input-spinner-trigger-right .wijmo-wijinput-spindown,
+.ui-input-spinner-trigger-right .wijmo-wijinput-trigger {
   border-top: none;
   border-right: none;
 }
 
-/* line 166, ../development/wijmo/_input.scss */
+/* line 167, ../development/wijmo/_input.scss */
 .ui-input-spinner-trigger-left .wijmo-wijinput-trigger {
   left: 0;
 }
 
-/* line 170, ../development/wijmo/_input.scss */
+/* line 171, ../development/wijmo/_input.scss */
 .ui-input-spinner-trigger-left .wijmo-wijinput-spinner {
   left: 23px;
 }
 
-/* line 175, ../development/wijmo/_input.scss */
+/* line 176, ../development/wijmo/_input.scss */
 .ui-input-spinner-trigger-left .wijmo-wijinput-input {
   padding: 5px 5px 5px 42px;
 }
 
-/* line 180, ../development/wijmo/_input.scss */
-.ui-input-spinner-trigger-left .wijmo-wijinput-spinup, .ui-input-spinner-trigger-left .wijmo-wijinput-spindown, .ui-input-spinner-trigger-left .wijmo-wijinput-trigger {
+/* line 183, ../development/wijmo/_input.scss */
+.ui-input-spinner-trigger-left .wijmo-wijinput-spinup,
+.ui-input-spinner-trigger-left .wijmo-wijinput-spindown,
+.ui-input-spinner-trigger-left .wijmo-wijinput-trigger {
   border-top: none;
   border-left: none;
 }

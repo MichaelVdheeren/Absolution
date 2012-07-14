@@ -2,13 +2,15 @@
 width:150px;
 padding:0.3em;
 position:relative;
+
+	.wijmo-wijsuperpanel {
+		border:none;
+		background: inherit;
+		padding:0;
+	}
 }
 
-.wijmo-wijmenu .wijmo-wijsuperpanel {
-border:none;
-background: inherit;
-padding:0;
-}
+.wijmo-wijmenu 
 
 .wijmo-wijmenu-list {
 position:static;
