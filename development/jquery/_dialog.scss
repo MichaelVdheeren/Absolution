@@ -1,0 +1,138 @@
+.ui-dialog
+{
+	position: absolute;
+	padding: 0.0em;
+	width: 300px;
+	overflow: hidden;
+	border: 2px solid #2F2F2F;
+	@include box-shadow(0px,0px,5px,#282425);
+	
+	.ui-dialog-title
+	{
+		float: left;
+		margin: 0 1em 0 0;
+		@include text-shadow(-1px -1px);
+	}
+	
+	.ui-dialog-titlebar-close
+	{
+		position: absolute;
+		right: .4em;
+		top: 50%;
+		width: 19px;
+		margin: -11px 0 0 0;
+		padding: 0px;
+		height: 18px;
+		border-width: 1px;
+		border-style: solid;
+		
+		span
+		{
+			display: block;
+			margin: 1px;
+		}
+		
+		&:hover, 
+		&:focus
+		{
+			padding: 0;
+		}
+	}
+	
+	.ui-dialog-content
+	{
+		position: relative;
+		border-width: 0px;
+		padding: 1em;
+		overflow: auto;
+		zoom: 1;
+		
+		.ui-tabs
+		{
+			margin: -1em;
+			border: 0px;
+		}
+		
+		hr
+		{
+			margin: 1em -1em 1em -1em;
+			border: 0px;
+			border-top: 1px solid #c1c1c1 !important;
+		}
+	}
+	
+	.ui-dialog-buttonpane
+	{
+		text-align: left;
+		border-width: 1px 0 0 0;
+		margin: .5em 0 0 0;
+		padding: .3em .3em .6em .4em;
+		background: #f4f4f4;
+		
+		.ui-dialog-buttonset
+		{
+			float: right;
+		}
+		
+		button
+		{
+			margin: .5em .4em .5em 0;
+			cursor: pointer;
+			font-weight: normal;
+			min-width: 7em;
+		}
+	}
+	
+	.ui-dialog-titlebar
+	{
+		padding: .3em 0.6em .3em;
+		position: relative;
+		@include border-radius(0px);
+		border-width: 0px;
+		font-size: 1.5em;
+		font-weight: normal;
+		background-color: #e3e3e3;
+		
+		@include gradientTopToBottom($dialog-title-bg, darken($dialog-title-bg,$gradient-percentage));
+		color: $dialog-title-text;
+		
+		a
+		{		
+			.ui-icon
+			{
+				background-image: url(images/ui-icons_ffffff_256x240.png);
+			}
+			
+			text-shadow: 0 -1px 1px darken($highlight-state-border, $gradient-percentage);
+			
+			color: $highlight-state-text;
+			border: 1px solid $highlight-state-border;
+			background: $highlight-state-bg;
+			@include gradientTopToBottom($highlight-state-bg, darken($highlight-state-bg, $gradient-percentage));
+			a { color: inherit }
+			@include ui-state-interactions($highlight-state-text, $highlight-state-bg);
+			
+			border-color: #000000;
+		}
+	}
+	
+	.ui-resizable-se
+	{
+		width: 14px;
+		height: 14px;
+		right: 1px;
+		bottom: 1px;
+		display: none;
+	}
+	
+	.ui-icon-grip-diagonal-se
+	{ 
+		background-position: -64px -224px;
+		display: none;
+	}
+}
+
+.ui-draggable .ui-dialog-titlebar
+{
+	cursor: move;
+}

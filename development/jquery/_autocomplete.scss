@@ -1,0 +1,61 @@
+.ui-autocomplete { position: absolute; cursor: default; margin-top:10px; }	
+
+/* workarounds */
+* html .ui-autocomplete { width:1px; } /* without this, the menu expands to 100% in IE6 */
+
+.ui-menu
+{
+	list-style:none;
+	padding: 0px;
+	float: left;
+	//@include box-shadow(0px,0px,5px,#282425);
+	
+	.ui-menu-item
+	{
+		padding: 0px;
+		zoom: 1;
+		float: left;
+		clear: left;
+		width: 100%;
+		margin: 0px;
+		border-top: 1px solid $default-state-bg;
+		border-bottom: 1px solid $default-state-border;
+		background-color: $default-state-bg;
+		//@include gradientTopToBottom($default-state-bg, darken($default-state-bg, $gradient-percentage));
+		
+		&:hover
+		{
+			@extend .ui-state-highlight;		
+			margin: 0px -1px;
+		}		
+		
+		a
+		{
+			text-decoration:none;
+			display:block;
+			padding:.3em .5em;
+			line-height:1.7;
+			zoom:1;
+			color: inherit;
+			font-weight: normal;
+			border: none;
+		}
+	}
+	
+	:last-child.ui-menu-item
+	{
+		border-bottom: 1px solid $default-state-bg;
+		
+		&:hover
+		{
+			border: 1px solid $highlight-state-border;
+		}
+	}
+}
+
+.ui-autocomplete.ui-menu.ui-widget.ui-widget-content
+{
+	color: $default-state-text;
+	border: 2px solid #2F2F2F;
+	
+}
