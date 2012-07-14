@@ -62,10 +62,7 @@
 		border: 1px solid $default-state-border;
 		
 		@include ui-state-disabled($default-state-text, $default-state-bg);
-	}
-	
-	td
-	{
+
 		&.ui-datepicker-today
 		{
 			background-color: $default-state-bg;

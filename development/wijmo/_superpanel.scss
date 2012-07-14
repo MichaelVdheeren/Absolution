@@ -74,7 +74,12 @@
     overflow:hidden;
     @include border-radius(5px);
     
-    span { display: none; }
+    span.ui-icon
+    {
+    	background: none;
+    	width:  8px;
+    	height: 8px;
+    }
     
     &.ui-state-default
     {

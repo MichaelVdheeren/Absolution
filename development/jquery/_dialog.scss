@@ -96,7 +96,7 @@
 		@include gradientTopToBottom($dialog-title-bg, darken($dialog-title-bg,$gradient-percentage));
 		color: $dialog-title-text;
 		
-		.ui-dialog-titlebar-close
+		a
 		{		
 			.ui-icon
 			{
