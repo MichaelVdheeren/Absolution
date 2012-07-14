@@ -117,6 +117,7 @@ button.ui-button-icons-only { width: 3.7em; }
 		margin-left: 0;
 		margin-right: -.4em;
 		@include border-radius(0px);
+		border-right-width: 0px;
 	}
 	
 	.ui-button.ui-corner-left {
@@ -125,6 +126,10 @@ button.ui-button-icons-only { width: 3.7em; }
 	
 	.ui-button.ui-corner-right {
 		@extend .ui-corner-right;
+	}
+	
+	.ui-button:last-child {
+		border-right-width: 1px;
 	}
 	
 }
