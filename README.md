@@ -3,7 +3,7 @@
 * You are free to redistribute or change the theme.
 * You can change the theme, but you should keep the references to contributors!
 
-Copyright 2010, Michael Vanderheeren  
+Copyright 2012, Michael Vanderheeren  
 http://www.michaelvanderheeren.be
 
 jQuery UI CSS Framework, Copyright 2010, http://jqueryui.com/about  
@@ -24,19 +24,19 @@ Download the latest version from the gitHub repository and add a text/css type l
 Example: <link type="text/css" href="absolution.blue.css" rel="stylesheet" />  
 
 **But I want a different color!**  
-No problem, if it is already generated then just replace the name of the file above. Otherwise, you have to change the color values in the .less files and either recompile the file or include the LESS javascript in the page where you're using the theme.
+No problem! Thanks to the Sass language you can easily make a copy of the absolution.blue.scss file, rename it, and change the color variables within that file. The only remaining step is to compile the file again using the sass compiler.
 
 **What about Wijmo support?**  
-There is no need anymore to include the Wijmo css stylesheets as they are the foundation for our Wijmo support. Currently the following widgets are fully supported: Expander, Slider, Accordion, Tree.
+There is no need anymore to include the Wijmo css stylesheets as they are the foundation for our Wijmo support. We are working hard to make sure that every widget in Wijmo receives the full support it deserves!
 
 **The theme looks ugly!**  
 Either you have a different taste or an old browser. This theme uses full CSS3 power in every way possible. Gradients, border-radius and box-shadows are just a simple example. There is no way that I will support legacy browsers. Repeated backgrounds limit the font-size and thus limits freedom for the theme user. This is a user-interface theme, and not a font one. Therefore all unneeded font restricting will be removed over time and replaced with inherits where needed.
 
 **Why did you remove the option to include separate widgets?**  
-Sometimes I like to push new technologies. The usage of LESS was a huge improvement for the readability of the code and the ability to change it fast. This came however at the cost of compiling which I do in a minimized single file to make the file smaller. There is however the option to include the necessary LESS files in your page along with the LESS javascript which will process those files.
+Sometimes I like to push new technologies. The usage of Sass was a huge improvement for the readability of the code and the ability to change it fast. This came however at the cost of compiling which I do in a minimized single file to make the file smaller.
 
-**Where can I find LESS?**  
-You are a no brainer aren't you? http://LMGTFY.com/?q=less
+**Where can I find Sass?**  
+You are a no brainer aren't you? http://LMGTFY.com/?q=sass
 
 **How can I support the theme development?**  
 If you have a Flattr account, then click on the button above.

@@ -1,13 +1,15 @@
-fieldset {
+fieldset
+{
 	padding: 5px;
 	text-shadow: 0px 1px 0px #fff;
 	outline: none;
-	border: 1px solid @default-state-border;
-	.border-radius;
+	border: 1px solid $default-state-border;
+	@include border-radius;
 	margin: 0px;
 }
 
-legend {
+legend
+{
 	font-size: 1.1em;
 }
 
@@ -21,19 +23,20 @@ textarea.uniform,
 textarea,
 input[type='text'],
 input[type='password'],
-input[type='file'] {
+input[type='file']
+{
 	padding: 5px;
 	text-shadow: 0px 1px 0px #fff;
 	outline: none;
 	
-	border: 1px solid @default-state-border;
-	.border-radius;
+	border: 1px solid $default-state-border;
+	@include border-radius;
+	background-color: $input-bg;
+	@include gradientTopToBottom($input-bg,lighten($input-bg, $gradient-percentage));
 	
-	background-color: @input-bg;
-	.gradientTopToBottom(@input-bg,lighten(@input-bg, @gradient-percentage));
-	
-	&:hover, &:focus {
-		.box-shadow (0,0,3px,#49A7DB);
+	&:hover, &:focus
+	{
+		@include box-shadow (0,0,3px,#49A7DB);
 	}
 }
 

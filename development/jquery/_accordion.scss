@@ -2,14 +2,20 @@
 { 
 	width: 100%;
 	
+	
+	a
+	{
+	    outline: none;
+	}
+	
 	.ui-accordion-header
 	{
 		cursor: pointer; 
 		position: relative; 
 		margin-top: 1px; 
 		zoom: 1;
-		border: solid 1px @defaultStateBorderColor;
-		.border-radius;
+		border: solid 1px $defaultStateBorderColor;
+		@include border-radius;
 		font:  inherit;
 		
 		a
@@ -26,18 +32,18 @@
 			top: 50%; 
 			margin-top: -7px;
 			width: 13px; height: 13px;
-			border: 1px solid @defaultStateBorderColor; 
+			border: 1px solid $defaultStateBorderColor; 
 			background: #ffffff url(images/ui-icons_222222_256x240.png);
 			background-position: -34px -2px;
-			.border-radius(7px);
-			.box-shadow-inset(0,-6px,5px,rgba(0,0,0,.1));
+			@include border-radius(7px);
+			@include box-shadow-inset(0,-6px,5px,rgba(0,0,0,.1));
 		}
 	}
 
 	.ui-accordion-content
 	{
 		border-width: 0px;
-		.border-radius(0px);
+		@include border-radius(0px);
 		background: none;
 		padding: 1em 2.2em; 
 		border-top: 0; 
@@ -58,7 +64,7 @@
 	{
 		background: #5e9ae2 url(images/ui-icons_ffffff_256x240.png);
 		background-position: -34px -2px;
-		border: 1px solid @highlight-state-border; 
+		border: 1px solid $highlight-state-border; 
 	}
 	
 	.ui-accordion-header.ui-state-active .ui-icon, 
@@ -72,60 +78,19 @@
 	.ui-accordion-header.ui-state-hover,
 	.ui-accordion-header.ui-state-focus
 	{
-		color: @defaultStateTextColor;
-		border-color: @defaultStateBorderColor; 
-		.gradientTopToBottom(@defaultStateStartColor, @defaultStateEndColor);
+		color: $defaultStateTextColor;
+		border-color: $defaultStateBorderColor; 
+		@include gradientTopToBottom($defaultStateStartColor, $defaultStateEndColor);
 	}
 }
 
 .ui-accordion-icons .ui-accordion-header a	{ padding-left: 2.6em; }
 
-
-
-
-
-
-
-.ui-accordion a {
-    outline: none;
-}
-
-.ui-accordion-right .ui-accordion-header,
-.ui-accordion-left .ui-accordion-header {
-    margin-top: 0;
-    margin-left: 1px;
-    width: 2em;
-    height: 12em;
-    overflow: hidden;
-}
-
-.ui-accordion-right .ui-accordion-content,
-.ui-accordion-left .ui-accordion-content
-{
-    margin: 0;
-    height: 200px;
-    width: 36em;
-    height: 12em;
-    padding: 0 2.2em;
-    top: 0;
-    padding: 1px;
-    border: none;
-}
-
-.ui-accordion-right .ui-accordion-header a,
-.ui-accordion-left .ui-accordion-header a {
-    .rotate-text();
-    position: absolute;
-    top: 2.5em; 
-	left: -0.7em;
-    text-align: center;
-}
-
 .ui-accordion-top {
 	.ui-accordion-header.ui-state-hover .ui-icon {
 		background: #5e9ae2 url(images/ui-icons_ffffff_256x240.png);
 		background-position: -34px -2px;
-		border: 1px solid @hoverStateBorderColor; 
+		border: 1px solid $hoverStateBorderColor; 
 	}
 	
 	.ui-accordion-header.ui-state-active .ui-icon, 
@@ -134,46 +99,76 @@
 	}
 }
 
-.ui-accordion-left, .ui-accordion-right {
-	.ui-accordion-header .ui-icon {
-		top: 1em; 
-		left: 50%;
-		margin-left: -7px;
-		background-position: -66px -1px;
+.ui-accordion-right
+{
+	.ui-accordion-header
+	{
+	    margin-top: 0;
+	    margin-left: 1px;
+	    width: 2em;
+	    height: 12em;
+	    overflow: hidden;
+	    
+	    a
+	    {
+	        @include rotate-text();
+	        position: absolute;
+	        top: 2.5em; 
+	    	left: -0.7em;
+	        text-align: center;
+	    }
+	    
+	    .ui-icon
+	    {
+	    	top: 1em; 
+	    	left: 50%;
+	    	margin-left: -7px;
+	    	background-position: -66px -1px;
+	    }
+	}
+	
+	.ui-accordion-content
+	{
+	    margin: 0;
+	    height: 200px;
+	    width: 36em;
+	    height: 12em;
+	    padding: 0 2.2em;
+	    top: 0;
+	    padding: 1px;
+	    border: none;
 	}
 	
 	.ui-accordion-header,
 	.ui-accordion-header.ui-state-active,
 	.ui-accordion-header.ui-state-hover,
-	.ui-accordion-header.ui-state-focus {
-		color: @defaultStateTextColor;
-		border-color: @defaultStateBorderColor; 
-		.gradientLeftToRight(@defaultStateStartColor, @defaultStateEndColor);
+	.ui-accordion-header.ui-state-focus
+	{
+		color: $defaultStateTextColor;
+		border-color: $defaultStateBorderColor; 
+		@include gradientLeftToRight($defaultStateStartColor, $defaultStateEndColor);
 	}
-}
-
-.ui-accordion-right {
-	.ui-accordion-header.ui-state-hover .ui-icon {
+	
+	.ui-accordion-header.ui-state-hover .ui-icon
+	{
 		background: #5e9ae2 url(images/ui-icons_ffffff_256x240.png);
 		background-position: -66px -1px;
-		border: 1px solid @hoverStateBorderColor; 
+		border: 1px solid $hoverStateBorderColor;
 	}
 	
 	.ui-accordion-header.ui-state-active .ui-icon,
-	.ui-accordion-header.ui-state-hover.ui-state-active .ui-icon {
+	.ui-accordion-header.ui-state-hover.ui-state-active .ui-icon
+	{
 		background-position: -34px -2px;
 	}
 }
 
 .ui-accordion-left {
-	.ui-accordion-header.ui-state-hover .ui-icon {
-		background: #5e9ae2 url(images/ui-icons_ffffff_256x240.png);
-		background-position: -66px -1px;
-		border: 1px solid @hoverStateBorderColor; 
-	}
+	@extend .ui-accordion-right;
 	
-	.ui-accordion-header.ui-state-active .ui-icon,
-	.ui-accordion-header.ui-state-hover.ui-state-active .ui-icon {
+	.ui-accordion-header.ui-state-active.ui-icon,
+	.ui-accordion-header.ui-state-hover.ui-state-active .ui-icon
+	{
 		background-position: -98px -2px;
 	}
 }

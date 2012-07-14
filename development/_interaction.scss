@@ -1,0 +1,138 @@
+@mixin ui-state-hover($text, $bg)
+{
+	&:hover,
+	&.ui-state-hover
+	{
+		color: $text;
+		background-color: $bg;
+		@include gradientTopToBottom($bg, darken($bg, $gradient-percentage));
+	}
+}
+
+@mixin ui-state-focus($text, $bg)
+{
+	&:focus,
+	&.ui-state-focus
+	{ 
+		color: $text;
+		background-color: $bg;
+		@include gradientTopToBottom($bg, darken($bg, $gradient-percentage));
+	}
+}
+
+@mixin ui-state-active($text, $bg)
+{
+	&:active,
+	&.ui-state-active
+	{ 
+		text-shadow: none;
+		color: $text;
+		background-color: $bg;
+		@include gradientTopToBottom(darken($bg, $gradient-percentage), $bg);
+	}
+}
+
+@mixin ui-state-disabled($text, $bg)
+{
+	&.ui-state-disabled
+	{
+		border-color: $default-state-border;
+		text-shadow: none;
+		background-color: lighten($bg,$gradient-percentage);
+		@include gradientTopToBottom(lighten($bg,$gradient-percentage), $bg);
+	}
+}
+
+@mixin ui-state-interactions($text,$bg)
+{
+	@include ui-state-hover($text, darken($bg, 0.5*$gradient-percentage));
+	@include ui-state-focus($text, darken($bg, 0.5*$gradient-percentage));
+	@include ui-state-active($text, $bg);
+	@include ui-state-disabled($text, $bg);
+}
+
+/* Interaction states
+----------------------------------*/
+.ui-state-default, 
+.ui-widget-content .ui-state-default, 
+.ui-widget-header .ui-state-default,
+.ui-state-hover, 
+.ui-widget-content .ui-state-hover, 
+.ui-widget-header .ui-state-hover, 
+.ui-state-focus, 
+.ui-widget-content .ui-state-focus, 
+.ui-widget-header .ui-state-focus,
+.ui-state-active, 
+.ui-widget-content .ui-state-active, 
+.ui-widget-header .ui-state-active
+{ 
+	border-style: solid;
+	border-width: 1px;
+}
+
+.ui-state-default a, 
+.ui-state-hover a, 
+.ui-state-active a
+{
+	color: inherit; 
+	text-decoration: none;
+}
+
+.ui-widget:active
+{ 
+	outline: none; 
+}
+
+/* Interaction Cues
+----------------------------------*/
+.ui-state-default
+{
+	color: $default-state-text;
+	border-color: $default-state-border;
+	@include gradientTopToBottom($default-state-bg, darken($default-state-bg, $gradient-percentage));
+}
+
+.ui-state-success
+{
+	text-shadow: 0 -1px 1px darken($success-state-border, $gradient-percentage);
+	
+	color: $success-state-text;
+	border: 1px solid $success-state-border;
+	@include gradientTopToBottom($success-state-bg, darken($success-state-bg, $gradient-percentage));
+	a { color: inherit }
+}
+
+.ui-state-warning
+{
+	text-shadow: 0 -1px 1px darken($warning-state-border, $gradient-percentage);
+	
+	color: $warning-state-text;
+	border: 1px solid $warning-state-border;
+	@include gradientTopToBottom($warning-state-bg, darken($warning-state-bg, $gradient-percentage));
+	a { color: inherit }
+}
+
+.ui-state-highlight
+{
+	text-shadow: 0 -1px 1px darken($highlight-state-border, $gradient-percentage);
+	
+	color: $highlight-state-text;
+	border: 1px solid $highlight-state-border;
+	@include gradientTopToBottom($highlight-state-bg, darken($highlight-state-bg, $gradient-percentage));
+	a { color: inherit }
+}
+
+.ui-state-error
+{
+	text-shadow: 0 -1px 1px darken($error-state-border, $gradient-percentage);
+	
+	color: $error-state-text;
+	border: 1px solid $error-state-border;
+	@include gradientTopToBottom($error-state-bg, darken($error-state-bg, $gradient-percentage));
+	a { color: inherit }
+}
+
+.ui-state-error-text, 
+.ui-widget-content .ui-state-error-text, 
+.ui-widget-header .ui-state-error-text { color: #363636; }
+.ui-state-disabled { cursor: default !important; }

@@ -1224,8 +1224,8 @@
 input[type='button'],
 input[type='reset'],
 input[type='submit'],
-button,
-div.button {
+div.button,
+button {
   display: inline-block;
   position: relative;
   padding: 0;
@@ -1233,7 +1233,6 @@ div.button {
   text-decoration: none !important;
   text-align: center;
   zoom: 1;
-  line-height: 1.2em;
   font: inherit;
   font-size: inherit;
   border-width: 1px;
@@ -1256,20 +1255,18 @@ div.button {
   border-radius: 3px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
-  /* no icon support for input elements, provide padding by default */
-
   padding: .4em 1em;
 }
 input[type='button']:hover,
 input[type='reset']:hover,
 input[type='submit']:hover,
-button:hover,
 div.button:hover,
+button:hover,
 input[type='button'] .ui-state-hover,
 input[type='reset'] .ui-state-hover,
 input[type='submit'] .ui-state-hover,
-button .ui-state-hover,
-div.button .ui-state-hover {
+div.button .ui-state-hover,
+button .ui-state-hover {
   color: #243314;
   background-color: #e7e7e7;
   background: #ffffff;
@@ -1282,13 +1279,13 @@ div.button .ui-state-hover {
 input[type='button']:focus,
 input[type='reset']:focus,
 input[type='submit']:focus,
-button:focus,
 div.button:focus,
+button:focus,
 input[type='button'] .ui-state-focus,
 input[type='reset'] .ui-state-focus,
 input[type='submit'] .ui-state-focus,
-button .ui-state-focus,
-div.button .ui-state-focus {
+div.button .ui-state-focus,
+button .ui-state-focus {
   color: #243314;
   background-color: #e7e7e7;
   background: #ffffff;
@@ -1301,13 +1298,13 @@ div.button .ui-state-focus {
 input[type='button']:active,
 input[type='reset']:active,
 input[type='submit']:active,
-button:active,
 div.button:active,
+button:active,
 input[type='button'] .ui-state-active,
 input[type='reset'] .ui-state-active,
 input[type='submit'] .ui-state-active,
-button .ui-state-active,
-div.button .ui-state-active {
+div.button .ui-state-active,
+button .ui-state-active {
   text-shadow: none;
   color: #243314;
   background-color: #f6f6f6;
@@ -1321,8 +1318,8 @@ div.button .ui-state-active {
 input[type='button'] .ui-state-disabled,
 input[type='reset'] .ui-state-disabled,
 input[type='submit'] .ui-state-disabled,
-button .ui-state-disabled,
-div.button .ui-state-disabled {
+div.button .ui-state-disabled,
+button .ui-state-disabled {
   text-shadow: none;
   color: #a4cb7b;
   background-color: #f6f6f6;
@@ -1333,16 +1330,39 @@ div.button .ui-state-disabled {
   background: -webkit-gradient(linear, left top, left bottom, from(#f6f6f6), to(#ffffff));
   background: -o-linear-gradient(0% 100% 90deg, #ffffff, #f6f6f6);
 }
+input[type='button'].ui-state-success,
+input[type='reset'].ui-state-success,
+input[type='submit'].ui-state-success,
+div.button.ui-state-success,
+button.ui-state-success {
+  text-shadow: 0 -1px 1px #42542a;
+  color: #ffffff;
+  border: 1px solid #627d3f;
+  background: #90a960;
+  background: #ffffa8;
+  filter: expression("progid:DXImageTransform.Microsoft.gradient(startColorstr='#90a960',endColorstr='#6f8448')");
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#90a960',endColorstr='#6f8448')";
+  background: -moz-linear-gradient(0% 100% 90deg, #6f8448, #90a960);
+  background: -webkit-gradient(linear, left top, left bottom, from(#90a960), to(#6f8448));
+  background: -o-linear-gradient(0% 100% 90deg, #6f8448, #90a960);
+}
+input[type='button'].ui-state-success a,
+input[type='reset'].ui-state-success a,
+input[type='submit'].ui-state-success a,
+div.button.ui-state-success a,
+button.ui-state-success a {
+  color: inherit;
+}
 input[type='button'].ui-state-success:hover,
 input[type='reset'].ui-state-success:hover,
 input[type='submit'].ui-state-success:hover,
-button.ui-state-success:hover,
 div.button.ui-state-success:hover,
+button.ui-state-success:hover,
 input[type='button'].ui-state-success .ui-state-hover,
 input[type='reset'].ui-state-success .ui-state-hover,
 input[type='submit'].ui-state-success .ui-state-hover,
-button.ui-state-success .ui-state-hover,
-div.button.ui-state-success .ui-state-hover {
+div.button.ui-state-success .ui-state-hover,
+button.ui-state-success .ui-state-hover {
   color: #ffffff;
   background-color: #809852;
   background: #dfff8f;
@@ -1355,13 +1375,13 @@ div.button.ui-state-success .ui-state-hover {
 input[type='button'].ui-state-success:focus,
 input[type='reset'].ui-state-success:focus,
 input[type='submit'].ui-state-success:focus,
-button.ui-state-success:focus,
 div.button.ui-state-success:focus,
+button.ui-state-success:focus,
 input[type='button'].ui-state-success .ui-state-focus,
 input[type='reset'].ui-state-success .ui-state-focus,
 input[type='submit'].ui-state-success .ui-state-focus,
-button.ui-state-success .ui-state-focus,
-div.button.ui-state-success .ui-state-focus {
+div.button.ui-state-success .ui-state-focus,
+button.ui-state-success .ui-state-focus {
   color: #ffffff;
   background-color: #809852;
   background: #dfff8f;
@@ -1374,13 +1394,13 @@ div.button.ui-state-success .ui-state-focus {
 input[type='button'].ui-state-success:active,
 input[type='reset'].ui-state-success:active,
 input[type='submit'].ui-state-success:active,
-button.ui-state-success:active,
 div.button.ui-state-success:active,
+button.ui-state-success:active,
 input[type='button'].ui-state-success .ui-state-active,
 input[type='reset'].ui-state-success .ui-state-active,
 input[type='submit'].ui-state-success .ui-state-active,
-button.ui-state-success .ui-state-active,
-div.button.ui-state-success .ui-state-active {
+div.button.ui-state-success .ui-state-active,
+button.ui-state-success .ui-state-active {
   text-shadow: none;
   color: #ffffff;
   background-color: #90a960;
@@ -1394,8 +1414,8 @@ div.button.ui-state-success .ui-state-active {
 input[type='button'].ui-state-success .ui-state-disabled,
 input[type='reset'].ui-state-success .ui-state-disabled,
 input[type='submit'].ui-state-success .ui-state-disabled,
-button.ui-state-success .ui-state-disabled,
-div.button.ui-state-success .ui-state-disabled {
+div.button.ui-state-success .ui-state-disabled,
+button.ui-state-success .ui-state-disabled {
   text-shadow: none;
   color: #ffffff;
   background-color: #90a960;
@@ -1409,13 +1429,13 @@ div.button.ui-state-success .ui-state-disabled {
 input[type='button'].ui-state-warning:hover,
 input[type='reset'].ui-state-warning:hover,
 input[type='submit'].ui-state-warning:hover,
-button.ui-state-warning:hover,
 div.button.ui-state-warning:hover,
+button.ui-state-warning:hover,
 input[type='button'].ui-state-warning .ui-state-hover,
 input[type='reset'].ui-state-warning .ui-state-hover,
 input[type='submit'].ui-state-warning .ui-state-hover,
-button.ui-state-warning .ui-state-hover,
-div.button.ui-state-warning .ui-state-hover {
+div.button.ui-state-warning .ui-state-hover,
+button.ui-state-warning .ui-state-hover {
   color: #ffffff;
   background-color: #d5a638;
   background: #ffff5c;
@@ -1428,13 +1448,13 @@ div.button.ui-state-warning .ui-state-hover {
 input[type='button'].ui-state-warning:focus,
 input[type='reset'].ui-state-warning:focus,
 input[type='submit'].ui-state-warning:focus,
-button.ui-state-warning:focus,
 div.button.ui-state-warning:focus,
+button.ui-state-warning:focus,
 input[type='button'].ui-state-warning .ui-state-focus,
 input[type='reset'].ui-state-warning .ui-state-focus,
 input[type='submit'].ui-state-warning .ui-state-focus,
-button.ui-state-warning .ui-state-focus,
-div.button.ui-state-warning .ui-state-focus {
+div.button.ui-state-warning .ui-state-focus,
+button.ui-state-warning .ui-state-focus {
   color: #ffffff;
   background-color: #d5a638;
   background: #ffff5c;
@@ -1447,13 +1467,13 @@ div.button.ui-state-warning .ui-state-focus {
 input[type='button'].ui-state-warning:active,
 input[type='reset'].ui-state-warning:active,
 input[type='submit'].ui-state-warning:active,
-button.ui-state-warning:active,
 div.button.ui-state-warning:active,
+button.ui-state-warning:active,
 input[type='button'].ui-state-warning .ui-state-active,
 input[type='reset'].ui-state-warning .ui-state-active,
 input[type='submit'].ui-state-warning .ui-state-active,
-button.ui-state-warning .ui-state-active,
-div.button.ui-state-warning .ui-state-active {
+div.button.ui-state-warning .ui-state-active,
+button.ui-state-warning .ui-state-active {
   text-shadow: none;
   color: #ffffff;
   background-color: #dab151;
@@ -1467,8 +1487,8 @@ div.button.ui-state-warning .ui-state-active {
 input[type='button'].ui-state-warning .ui-state-disabled,
 input[type='reset'].ui-state-warning .ui-state-disabled,
 input[type='submit'].ui-state-warning .ui-state-disabled,
-button.ui-state-warning .ui-state-disabled,
-div.button.ui-state-warning .ui-state-disabled {
+div.button.ui-state-warning .ui-state-disabled,
+button.ui-state-warning .ui-state-disabled {
   text-shadow: none;
   color: #ffffff;
   background-color: #dab151;
@@ -1479,16 +1499,39 @@ div.button.ui-state-warning .ui-state-disabled {
   background: -webkit-gradient(linear, left top, left bottom, from(#dab151), to(#e5c883));
   background: -o-linear-gradient(0% 100% 90deg, #e5c883, #dab151);
 }
+input[type='button'].ui-state-highlight,
+input[type='reset'].ui-state-highlight,
+input[type='submit'].ui-state-highlight,
+div.button.ui-state-highlight,
+button.ui-state-highlight {
+  text-shadow: 0 -1px 1px #214675;
+  color: #ffffff;
+  border: 1px solid #2e63a5;
+  background: #49a7db;
+  background: #6fffff;
+  filter: expression("progid:DXImageTransform.Microsoft.gradient(startColorstr='#49a7db',endColorstr='#268ac1')");
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#49a7db',endColorstr='#268ac1')";
+  background: -moz-linear-gradient(0% 100% 90deg, #268ac1, #49a7db);
+  background: -webkit-gradient(linear, left top, left bottom, from(#49a7db), to(#268ac1));
+  background: -o-linear-gradient(0% 100% 90deg, #268ac1, #49a7db);
+}
+input[type='button'].ui-state-highlight a,
+input[type='reset'].ui-state-highlight a,
+input[type='submit'].ui-state-highlight a,
+div.button.ui-state-highlight a,
+button.ui-state-highlight a {
+  color: inherit;
+}
 input[type='button'].ui-state-highlight:hover,
 input[type='reset'].ui-state-highlight:hover,
 input[type='submit'].ui-state-highlight:hover,
-button.ui-state-highlight:hover,
 div.button.ui-state-highlight:hover,
+button.ui-state-highlight:hover,
 input[type='button'].ui-state-highlight .ui-state-hover,
 input[type='reset'].ui-state-highlight .ui-state-hover,
 input[type='submit'].ui-state-highlight .ui-state-hover,
-button.ui-state-highlight .ui-state-hover,
-div.button.ui-state-highlight .ui-state-hover {
+div.button.ui-state-highlight .ui-state-hover,
+button.ui-state-highlight .ui-state-hover {
   color: #ffffff;
   background-color: #2f9bd6;
   background: #51ffff;
@@ -1501,13 +1544,13 @@ div.button.ui-state-highlight .ui-state-hover {
 input[type='button'].ui-state-highlight:focus,
 input[type='reset'].ui-state-highlight:focus,
 input[type='submit'].ui-state-highlight:focus,
-button.ui-state-highlight:focus,
 div.button.ui-state-highlight:focus,
+button.ui-state-highlight:focus,
 input[type='button'].ui-state-highlight .ui-state-focus,
 input[type='reset'].ui-state-highlight .ui-state-focus,
 input[type='submit'].ui-state-highlight .ui-state-focus,
-button.ui-state-highlight .ui-state-focus,
-div.button.ui-state-highlight .ui-state-focus {
+div.button.ui-state-highlight .ui-state-focus,
+button.ui-state-highlight .ui-state-focus {
   color: #ffffff;
   background-color: #2f9bd6;
   background: #51ffff;
@@ -1520,13 +1563,13 @@ div.button.ui-state-highlight .ui-state-focus {
 input[type='button'].ui-state-highlight:active,
 input[type='reset'].ui-state-highlight:active,
 input[type='submit'].ui-state-highlight:active,
-button.ui-state-highlight:active,
 div.button.ui-state-highlight:active,
+button.ui-state-highlight:active,
 input[type='button'].ui-state-highlight .ui-state-active,
 input[type='reset'].ui-state-highlight .ui-state-active,
 input[type='submit'].ui-state-highlight .ui-state-active,
-button.ui-state-highlight .ui-state-active,
-div.button.ui-state-highlight .ui-state-active {
+div.button.ui-state-highlight .ui-state-active,
+button.ui-state-highlight .ui-state-active {
   text-shadow: none;
   color: #ffffff;
   background-color: #49a7db;
@@ -1540,8 +1583,8 @@ div.button.ui-state-highlight .ui-state-active {
 input[type='button'].ui-state-highlight .ui-state-disabled,
 input[type='reset'].ui-state-highlight .ui-state-disabled,
 input[type='submit'].ui-state-highlight .ui-state-disabled,
-button.ui-state-highlight .ui-state-disabled,
-div.button.ui-state-highlight .ui-state-disabled {
+div.button.ui-state-highlight .ui-state-disabled,
+button.ui-state-highlight .ui-state-disabled {
   text-shadow: none;
   color: #ffffff;
   background-color: #49a7db;
@@ -1555,13 +1598,13 @@ div.button.ui-state-highlight .ui-state-disabled {
 input[type='button'].ui-state-error:hover,
 input[type='reset'].ui-state-error:hover,
 input[type='submit'].ui-state-error:hover,
-button.ui-state-error:hover,
 div.button.ui-state-error:hover,
+button.ui-state-error:hover,
 input[type='button'].ui-state-error .ui-state-hover,
 input[type='reset'].ui-state-error .ui-state-hover,
 input[type='submit'].ui-state-error .ui-state-hover,
-button.ui-state-error .ui-state-hover,
-div.button.ui-state-error .ui-state-hover {
+div.button.ui-state-error .ui-state-hover,
+button.ui-state-error .ui-state-hover {
   color: #ffffff;
   background-color: #d15965;
   background: #ff8ca5;
@@ -1574,13 +1617,13 @@ div.button.ui-state-error .ui-state-hover {
 input[type='button'].ui-state-error:focus,
 input[type='reset'].ui-state-error:focus,
 input[type='submit'].ui-state-error:focus,
-button.ui-state-error:focus,
 div.button.ui-state-error:focus,
+button.ui-state-error:focus,
 input[type='button'].ui-state-error .ui-state-focus,
 input[type='reset'].ui-state-error .ui-state-focus,
 input[type='submit'].ui-state-error .ui-state-focus,
-button.ui-state-error .ui-state-focus,
-div.button.ui-state-error .ui-state-focus {
+div.button.ui-state-error .ui-state-focus,
+button.ui-state-error .ui-state-focus {
   color: #ffffff;
   background-color: #d15965;
   background: #ff8ca5;
@@ -1593,13 +1636,13 @@ div.button.ui-state-error .ui-state-focus {
 input[type='button'].ui-state-error:active,
 input[type='reset'].ui-state-error:active,
 input[type='submit'].ui-state-error:active,
-button.ui-state-error:active,
 div.button.ui-state-error:active,
+button.ui-state-error:active,
 input[type='button'].ui-state-error .ui-state-active,
 input[type='reset'].ui-state-error .ui-state-active,
 input[type='submit'].ui-state-error .ui-state-active,
-button.ui-state-error .ui-state-active,
-div.button.ui-state-error .ui-state-active {
+div.button.ui-state-error .ui-state-active,
+button.ui-state-error .ui-state-active {
   text-shadow: none;
   color: #ffffff;
   background-color: #d8717b;
@@ -1613,8 +1656,8 @@ div.button.ui-state-error .ui-state-active {
 input[type='button'].ui-state-error .ui-state-disabled,
 input[type='reset'].ui-state-error .ui-state-disabled,
 input[type='submit'].ui-state-error .ui-state-disabled,
-button.ui-state-error .ui-state-disabled,
-div.button.ui-state-error .ui-state-disabled {
+div.button.ui-state-error .ui-state-disabled,
+button.ui-state-error .ui-state-disabled {
   text-shadow: none;
   color: #ffffff;
   background-color: #d8717b;
@@ -1633,7 +1676,6 @@ div.button.ui-state-error .ui-state-disabled {
   text-decoration: none !important;
   text-align: center;
   zoom: 1;
-  line-height: 1.2em;
   font: inherit;
   font-size: inherit;
   border-width: 1px;
@@ -1698,6 +1740,21 @@ div.button.ui-state-error .ui-state-disabled {
   background: -moz-linear-gradient(0% 100% 90deg, #ffffff, #f6f6f6);
   background: -webkit-gradient(linear, left top, left bottom, from(#f6f6f6), to(#ffffff));
   background: -o-linear-gradient(0% 100% 90deg, #ffffff, #f6f6f6);
+}
+.ui-button.ui-state-success {
+  text-shadow: 0 -1px 1px #42542a;
+  color: #ffffff;
+  border: 1px solid #627d3f;
+  background: #90a960;
+  background: #ffffa8;
+  filter: expression("progid:DXImageTransform.Microsoft.gradient(startColorstr='#90a960',endColorstr='#6f8448')");
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#90a960',endColorstr='#6f8448')";
+  background: -moz-linear-gradient(0% 100% 90deg, #6f8448, #90a960);
+  background: -webkit-gradient(linear, left top, left bottom, from(#90a960), to(#6f8448));
+  background: -o-linear-gradient(0% 100% 90deg, #6f8448, #90a960);
+}
+.ui-button.ui-state-success a {
+  color: inherit;
 }
 .ui-button.ui-state-success:hover,
 .ui-button.ui-state-success .ui-state-hover {
@@ -1788,6 +1845,21 @@ div.button.ui-state-error .ui-state-disabled {
   background: -moz-linear-gradient(0% 100% 90deg, #e5c883, #dab151);
   background: -webkit-gradient(linear, left top, left bottom, from(#dab151), to(#e5c883));
   background: -o-linear-gradient(0% 100% 90deg, #e5c883, #dab151);
+}
+.ui-button.ui-state-highlight {
+  text-shadow: 0 -1px 1px #214675;
+  color: #ffffff;
+  border: 1px solid #2e63a5;
+  background: #49a7db;
+  background: #6fffff;
+  filter: expression("progid:DXImageTransform.Microsoft.gradient(startColorstr='#49a7db',endColorstr='#268ac1')");
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#49a7db',endColorstr='#268ac1')";
+  background: -moz-linear-gradient(0% 100% 90deg, #268ac1, #49a7db);
+  background: -webkit-gradient(linear, left top, left bottom, from(#49a7db), to(#268ac1));
+  background: -o-linear-gradient(0% 100% 90deg, #268ac1, #49a7db);
+}
+.ui-button.ui-state-highlight a {
+  color: inherit;
 }
 .ui-button.ui-state-highlight:hover,
 .ui-button.ui-state-highlight .ui-state-hover {
@@ -1952,6 +2024,25 @@ button.ui-button-icons-only {
 .ui-buttonset .ui-button {
   margin-left: 0;
   margin-right: -0.3em;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+}
+.ui-buttonset .ui-button.ui-corner-left {
+  -moz-border-radius-topleft: 3px;
+  -webkit-border-top-left-radius: 3px;
+  border-top-left-radius: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.ui-buttonset .ui-button.ui-corner-right {
+  -moz-border-radius-topright: 3px;
+  -webkit-border-top-right-radius: 3px;
+  border-top-right-radius: 3px;
+  -moz-border-radius-bottomright: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  border-bottom-right-radius: 3px;
 }
 /* workarounds */
 button.ui-button::-moz-focus-inner {
@@ -3188,8 +3279,7 @@ div.wijmo-wijprogressbar-north .ui-widget-header {
   filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
 }
 div.selector span,
-div.uploader span.action,
-div.button {
+div.uploader span.action {
   color: #243314;
   border-color: #ababab;
   background-color: #f6f6f6;
@@ -3283,6 +3373,15 @@ div.selector {
   -moz-box-shadow: inset 0 -10px 15px rgba(0, 0, 0, 0.1);
   box-shadow: inset 0 -10px 15px rgba(0, 0, 0, 0.1);
   margin: 2px -2px 2px 0px;
+}
+div.selector:hover {
+  background: #ececec url('images/selector.png') right center no-repeat;
+}
+div.selector:focus {
+  background: #ececec url('images/selector.png') right center no-repeat;
+}
+div.selector:active {
+  background: #e3e3e3 url('images/selector.png') right center no-repeat;
 }
 div.selector span {
   border-right: inherit;
@@ -3432,7 +3531,7 @@ div.uploader span.action {
   overflow: hidden;
   cursor: pointer;
   font: inherit;
-  border-left: solid 1px #bbb;
+  border-left: solid 1px #ababab;
 }
 div.uploader span.filename {
   line-height: 100%;
