@@ -75,11 +75,10 @@ $activeStateTextColor: 		$active-state-text;
 $activeStateBorderColor:	$active-state-border;
 
 
-$titleBarStartColor:		$dialog-title-bg;//#4c4c4e;
-$titleBarEndColor:			darken($titleBarStartColor, $gradient-percentage);//#282425;
+$titleBarStartColor:		$dialog-title-bg;
+$titleBarEndColor:			darken($titleBarStartColor, $gradient-percentage);
 $titleBarTextColor:			$dialog-title-text;
 
-// Mixins
 @mixin border-radius ($radius: $border-radius) {
 	border-radius: $radius;
 	-webkit-border-radius: $radius;
@@ -131,7 +130,6 @@ $titleBarTextColor:			$dialog-title-text;
 	background: -o-linear-gradient(0% 100% 180deg, $to, $from);
 }
 
-// Widgets
 @import "jquery/widgets";
 @import "uniform/widgets";
 @import "wijmo/widgets";

@@ -166,7 +166,7 @@
 .ui-accordion-left {
 	@extend .ui-accordion-right;
 	
-	.ui-accordion-header.ui-state-active.ui-icon,
+	.ui-accordion-header.ui-state-active .ui-icon,
 	.ui-accordion-header.ui-state-hover.ui-state-active .ui-icon
 	{
 		background-position: -98px -2px;
