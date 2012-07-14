@@ -151,9 +151,7 @@ div.checker
 		display: -moz-inline-box;
 		display: inline-block;
 		text-align: center;
-		-moz-border-radius: 3px;
-		-webkit-border-radius: 3px;
-		border-radius: 3px;
+		@include border-radius(3px);
 	}
 	
 	&.focus span,
@@ -169,6 +167,11 @@ div.checker
 		@include box-shadow-inset(0 -6px 5px rgba(0,0,0,.2));
 		background-image: url(images/ui-icons_ffffff_256x240.png);
 		background-position: -66px -147px;
+	}
+	
+	&:hover, &:focus
+	{
+		@include box-shadow (0,0,3px,#49A7DB);
 	}
 }
 
@@ -191,8 +194,7 @@ div.radio
 	
 	&:hover, &:focus
 	{
-		@include box-shadow(0 0 3px #49A7DB);
-		//.gradientTopToBottom(#F8F8F8,#FEFEFE);
+		@include box-shadow(0,0,3px,$highlight-state-bg);
 	}
 	
 	input
@@ -216,7 +218,7 @@ div.radio
 		&.checked
 		{
 			background: $highlight-state-bg;
-			@include box-shadow-inset(0 -6px 5px rgba(0,0,0,.2));
+			@include box-shadow-inset(0,-6px,5px,rgba(0,0,0,.2));
 		}
 	}
 } 

@@ -1,44 +1,85 @@
 .wijmo-checkbox
 {
     position: relative; /*float: left;*/
-    margin: 3px 0;
-    line-height: 16px;
-    width: 16px;
-}
-.wijmo-checkbox .wijmo-checkbox-inputwrapper
-{
-    width: 0;
-    height: 0;
-    overflow: hidden;
-}
-.wijmo-checkbox label
-{
-    display: block;
-    position: relative;
-    margin: 0;
-    cursor: pointer;
-    z-index: 1;
-    padding: 0 0 0 1.4em;
-    outline: none;
-    margin: 0 3px;
-    width: 8em;
-}
-.wijmo-checkbox .wijmo-checkbox-box
-{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 16px;
-    height: 16px;
-    -moz-border-radius: 2px;
-    -webkit-border-radius: 2px;
-    border-radius: 2px;
-    margin-right: 3px;
-}
-
-.wijmo-checkbox .wijmo-checkbox-relative
-{
-    position: relative;
-    float: left;
-    margin-right: 3px;    
+    margin: 1em 0;
+    line-height: 1em;
+    width: 1em;
+    
+    &:hover .wijmo-checkbox-box,
+    &:focus .wijmo-checkbox-box
+    {
+    	@include box-shadow (0,0,3px,#49A7DB);
+    }
+    
+    .wijmo-checkbox-inputwrapper
+    {
+        width: 0;
+        height: 0;
+        overflow: hidden;
+    }
+    
+    label
+    {
+        display: block;
+        position: relative;
+        margin: 0;
+        cursor: pointer;
+        z-index: 1;
+        padding: 0 0 0 1.6em;
+        outline: none;
+        margin: 0 3px;
+        width: 8em;
+    }
+    
+    .wijmo-checkbox-box
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+        line-height: 1em;
+        margin-top: -0.3em;
+        width: 1em;
+        height: 1em;
+        -moz-border-radius: 2px;
+        -webkit-border-radius: 2px;
+        border-radius: 2px;
+        padding: 0.2em;
+        border: 1px solid #a9a9a9;
+        @include border-radius(5px);
+        @include gradientTopToBottom(#eff0f0, #ffffff);
+        
+        span
+        {
+        	width: 1em;
+        	height: 1em;
+        	display: -moz-inline-box;
+        	display: inline-block;
+        	text-align: center;
+        	@include border-radius(3px);
+        }
+        
+        &.focus span,
+        &:hover span,
+        &.ui-state-focus span,
+        &.ui-state-hover span
+        {
+        	background-image: url(images/ui-icons_222222_256x240.png);
+        	background-position: -66px -147px;
+        }
+        
+        span.ui-icon-check
+        {
+        	background: #5e9ae2;
+        	@include box-shadow-inset(0 -6px 5px rgba(0,0,0,.2));
+        	background-image: url(images/ui-icons_ffffff_256x240.png);
+        	background-position: -66px -147px;
+        }
+    }
+    
+    .wijmo-checkbox-relative
+    {
+        position: relative;
+        float: left;
+        margin-right: 3px;    
+    }  
 }

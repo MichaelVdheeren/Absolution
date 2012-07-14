@@ -3846,16 +3846,16 @@ div.checker span {
   display: -moz-inline-box;
   display: inline-block;
   text-align: center;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
   border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
 }
-/* line 161, ../development/uniform/_widgets.scss */
+/* line 159, ../development/uniform/_widgets.scss */
 div.checker.focus span, div.checker:hover span {
   background-image: url(images/ui-icons_222222_256x240.png);
   background-position: -66px -147px;
 }
-/* line 167, ../development/uniform/_widgets.scss */
+/* line 165, ../development/uniform/_widgets.scss */
 div.checker span.checked {
   background: #5e9ae2;
   -webkit-box-shadow: inset 0 -6px 5px rgba(0, 0, 0, 0.2) 0 1px black;
@@ -3864,11 +3864,17 @@ div.checker span.checked {
   background-image: url(images/ui-icons_ffffff_256x240.png);
   background-position: -66px -147px;
 }
+/* line 173, ../development/uniform/_widgets.scss */
+div.checker:hover, div.checker:focus {
+  -webkit-box-shadow: 0 0 3px #49a7db;
+  -moz-box-shadow: 0 0 3px #49a7db;
+  box-shadow: 0 0 3px #49a7db;
+}
 
 /*  *************************************  *
 	  RADIO 
  *  *************************************  */
-/* line 180, ../development/uniform/_widgets.scss */
+/* line 183, ../development/uniform/_widgets.scss */
 div.radio {
   margin-top: -0.3em;
   margin-right: 0.3em;
@@ -3888,13 +3894,13 @@ div.radio {
   background: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(white));
   background: -o-linear-gradient(0% 100% 90deg, white, #f8f8f8);
 }
-/* line 193, ../development/uniform/_widgets.scss */
+/* line 196, ../development/uniform/_widgets.scss */
 div.radio:hover, div.radio:focus {
-  -webkit-box-shadow: 0 0 3px #49a7db 0 1px black;
-  -moz-box-shadow: 0 0 3px #49a7db 0 1px black;
-  box-shadow: 0 0 3px #49a7db 0 1px black;
+  -webkit-box-shadow: 0 0 3px #49a7db;
+  -moz-box-shadow: 0 0 3px #49a7db;
+  box-shadow: 0 0 3px #49a7db;
 }
-/* line 199, ../development/uniform/_widgets.scss */
+/* line 201, ../development/uniform/_widgets.scss */
 div.radio input {
   width: 1em;
   height: 1em;
@@ -3904,7 +3910,7 @@ div.radio input {
   display: inline-block;
   background: none;
 }
-/* line 209, ../development/uniform/_widgets.scss */
+/* line 211, ../development/uniform/_widgets.scss */
 div.radio span {
   width: 1em;
   height: 1em;
@@ -3915,18 +3921,18 @@ div.radio span {
   display: inline-block;
   text-align: center;
 }
-/* line 217, ../development/uniform/_widgets.scss */
+/* line 219, ../development/uniform/_widgets.scss */
 div.radio span.checked {
   background: #49a7db;
-  -webkit-box-shadow: inset 0 -6px 5px rgba(0, 0, 0, 0.2) 0 1px black;
-  -moz-box-shadow: inset 0 -6px 5px rgba(0, 0, 0, 0.2) 0 1px black;
-  box-shadow: inset 0 -6px 5px rgba(0, 0, 0, 0.2) 0 1px black;
+  -webkit-box-shadow: inset 0 -6px 5px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0 -6px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 -6px 5px rgba(0, 0, 0, 0.2);
 }
 
 /*  *************************************  *
 	  Uploader 
  *  *************************************  */
-/* line 229, ../development/uniform/_widgets.scss */
+/* line 231, ../development/uniform/_widgets.scss */
 div.uploader {
   border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -3938,7 +3944,7 @@ div.uploader {
   cursor: default;
   padding: 0px !important;
 }
-/* line 239, ../development/uniform/_widgets.scss */
+/* line 241, ../development/uniform/_widgets.scss */
 div.uploader span.action {
   line-height: 100%;
   padding: 5px;
@@ -3950,7 +3956,7 @@ div.uploader span.action {
   font: inherit;
   border-left: solid 1px #ababab;
 }
-/* line 252, ../development/uniform/_widgets.scss */
+/* line 254, ../development/uniform/_widgets.scss */
 div.uploader span.filename {
   line-height: 100%;
   padding: 5px !important;
@@ -3964,16 +3970,16 @@ div.uploader span.filename {
   white-space: nowrap;
   cursor: default;
 }
-/* line 270, ../development/uniform/_widgets.scss */
+/* line 272, ../development/uniform/_widgets.scss */
 div.uploader.disabled span.action {
   color: #aaa;
 }
-/* line 275, ../development/uniform/_widgets.scss */
+/* line 277, ../development/uniform/_widgets.scss */
 div.uploader.disabled span.filename {
   border-color: #ddd;
   color: #aaa;
 }
-/* line 281, ../development/uniform/_widgets.scss */
+/* line 283, ../development/uniform/_widgets.scss */
 div.uploader input {
   opacity: 0;
   filter: 'alpha(opacity:0)';
@@ -4002,25 +4008,25 @@ div.uploader input {
   display: block;
 }
 
-/* line 2, ../development/wijmo/_splitter.scss */
+/* line 2, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_splitter.scss */
 .wijmo-wijsplitter-vertical {
   overflow: hidden;
   /* fixed bug for IE6.7 */
   position: relative;
 }
 
-/* line 7, ../development/wijmo/_splitter.scss */
+/* line 7, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_splitter.scss */
 .wijmo-wijsplitter-v-panel1 {
   float: left;
   position: relative;
 }
 
-/* line 12, ../development/wijmo/_splitter.scss */
+/* line 12, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_splitter.scss */
 .wijmo-wijsplitter-v-panel1-content {
   position: relative;
 }
 
-/* line 16, ../development/wijmo/_splitter.scss */
+/* line 16, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_splitter.scss */
 .wijmo-wijsplitter-v-bar {
   float: left;
   position: relative;
@@ -4029,7 +4035,7 @@ div.uploader input {
   z-index: 99;
 }
 
-/* line 25, ../development/wijmo/_splitter.scss */
+/* line 25, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_splitter.scss */
 .wijmo-wijsplitter-vertical .ui-resizable-e {
   right: -7px;
   width: 10px;
@@ -4042,24 +4048,24 @@ div.uploader input {
 }
 
 /**html*/
-/* line 37, ../development/wijmo/_splitter.scss */
+/* line 37, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_splitter.scss */
 .wijmo-wijsplitter-vertical .ui-resizable-e {
   right: -4px;
 }
 
 /** + html*/
-/* line 42, ../development/wijmo/_splitter.scss */
+/* line 42, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_splitter.scss */
 .wijmo-wijsplitter-vertical .ui-resizable-e {
   right: -4px;
 }
 
-/* line 47, ../development/wijmo/_splitter.scss */
+/* line 47, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_splitter.scss */
 .wijmo-wijsplitter-v-expander {
   position: absolute;
   z-index: 999;
 }
 
-/* line 53, ../development/wijmo/_splitter.scss */
+/* line 53, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_splitter.scss */
 .wijmo-wijsplitter-v-expanded .wijmo-wijsplitter-v-expander {
   border-right: medium none;
   overflow: hidden;
@@ -4069,12 +4075,12 @@ div.uploader input {
   z-index: 999;
 }
 
-/* line 62, ../development/wijmo/_splitter.scss */
+/* line 62, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_splitter.scss */
 .wijmo-wijsplitter-v-expanded .wijmo-wijsplitter-v-expander .ui-icon {
   margin-left: -6px;
 }
 
-/* line 67, ../development/wijmo/_splitter.scss */
+/* line 67, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_splitter.scss */
 .wijmo-wijsplitter-v-collapsed .wijmo-wijsplitter-v-expander {
   border-left: medium none;
   overflow: hidden;
@@ -4084,47 +4090,47 @@ div.uploader input {
   z-index: 999;
 }
 
-/* line 76, ../development/wijmo/_splitter.scss */
+/* line 76, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_splitter.scss */
 .wijmo-wijsplitter-v-collapsed .wijmo-wijsplitter-v-expander .ui-icon {
   margin-left: -6px;
 }
 
-/* line 81, ../development/wijmo/_splitter.scss */
+/* line 81, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_splitter.scss */
 .wijmo-wijsplitter-v-panel2 {
   float: left;
 }
 
-/* line 85, ../development/wijmo/_splitter.scss */
+/* line 85, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_splitter.scss */
 .wijmo-wijsplitter-v-panel2-content {
   position: relative;
 }
 
-/* line 89, ../development/wijmo/_splitter.scss */
+/* line 89, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_splitter.scss */
 .wijmo-wijsplitter-v-resize-helper {
   border-right: dotted 1px black;
   overflow: hidden;
   border-bottom: dotted 0 black;
 }
 
-/* line 96, ../development/wijmo/_splitter.scss */
+/* line 96, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_splitter.scss */
 .wijmo-wijsplitter-horizontal {
   overflow: hidden;
   /* fixed bug for IE6.7 */
   position: relative;
 }
 
-/* line 101, ../development/wijmo/_splitter.scss */
+/* line 101, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_splitter.scss */
 .wijmo-wijsplitter-h-panel1 {
   position: relative;
 }
 
-/* line 105, ../development/wijmo/_splitter.scss */
+/* line 105, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_splitter.scss */
 .wijmo-wijsplitter-h-panel1-content {
   overflow: auto;
   position: relative;
 }
 
-/* line 110, ../development/wijmo/_splitter.scss */
+/* line 110, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_splitter.scss */
 .wijmo-wijsplitter-h-bar {
   position: relative;
   font-size: 1px;
@@ -4132,7 +4138,7 @@ div.uploader input {
   z-index: 999;
 }
 
-/* line 118, ../development/wijmo/_splitter.scss */
+/* line 118, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_splitter.scss */
 .wijmo-wijsplitter-horizontal .ui-resizable-s {
   bottom: -7px;
   height: 10px;
@@ -4145,24 +4151,24 @@ div.uploader input {
 }
 
 /**html*/
-/* line 130, ../development/wijmo/_splitter.scss */
+/* line 130, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_splitter.scss */
 .wijmo-wijsplitter-horizontal .ui-resizable-s {
   bottom: -4px;
 }
 
 /** + html*/
-/* line 135, ../development/wijmo/_splitter.scss */
+/* line 135, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_splitter.scss */
 .wijmo-wijsplitter-horizontal .ui-resizable-s {
   bottom: -4px;
 }
 
-/* line 140, ../development/wijmo/_splitter.scss */
+/* line 140, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_splitter.scss */
 .wijmo-wijsplitter-h-expander {
   position: absolute;
   z-index: 999;
 }
 
-/* line 147, ../development/wijmo/_splitter.scss */
+/* line 147, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_splitter.scss */
 .wijmo-wijsplitter-h-expanded .wijmo-wijsplitter-h-expander {
   border-bottom: none;
   height: 8px;
@@ -4172,12 +4178,12 @@ div.uploader input {
   z-index: 999;
 }
 
-/* line 157, ../development/wijmo/_splitter.scss */
+/* line 157, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_splitter.scss */
 .wijmo-wijsplitter-h-expanded .wijmo-wijsplitter-h-expander .ui-icon {
   margin-top: -4px;
 }
 
-/* line 162, ../development/wijmo/_splitter.scss */
+/* line 162, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_splitter.scss */
 .wijmo-wijsplitter-h-collapsed .wijmo-wijsplitter-h-expander {
   border-top: none;
   height: 8px;
@@ -4187,25 +4193,25 @@ div.uploader input {
   z-index: 999;
 }
 
-/* line 171, ../development/wijmo/_splitter.scss */
+/* line 171, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_splitter.scss */
 .wijmo-wijsplitter-h-collapsed .wijmo-wijsplitter-h-expander .ui-icon {
   margin-top: -4px;
 }
 
-/* line 178, ../development/wijmo/_splitter.scss */
+/* line 178, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_splitter.scss */
 .wijmo-wijsplitter-h-panel2-content {
   overflow: auto;
   position: relative;
 }
 
-/* line 183, ../development/wijmo/_splitter.scss */
+/* line 183, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_splitter.scss */
 .wijmo-wijsplitter-h-resize-helper {
   border-bottom: dotted 1px black;
   overflow: hidden;
   border-right: dotted 0 black;
 }
 
-/* line 2, ../development/wijmo/_dropdown.scss */
+/* line 2, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_dropdown.scss */
 .wijmo-wijdropdown {
   display: inline-block;
   position: relative;
@@ -4216,7 +4222,7 @@ div.uploader input {
   /*z-index: 101;*/
 }
 
-/* line 16, ../development/wijmo/_dropdown.scss */
+/* line 16, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_dropdown.scss */
 .wijmo-wijdropdown div.wijmo-dropdown-trigger {
   border-right: none;
   border-top: none;
@@ -4230,12 +4236,12 @@ div.uploader input {
   padding: 0 3px;
 }
 
-/* line 30, ../development/wijmo/_dropdown.scss */
+/* line 30, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_dropdown.scss */
 .wijmo-wijdropdown .wijmo-dropdown-trigger .ui-icon {
   margin-top: 3px;
 }
 
-/* line 35, ../development/wijmo/_dropdown.scss */
+/* line 35, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_dropdown.scss */
 .wijmo-wijdropdown label.wijmo-dropdown-label {
   display: block;
   padding: 3px 26px 3px 5px;
@@ -4243,19 +4249,19 @@ div.uploader input {
   border: none;
 }
 
-/* line 43, ../development/wijmo/_dropdown.scss */
+/* line 43, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_dropdown.scss */
 .wijmo-wijdropdown .wijmo-dropdown {
   position: absolute;
   height: 250px;
 }
 
-/* line 48, ../development/wijmo/_dropdown.scss */
+/* line 48, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_dropdown.scss */
 .wijmo-wijdropdown .wijmo-dropdown .wijmo-dropdown-list {
   padding: 0.4em;
   border: 0 none;
 }
 
-/* line 54, ../development/wijmo/_dropdown.scss */
+/* line 54, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_dropdown.scss */
 .wijmo-wijdropdown .wijmo-dropdown .wijmo-dropdown-item {
   border: 1px solid transparent;
   cursor: pointer;
@@ -4270,121 +4276,207 @@ div.uploader input {
 {
     margin-left: 15%;
 }*/
-/* line 73, ../development/wijmo/_dropdown.scss */
+/* line 73, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_dropdown.scss */
 .wijmo-wijdropdown .wijmo-dropdown .wijmo-dropdown-optgroup .wijmo-dropdown-items li {
   padding-left: 10px;
 }
 
-/* line 78, ../development/wijmo/_dropdown.scss */
+/* line 78, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_dropdown.scss */
 .wijmo-wijdropdown .wijmo-dropdown .wijmo-optgroup-header {
   font-style: italic;
 }
 
-/* line 2, ../development/wijmo/_checkbox.scss */
+/* line 2, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_checkbox.scss */
 .wijmo-checkbox {
   position: relative;
   /*float: left;*/
-  margin: 3px 0;
-  line-height: 16px;
-  width: 16px;
+  margin: 1em 0;
+  line-height: 1em;
+  width: 1em;
 }
-
-/* line 9, ../development/wijmo/_checkbox.scss */
+/* line 10, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_checkbox.scss */
+.wijmo-checkbox:hover .wijmo-checkbox-box, .wijmo-checkbox:focus .wijmo-checkbox-box {
+  -webkit-box-shadow: 0 0 3px #49a7db;
+  -moz-box-shadow: 0 0 3px #49a7db;
+  box-shadow: 0 0 3px #49a7db;
+}
+/* line 15, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_checkbox.scss */
 .wijmo-checkbox .wijmo-checkbox-inputwrapper {
   width: 0;
   height: 0;
   overflow: hidden;
 }
-
-/* line 15, ../development/wijmo/_checkbox.scss */
+/* line 22, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_checkbox.scss */
 .wijmo-checkbox label {
   display: block;
   position: relative;
   margin: 0;
   cursor: pointer;
   z-index: 1;
-  padding: 0 0 0 1.4em;
+  padding: 0 0 0 1.6em;
   outline: none;
   margin: 0 3px;
   width: 8em;
 }
-
-/* line 27, ../development/wijmo/_checkbox.scss */
+/* line 35, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_checkbox.scss */
 .wijmo-checkbox .wijmo-checkbox-box {
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 0;
-  width: 16px;
-  height: 16px;
+  line-height: 1em;
+  margin-top: -0.3em;
+  width: 1em;
+  height: 1em;
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
   border-radius: 2px;
-  margin-right: 3px;
+  padding: 0.2em;
+  border: 1px solid #a9a9a9;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  background: white;
+  filter: expression("progid:DXImageTransform.Microsoft.gradient(startColorstr='#eff0f0',endColorstr='white')");
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#eff0f0',endColorstr='white')";
+  background: -moz-linear-gradient(0% 100% 90deg, white, #eff0f0);
+  background: -webkit-gradient(linear, left top, left bottom, from(#eff0f0), to(white));
+  background: -o-linear-gradient(0% 100% 90deg, white, #eff0f0);
 }
-
-/* line 40, ../development/wijmo/_checkbox.scss */
+/* line 52, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_checkbox.scss */
+.wijmo-checkbox .wijmo-checkbox-box span {
+  width: 1em;
+  height: 1em;
+  display: -moz-inline-box;
+  display: inline-block;
+  text-align: center;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+}
+/* line 65, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_checkbox.scss */
+.wijmo-checkbox .wijmo-checkbox-box.focus span, .wijmo-checkbox .wijmo-checkbox-box:hover span, .wijmo-checkbox .wijmo-checkbox-box.ui-state-focus span, .wijmo-checkbox .wijmo-checkbox-box.ui-state-hover span {
+  background-image: url(images/ui-icons_222222_256x240.png);
+  background-position: -66px -147px;
+}
+/* line 71, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_checkbox.scss */
+.wijmo-checkbox .wijmo-checkbox-box span.ui-icon-check {
+  background: #5e9ae2;
+  -webkit-box-shadow: inset 0 -6px 5px rgba(0, 0, 0, 0.2) 0 1px black;
+  -moz-box-shadow: inset 0 -6px 5px rgba(0, 0, 0, 0.2) 0 1px black;
+  box-shadow: inset 0 -6px 5px rgba(0, 0, 0, 0.2) 0 1px black;
+  background-image: url(images/ui-icons_ffffff_256x240.png);
+  background-position: -66px -147px;
+}
+/* line 80, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_checkbox.scss */
 .wijmo-checkbox .wijmo-checkbox-relative {
   position: relative;
   float: left;
   margin-right: 3px;
 }
 
-/* line 2, ../development/wijmo/_radio.scss */
+/* line 2, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_radio.scss */
 .wijmo-wijradio {
   position: relative;
   /*float: left;*/
-  margin: 3px 0;
-  width: 16px;
-  line-height: 16px;
+  margin: 1em 0;
+  width: 1em;
+  line-height: 1em;
 }
-
-/* line 9, ../development/wijmo/_radio.scss */
+/* line 10, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_radio.scss */
+.wijmo-wijradio:hover .wijmo-wijradio-box, .wijmo-wijradio:focus .wijmo-wijradio-box {
+  -webkit-box-shadow: 0 0 3px #49a7db;
+  -moz-box-shadow: 0 0 3px #49a7db;
+  box-shadow: 0 0 3px #49a7db;
+}
+/* line 15, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_radio.scss */
 .wijmo-wijradio .wijmo-wijradio-inputwrapper {
   width: 0;
   height: 0;
   overflow: hidden;
 }
-
-/* line 15, ../development/wijmo/_radio.scss */
+/* line 22, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_radio.scss */
 .wijmo-wijradio label {
   display: block;
   position: relative;
   margin: 0;
   cursor: pointer;
   z-index: 1;
-  padding: 0 0 0 1.4em;
+  padding: 0 0 0 1.6em;
   outline: none;
   margin: 0 3px;
   width: 8em;
 }
-
-/* line 27, ../development/wijmo/_radio.scss */
+/* line 35, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_radio.scss */
 .wijmo-wijradio .wijmo-wijradio-box {
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 0;
-  width: 16px;
-  height: 16px;
-  line-height: 16px;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
+  line-height: 1em;
+  margin-top: -0.3em;
+  width: 1em;
+  height: 1em;
+  padding: 0.2em;
+  border-radius: 2em;
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  border: 1px solid #ababab;
+  background-color: #f8f8f8;
+  background: white;
+  filter: expression("progid:DXImageTransform.Microsoft.gradient(startColorstr='#f8f8f8',endColorstr='white')");
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#f8f8f8',endColorstr='white')";
+  background: -moz-linear-gradient(0% 100% 90deg, white, #f8f8f8);
+  background: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(white));
+  background: -o-linear-gradient(0% 100% 90deg, white, #f8f8f8);
 }
-
-/* line 39, ../development/wijmo/_radio.scss */
+/* line 50, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_radio.scss */
+.wijmo-wijradio .wijmo-wijradio-box:hover, .wijmo-wijradio .wijmo-wijradio-box:focus, .wijmo-wijradio .wijmo-wijradio-box.ui-state-hover, .wijmo-wijradio .wijmo-wijradio-box.ui-state-focus {
+  -webkit-box-shadow: 0 0 3px #49a7db 0 1px black;
+  -moz-box-shadow: 0 0 3px #49a7db 0 1px black;
+  box-shadow: 0 0 3px #49a7db 0 1px black;
+}
+/* line 55, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_radio.scss */
+.wijmo-wijradio .wijmo-wijradio-box input {
+  width: 1em;
+  height: 1em;
+  opacity: 0;
+  filter: 'alpha(opacity:0)';
+  text-align: center;
+  display: inline-block;
+  background: none;
+}
+/* line 65, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_radio.scss */
+.wijmo-wijradio .wijmo-wijradio-box span {
+  width: 1em;
+  height: 1em;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  display: -moz-inline-box;
+  display: inline-block;
+  text-align: center;
+  background: none;
+}
+/* line 74, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_radio.scss */
+.wijmo-wijradio .wijmo-wijradio-box span.ui-icon-radio-off {
+  background: #49a7db;
+  -webkit-box-shadow: inset 0 -6px 5px rgba(0, 0, 0, 0.2) 0 1px black;
+  -moz-box-shadow: inset 0 -6px 5px rgba(0, 0, 0, 0.2) 0 1px black;
+  box-shadow: inset 0 -6px 5px rgba(0, 0, 0, 0.2) 0 1px black;
+}
+/* line 82, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_radio.scss */
 .wijmo-wijradio .wijmo-wijradio-relative {
   position: relative;
   float: left;
   margin-right: 3px;
 }
 
-/* line 21, ../development/wijmo/_widgets.scss */
+/* line 2, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_list.scss */
 .wijmo-wijlist-list {
   cursor: default;
   overflow: hidden;
 }
 
-/* line 26, ../development/wijmo/_widgets.scss */
+/* line 7, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_list.scss */
 .wijmo-wijlist-ul {
   list-style: none;
   padding: 2px;
@@ -4394,7 +4486,7 @@ div.uploader input {
   overflow: hidden;
 }
 
-/* line 35, ../development/wijmo/_widgets.scss */
+/* line 16, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_list.scss */
 .wijmo-wijlist-ul .wijmo-wijlist-item {
   margin: 1px 0;
   padding: 3px 5px;
@@ -4405,26 +4497,31 @@ div.uploader input {
   border: solid 1px transparent;
 }
 
-/* line 45, ../development/wijmo/_widgets.scss */
+/* line 26, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_list.scss */
 .wijmo-wijlist-ul .wijmo-wijlist-item.ui-state-hover {
   font-weight: normal;
 }
 
-/* line 50, ../development/wijmo/_widgets.scss */
+/* line 31, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_list.scss */
 .wijmo-wijlist .ui-resizable-se {
   width: 7px;
   height: 7px;
   background: none;
 }
 
-/* line 56, ../development/wijmo/_widgets.scss */
+/* line 38, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_list.scss */
+.wijmo-wijlist-ul .wijmo-wijlist-item {
+  cursor: pointer;
+}
+
+/* line 1, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_tooltip.scss */
 .wijmo-wijtooltip {
   position: absolute;
   z-index: 9999;
   margin: 0;
 }
 
-/* line 2, ../development/wijmo/_tooltip.scss */
+/* line 8, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_tooltip.scss */
 .wijmo-wijtooltip .wijmo-wijtooltip-close {
   background: none repeat scroll 0 0 transparent;
   border: medium none;
@@ -4436,7 +4533,7 @@ div.uploader input {
   width: 16px;
 }
 
-/* line 14, ../development/wijmo/_tooltip.scss */
+/* line 20, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_tooltip.scss */
 .wijmo-wijtooltip .wijmo-wijtooltip-title {
   background: none repeat scroll 0 0 transparent;
   border: medium none;
@@ -4444,18 +4541,18 @@ div.uploader input {
   padding: 0.4em;
 }
 
-/* line 21, ../development/wijmo/_tooltip.scss */
+/* line 27, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_tooltip.scss */
 .wijmo-wijtooltip .wijmo-wijtooltip-container {
   padding: 1em;
   overflow: hidden;
 }
 
-/* line 26, ../development/wijmo/_tooltip.scss */
+/* line 32, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_tooltip.scss */
 .wijmo-wijtooltip {
   border-width: 2px;
 }
 
-/* line 30, ../development/wijmo/_tooltip.scss */
+/* line 36, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_tooltip.scss */
 .wijmo-wijtooltip .wijmo-wijtooltip-pointer, .wijmo-wijtooltip .wijmo-wijtooltip-pointer-inner {
   background: none;
   height: 0;
@@ -4463,21 +4560,21 @@ div.uploader input {
   width: 0;
 }
 
-/* line 37, ../development/wijmo/_tooltip.scss */
+/* line 43, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_tooltip.scss */
 .wijmo-wijtooltip-arrow-tr .wijmo-wijtooltip-pointer, .wijmo-wijtooltip-arrow-tc .wijmo-wijtooltip-pointer, .wijmo-wijtooltip-arrow-tl .wijmo-wijtooltip-pointer {
   border-bottom-width: 14px;
   border-top: 0 none;
   top: -14px;
 }
 
-/* line 44, ../development/wijmo/_tooltip.scss */
+/* line 50, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_tooltip.scss */
 .wijmo-wijtooltip-arrow-tr .wijmo-wijtooltip-pointer {
   border-left: 18px dashed transparent;
   border-right: 0 none;
   right: 10px;
 }
 
-/* line 50, ../development/wijmo/_tooltip.scss */
+/* line 56, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_tooltip.scss */
 .wijmo-wijtooltip-arrow-tc .wijmo-wijtooltip-pointer {
   border-left: 10px dashed transparent;
   border-right: 10px dashed transparent;
@@ -4485,14 +4582,14 @@ div.uploader input {
   margin-left: -10px;
 }
 
-/* line 57, ../development/wijmo/_tooltip.scss */
+/* line 63, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_tooltip.scss */
 .wijmo-wijtooltip-arrow-tl .wijmo-wijtooltip-pointer {
   border-left: 0 none;
   border-right: 18px dashed transparent;
   left: 10px;
 }
 
-/* line 63, ../development/wijmo/_tooltip.scss */
+/* line 69, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_tooltip.scss */
 .wijmo-wijtooltip-arrow-tr .wijmo-wijtooltip-pointer-inner, .wijmo-wijtooltip-arrow-tc .wijmo-wijtooltip-pointer-inner, .wijmo-wijtooltip-arrow-tl .wijmo-wijtooltip-pointer-inner {
   border-bottom-color: inherit;
   border-bottom-style: solid;
@@ -4502,21 +4599,21 @@ div.uploader input {
   line-height: 0;
 }
 
-/* line 71, ../development/wijmo/_tooltip.scss */
+/* line 77, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_tooltip.scss */
 .wijmo-wijtooltip-arrow-tr .wijmo-wijtooltip-pointer-inner {
   border-left: 12px dashed transparent;
   border-right: 0 none;
   right: 2px;
 }
 
-/* line 77, ../development/wijmo/_tooltip.scss */
+/* line 83, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_tooltip.scss */
 .wijmo-wijtooltip-arrow-tc .wijmo-wijtooltip-pointer-inner {
   border-left: 8px dashed transparent;
   border-right: 8px dashed transparent;
   left: -8px;
 }
 
-/* line 83, ../development/wijmo/_tooltip.scss */
+/* line 89, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_tooltip.scss */
 .wijmo-wijtooltip-arrow-tl .wijmo-wijtooltip-pointer-inner {
   border-left: 0 none;
   border-right-style: dashed;
@@ -4525,21 +4622,21 @@ div.uploader input {
   left: 2px;
 }
 
-/* line 91, ../development/wijmo/_tooltip.scss */
+/* line 97, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_tooltip.scss */
 .wijmo-wijtooltip-arrow-rb .wijmo-wijtooltip-pointer, .wijmo-wijtooltip-arrow-rc .wijmo-wijtooltip-pointer, .wijmo-wijtooltip-arrow-rt .wijmo-wijtooltip-pointer {
   border-left-width: 14px;
   border-right: 0 none;
   right: -14px;
 }
 
-/* line 97, ../development/wijmo/_tooltip.scss */
+/* line 103, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_tooltip.scss */
 .wijmo-wijtooltip-arrow-rb .wijmo-wijtooltip-pointer {
   border-bottom: 0 none;
   border-top: 18px dashed transparent;
   bottom: 10px;
 }
 
-/* line 103, ../development/wijmo/_tooltip.scss */
+/* line 109, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_tooltip.scss */
 .wijmo-wijtooltip-arrow-rc .wijmo-wijtooltip-pointer {
   border-bottom: 10px dashed transparent;
   border-top: 10px dashed transparent;
@@ -4547,14 +4644,14 @@ div.uploader input {
   margin-bottom: -10px;
 }
 
-/* line 110, ../development/wijmo/_tooltip.scss */
+/* line 116, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_tooltip.scss */
 .wijmo-wijtooltip-arrow-rt .wijmo-wijtooltip-pointer {
   border-bottom: 18px dashed transparent;
   border-top: 0 none;
   top: 10px;
 }
 
-/* line 116, ../development/wijmo/_tooltip.scss */
+/* line 122, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_tooltip.scss */
 .wijmo-wijtooltip-arrow-rb .wijmo-wijtooltip-pointer-inner, .wijmo-wijtooltip-arrow-rc .wijmo-wijtooltip-pointer-inner, .wijmo-wijtooltip-arrow-rt .wijmo-wijtooltip-pointer-inner {
   border-left-color: inherit;
   border-left-style: solid;
@@ -4564,7 +4661,7 @@ div.uploader input {
   line-height: 0;
 }
 
-/* line 125, ../development/wijmo/_tooltip.scss */
+/* line 131, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_tooltip.scss */
 .wijmo-wijtooltip-arrow-rb .wijmo-wijtooltip-pointer-inner {
   border-bottom: 0 none;
   border-top-style: dashed;
@@ -4573,14 +4670,14 @@ div.uploader input {
   bottom: 2px;
 }
 
-/* line 133, ../development/wijmo/_tooltip.scss */
+/* line 139, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_tooltip.scss */
 .wijmo-wijtooltip-arrow-rc .wijmo-wijtooltip-pointer-inner {
   border-bottom: 8px dashed transparent;
   border-top: 8px dashed transparent;
   bottom: -8px;
 }
 
-/* line 139, ../development/wijmo/_tooltip.scss */
+/* line 145, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_tooltip.scss */
 .wijmo-wijtooltip-arrow-rt .wijmo-wijtooltip-pointer-inner {
   border-bottom-style: dashed;
   border-bottom-color: inherit;
@@ -4589,21 +4686,21 @@ div.uploader input {
   top: 2px;
 }
 
-/* line 147, ../development/wijmo/_tooltip.scss */
+/* line 153, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_tooltip.scss */
 .wijmo-wijtooltip-arrow-br .wijmo-wijtooltip-pointer, .wijmo-wijtooltip-arrow-bc .wijmo-wijtooltip-pointer, .wijmo-wijtooltip-arrow-bl .wijmo-wijtooltip-pointer {
   border-bottom: 0 none;
   border-top-width: 14px;
   bottom: -14px;
 }
 
-/* line 154, ../development/wijmo/_tooltip.scss */
+/* line 160, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_tooltip.scss */
 .wijmo-wijtooltip-arrow-br .wijmo-wijtooltip-pointer {
   border-left: 18px dashed transparent;
   border-right: 0 none;
   right: 10px;
 }
 
-/* line 160, ../development/wijmo/_tooltip.scss */
+/* line 166, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_tooltip.scss */
 .wijmo-wijtooltip-arrow-bc .wijmo-wijtooltip-pointer {
   border-left: 10px dashed transparent;
   border-right: 10px dashed transparent;
@@ -4611,14 +4708,14 @@ div.uploader input {
   margin-left: -10px;
 }
 
-/* line 167, ../development/wijmo/_tooltip.scss */
+/* line 173, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_tooltip.scss */
 .wijmo-wijtooltip-arrow-bl .wijmo-wijtooltip-pointer {
   border-left: 0 none;
   border-right: 18px dashed transparent;
   left: 10px;
 }
 
-/* line 173, ../development/wijmo/_tooltip.scss */
+/* line 179, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_tooltip.scss */
 .wijmo-wijtooltip-arrow-br .wijmo-wijtooltip-pointer-inner, .wijmo-wijtooltip-arrow-bc .wijmo-wijtooltip-pointer-inner, .wijmo-wijtooltip-arrow-bl .wijmo-wijtooltip-pointer-inner {
   border-top-color: inherit;
   border-top-style: solid;
@@ -4628,42 +4725,42 @@ div.uploader input {
   line-height: 0;
 }
 
-/* line 181, ../development/wijmo/_tooltip.scss */
+/* line 187, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_tooltip.scss */
 .wijmo-wijtooltip-arrow-br .wijmo-wijtooltip-pointer-inner {
   border-left: 12px dashed transparent;
   border-right: 0 none;
   right: 2px;
 }
 
-/* line 187, ../development/wijmo/_tooltip.scss */
+/* line 193, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_tooltip.scss */
 .wijmo-wijtooltip-arrow-bc .wijmo-wijtooltip-pointer-inner {
   border-left: 8px dashed transparent;
   border-right: 8px dashed transparent;
   left: -8px;
 }
 
-/* line 193, ../development/wijmo/_tooltip.scss */
+/* line 199, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_tooltip.scss */
 .wijmo-wijtooltip-arrow-bl .wijmo-wijtooltip-pointer-inner {
   border-left: 0 none;
   border-right: 12px dashed transparent;
   left: 2px;
 }
 
-/* line 199, ../development/wijmo/_tooltip.scss */
+/* line 205, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_tooltip.scss */
 .wijmo-wijtooltip-arrow-lb .wijmo-wijtooltip-pointer, .wijmo-wijtooltip-arrow-lc .wijmo-wijtooltip-pointer, .wijmo-wijtooltip-arrow-lt .wijmo-wijtooltip-pointer {
   border-left: 0 none;
   border-right-width: 14px;
   left: -14px;
 }
 
-/* line 205, ../development/wijmo/_tooltip.scss */
+/* line 211, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_tooltip.scss */
 .wijmo-wijtooltip-arrow-lb .wijmo-wijtooltip-pointer {
   border-bottom: 0 none;
   border-top: 18px dashed transparent;
   bottom: 10px;
 }
 
-/* line 211, ../development/wijmo/_tooltip.scss */
+/* line 217, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_tooltip.scss */
 .wijmo-wijtooltip-arrow-lc .wijmo-wijtooltip-pointer {
   border-bottom: 10px dashed transparent;
   border-top: 10px dashed transparent;
@@ -4671,14 +4768,14 @@ div.uploader input {
   margin-bottom: -10px;
 }
 
-/* line 218, ../development/wijmo/_tooltip.scss */
+/* line 224, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_tooltip.scss */
 .wijmo-wijtooltip-arrow-lt .wijmo-wijtooltip-pointer {
   border-bottom: 18px dashed transparent;
   border-top: 0 none;
   top: 10px;
 }
 
-/* line 224, ../development/wijmo/_tooltip.scss */
+/* line 230, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_tooltip.scss */
 .wijmo-wijtooltip-arrow-lb .wijmo-wijtooltip-pointer-inner, .wijmo-wijtooltip-arrow-lc .wijmo-wijtooltip-pointer-inner, .wijmo-wijtooltip-arrow-lt .wijmo-wijtooltip-pointer-inner {
   border-right-color: inherit;
   border-right-style: solid;
@@ -4688,21 +4785,21 @@ div.uploader input {
   line-height: 0;
 }
 
-/* line 232, ../development/wijmo/_tooltip.scss */
+/* line 238, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_tooltip.scss */
 .wijmo-wijtooltip-arrow-lb .wijmo-wijtooltip-pointer-inner {
   border-bottom: 0 none;
   border-top: 12px dashed transparent;
   bottom: 2px;
 }
 
-/* line 238, ../development/wijmo/_tooltip.scss */
+/* line 244, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_tooltip.scss */
 .wijmo-wijtooltip-arrow-lc .wijmo-wijtooltip-pointer-inner {
   border-bottom: 8px dashed transparent;
   border-top: 8px dashed transparent;
   bottom: -8px;
 }
 
-/* line 244, ../development/wijmo/_tooltip.scss */
+/* line 250, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_tooltip.scss */
 .wijmo-wijtooltip-arrow-lt .wijmo-wijtooltip-pointer-inner {
   border-bottom-style: dashed;
   border-bottom-color: inherit;
@@ -4711,45 +4808,45 @@ div.uploader input {
   top: 2px;
 }
 
-/* line 64, ../development/wijmo/_widgets.scss */
+/* line 1, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_menu.scss */
 .wijmo-wijmenu {
   width: 150px;
   padding: 0.3em;
   position: relative;
 }
 
-/* line 70, ../development/wijmo/_widgets.scss */
+/* line 7, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_menu.scss */
 .wijmo-wijmenu .wijmo-wijsuperpanel {
   border: none;
   background: inherit;
   padding: 0;
 }
 
-/* line 76, ../development/wijmo/_widgets.scss */
+/* line 13, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_menu.scss */
 .wijmo-wijmenu-list {
   position: static;
 }
 
-/* line 80, ../development/wijmo/_widgets.scss */
+/* line 17, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_menu.scss */
 .wijmo-wijmenu .wijmo-wijmenu-parent .wijmo-wijmenu-child {
   display: none;
   width: 150px;
   padding: 0.3em;
 }
 
-/* line 86, ../development/wijmo/_widgets.scss */
+/* line 23, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_menu.scss */
 .wijmo-wijmenu .wijmo-wijmenu-parent {
   position: relative;
 }
 
-/* line 90, ../development/wijmo/_widgets.scss */
+/* line 27, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_menu.scss */
 .wijmo-wijmenu .wijmo-wijmenu-child {
   position: relative;
   left: 150px;
   top: 0;
 }
 
-/* line 96, ../development/wijmo/_widgets.scss */
+/* line 33, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_menu.scss */
 .wijmo-wijmenu .wijmo-wijmenu-item {
   width: 100%;
   float: left;
@@ -4758,13 +4855,13 @@ div.uploader input {
   padding: 0;
 }
 
-/* line 104, ../development/wijmo/_widgets.scss */
+/* line 41, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_menu.scss */
 .wijmo-wijmenu .wijmo-wijmenu-list .wijmo-wijmenu-item {
   background: none;
   border: none;
 }
 
-/* line 109, ../development/wijmo/_widgets.scss */
+/* line 46, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_menu.scss */
 .wijmo-wijmenu .wijmo-wijmenu-link {
   display: block;
   width: 92%;
@@ -4777,41 +4874,41 @@ div.uploader input {
   padding: 0.3em;
 }
 
-/* line 121, ../development/wijmo/_widgets.scss */
+/* line 58, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_menu.scss */
 .wijmo-wijmenu-horizontal {
   width: auto;
 }
 
-/* line 125, ../development/wijmo/_widgets.scss */
+/* line 62, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_menu.scss */
 .wijmo-wijmenu-horizontal .wijmo-wijmenu-item {
   width: auto;
   clear: none;
   margin-right: 3px;
 }
 
-/* line 131, ../development/wijmo/_widgets.scss */
+/* line 68, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_menu.scss */
 .wijmo-wijmenu-horizontal .wijmo-wijmenu-child .wijmo-wijmenu-item {
   width: 100%;
 }
 
-/* line 135, ../development/wijmo/_widgets.scss */
+/* line 72, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_menu.scss */
 .wijmo-wijmenu-horizontal .wijmo-wijmenu-child {
   top: 25px;
   left: 0;
 }
 
-/* line 140, ../development/wijmo/_widgets.scss */
+/* line 77, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_menu.scss */
 .wijmo-wijmenu-horizontal .wijmo-wijmenu-link {
   width: auto;
   padding: 0.4em 0.3em;
 }
 
-/* line 145, ../development/wijmo/_widgets.scss */
+/* line 82, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_menu.scss */
 .wijmo-wijmenu-horizontal .wijmo-wijmenu-child .wijmo-wijmenu-link {
   width: 92%;
 }
 
-/* line 149, ../development/wijmo/_widgets.scss */
+/* line 86, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_menu.scss */
 .wijmo-wijmenu .wijmo-wijmenu-list .ui-widget-header {
   clear: both;
   float: left;
@@ -4820,14 +4917,14 @@ div.uploader input {
   margin: 1px 0;
 }
 
-/* line 157, ../development/wijmo/_widgets.scss */
+/* line 94, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_menu.scss */
 .wijmo-wijmenu-horizontal .ui-widget-header {
   clear: none;
   width: auto;
   margin: 0 3px 0 0;
 }
 
-/* line 163, ../development/wijmo/_widgets.scss */
+/* line 100, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_menu.scss */
 .wijmo-wijmenu .ui-widget-header h1, .wijmo-wijmenu .ui-widget-header h2, .wijmo-wijmenu .ui-widget-header h3, .wijmo-wijmenu .ui-widget-header h4, .wijmo-wijmenu .ui-widget-header h5, .wijmo-wijmenu .ui-widget-header h6 {
   float: left;
   display: block;
@@ -4836,23 +4933,23 @@ div.uploader input {
   padding: 0.3em 3%;
 }
 
-/* line 171, ../development/wijmo/_widgets.scss */
+/* line 108, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_menu.scss */
 .wijmo-wijmenu-horizontal .ui-widget-header h1, .wijmo-wijmenu-horizontal .ui-widget-header h2, .wijmo-wijmenu-horizontal .ui-widget-header h3, .wijmo-wijmenu-horizontal .ui-widget-header h4, .wijmo-wijmenu-horizontal .ui-widget-header h5, .wijmo-wijmenu-horizontal .ui-widget-header h6 {
   padding: 0.4em 0.3em;
 }
 
-/* line 175, ../development/wijmo/_widgets.scss */
+/* line 112, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_menu.scss */
 .wijmo-wijmenu a.ui-state-default:link, .wijmo-wijmenu .ui-slider a.ui-slider-handle:link, .ui-slider .wijmo-wijmenu a.ui-slider-handle:link, .wijmo-wijmenu .ui-tabs a.ui-widget-header:link, .ui-tabs .wijmo-wijmenu a.ui-widget-header:link, .wijmo-wijmenu a.ui-state-default:visited, .wijmo-wijmenu .ui-slider a.ui-slider-handle:visited, .ui-slider .wijmo-wijmenu a.ui-slider-handle:visited, .wijmo-wijmenu .ui-tabs a.ui-widget-header:visited, .ui-tabs .wijmo-wijmenu a.ui-widget-header:visited, .wijmo-wijmenu a.ui-state-default:hover, .wijmo-wijmenu .ui-slider a.ui-slider-handle:hover, .ui-slider .wijmo-wijmenu a.ui-slider-handle:hover, .wijmo-wijmenu .ui-tabs a.ui-widget-header:hover, .ui-tabs .wijmo-wijmenu a.ui-widget-header:hover, .wijmo-wijmenu a.ui-state-default:active, .wijmo-wijmenu .ui-slider a.ui-slider-handle:active, .ui-slider .wijmo-wijmenu a.ui-slider-handle:active, .wijmo-wijmenu .ui-tabs a.ui-widget-header:active, .ui-tabs .wijmo-wijmenu a.ui-widget-header:active, .wijmo-wijmenu a.ui-state-hover:link, .wijmo-wijmenu a.ui-state-hover:visited, .wijmo-wijmenu a.ui-state-hover:hover, .wijmo-wijmenu a.ui-state-hover:active, .wijmo-wijmenu a.ui-state-active:link, .wijmo-wijmenu a.ui-state-active:visited, .wijmo-wijmenu a.ui-state-active:hover, .wijmo-wijmenu a.ui-state-active:active {
   font-weight: 400;
   border-style: solid;
 }
 
-/* line 180, ../development/wijmo/_widgets.scss */
+/* line 117, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_menu.scss */
 .wijmo-wijmenu .wijmo-wijmenu-child .ui-state-hover {
   font-weight: 400;
 }
 
-/* line 184, ../development/wijmo/_widgets.scss */
+/* line 121, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_menu.scss */
 .wijmo-wijmenu .wijmo-wijmenu-separator {
   clear: both;
   float: left;
@@ -4863,7 +4960,7 @@ div.uploader input {
   font-size: 0;
 }
 
-/* line 194, ../development/wijmo/_widgets.scss */
+/* line 131, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_menu.scss */
 .wijmo-wijmenu-horizontal .wijmo-wijmenu-separator {
   height: auto;
   clear: none;
@@ -4873,7 +4970,7 @@ div.uploader input {
   padding: 0.4em 0;
 }
 
-/* line 203, ../development/wijmo/_widgets.scss */
+/* line 140, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_menu.scss */
 .wijmo-wijmenu-horizontal .wijmo-wijmenu-child .wijmo-wijmenu-separator {
   clear: both;
   float: left;
@@ -4884,7 +4981,7 @@ div.uploader input {
   padding: 0;
 }
 
-/* line 213, ../development/wijmo/_widgets.scss */
+/* line 150, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_menu.scss */
 .wijmo-wijmenu .wijmo-wijmenu-group {
   clear: both;
   float: left;
@@ -4893,17 +4990,17 @@ div.uploader input {
   padding: 0 0.4em;
 }
 
-/* line 221, ../development/wijmo/_widgets.scss */
+/* line 158, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_menu.scss */
 .wijmo-wijmenu-ipod {
   width: 180px;
 }
 
-/* line 225, ../development/wijmo/_widgets.scss */
+/* line 162, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_menu.scss */
 .wijmo-wijmenu-container {
   overflow: hidden;
 }
 
-/* line 229, ../development/wijmo/_widgets.scss */
+/* line 166, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_menu.scss */
 .wijmo-wijmenu-ipod .wijmo-wijmenu-list {
   background: inherit;
   position: absolute;
@@ -4912,28 +5009,28 @@ div.uploader input {
   -webkit-box-shadow: none;
 }
 
-/* line 237, ../development/wijmo/_widgets.scss */
+/* line 174, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_menu.scss */
 .wijmo-wijmenu-breadcrumb {
   margin: 0;
   padding: 0;
 }
 
-/* line 242, ../development/wijmo/_widgets.scss */
+/* line 179, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_menu.scss */
 .wijmo-wijmenu-footer {
   margin-top: 3px;
 }
 
-/* line 246, ../development/wijmo/_widgets.scss */
+/* line 183, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_menu.scss */
 .wijmo-wijmenu-footer .ui-icon {
   margin: 3px 0;
 }
 
-/* line 250, ../development/wijmo/_widgets.scss */
+/* line 187, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_menu.scss */
 .wijmo-wijmenu-header {
   margin-bottom: 3px;
 }
 
-/* line 254, ../development/wijmo/_widgets.scss */
+/* line 191, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_menu.scss */
 .wijmo-wijmenu-breadcrumb li {
   float: left;
   list-style: none;
@@ -4942,44 +5039,44 @@ div.uploader input {
   padding: 0 .2em;
 }
 
-/* line 262, ../development/wijmo/_widgets.scss */
+/* line 199, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_menu.scss */
 .wijmo-wijmenu-breadcrumb li.wijmo-wijmenu-prev-list, .wijmo-wijmenu-breadcrumb li.wijmo-wijmenu-current-crumb {
   clear: left;
   float: none;
   opacity: 1;
 }
 
-/* line 268, ../development/wijmo/_widgets.scss */
+/* line 205, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_menu.scss */
 .wijmo-wijmenu-breadcrumb li.wijmo-wijmenu-current-crumb {
   padding-top: .2em;
 }
 
-/* line 272, ../development/wijmo/_widgets.scss */
+/* line 209, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_menu.scss */
 .wijmo-wijmenu-footer a:link, .wijmo-wijmenu-footer a:visited {
   float: left;
   width: 100%;
   text-decoration: none;
 }
 
-/* line 278, ../development/wijmo/_widgets.scss */
+/* line 215, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_menu.scss */
 .wijmo-wijmenu-footer a span {
   float: left;
   cursor: pointer;
 }
 
-/* line 283, ../development/wijmo/_widgets.scss */
+/* line 220, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_menu.scss */
 .wijmo-wijmenu-breadcrumb .wijmo-wijmenu-prev-list a:link, .wijmo-wijmenu-breadcrumb .wijmo-wijmenu-prev-list a:visited, .wijmo-wijmenu-breadcrumb .wijmo-wijmenu-prev-list a:hover, .wijmo-wijmenu-breadcrumb .wijmo-wijmenu-prev-list a:active {
   background-image: none;
   text-decoration: none;
 }
 
-/* line 288, ../development/wijmo/_widgets.scss */
+/* line 225, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_menu.scss */
 .wijmo-wijmenu-breadcrumb .wijmo-wijmenu-prev-list a {
   float: left;
   padding-right: .4em;
 }
 
-/* line 293, ../development/wijmo/_widgets.scss */
+/* line 230, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_menu.scss */
 .wijmo-wijmenu-breadcrumb .wijmo-wijmenu-current-crumb a:link, .wijmo-wijmenu-breadcrumb .wijmo-wijmenu-current-crumb a:visited, .wijmo-wijmenu-breadcrumb .wijmo-wijmenu-current-crumb a:hover, .wijmo-wijmenu-breadcrumb .wijmo-wijmenu-current-crumb a:active {
   display: block;
   background-image: none;
@@ -4987,23 +5084,23 @@ div.uploader input {
   text-decoration: none;
 }
 
-/* line 300, ../development/wijmo/_widgets.scss */
+/* line 237, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_menu.scss */
 .wijmo-wijmenu .wijmo-wijmenu-parent .ui-icon, .wijmo-wijmenu-horizontal .wijmo-wijmenu-child .ui-icon, .wijmo-wijmenu-ipod .ui-icon-triangle-1-e {
   float: right;
 }
 
-/* line 304, ../development/wijmo/_widgets.scss */
+/* line 241, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_menu.scss */
 .wijmo-wijmenu .wijmo-wijmenu-item .wijmo-wijmenu-text, .wijmo-wijmenu-horizontal .wijmo-wijmenu-parent .ui-icon, .wijmo-wijmenu-breadcrumb a, .wijmo-wijmenu-breadcrumb span, .wijmo-wijmenu-breadcrumb .wijmo-wijmenu-prev-list a .ui-icon {
   float: left;
 }
 
-/* line 308, ../development/wijmo/_widgets.scss */
+/* line 245, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_menu.scss */
 .wijmo-wijmenu .wijmo-wijmenu-link .wijmo-wijmenu-icon-left {
   display: inline-block;
   float: left;
 }
 
-/* line 313, ../development/wijmo/_widgets.scss */
+/* line 250, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_menu.scss */
 .wijmo-wijmenu .wijmo-wijmenu-link .wijmo-wijmenu-icon-right {
   display: inline-block;
   float: right;
@@ -5011,19 +5108,19 @@ div.uploader input {
 
 /* wijcombobox
  ----------------------------------*/
-/* line 321, ../development/wijmo/_widgets.scss */
+/* line 4, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_combobox.scss */
 .wijmo-wijcombobox {
   position: relative;
 }
 
-/* line 325, ../development/wijmo/_widgets.scss */
+/* line 8, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_combobox.scss */
 .wijmo-wijcombobox-wrapper {
   float: left;
 }
 
 /* wijcombobox textbox
  ----------------------------------*/
-/* line 331, ../development/wijmo/_widgets.scss */
+/* line 15, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_combobox.scss */
 .wijmo-wijcombobox-input {
   background: none repeat scroll 0 0 transparent;
   border: 0 none;
@@ -5032,7 +5129,7 @@ div.uploader input {
   outline: none;
 }
 
-/* line 340, ../development/wijmo/_widgets.scss */
+/* line 24, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_combobox.scss */
 .wijmo-wijcombobox .wijmo-wijcombobox-label {
   background: transparent;
   border: none;
@@ -5041,14 +5138,14 @@ div.uploader input {
   white-space: nowrap;
 }
 
-/* line 348, ../development/wijmo/_widgets.scss */
+/* line 32, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_combobox.scss */
 .wijmo-wijcombobox-loading {
   background: transparent url("images/ui-anim_basic_16x16.gif") right center no-repeat;
 }
 
 /* dropdown list trigger
  ----------------------------------*/
-/* line 354, ../development/wijmo/_widgets.scss */
+/* line 38, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_combobox.scss */
 .wijmo-wijcombobox .wijmo-wijcombobox-trigger {
   position: absolute;
   top: 0px;
@@ -5059,13 +5156,13 @@ div.uploader input {
 
 /* dropdown list
 ----------------------------------*/
-/* line 364, ../development/wijmo/_widgets.scss */
+/* line 48, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_combobox.scss */
 .wijmo-wijcombobox-list {
   position: absolute;
   overflow: hidden;
 }
 
-/* line 369, ../development/wijmo/_widgets.scss */
+/* line 53, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_combobox.scss */
 .wijmo-wijcombobox-ul .wijmo-wijcombobox-item {
   margin: 0;
   padding: .2em .4em;
@@ -5073,20 +5170,20 @@ div.uploader input {
   white-space: nowrap;
 }
 
-/* line 376, ../development/wijmo/_widgets.scss */
+/* line 60, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_combobox.scss */
 .wijmo-wijcombobox-ul .wijmo-wijcombobox-item.ui-state-hover, .wijmo-wijcombobox-ul .wijmo-wijcombobox-item.ui-state-active {
   font-weight: normal;
   margin: -1px;
 }
 
-/* line 382, ../development/wijmo/_widgets.scss */
+/* line 66, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_combobox.scss */
 .wijmo-wijcombobox-ul .wijmo-wijlist-item-selected {
   font-style: italic;
 }
 
 /* multiple columns
 ----------------------------------*/
-/* line 388, ../development/wijmo/_widgets.scss */
+/* line 72, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_combobox.scss */
 .wijmo-wijcombobox-multicolumn .wijmo-wijcombobox-row, .wijmo-wijcombobox-multicolumn .wijmo-wijcombobox-rowheader {
   list-style: none none outside;
   padding: 0px;
@@ -5096,7 +5193,7 @@ div.uploader input {
   width: 10000px;
 }
 
-/* line 397, ../development/wijmo/_widgets.scss */
+/* line 81, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_combobox.scss */
 .wijmo-wijcombobox-multicolumn .wijmo-wijcombobox-cell {
   float: left;
   overflow: hidden;
@@ -5105,804 +5202,67 @@ div.uploader input {
   width: 100px;
 }
 
-/* line 405, ../development/wijmo/_widgets.scss */
+/* line 89, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_combobox.scss */
 .wijmo-wijcombobox-multicolumn .wijmo-wijcombobox-rowheader .wijmo-wijcombobox-cell {
   border-right-width: 1px;
 }
 
-/* line 409, ../development/wijmo/_widgets.scss */
+/* line 93, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_combobox.scss */
 .wijmo-wijcombobox-multicolumn .wijmo-wijcombobox-row .wijmo-wijcombobox-cell {
   border-right-width: 1px;
   border-bottom-width: 1px;
 }
 
-/* line 414, ../development/wijmo/_widgets.scss */
+/* line 98, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_combobox.scss */
 .wijmo-wijcombobox-multicolumn .wijmo-wijsuperpanel-header {
   border-width: 0px;
   border-bottom-width: 1px;
 }
 
-/* line 419, ../development/wijmo/_widgets.scss */
+/* line 103, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_combobox.scss */
 .wijmo-wijcombobox-multicolumn .wijmo-wijlist-item, .wijmo-wijcombobox-multicolumn .wijmo-wijlist-ul {
   padding: 0px;
   border: 0px;
 }
 
-/* line 424, ../development/wijmo/_widgets.scss */
+/* line 108, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_combobox.scss */
 .wijmo-wijcombobox-multicolumn .wijmo-wijcombobox-active-prev .wijmo-wijcombobox-cell {
   border-bottom-width: 0px;
 }
 
-/* line 428, ../development/wijmo/_widgets.scss */
+/* line 112, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_combobox.scss */
 .wijmo-wijcombobox-multicolumn .wijmo-wijcombobox-row .ui-state-hover {
   border-top-width: 1px;
 }
 
-/* line 432, ../development/wijmo/_widgets.scss */
+/* line 116, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_combobox.scss */
 .wijmo-wijcombobox-multicolumn .wijmo-wijlist-item-first .ui-state-hover {
   border-top-width: 0px;
 }
 
-/* line 437, ../development/wijmo/_widgets.scss */
-.wijmo-wijlist-ul .wijmo-wijlist-item {
-  cursor: pointer;
-}
-
-/* line 441, ../development/wijmo/_widgets.scss */
-.wijmo-wijinput {
-  position: relative;
-  width: 150px;
-  border: 0px;
-}
-
-/* line 448, ../development/wijmo/_widgets.scss */
-.wijmo-wijinput-wrapper {
-  float: left;
-  margin-right: 0;
-  width: 100%;
-}
-
-/* line 455, ../development/wijmo/_widgets.scss */
-.wijmo-wijinput-input {
-  background: none;
-  border: 0 none;
-  color: inherit;
-  float: right;
-  outline: none;
-  margin: 0;
-  line-height: 16px;
-  height: 16px;
-  padding: 5px;
-}
-
-/* line 468, ../development/wijmo/_widgets.scss */
-.wijmo-wijinput .wijmo-wijinput-trigger {
-  position: absolute;
-  right: 0;
-  width: 16px;
-  cursor: pointer;
-  padding: 0 3px;
-  height: 100%;
-}
-
-/* line 478, ../development/wijmo/_widgets.scss */
-.wijmo-wijinput .wijmo-wijinput-trigger .ui-icon {
-  margin-top: 40%;
-}
-
-/* line 483, ../development/wijmo/_widgets.scss */
-.ui-input-trigger-right .wijmo-wijinput-input, .ui-input-spinner-right .wijmo-wijinput-input {
-  padding: 5px 25px 5px 5px;
-}
-
-/* line 487, ../development/wijmo/_widgets.scss */
-.ui-input-trigger-left .wijmo-wijinput-input, .ui-input-spinner-left .wijmo-wijinput-input {
-  padding: 5px 5px 5px 25px;
-}
-
-/* line 492, ../development/wijmo/_widgets.scss */
-.ui-input-trigger-right .wijmo-wijinput-trigger {
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-/* line 498, ../development/wijmo/_widgets.scss */
-.ui-input-trigger-left .wijmo-wijinput-trigger {
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-
-/* line 504, ../development/wijmo/_widgets.scss */
-.ui-input-trigger-right .wijmo-wijinput-trigger {
-  border-right: none;
-  border-top: none;
-  border-bottom: none;
-}
-
-/* line 511, ../development/wijmo/_widgets.scss */
-.ui-input-trigger-left .wijmo-wijinput-trigger {
-  border-left: none;
-  border-top: none;
-  border-bottom: none;
-}
-
-/* line 518, ../development/wijmo/_widgets.scss */
-.wijmo-wijinput .wijmo-wijinput-spinner {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 17px;
-  cursor: pointer;
-  height: 100%;
-}
-
-/* line 528, ../development/wijmo/_widgets.scss */
-.ui-input-spinner-left .wijmo-wijinput-spinner {
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-
-/* line 535, ../development/wijmo/_widgets.scss */
-.wijmo-wijinput-spinup {
-  border-bottom: none;
-  display: block;
-  height: 50%;
-  width: 16px;
-  position: relative;
-}
-
-/* line 545, ../development/wijmo/_widgets.scss */
-.wijmo-wijinput-spindown {
-  border-top: none;
-  display: block;
-  height: 50%;
-  width: 16px;
-  position: relative;
-}
-
-/* line 556, ../development/wijmo/_widgets.scss */
-.ui-input-spinner-right .wijmo-wijinput-spinup {
-  border-right: none;
-  border-top: none;
-}
-
-/* line 561, ../development/wijmo/_widgets.scss */
-.ui-input-spinner-right .wijmo-wijinput-spindown {
-  border-right: none;
-  border-bottom: none;
-}
-
-/* line 567, ../development/wijmo/_widgets.scss */
-.ui-input-spinner-left .wijmo-wijinput-spinup {
-  border-left: none;
-  border-top: none;
-}
-
-/* line 573, ../development/wijmo/_widgets.scss */
-.ui-input-spinner-left .wijmo-wijinput-spindown {
-  border-left: none;
-  border-bottom: none;
-}
-
-/* line 579, ../development/wijmo/_widgets.scss */
-.wijmo-wijinput-numeric {
-  text-align: right;
-}
-
-/* line 584, ../development/wijmo/_widgets.scss */
-.wijmo-wijinput-date, .wijmo-wijinput-mask {
-  float: left;
-}
-
-/* line 589, ../development/wijmo/_widgets.scss */
-.ui-input-spinner-trigger-right .wijmo-wijinput-spinner {
-  right: 23px;
-}
-
-/* line 594, ../development/wijmo/_widgets.scss */
-.ui-input-spinner-trigger-right .wijmo-wijinput-input {
-  padding: 5px 42px 5px 5px;
-}
-
-/* line 599, ../development/wijmo/_widgets.scss */
-.ui-input-spinner-trigger-right .wijmo-wijinput-spinup, .ui-input-spinner-trigger-right .wijmo-wijinput-spindown, .ui-input-spinner-trigger-right .wijmo-wijinput-trigger {
-  border-top: none;
-  border-right: none;
-}
-
-/* line 605, ../development/wijmo/_widgets.scss */
-.ui-input-spinner-trigger-left .wijmo-wijinput-trigger {
-  left: 0;
-}
-
-/* line 609, ../development/wijmo/_widgets.scss */
-.ui-input-spinner-trigger-left .wijmo-wijinput-spinner {
-  left: 23px;
-}
-
-/* line 614, ../development/wijmo/_widgets.scss */
-.ui-input-spinner-trigger-left .wijmo-wijinput-input {
-  padding: 5px 5px 5px 42px;
-}
-
-/* line 619, ../development/wijmo/_widgets.scss */
-.ui-input-spinner-trigger-left .wijmo-wijinput-spinup, .ui-input-spinner-trigger-left .wijmo-wijinput-spindown, .ui-input-spinner-trigger-left .wijmo-wijinput-trigger {
-  border-top: none;
-  border-left: none;
-}
-
-/* line 624, ../development/wijmo/_widgets.scss */
-.wijmo-wijgrid {
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
-  border-radius: 0;
-  overflow: hidden;
-}
-
-/* line 632, ../development/wijmo/_widgets.scss */
-.wijmo-wijgrid-loading {
-  background: transparent url("images/ui-anim_basic_16x16.gif") left top no-repeat;
-  min-height: 16px;
-  min-width: 16px;
-}
-
-/* line 639, ../development/wijmo/_widgets.scss */
-.wijmo-wijgrid .wijmo-wijsuperpanel {
-  border: 0;
-}
-
-/* line 644, ../development/wijmo/_widgets.scss */
-.wijmo-wijgrid .wijmo-wijgrid-table .wijmo-wijgrid-filter-trigger {
-  position: absolute;
-  right: 0;
-  top: 0;
-  height: 16px;
-  width: 16px;
-  display: block;
-  padding: 5px 3px;
-  border-top: none;
-  border-right: none;
-  border-bottom: none;
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
-  border-radius: 0;
-}
-
-/* line 661, ../development/wijmo/_widgets.scss */
-.wijmo-wijgrid .wijmo-wijgrid-table .wijmo-wijgrid-filter-input {
-  width: auto;
-  height: 16px;
-  border: none;
-  padding: 5px 3px;
-  overflow: visible;
-  /* ie6 padding issue fix */
-  color: inherit;
-  outline: none;
-  position: relative;
-  z-index: 5;
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
-  border-radius: 0;
-  background: none;
-}
-
-/* line 679, ../development/wijmo/_widgets.scss */
-.wijmo-wijgrid .wijmo-wijgrid-filter {
-  position: relative;
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
-  border-radius: 0;
-  border-top: none;
-  border-left: none;
-  border-bottom: none;
-}
-
-/* line 690, ../development/wijmo/_widgets.scss */
-.wijmo-wijgrid .wijmo-wijgrid-filter .wijmo-wijinput {
-  border: none;
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
-  border-radius: 0;
-}
-
-/* line 698, ../development/wijmo/_widgets.scss */
-.wijmo-wijgrid-filtericon {
-  background: url("images/filterop.png") no-repeat;
-  text-indent: -9999px;
-  overflow: hidden;
-  height: 16px;
-  width: 16px;
-  display: none;
-}
-
-/* line 707, ../development/wijmo/_widgets.scss */
-.filter-nofilter {
-  background-position: 0 0px;
-}
-
-/* line 712, ../development/wijmo/_widgets.scss */
-.filter-contains {
-  background-position: 0 -16px;
-}
-
-/* line 717, ../development/wijmo/_widgets.scss */
-.filter-notcontain {
-  background-position: 0 -32px;
-}
-
-/* line 722, ../development/wijmo/_widgets.scss */
-.filter-beginswith {
-  background-position: 0 -48px;
-}
-
-/* line 727, ../development/wijmo/_widgets.scss */
-.filter-endswith {
-  background-position: 0 -64px;
-}
-
-/* line 732, ../development/wijmo/_widgets.scss */
-.filter-equals {
-  background-position: 0 -80px;
-}
-
-/* line 737, ../development/wijmo/_widgets.scss */
-.filter-notequal {
-  background-position: 0 -96px;
-}
-
-/* line 742, ../development/wijmo/_widgets.scss */
-.filter-greater {
-  background-position: 0 -112px;
-}
-
-/* line 747, ../development/wijmo/_widgets.scss */
-.filter-less {
-  background-position: 0 -128px;
-}
-
-/* line 752, ../development/wijmo/_widgets.scss */
-.filter-greaterorequal {
-  background-position: 0 -144px;
-}
-
-/* line 757, ../development/wijmo/_widgets.scss */
-.filter-lessorequal {
-  background-position: 0 -160px;
-}
-
-/* line 762, ../development/wijmo/_widgets.scss */
-.filter-isempty {
-  background-position: 0 -176px;
-}
-
-/* line 767, ../development/wijmo/_widgets.scss */
-.filter-notisempty {
-  background-position: 0 -192px;
-}
-
-/* line 772, ../development/wijmo/_widgets.scss */
-.filter-isnull {
-  background-position: 0 -208px;
-}
-
-/* line 777, ../development/wijmo/_widgets.scss */
-.filter-notisnull {
-  background-position: 0 -224px;
-}
-
-/* line 782, ../development/wijmo/_widgets.scss */
-.wijmo-wijpager .ui-icon {
-  cursor: pointer;
-}
-
-/* line 787, ../development/wijmo/_widgets.scss */
-.wijmo-wijgrid .wijmo-wijgrid-grouptogglebtn {
-  float: left;
-  cursor: pointer;
-  margin-top: 3px;
-}
-
-/* line 794, ../development/wijmo/_widgets.scss */
-.wijmo-wijgrid .wijmo-wijgrid-table {
-  border-collapse: collapse;
-  outline: none;
-}
-
-/* line 800, ../development/wijmo/_widgets.scss */
-.wijmo-wijgrid-rowheader {
-  width: 21px;
-}
-
-/* line 805, ../development/wijmo/_widgets.scss */
-.wijmo-wijgrid .wijmo-wijgrid-header, .wijmo-wijgrid .wijmo-wijgrid-footer {
-  border-left: none !important;
-  border-top: none !important;
-  border-bottom: none !important;
-  padding: 0.2em;
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
-  border-radius: 0;
-}
-
-/* line 816, ../development/wijmo/_widgets.scss */
-.wijmo-wijgrid tr.wijmo-wijgrid-row {
-  border-bottom: none;
-}
-
-/* line 821, ../development/wijmo/_widgets.scss */
-.wijmo-wijgrid tr.wijmo-wijgrid-row td {
-  border: none;
-  border-right-color: inherit;
-  border-right-style: solid;
-  border-right-width: 1px;
-  border-top-color: inherit;
-  border-top-style: solid;
-  border-top-width: 1px;
-  text-align: left;
-  overflow: hidden;
-}
-
-/* line 834, ../development/wijmo/_widgets.scss */
-.wijmo-wijgrid .wijgridtd {
-  font-weight: normal;
-  padding: 0px;
-}
-
-/* line 840, ../development/wijmo/_widgets.scss */
-.wijmo-wijgrid .wijgridth {
-  padding: 0px;
-}
-
-/* line 845, ../development/wijmo/_widgets.scss */
-.wijmo-wijgrid .wijmo-wijgrid-headerrow .wijmo-c1basefield {
-  zoom: 1;
-  overflow: hidden;
-  border-left: 0;
-  border-top: 0;
-  padding: 0px;
-  position: relative;
-}
-
-/* line 855, ../development/wijmo/_widgets.scss */
-.wijmo-wijgrid .wijmo-wijgrid-headerrow .wijmo-wijgrid-headertext {
-  padding: 0.5em 1em;
-  display: block;
-  text-align: center;
-  position: relative;
-}
-
-/* line 862, ../development/wijmo/_widgets.scss */
-.wijmo-wijgrid .wijmo-wijgrid-headerrow .ui-icon {
-  width: 16px;
-  height: 16px;
-  position: absolute;
-  right: 0;
-  top: 50%;
-  margin-top: -8px;
-  z-index: 99;
-}
-
-/* line 877, ../development/wijmo/_widgets.scss */
-.wijmo-wijgrid .wijmo-wijgrid-filterrow td {
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: inherit;
-}
-
-/* line 885, ../development/wijmo/_widgets.scss */
-.wijmo-wijgrid .wijmo-wijpager {
-  display: block;
-  position: relative;
-}
-
-/* line 891, ../development/wijmo/_widgets.scss */
-.wijmo-wijgrid-resizehandle {
-  position: absolute;
-  z-index: 99999;
-}
-
-/* 
- *    Scrolling
- */
-/* line 901, ../development/wijmo/_widgets.scss */
-.wijmo-wijgrid-v-splitter, .wijmo-wijgrid-h-splitter {
-  background-color: white;
-  width: 4px;
-  height: 4px;
-  position: absolute;
-  z-index: 10;
-  display: none;
-}
-
-/* line 910, ../development/wijmo/_widgets.scss */
-.wijmo-wijgrid-splits-enabled .wijmo-wijgrid-v-splitter {
-  border-right: 1px solid #000000;
-  display: block;
-  cursor: w-resize;
-}
-
-/* line 916, ../development/wijmo/_widgets.scss */
-.wijmo-wijgrid-splits-enabled .wijmo-wijgrid-h-splitter {
-  border-bottom: 1px solid #000000;
-  display: block;
-  cursor: n-resize;
-}
-
-/* line 922, ../development/wijmo/_widgets.scss */
-.wijmo-wijgrid-splits-enabled .wijmo-wijgrid-v-splitter.ui-draggable-dragging, .wijmo-wijgrid-splits-enabled .wijmo-wijgrid-h-splitter.ui-draggable-dragging {
-  background-color: #626262;
-}
-
-/* line 927, ../development/wijmo/_widgets.scss */
-.wijmo-wijgrid-filterlist {
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 100;
-}
-
-/* line 934, ../development/wijmo/_widgets.scss */
-.wijmo-wijgrid-scroller {
-  overflow: hidden;
-}
-
-/* line 938, ../development/wijmo/_widgets.scss */
-.wijmo-wijgrid-fixedview {
-  position: relative;
-}
-
-/* line 943, ../development/wijmo/_widgets.scss */
-.wijmo-wijgrid-scroller {
-  border: 0px;
-}
-
-/* line 948, ../development/wijmo/_widgets.scss */
-.wijmo-wijgrid .wijmo-wijsuperpanel-vbar-buttontop {
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
-  border-radius: 0;
-  top: -1px;
-}
-
-/* line 956, ../development/wijmo/_widgets.scss */
-.wijmo-wijgrid .wijmo-wijsuperpanel-vbar-buttonbottom {
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
-  border-radius: 0;
-  bottom: -1px;
-}
-
-/* line 964, ../development/wijmo/_widgets.scss */
-.wijmo-wijgrid .wijgridinput {
-  width: 100%;
-  margin: 0;
-  border: none;
-  padding: 0;
-  text-align: inherit;
-}
-
-/* line 973, ../development/wijmo/_widgets.scss */
-.wijmo-wijgrid tr.wijmo-wijgrid-row td.wijdata-type-currency, .wijmo-wijgrid tr.wijmo-wijgrid-row td.wijdata-type-number, .wijmo-wijgrid tr.wijmo-wijgrid-row td.wijdata-type-date {
-  text-align: right;
-}
-
-/* line 978, ../development/wijmo/_widgets.scss */
-.wijmo-wijgrid tr.wijmo-wijgrid-row td.wijdata-type-boolean {
-  text-align: center;
-}
-
-/* line 983, ../development/wijmo/_widgets.scss */
-.wijmo-wijgrid .wijmo-wijgrid-innercell {
-  padding: 1px 2px;
-}
-
-/* line 988, ../development/wijmo/_widgets.scss */
-.wijmo-wijgrid .wijmo-wijcombobox-wrapper {
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
-  border-radius: 0;
-  border-top: 0;
-  border-bottom: 0;
-  border-left: 0;
-}
-
-/* line 998, ../development/wijmo/_widgets.scss */
-.wijmo-wijgrid .wijmo-wijcombobox .wijmo-wijcombobox-trigger {
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
-  border-radius: 0;
-  border-top: 0;
-  border-bottom: 0;
-  border-right: 0;
-}
-
-/* line 1008, ../development/wijmo/_widgets.scss */
-.wijmo-wijgrid .wijmo-wijcombobox-input {
-  padding: 0;
-}
-
-/* line 1013, ../development/wijmo/_widgets.scss */
-.wijmo-wijgrid .ui-input-trigger-right .wijmo-wijinput-input, .wijmo-wijgrid .ui-input-spinner-right .wijmo-wijinput-input {
-  padding: 0px 25px 0px 5px;
-}
-
-/* line 1018, ../development/wijmo/_widgets.scss */
-.wijmo-wijgrid .wijmo-wijinput {
-  border: none;
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
-  border-radius: 0;
-}
-
-/* line 1026, ../development/wijmo/_widgets.scss */
-.wijmo-wijgrid .wijmo-wijinput-spinup {
-  height: 7px;
-}
-
-/* line 1031, ../development/wijmo/_widgets.scss */
-.wijmo-wijgrid .wijmo-wijinput-spindown {
-  height: 7px;
-}
-
-/* line 1036, ../development/wijmo/_widgets.scss */
-.wijmo-wijgrid .wijmo-wijinput-spinner .ui-icon-triangle-1-n {
-  background-position: 0 -20px;
-}
-
-/* line 1041, ../development/wijmo/_widgets.scss */
-.wijmo-wijgrid .wijmo-wijinput-spinner .ui-icon-triangle-1-s {
-  background-position: -64px -20px;
-}
-
-/* drag-n-drop *** */
-/* line 1047, ../development/wijmo/_widgets.scss */
-.wijmo-wijgrid-dnd-arrow-top, .wijmo-wijgrid-dnd-arrow-bottom {
-  z-index: 1000;
-  width: 16px;
-  height: 16px;
-}
-
-/* line 1054, ../development/wijmo/_widgets.scss */
-.wijmo-wijgrid-dnd-arrow-top .ui-icon {
-  position: absolute;
-  top: -4px;
-}
-
-/* line 1060, ../development/wijmo/_widgets.scss */
-.wijmo-wijgrid-dnd-arrow-bottom .ui-icon {
-  position: absolute;
-  top: 4px;
-}
-
-/* line 1066, ../development/wijmo/_widgets.scss */
-.wijmo-wijgrid-dnd-helper {
-  border: 1px solid #F0F0F0 !important;
-  filter: alpha(opacity=70) !important;
-  -moz-opacity: 0.7;
-  opacity: 0.7;
-  z-index: 1000;
-}
-
-/* line 1075, ../development/wijmo/_widgets.scss */
-.wijmo-wijgrid th.ui-draggable {
-  cursor: pointer;
-}
-
-/* *** drag-n-drop */
-/* line 1081, ../development/wijmo/_widgets.scss */
-.wijmo-wijgrid-footerrow {
-  text-align: right;
-}
-
-/* line 1086, ../development/wijmo/_widgets.scss */
-.wijmo-wijgrid-group-button {
-  float: left;
-  padding: 0.4em 1.4em 0.4em 0.4em;
-  position: relative;
-  margin: 0.4em;
-  text-decoration: none;
-}
-
-/* line 1094, ../development/wijmo/_widgets.scss */
-.wijmo-wijgrid-group-button-close {
-  float: right;
-  margin: 0 3px 0 24px;
-  padding: 1px;
-  position: absolute;
-  right: -14px;
-  top: -7px;
-  border-radius: 15px;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-}
-
-/* line 1103, ../development/wijmo/_widgets.scss */
-.wijmo-wijgrid-group-button-sort {
-  position: absolute;
-  right: 3px;
-  top: 25%;
-}
-
-/* line 1109, ../development/wijmo/_widgets.scss */
-.wijmo-wijgrid-group-area {
-  height: 35px;
-}
-
-/* line 1114, ../development/wijmo/_widgets.scss */
-.wijmo-wijupload ul {
-  margin: 0;
-  padding: 0;
-}
-
-/* line 1120, ../development/wijmo/_widgets.scss */
-.wijmo-wijupload li {
-  list-style: none outside none;
-  position: relative;
-  padding: 5px 110px 5px 5px;
-  width: 100%;
-}
-
-/* line 1128, ../development/wijmo/_widgets.scss */
-.wijmo-wijupload .wijmo-wijupload-buttonContainer {
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-/* line 1135, ../development/wijmo/_widgets.scss */
-.wijmo-wijupload .wijmo-wijupload-file {
-  display: block;
-  padding: 0.4em;
-  line-height: 1.4;
-}
-
-/* line 1142, ../development/wijmo/_widgets.scss */
-.wijmo-wijupload .wijmo-wijupload-loading {
-  width: 16px;
-  height: 16px;
-  background-image: url("images/ui-anim_basic_16x16.gif");
-  display: block;
-  float: left;
-  top: 25%;
-  left: -10px;
-  position: relative;
-}
-
-/* line 1154, ../development/wijmo/_widgets.scss */
-.wijmo-wijupload .ui-button, .wijmo-wijupload input[type='button'], .wijmo-wijupload
-input[type='reset'], .wijmo-wijupload
-input[type='submit'], .wijmo-wijupload
-div.button, .wijmo-wijupload
-button {
-  margin: 2px;
-}
-
-/* line 1, ../development/wijmo/_tree.scss */
+/* line 1, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_tree.scss */
 .wijmo-wijtree {
   width: 360px;
   padding: 0.5em;
 }
 
-/* line 6, ../development/wijmo/_tree.scss */
+/* line 6, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_tree.scss */
 .wijmo-wijtree .wijmo-checkbox {
   margin: 0;
   float: left;
 }
 
-/* line 11, ../development/wijmo/_tree.scss */
+/* line 11, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_tree.scss */
 .wijmo-wijtree .wijmo-wijtree-parent span {
   float: left;
 }
 
-/* line 15, ../development/wijmo/_tree.scss */
+/* line 15, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_tree.scss */
 .wijmo-wijtree .wijmo-wijtree-child {
   margin-left: 32px;
 }
 
-/* line 19, ../development/wijmo/_tree.scss */
+/* line 19, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_tree.scss */
 .wijmo-wijtree .wijmo-wijtree-list .wijmo-wijtree-node {
   border: 0px;
   background: none;
@@ -5913,14 +5273,14 @@ button {
   margin: 0 20px 0 0;
 }
 
-/* line 29, ../development/wijmo/_tree.scss */
+/* line 29, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_tree.scss */
 .wijmo-wijtree-inner {
   border: 1px solid transparent;
   padding: 3px;
   vertical-align: middle;
 }
 
-/* line 36, ../development/wijmo/_tree.scss */
+/* line 36, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_tree.scss */
 .wijmo-wijtree .wijmo-wijtree-list .wijmo-wijtree-node .wijmo-wijtree-inner a,
 .wijmo-wijtree .wijmo-wijtree-list .wijmo-wijtree-node .wijmo-wijtree-inner .wijmo-wijtree-template {
   outline: none;
@@ -5929,12 +5289,12 @@ button {
   float: left;
 }
 
-/* line 43, ../development/wijmo/_tree.scss */
+/* line 43, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_tree.scss */
 .wijmo-wijtree .wijmo-wijtree-list li.wijmo-wijtree-node {
   margin-left: 16px;
 }
 
-/* line 48, ../development/wijmo/_tree.scss */
+/* line 48, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_tree.scss */
 .wijmo-wijtree .wijmo-wijtree-list .ui-state-default a, .wijmo-wijtree .wijmo-wijtree-list .ui-slider .ui-slider-handle a, .ui-slider .wijmo-wijtree .wijmo-wijtree-list .ui-slider-handle a, .wijmo-wijtree .wijmo-wijtree-list .ui-tabs .ui-widget-header a, .ui-tabs .wijmo-wijtree .wijmo-wijtree-list .ui-widget-header a, .wijmo-wijtree .wijmo-wijtree-list div.selector span a, div.selector .wijmo-wijtree .wijmo-wijtree-list span a, .wijmo-wijtree .wijmo-wijtree-list div.uploader span.action a, div.uploader .wijmo-wijtree .wijmo-wijtree-list span.action a,
 .wijmo-wijtree .wijmo-wijtree-list .ui-state-default,
 .wijmo-wijtree .wijmo-wijtree-list .ui-slider .ui-slider-handle, .ui-slider
@@ -5948,13 +5308,13 @@ button {
   color: inherit;
 }
 
-/* line 53, ../development/wijmo/_tree.scss */
+/* line 53, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_tree.scss */
 .wijmo-wijtree .wijmo-wijtree-list .ui-state-hover,
 .wijmo-wijtree .wijmo-wijtree-list .ui-state-active {
   font-weight: normal;
 }
 
-/* line 68, ../development/wijmo/_tree.scss */
+/* line 68, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_tree.scss */
 wijmo-wijtree a.ui-state-default:link, wijmo-wijtree .ui-slider a.ui-slider-handle:link, .ui-slider wijmo-wijtree a.ui-slider-handle:link, wijmo-wijtree .ui-tabs a.ui-widget-header:link, .ui-tabs wijmo-wijtree a.ui-widget-header:link,
 wijmo-wijtree a.ui-state-default:visited,
 wijmo-wijtree .ui-slider a.ui-slider-handle:visited, .ui-slider
@@ -5983,7 +5343,7 @@ wijmo-wijtree a.ui-state-active:active {
   font-weight: normal;
 }
 
-/* line 73, ../development/wijmo/_tree.scss */
+/* line 73, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_tree.scss */
 .wijmo-wijtree .wijmo-wijtree-list .wijmo-wijtree-item {
   padding: 0;
   width: 100%;
@@ -5995,12 +5355,12 @@ wijmo-wijtree a.ui-state-active:active {
   width: 100%;
 }
 
-/* line 83, ../development/wijmo/_tree.scss */
+/* line 83, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_tree.scss */
 .wijmo-wijtree .wijmo-wijtree-list .ui-icon {
   float: left;
 }
 
-/* line 87, ../development/wijmo/_tree.scss */
+/* line 87, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_tree.scss */
 .wijmo-wijtree .wijmo-wijtree-list .wijmo-wijtree-parent {
   margin: 0;
   padding: 0;
@@ -6009,14 +5369,14 @@ wijmo-wijtree a.ui-state-active:active {
   clear: left;
 }
 
-/* line 95, ../development/wijmo/_tree.scss */
+/* line 95, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_tree.scss */
 .wijmo-wijtree-insertion {
   height: 1px;
   font-size: 0px;
   /*fix ie 6 issue*/
 }
 
-/* line 100, ../development/wijmo/_tree.scss */
+/* line 100, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_tree.scss */
 .wijmo-wijtree-node .wijmo-wijtextbox {
   padding: 0;
   margin: 0;
@@ -6024,47 +5384,47 @@ wijmo-wijtree a.ui-state-active:active {
   margin: 0 0 0 0.5em;
 }
 
-/* line 2, ../development/wijmo/_expander.scss */
+/* line 2, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_expander.scss */
 .wijmo-wijexpander {
   margin: 1px;
   padding: 0;
   display: block;
 }
-/* line 8, ../development/wijmo/_expander.scss */
+/* line 8, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_expander.scss */
 .wijmo-wijexpander a {
   outline: none;
 }
-/* line 13, ../development/wijmo/_expander.scss */
+/* line 13, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_expander.scss */
 .wijmo-wijexpander .ui-expander-header {
   cursor: pointer;
   margin-top: 1px;
   position: relative;
 }
-/* line 19, ../development/wijmo/_expander.scss */
+/* line 19, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_expander.scss */
 .wijmo-wijexpander .ui-expander-header a {
   display: block;
   font-size: 1em;
   padding: 0.5em 0.5em 0.5em 0.7em;
 }
-/* line 26, ../development/wijmo/_expander.scss */
+/* line 26, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_expander.scss */
 .wijmo-wijexpander .ui-expander-header .ui-icon {
   left: 0.5em;
   margin-top: -8px;
   position: absolute;
   top: 50%;
 }
-/* line 34, ../development/wijmo/_expander.scss */
+/* line 34, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_expander.scss */
 .wijmo-wijexpander .ui-expander-header > a {
   padding-left: 2.2em;
 }
-/* line 40, ../development/wijmo/_expander.scss */
+/* line 40, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_expander.scss */
 .wijmo-wijexpander .ui-expander-content-active {
   display: block;
   border-top: 0 none;
   padding: 1em 2.2em;
 }
 
-/* line 48, ../development/wijmo/_expander.scss */
+/* line 48, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_expander.scss */
 .ui-helper-horizontal.wijmo-wijexpander .ui-expander-header .ui-icon {
   left: inherit;
   margin-top: inherit;
@@ -6074,31 +5434,31 @@ wijmo-wijtree a.ui-state-active:active {
   left: 50%;
 }
 
-/* line 58, ../development/wijmo/_expander.scss */
+/* line 58, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_expander.scss */
 .ui-helper-horizontal.wijmo-wijexpander .ui-expander-header > a {
   padding-left: inherit;
   padding-top: 2.2em;
   display: inline-block;
 }
 
-/* line 67, ../development/wijmo/_expander.scss */
+/* line 67, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_expander.scss */
 .ui-expander-right .ui-expander-header {
   margin: 0 1px;
   width: 2em;
   height: 12em;
   overflow: hidden;
 }
-/* line 74, ../development/wijmo/_expander.scss */
+/* line 74, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_expander.scss */
 .ui-expander-right .ui-expander-header.ui-state-hover .ui-icon {
   background: #5e9ae2 url(images/ui-icons_ffffff_256x240.png);
   background-position: -66px -1px;
   border: 1px solid #ababab;
 }
-/* line 82, ../development/wijmo/_expander.scss */
+/* line 82, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_expander.scss */
 .ui-expander-right .ui-expander-header.ui-state-active .ui-icon, .ui-expander-right .ui-expander-header.ui-state-hover.ui-state-active .ui-icon {
   background-position: -34px -2px;
 }
-/* line 88, ../development/wijmo/_expander.scss */
+/* line 88, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_expander.scss */
 .ui-expander-right .ui-expander-content {
   margin: 0;
   height: 200px;
@@ -6111,33 +5471,33 @@ wijmo-wijtree a.ui-state-active:active {
   border: none;
   margin-right: 1px;
 }
-/* line 102, ../development/wijmo/_expander.scss */
+/* line 102, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_expander.scss */
 .ui-expander-right .ui-state-active {
   border-right: none;
 }
 
-/* line 110, ../development/wijmo/_expander.scss */
+/* line 110, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_expander.scss */
 .ui-expander-left .ui-expander-header {
   margin: 0 1px;
   width: 2em;
   height: 12em;
   overflow: hidden;
 }
-/* line 117, ../development/wijmo/_expander.scss */
+/* line 117, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_expander.scss */
 .ui-expander-left .ui-expander-header .ui-icon {
   top: 10%;
 }
-/* line 122, ../development/wijmo/_expander.scss */
+/* line 122, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_expander.scss */
 .ui-expander-left .ui-expander-header.ui-state-hover .ui-icon {
   background: #5e9ae2 url(images/ui-icons_ffffff_256x240.png);
   background-position: -66px -1px;
   border: 1px solid #ababab;
 }
-/* line 130, ../development/wijmo/_expander.scss */
+/* line 130, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_expander.scss */
 .ui-expander-left .ui-expander-header.ui-state-active .ui-icon, .ui-expander-left .ui-expander-header.ui-state-hover.ui-state-active .ui-icon {
   background-position: -98px -2px;
 }
-/* line 136, ../development/wijmo/_expander.scss */
+/* line 136, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_expander.scss */
 .ui-expander-left .ui-expander-content {
   margin: 0;
   height: 200px;
@@ -6150,12 +5510,12 @@ wijmo-wijtree a.ui-state-active:active {
   margin-right: -2px;
   margin-left: 1px;
 }
-/* line 150, ../development/wijmo/_expander.scss */
+/* line 150, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_expander.scss */
 .ui-expander-left .ui-state-active {
   border-left: none;
 }
 
-/* line 157, ../development/wijmo/_expander.scss */
+/* line 157, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_expander.scss */
 .ui-expander .ui-expander-content {
   border-top: 0 none;
   display: none;
@@ -6175,7 +5535,7 @@ wijmo-wijtree a.ui-state-active:active {
   overflow: auto;
   zoom: 1;
 }
-/* line 177, ../development/wijmo/_expander.scss */
+/* line 177, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_expander.scss */
 .ui-expander .ui-expander-header {
   cursor: pointer;
   position: relative;
@@ -6186,7 +5546,7 @@ wijmo-wijtree a.ui-state-active:active {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
 }
-/* line 186, ../development/wijmo/_expander.scss */
+/* line 186, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_expander.scss */
 .ui-expander .ui-expander-header a {
   display: block;
   font-size: 1em;
@@ -6194,7 +5554,7 @@ wijmo-wijtree a.ui-state-active:active {
   color: inherit;
   padding-left: 2.6em;
 }
-/* line 195, ../development/wijmo/_expander.scss */
+/* line 195, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_expander.scss */
 .ui-expander .ui-expander-header .ui-icon {
   position: absolute;
   left: .5em;
@@ -6212,17 +5572,17 @@ wijmo-wijtree a.ui-state-active:active {
   -moz-box-shadow: inset 0 -6px 5px rgba(0, 0, 0, 0.1) 0 1px black;
   box-shadow: inset 0 -6px 5px rgba(0, 0, 0, 0.1) 0 1px black;
 }
-/* line 209, ../development/wijmo/_expander.scss */
+/* line 209, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_expander.scss */
 .ui-expander .ui-expander-header.ui-state-hover .ui-icon {
   background: #5e9ae2 url(images/ui-icons_ffffff_256x240.png);
   background-position: -34px -2px;
   border: 1px solid #ababab;
 }
-/* line 217, ../development/wijmo/_expander.scss */
+/* line 217, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_expander.scss */
 .ui-expander .ui-expander-header.ui-state-active .ui-icon, .ui-expander .ui-expander-header.ui-state-hover.ui-state-active .ui-icon {
   background-position: -66px -1px;
 }
-/* line 225, ../development/wijmo/_expander.scss */
+/* line 225, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_expander.scss */
 .ui-expander .ui-expander-header, .ui-expander .ui-expander-header.ui-state-active, .ui-expander .ui-expander-header.ui-state-hover, .ui-expander .ui-expander-header.ui-state-focus {
   color: #243314;
   border-color: #ababab;
@@ -6234,18 +5594,18 @@ wijmo-wijtree a.ui-state-active:active {
   background: -o-linear-gradient(0% 100% 90deg, #d7d7d7, #f6f6f6);
 }
 
-/* line 238, ../development/wijmo/_expander.scss */
+/* line 238, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_expander.scss */
 .ui-expander-top .ui-expander-header.ui-state-hover .ui-icon {
   background: #5e9ae2 url(images/ui-icons_ffffff_256x240.png);
   background-position: -34px -2px;
   border: 1px solid #ababab;
 }
-/* line 246, ../development/wijmo/_expander.scss */
+/* line 246, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_expander.scss */
 .ui-expander-top .ui-expander-header.ui-state-active .ui-icon, .ui-expander-top .ui-expander-header.ui-state-hover.ui-state-active .ui-icon {
   background-position: -1px -2px;
 }
 
-/* line 260, ../development/wijmo/_expander.scss */
+/* line 260, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_expander.scss */
 .ui-expander-left .ui-expander-header, .ui-expander-left .ui-expander-header.ui-state-active, .ui-expander-left .ui-expander-header.ui-state-hover, .ui-expander-left .ui-expander-header.ui-state-focus, .ui-expander-right .ui-expander-header, .ui-expander-right .ui-expander-header.ui-state-active, .ui-expander-right .ui-expander-header.ui-state-hover, .ui-expander-right .ui-expander-header.ui-state-focus {
   color: #243314;
   border-color: #ababab;
@@ -6256,14 +5616,14 @@ wijmo-wijtree a.ui-state-active:active {
   background: -webkit-gradient(linear, left top, right top, from(#f6f6f6), to(#d7d7d7));
   background: -o-linear-gradient(0% 100% 180deg, #d7d7d7, #f6f6f6);
 }
-/* line 267, ../development/wijmo/_expander.scss */
+/* line 267, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_expander.scss */
 .ui-expander-left .ui-expander-header .ui-icon, .ui-expander-right .ui-expander-header .ui-icon {
   top: 1em;
   left: 50%;
   margin-left: -7px;
   background-position: -66px -1px;
 }
-/* line 275, ../development/wijmo/_expander.scss */
+/* line 275, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_expander.scss */
 .ui-expander-left .ui-expander-header a, .ui-expander-right .ui-expander-header a {
   padding: 0;
   -webkit-transform: rotate(-90deg);
@@ -6275,11 +5635,11 @@ wijmo-wijtree a.ui-state-active:active {
   left: -1.6em;
 }
 
-/* line 4, ../development/wijmo/_pager.scss */
+/* line 4, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_pager.scss */
 .wijmo-wijpager .ui-icon {
   cursor: pointer;
 }
-/* line 9, ../development/wijmo/_pager.scss */
+/* line 9, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_pager.scss */
 .wijmo-wijpager .ui-list {
   float: left;
   padding: 1px;
@@ -6287,7 +5647,7 @@ wijmo-wijtree a.ui-state-active:active {
   background: none;
   border: none;
 }
-/* line 17, ../development/wijmo/_pager.scss */
+/* line 17, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_pager.scss */
 .wijmo-wijpager .ui-list .ui-page {
   float: left;
   height: auto;
@@ -6296,11 +5656,11 @@ wijmo-wijtree a.ui-state-active:active {
   margin: 0 1px;
   width: auto;
 }
-/* line 26, ../development/wijmo/_pager.scss */
+/* line 26, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_pager.scss */
 .wijmo-wijpager .ui-list .ui-page span {
   margin: 2px;
 }
-/* line 33, ../development/wijmo/_pager.scss */
+/* line 33, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_pager.scss */
 .wijmo-wijpager .ui-list .ui-page a,
 .wijmo-wijpager .ui-list .ui-state-active span {
   padding: 2px 5px;
@@ -6310,35 +5670,35 @@ wijmo-wijtree a.ui-state-active:active {
 
 /* SuperPanel
 ----------------------------------*/
-/* line 4, ../development/wijmo/_superpanel.scss */
+/* line 4, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_superpanel.scss */
 .wijmo-wijsuperpanel {
   overflow: hidden;
   outline: none;
   background-image: none;
 }
-/* line 11, ../development/wijmo/_superpanel.scss */
+/* line 11, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_superpanel.scss */
 .wijmo-wijsuperpanel .wijmo-wijsuperpanel-vbarcontainer,
 .wijmo-wijsuperpanel .wijmo-wijsuperpanel-hbarcontainer {
   position: absolute;
   border: none;
   padding: 3px;
 }
-/* line 18, ../development/wijmo/_superpanel.scss */
+/* line 18, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_superpanel.scss */
 .wijmo-wijsuperpanel .wijmo-wijsuperpanel-vbarcontainer {
   width: 8px;
 }
-/* line 23, ../development/wijmo/_superpanel.scss */
+/* line 23, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_superpanel.scss */
 .wijmo-wijsuperpanel .wijmo-wijsuperpanel-hbarcontainer {
   height: 8px;
 }
-/* line 28, ../development/wijmo/_superpanel.scss */
+/* line 28, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_superpanel.scss */
 .wijmo-wijsuperpanel .ui-icon-gripsmall-diagonal-se {
   background: none;
   width: 7px;
   height: 7px;
 }
 
-/* line 36, ../development/wijmo/_superpanel.scss */
+/* line 36, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_superpanel.scss */
 .wijmo-wijsuperpanel-statecontainer {
   overflow: hidden;
   position: relative;
@@ -6346,14 +5706,14 @@ wijmo-wijtree a.ui-state-active:active {
   background: #f2f2f2;
 }
 
-/* line 44, ../development/wijmo/_superpanel.scss */
+/* line 44, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_superpanel.scss */
 .wijmo-wijsuperpanel-contentwrapper {
   position: absolute;
   overflow: hidden;
   background: #ffffff;
 }
 
-/* line 57, ../development/wijmo/_superpanel.scss */
+/* line 57, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_superpanel.scss */
 .wijmo-wijsuperpanel-hbarcontainer,
 .wijmo-wijsuperpanel-vbarcontainer,
 .wijmo-wijsuperpanel-hbarcontainer:hover,
@@ -6365,14 +5725,14 @@ wijmo-wijtree a.ui-state-active:active {
   background: none;
 }
 
-/* line 64, ../development/wijmo/_superpanel.scss */
+/* line 64, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_superpanel.scss */
 .wijmo-wijsuperpanel-templateouterwrapper {
   position: relative;
   /*    overflow:auto; */
   zoom: 1;
 }
 
-/* line 71, ../development/wijmo/_superpanel.scss */
+/* line 71, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_superpanel.scss */
 .wijmo-wijsuperpanel-handle {
   position: absolute;
   font-size: 0px;
@@ -6381,42 +5741,42 @@ wijmo-wijtree a.ui-state-active:active {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
 }
-/* line 78, ../development/wijmo/_superpanel.scss */
+/* line 78, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_superpanel.scss */
 .wijmo-wijsuperpanel-handle span.ui-icon {
   background: none;
   width: 8px;
   height: 8px;
 }
-/* line 85, ../development/wijmo/_superpanel.scss */
+/* line 85, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_superpanel.scss */
 .wijmo-wijsuperpanel-handle.ui-state-default, .ui-slider .wijmo-wijsuperpanel-handle.ui-slider-handle, .ui-tabs .wijmo-wijsuperpanel-handle.ui-widget-header, div.selector span.wijmo-wijsuperpanel-handle, div.uploader span.wijmo-wijsuperpanel-handle.action {
   background: none;
   border: 0px;
   background-color: #C2C2C2;
 }
-/* line 92, ../development/wijmo/_superpanel.scss */
+/* line 92, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_superpanel.scss */
 .wijmo-wijsuperpanel-handle.ui-state-default.ui-state-active, .ui-slider .wijmo-wijsuperpanel-handle.ui-state-active.ui-slider-handle, .ui-tabs .wijmo-wijsuperpanel-handle.ui-state-active.ui-widget-header, div.selector span.wijmo-wijsuperpanel-handle.ui-state-active, div.uploader span.wijmo-wijsuperpanel-handle.ui-state-active.action, .wijmo-wijsuperpanel-handle.ui-state-default.ui-state-hover, .ui-slider .wijmo-wijsuperpanel-handle.ui-state-hover.ui-slider-handle, .ui-tabs .wijmo-wijsuperpanel-handle.ui-state-hover.ui-widget-header, div.selector span.wijmo-wijsuperpanel-handle.ui-state-hover, div.uploader span.wijmo-wijsuperpanel-handle.ui-state-hover.action {
   background: none;
   border: 0px;
   background-color: #7D7D7D;
 }
-/* line 100, ../development/wijmo/_superpanel.scss */
+/* line 100, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_superpanel.scss */
 .wijmo-wijsuperpanel-handle * {
   font-size: 0px;
 }
 
-/* line 106, ../development/wijmo/_superpanel.scss */
+/* line 106, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_superpanel.scss */
 .wijmo-wijsuperpanel-helper {
   border-style: dotted;
   background: transparent;
 }
 
-/* line 112, ../development/wijmo/_superpanel.scss */
+/* line 112, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_superpanel.scss */
 .wijmo-wijsuperpanel-button {
   position: absolute;
   padding: 4px;
 }
 
-/* line 121, ../development/wijmo/_superpanel.scss */
+/* line 121, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_superpanel.scss */
 .wijmo-wijsuperpanel-hbar-buttonleft,
 .wijmo-wijsuperpanel-hbar-buttonright,
 .wijmo-wijsuperpanel-vbar-buttontop,
@@ -6426,31 +5786,31 @@ wijmo-wijtree a.ui-state-active:active {
   display: none;
 }
 
-/* line 2, ../development/wijmo/_wizard.scss */
+/* line 2, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_wizard.scss */
 .wijmo-wijwizard {
   position: relative;
 }
 
-/* line 7, ../development/wijmo/_wizard.scss */
+/* line 7, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_wizard.scss */
 .wijmo-wijwizard-steps li {
   float: left;
   padding: 0.4em;
   margin: 0 3px 0 0;
 }
 
-/* line 14, ../development/wijmo/_wizard.scss */
+/* line 14, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_wizard.scss */
 .wijmo-wijwizard-steps h1 {
   margin: 0;
   padding: 0;
   font-size: 24px;
 }
 
-/* line 21, ../development/wijmo/_wizard.scss */
+/* line 21, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_wizard.scss */
 .wijmo-wijwizard-content {
   margin: 3px 0;
 }
 
-/* line 26, ../development/wijmo/_wizard.scss */
+/* line 26, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_wizard.scss */
 .wijmo-wijwizard .wijmo-wijwizard-panel {
   display: block;
   border-width: 0;
@@ -6458,41 +5818,41 @@ wijmo-wijtree a.ui-state-active:active {
   background: none;
 }
 
-/* line 34, ../development/wijmo/_wizard.scss */
+/* line 34, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_wizard.scss */
 .wijmo-wijwizard .wijmo-wijwizard-hide {
   display: none !important;
 }
 
-/* line 39, ../development/wijmo/_wizard.scss */
+/* line 39, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_wizard.scss */
 .wijmo-wijwizard-buttons {
   float: right;
 }
 
-/* line 43, ../development/wijmo/_wizard.scss */
+/* line 43, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_wizard.scss */
 .wijmo-wijwizard-next, .wijmo-wijwizard-prev {
   display: block;
   position: absolute;
   padding: 3px 0;
 }
 
-/* line 49, ../development/wijmo/_wizard.scss */
+/* line 49, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_wizard.scss */
 .wijmo-wijwizard-next {
   right: 0;
   top: 49%;
 }
 
-/* line 55, ../development/wijmo/_wizard.scss */
+/* line 55, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_wizard.scss */
 .wijmo-wijwizard-prev {
   left: 0;
   top: 49%;
 }
 
-/* line 2, ../development/wijmo/_dialog.scss */
+/* line 2, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_dialog.scss */
 .wijmo-wijdialog .wijmo-wijdialog-hasframe {
   padding: 0;
 }
 
-/* line 7, ../development/wijmo/_dialog.scss */
+/* line 7, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_dialog.scss */
 .wijmo-wijdialog-defaultdockingzone {
   position: fixed;
   bottom: 0px;
@@ -6500,12 +5860,12 @@ wijmo-wijtree a.ui-state-active:active {
 }
 
 /* for ie 6 minimize*/
-/* line 15, ../development/wijmo/_dialog.scss */
+/* line 15, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_dialog.scss */
 * html .wijmo-wijdialog-defaultdockingzone .ui-dialog-titlebar {
   float: left;
 }
 
-/* line 20, ../development/wijmo/_dialog.scss */
+/* line 20, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_dialog.scss */
 .wijmo-wijdialog-captionbutton {
   display: inline-block;
   /*margin-right:.2em;*/
@@ -6514,38 +5874,38 @@ wijmo-wijtree a.ui-state-active:active {
   margin-left: 3px;
   border-color: #000000;
 }
-/* line 26, ../development/wijmo/_dialog.scss */
+/* line 26, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_dialog.scss */
 .wijmo-wijdialog-captionbutton a {
   color: inherit;
 }
-/* line 30, ../development/wijmo/_dialog.scss */
+/* line 30, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_dialog.scss */
 .wijmo-wijdialog-captionbutton .ui-icon {
   margin: 1px;
   background-image: url(images/ui-icons_ffffff_256x240.png);
 }
 
-/* line 2, ../development/wijmo/_calendar.scss */
+/* line 2, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_calendar.scss */
 .wijmo-wijcalendar {
   -webkit-user-select: none;
   -moz-user-select: none;
   display: block;
 }
-/* line 8, ../development/wijmo/_calendar.scss */
+/* line 8, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_calendar.scss */
 .wijmo-wijcalendar .ui-datepicker-header {
   padding: 1px;
 }
-/* line 12, ../development/wijmo/_calendar.scss */
+/* line 12, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_calendar.scss */
 .wijmo-wijcalendar .ui-datepicker-header .ui-state-default, .wijmo-wijcalendar .ui-datepicker-header .ui-slider .ui-slider-handle, .ui-slider .wijmo-wijcalendar .ui-datepicker-header .ui-slider-handle, .wijmo-wijcalendar .ui-datepicker-header .ui-tabs .ui-widget-header, .ui-tabs .wijmo-wijcalendar .ui-datepicker-header .ui-widget-header, .wijmo-wijcalendar .ui-datepicker-header div.selector span, div.selector .wijmo-wijcalendar .ui-datepicker-header span, .wijmo-wijcalendar .ui-datepicker-header div.uploader span.action, div.uploader .wijmo-wijcalendar .ui-datepicker-header span.action {
   border-color: transparent;
   background: none;
   color: inherit;
 }
-/* line 20, ../development/wijmo/_calendar.scss */
+/* line 20, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_calendar.scss */
 .wijmo-wijcalendar .wijmo-wijcalendar-table {
   table-layout: fixed;
 }
 
-/* line 26, ../development/wijmo/_calendar.scss */
+/* line 26, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_calendar.scss */
 .wijmo-wijcalendar-header {
   position: relative;
   border: none;
@@ -6567,68 +5927,68 @@ wijmo-wijtree a.ui-state-active:active {
   .ui-icon-stop { background-position: -96px -160px; }
   */
 }
-/* line 41, ../development/wijmo/_calendar.scss */
+/* line 41, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_calendar.scss */
 .wijmo-wijcalendar-header .ui-icon {
   background-image: url(images/ui-icons_ffffff_256x240.png);
 }
-/* line 45, ../development/wijmo/_calendar.scss */
+/* line 45, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_calendar.scss */
 .wijmo-wijcalendar-header > .ui-datepicker-prev .ui-icon {
   background-position: -48px -160px;
   width: 16px;
 }
-/* line 50, ../development/wijmo/_calendar.scss */
+/* line 50, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_calendar.scss */
 .wijmo-wijcalendar-header > .ui-datepicker-next .ui-icon {
   background-position: -32px -160px;
   width: 16px;
 }
 
-/* line 57, ../development/wijmo/_calendar.scss */
+/* line 57, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_calendar.scss */
 .wijmo-wijcalendar-header-inner {
   margin: 0 2.2em;
   line-height: 1.8em;
 }
 
-/* line 63, ../development/wijmo/_calendar.scss */
+/* line 63, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_calendar.scss */
 .wijmo-wijcalendar-prevpreview-button, .wijmo-wijcalendar-nextpreview-button {
   width: 16px;
   margin-top: 35%;
   float: left;
 }
 
-/* line 70, ../development/wijmo/_calendar.scss */
+/* line 70, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_calendar.scss */
 .wijmo-wijcalendar-nextpreview-button {
   float: right;
 }
 
-/* line 75, ../development/wijmo/_calendar.scss */
+/* line 75, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_calendar.scss */
 .wijmo-wijcalendar-preview-wrapper .wijmo-wijcalendar {
   float: left;
   width: 18em;
 }
 
-/* line 81, ../development/wijmo/_calendar.scss */
+/* line 81, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_calendar.scss */
 .wijmo-wijcalendar-preview-wrapper .wijmo-wijcalendar .ui-datepicker-calendar {
   width: 80%;
   float: left;
 }
 
-/* line 86, ../development/wijmo/_calendar.scss */
+/* line 86, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_calendar.scss */
 .wijmo-wijcalendar-table th {
   border-bottom: 1px solid #a9a9a9;
   background: #E0DCE0;
 }
 
-/* line 92, ../development/wijmo/_calendar.scss */
+/* line 92, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_calendar.scss */
 .wijmo-wijcalendar-title, .wijmo-wijcalendar-selectable {
   cursor: pointer;
 }
 
-/* line 97, ../development/wijmo/_calendar.scss */
+/* line 97, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_calendar.scss */
 .ui-datepicker-other-month {
   text-align: right;
 }
 
-/* line 102, ../development/wijmo/_calendar.scss */
+/* line 102, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_calendar.scss */
 .wijmo-wijcalendar-mygrid td span, .wijmo-wijcalendar-mygrid td a {
   display: block;
   text-align: center;
@@ -6636,7 +5996,7 @@ wijmo-wijtree a.ui-state-active:active {
   padding: 0;
 }
 
-/* line 113, ../development/wijmo/_calendar.scss */
+/* line 113, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_calendar.scss */
 .wijmo-wijcalendar-mygrid .ui-state-default a, .wijmo-wijcalendar-mygrid .ui-slider .ui-slider-handle a, .ui-slider .wijmo-wijcalendar-mygrid .ui-slider-handle a, .wijmo-wijcalendar-mygrid .ui-tabs .ui-widget-header a, .ui-tabs .wijmo-wijcalendar-mygrid .ui-widget-header a, .wijmo-wijcalendar-mygrid div.selector span a, div.selector .wijmo-wijcalendar-mygrid span a, .wijmo-wijcalendar-mygrid div.uploader span.action a, div.uploader .wijmo-wijcalendar-mygrid span.action a,
 .wijmo-wijcalendar-mygrid .ui-state-default a:hover,
 .wijmo-wijcalendar-mygrid .ui-slider .ui-slider-handle a:hover, .ui-slider
@@ -6652,51 +6012,783 @@ wijmo-wijtree a.ui-state-active:active {
   color: inherit;
 }
 
-/* line 118, ../development/wijmo/_calendar.scss */
+/* line 118, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_calendar.scss */
 .ui-header-custom img, .ui-footer-custom img {
   width: 100%;
 }
 
-/* line 125, ../development/wijmo/_calendar.scss */
+/* line 125, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_calendar.scss */
 .wijmo-wijcalendar table.wijmo-wijcalendar-mygrid {
   margin-top: 2px;
   border-collapse: separate;
   table-layout: fixed;
 }
-/* line 131, ../development/wijmo/_calendar.scss */
+/* line 131, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_calendar.scss */
 .wijmo-wijcalendar table.wijmo-wijcalendar-mygrid .ui-datepicker-week-day {
   cursor: pointer;
 }
 
-/* line 138, ../development/wijmo/_calendar.scss */
+/* line 138, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_calendar.scss */
 .wijmo-wijcalendar-aniwrapper {
   position: relative;
   left: 0;
   top: 0;
 }
 
-/* line 145, ../development/wijmo/_calendar.scss */
+/* line 145, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_calendar.scss */
 .wijmo-wijcalendar-multi-aniwrapper {
   position: absolute;
   overflow: hidden;
 }
 
-/* line 152, ../development/wijmo/_calendar.scss */
+/* line 152, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_calendar.scss */
 .ui-datepicker-rtl .ui-datepicker-prev .ui-icon,
 .ui-datepicker-rtl .ui-datepicker-next .ui-icon {
   direction: rtl;
 }
 
-/* line 156, ../development/wijmo/_calendar.scss */
+/* line 156, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_calendar.scss */
 .wijmo-wijcalendar .ui-datepicker-group .ui-datepicker-header {
   border-radius: 0px;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
 }
 
-/* line 160, ../development/wijmo/_calendar.scss */
+/* line 160, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_calendar.scss */
 .ui-datepicker-title.wijmo-wijcalendar-title {
   line-height: 2.3em;
+}
+
+/* line 2, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_upload.scss */
+.wijmo-wijupload ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 8, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_upload.scss */
+.wijmo-wijupload li {
+  list-style: none outside none;
+  position: relative;
+  padding: 5px 110px 5px 5px;
+  width: 100%;
+}
+
+/* line 16, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_upload.scss */
+.wijmo-wijupload .wijmo-wijupload-buttonContainer {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* line 23, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_upload.scss */
+.wijmo-wijupload .wijmo-wijupload-file {
+  display: block;
+  padding: 0.4em;
+  line-height: 1.4;
+}
+
+/* line 30, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_upload.scss */
+.wijmo-wijupload .wijmo-wijupload-loading {
+  width: 16px;
+  height: 16px;
+  background-image: url("images/ui-anim_basic_16x16.gif");
+  display: block;
+  float: left;
+  top: 25%;
+  left: -10px;
+  position: relative;
+}
+
+/* line 42, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_upload.scss */
+.wijmo-wijupload .ui-button, .wijmo-wijupload input[type='button'], .wijmo-wijupload
+input[type='reset'], .wijmo-wijupload
+input[type='submit'], .wijmo-wijupload
+div.button, .wijmo-wijupload
+button {
+  margin: 2px;
+}
+
+/* line 2, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_grid.scss */
+.wijmo-wijgrid {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  overflow: hidden;
+}
+
+/* line 10, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_grid.scss */
+.wijmo-wijgrid-loading {
+  background: transparent url("images/ui-anim_basic_16x16.gif") left top no-repeat;
+  min-height: 16px;
+  min-width: 16px;
+}
+
+/* line 17, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_grid.scss */
+.wijmo-wijgrid .wijmo-wijsuperpanel {
+  border: 0;
+}
+
+/* line 22, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_grid.scss */
+.wijmo-wijgrid .wijmo-wijgrid-table .wijmo-wijgrid-filter-trigger {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 16px;
+  width: 16px;
+  display: block;
+  padding: 5px 3px;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+
+/* line 39, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_grid.scss */
+.wijmo-wijgrid .wijmo-wijgrid-table .wijmo-wijgrid-filter-input {
+  width: auto;
+  height: 16px;
+  border: none;
+  padding: 5px 3px;
+  overflow: visible;
+  /* ie6 padding issue fix */
+  color: inherit;
+  outline: none;
+  position: relative;
+  z-index: 5;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  background: none;
+}
+
+/* line 57, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_grid.scss */
+.wijmo-wijgrid .wijmo-wijgrid-filter {
+  position: relative;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  border-top: none;
+  border-left: none;
+  border-bottom: none;
+}
+
+/* line 68, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_grid.scss */
+.wijmo-wijgrid .wijmo-wijgrid-filter .wijmo-wijinput {
+  border: none;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+
+/* line 76, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_grid.scss */
+.wijmo-wijgrid-filtericon {
+  background: url("images/filterop.png") no-repeat;
+  text-indent: -9999px;
+  overflow: hidden;
+  height: 16px;
+  width: 16px;
+  display: none;
+}
+
+/* line 85, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_grid.scss */
+.filter-nofilter {
+  background-position: 0 0px;
+}
+
+/* line 90, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_grid.scss */
+.filter-contains {
+  background-position: 0 -16px;
+}
+
+/* line 95, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_grid.scss */
+.filter-notcontain {
+  background-position: 0 -32px;
+}
+
+/* line 100, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_grid.scss */
+.filter-beginswith {
+  background-position: 0 -48px;
+}
+
+/* line 105, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_grid.scss */
+.filter-endswith {
+  background-position: 0 -64px;
+}
+
+/* line 110, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_grid.scss */
+.filter-equals {
+  background-position: 0 -80px;
+}
+
+/* line 115, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_grid.scss */
+.filter-notequal {
+  background-position: 0 -96px;
+}
+
+/* line 120, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_grid.scss */
+.filter-greater {
+  background-position: 0 -112px;
+}
+
+/* line 125, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_grid.scss */
+.filter-less {
+  background-position: 0 -128px;
+}
+
+/* line 130, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_grid.scss */
+.filter-greaterorequal {
+  background-position: 0 -144px;
+}
+
+/* line 135, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_grid.scss */
+.filter-lessorequal {
+  background-position: 0 -160px;
+}
+
+/* line 140, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_grid.scss */
+.filter-isempty {
+  background-position: 0 -176px;
+}
+
+/* line 145, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_grid.scss */
+.filter-notisempty {
+  background-position: 0 -192px;
+}
+
+/* line 150, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_grid.scss */
+.filter-isnull {
+  background-position: 0 -208px;
+}
+
+/* line 155, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_grid.scss */
+.filter-notisnull {
+  background-position: 0 -224px;
+}
+
+/* line 160, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_grid.scss */
+.wijmo-wijpager .ui-icon {
+  cursor: pointer;
+}
+
+/* line 165, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_grid.scss */
+.wijmo-wijgrid .wijmo-wijgrid-grouptogglebtn {
+  float: left;
+  cursor: pointer;
+  margin-top: 3px;
+}
+
+/* line 172, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_grid.scss */
+.wijmo-wijgrid .wijmo-wijgrid-table {
+  border-collapse: collapse;
+  outline: none;
+}
+
+/* line 178, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_grid.scss */
+.wijmo-wijgrid-rowheader {
+  width: 21px;
+}
+
+/* line 183, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_grid.scss */
+.wijmo-wijgrid .wijmo-wijgrid-header, .wijmo-wijgrid .wijmo-wijgrid-footer {
+  border-left: none !important;
+  border-top: none !important;
+  border-bottom: none !important;
+  padding: 0.2em;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+
+/* line 194, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_grid.scss */
+.wijmo-wijgrid tr.wijmo-wijgrid-row {
+  border-bottom: none;
+}
+
+/* line 199, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_grid.scss */
+.wijmo-wijgrid tr.wijmo-wijgrid-row td {
+  border: none;
+  border-right-color: inherit;
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: inherit;
+  border-top-style: solid;
+  border-top-width: 1px;
+  text-align: left;
+  overflow: hidden;
+}
+
+/* line 212, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_grid.scss */
+.wijmo-wijgrid .wijgridtd {
+  font-weight: normal;
+  padding: 0px;
+}
+
+/* line 218, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_grid.scss */
+.wijmo-wijgrid .wijgridth {
+  padding: 0px;
+}
+
+/* line 223, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_grid.scss */
+.wijmo-wijgrid .wijmo-wijgrid-headerrow .wijmo-c1basefield {
+  zoom: 1;
+  overflow: hidden;
+  border-left: 0;
+  border-top: 0;
+  padding: 0px;
+  position: relative;
+}
+
+/* line 233, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_grid.scss */
+.wijmo-wijgrid .wijmo-wijgrid-headerrow .wijmo-wijgrid-headertext {
+  padding: 0.5em 1em;
+  display: block;
+  text-align: center;
+  position: relative;
+}
+
+/* line 240, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_grid.scss */
+.wijmo-wijgrid .wijmo-wijgrid-headerrow .ui-icon {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -8px;
+  z-index: 99;
+}
+
+/* line 255, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_grid.scss */
+.wijmo-wijgrid .wijmo-wijgrid-filterrow td {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: inherit;
+}
+
+/* line 263, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_grid.scss */
+.wijmo-wijgrid .wijmo-wijpager {
+  display: block;
+  position: relative;
+}
+
+/* line 269, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_grid.scss */
+.wijmo-wijgrid-resizehandle {
+  position: absolute;
+  z-index: 99999;
+}
+
+/* 
+ *    Scrolling
+ */
+/* line 279, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_grid.scss */
+.wijmo-wijgrid-v-splitter, .wijmo-wijgrid-h-splitter {
+  background-color: white;
+  width: 4px;
+  height: 4px;
+  position: absolute;
+  z-index: 10;
+  display: none;
+}
+
+/* line 288, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_grid.scss */
+.wijmo-wijgrid-splits-enabled .wijmo-wijgrid-v-splitter {
+  border-right: 1px solid #000000;
+  display: block;
+  cursor: w-resize;
+}
+
+/* line 294, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_grid.scss */
+.wijmo-wijgrid-splits-enabled .wijmo-wijgrid-h-splitter {
+  border-bottom: 1px solid #000000;
+  display: block;
+  cursor: n-resize;
+}
+
+/* line 300, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_grid.scss */
+.wijmo-wijgrid-splits-enabled .wijmo-wijgrid-v-splitter.ui-draggable-dragging, .wijmo-wijgrid-splits-enabled .wijmo-wijgrid-h-splitter.ui-draggable-dragging {
+  background-color: #626262;
+}
+
+/* line 305, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_grid.scss */
+.wijmo-wijgrid-filterlist {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 100;
+}
+
+/* line 312, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_grid.scss */
+.wijmo-wijgrid-scroller {
+  overflow: hidden;
+}
+
+/* line 316, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_grid.scss */
+.wijmo-wijgrid-fixedview {
+  position: relative;
+}
+
+/* line 321, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_grid.scss */
+.wijmo-wijgrid-scroller {
+  border: 0px;
+}
+
+/* line 326, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_grid.scss */
+.wijmo-wijgrid .wijmo-wijsuperpanel-vbar-buttontop {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  top: -1px;
+}
+
+/* line 334, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_grid.scss */
+.wijmo-wijgrid .wijmo-wijsuperpanel-vbar-buttonbottom {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  bottom: -1px;
+}
+
+/* line 342, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_grid.scss */
+.wijmo-wijgrid .wijgridinput {
+  width: 100%;
+  margin: 0;
+  border: none;
+  padding: 0;
+  text-align: inherit;
+}
+
+/* line 351, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_grid.scss */
+.wijmo-wijgrid tr.wijmo-wijgrid-row td.wijdata-type-currency, .wijmo-wijgrid tr.wijmo-wijgrid-row td.wijdata-type-number, .wijmo-wijgrid tr.wijmo-wijgrid-row td.wijdata-type-date {
+  text-align: right;
+}
+
+/* line 356, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_grid.scss */
+.wijmo-wijgrid tr.wijmo-wijgrid-row td.wijdata-type-boolean {
+  text-align: center;
+}
+
+/* line 361, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_grid.scss */
+.wijmo-wijgrid .wijmo-wijgrid-innercell {
+  padding: 1px 2px;
+}
+
+/* line 366, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_grid.scss */
+.wijmo-wijgrid .wijmo-wijcombobox-wrapper {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  border-top: 0;
+  border-bottom: 0;
+  border-left: 0;
+}
+
+/* line 376, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_grid.scss */
+.wijmo-wijgrid .wijmo-wijcombobox .wijmo-wijcombobox-trigger {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  border-top: 0;
+  border-bottom: 0;
+  border-right: 0;
+}
+
+/* line 386, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_grid.scss */
+.wijmo-wijgrid .wijmo-wijcombobox-input {
+  padding: 0;
+}
+
+/* line 391, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_grid.scss */
+.wijmo-wijgrid .ui-input-trigger-right .wijmo-wijinput-input, .wijmo-wijgrid .ui-input-spinner-right .wijmo-wijinput-input {
+  padding: 0px 25px 0px 5px;
+}
+
+/* line 396, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_grid.scss */
+.wijmo-wijgrid .wijmo-wijinput {
+  border: none;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+
+/* line 404, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_grid.scss */
+.wijmo-wijgrid .wijmo-wijinput-spinup {
+  height: 7px;
+}
+
+/* line 409, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_grid.scss */
+.wijmo-wijgrid .wijmo-wijinput-spindown {
+  height: 7px;
+}
+
+/* line 414, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_grid.scss */
+.wijmo-wijgrid .wijmo-wijinput-spinner .ui-icon-triangle-1-n {
+  background-position: 0 -20px;
+}
+
+/* line 419, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_grid.scss */
+.wijmo-wijgrid .wijmo-wijinput-spinner .ui-icon-triangle-1-s {
+  background-position: -64px -20px;
+}
+
+/* drag-n-drop *** */
+/* line 425, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_grid.scss */
+.wijmo-wijgrid-dnd-arrow-top, .wijmo-wijgrid-dnd-arrow-bottom {
+  z-index: 1000;
+  width: 16px;
+  height: 16px;
+}
+
+/* line 432, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_grid.scss */
+.wijmo-wijgrid-dnd-arrow-top .ui-icon {
+  position: absolute;
+  top: -4px;
+}
+
+/* line 438, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_grid.scss */
+.wijmo-wijgrid-dnd-arrow-bottom .ui-icon {
+  position: absolute;
+  top: 4px;
+}
+
+/* line 444, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_grid.scss */
+.wijmo-wijgrid-dnd-helper {
+  border: 1px solid #F0F0F0 !important;
+  filter: alpha(opacity=70) !important;
+  -moz-opacity: 0.7;
+  opacity: 0.7;
+  z-index: 1000;
+}
+
+/* line 453, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_grid.scss */
+.wijmo-wijgrid th.ui-draggable {
+  cursor: pointer;
+}
+
+/* *** drag-n-drop */
+/* line 459, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_grid.scss */
+.wijmo-wijgrid-footerrow {
+  text-align: right;
+}
+
+/* line 464, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_grid.scss */
+.wijmo-wijgrid-group-button {
+  float: left;
+  padding: 0.4em 1.4em 0.4em 0.4em;
+  position: relative;
+  margin: 0.4em;
+  text-decoration: none;
+}
+
+/* line 472, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_grid.scss */
+.wijmo-wijgrid-group-button-close {
+  float: right;
+  margin: 0 3px 0 24px;
+  padding: 1px;
+  position: absolute;
+  right: -14px;
+  top: -7px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+}
+
+/* line 481, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_grid.scss */
+.wijmo-wijgrid-group-button-sort {
+  position: absolute;
+  right: 3px;
+  top: 25%;
+}
+
+/* line 487, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_grid.scss */
+.wijmo-wijgrid-group-area {
+  height: 35px;
+}
+
+/* line 2, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_input.scss */
+.wijmo-wijinput {
+  position: relative;
+  width: 150px;
+  border: 0px;
+}
+
+/* line 9, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_input.scss */
+.wijmo-wijinput-wrapper {
+  float: left;
+  margin-right: 0;
+  width: 100%;
+}
+
+/* line 16, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_input.scss */
+.wijmo-wijinput-input {
+  background: none;
+  border: 0 none;
+  color: inherit;
+  float: right;
+  outline: none;
+  margin: 0;
+  line-height: 16px;
+  height: 16px;
+  padding: 5px;
+}
+
+/* line 29, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_input.scss */
+.wijmo-wijinput .wijmo-wijinput-trigger {
+  position: absolute;
+  right: 0;
+  width: 16px;
+  cursor: pointer;
+  padding: 0 3px;
+  height: 100%;
+}
+
+/* line 39, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_input.scss */
+.wijmo-wijinput .wijmo-wijinput-trigger .ui-icon {
+  margin-top: 40%;
+}
+
+/* line 44, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_input.scss */
+.ui-input-trigger-right .wijmo-wijinput-input, .ui-input-spinner-right .wijmo-wijinput-input {
+  padding: 5px 25px 5px 5px;
+}
+
+/* line 48, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_input.scss */
+.ui-input-trigger-left .wijmo-wijinput-input, .ui-input-spinner-left .wijmo-wijinput-input {
+  padding: 5px 5px 5px 25px;
+}
+
+/* line 53, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_input.scss */
+.ui-input-trigger-right .wijmo-wijinput-trigger {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* line 59, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_input.scss */
+.ui-input-trigger-left .wijmo-wijinput-trigger {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* line 65, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_input.scss */
+.ui-input-trigger-right .wijmo-wijinput-trigger {
+  border-right: none;
+  border-top: none;
+  border-bottom: none;
+}
+
+/* line 72, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_input.scss */
+.ui-input-trigger-left .wijmo-wijinput-trigger {
+  border-left: none;
+  border-top: none;
+  border-bottom: none;
+}
+
+/* line 79, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_input.scss */
+.wijmo-wijinput .wijmo-wijinput-spinner {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 17px;
+  cursor: pointer;
+  height: 100%;
+}
+
+/* line 89, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_input.scss */
+.ui-input-spinner-left .wijmo-wijinput-spinner {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* line 96, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_input.scss */
+.wijmo-wijinput-spinup {
+  border-bottom: none;
+  display: block;
+  height: 50%;
+  width: 16px;
+  position: relative;
+}
+
+/* line 106, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_input.scss */
+.wijmo-wijinput-spindown {
+  border-top: none;
+  display: block;
+  height: 50%;
+  width: 16px;
+  position: relative;
+}
+
+/* line 117, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_input.scss */
+.ui-input-spinner-right .wijmo-wijinput-spinup {
+  border-right: none;
+  border-top: none;
+}
+
+/* line 122, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_input.scss */
+.ui-input-spinner-right .wijmo-wijinput-spindown {
+  border-right: none;
+  border-bottom: none;
+}
+
+/* line 128, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_input.scss */
+.ui-input-spinner-left .wijmo-wijinput-spinup {
+  border-left: none;
+  border-top: none;
+}
+
+/* line 134, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_input.scss */
+.ui-input-spinner-left .wijmo-wijinput-spindown {
+  border-left: none;
+  border-bottom: none;
+}
+
+/* line 140, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_input.scss */
+.wijmo-wijinput-numeric {
+  text-align: right;
+}
+
+/* line 145, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_input.scss */
+.wijmo-wijinput-date, .wijmo-wijinput-mask {
+  float: left;
+}
+
+/* line 150, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_input.scss */
+.ui-input-spinner-trigger-right .wijmo-wijinput-spinner {
+  right: 23px;
+}
+
+/* line 155, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_input.scss */
+.ui-input-spinner-trigger-right .wijmo-wijinput-input {
+  padding: 5px 42px 5px 5px;
+}
+
+/* line 160, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_input.scss */
+.ui-input-spinner-trigger-right .wijmo-wijinput-spinup, .ui-input-spinner-trigger-right .wijmo-wijinput-spindown, .ui-input-spinner-trigger-right .wijmo-wijinput-trigger {
+  border-top: none;
+  border-right: none;
+}
+
+/* line 166, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_input.scss */
+.ui-input-spinner-trigger-left .wijmo-wijinput-trigger {
+  left: 0;
+}
+
+/* line 170, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_input.scss */
+.ui-input-spinner-trigger-left .wijmo-wijinput-spinner {
+  left: 23px;
+}
+
+/* line 175, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_input.scss */
+.ui-input-spinner-trigger-left .wijmo-wijinput-input {
+  padding: 5px 5px 5px 42px;
+}
+
+/* line 180, /Users/michael/Dropbox/Workspaces/Espresso/Absolution/development/wijmo/_input.scss */
+.ui-input-spinner-trigger-left .wijmo-wijinput-spinup, .ui-input-spinner-trigger-left .wijmo-wijinput-spindown, .ui-input-spinner-trigger-left .wijmo-wijinput-trigger {
+  border-top: none;
+  border-left: none;
 }
 
 /* line 2, ../development/html/_widgets.scss */
