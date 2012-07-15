@@ -1837,7 +1837,7 @@ button.ui-corner-right,
   width: 100%;
   margin: 0px;
   border-top: 1px solid #f6f6f6;
-  border-bottom: 1px solid #ababab;
+  border-bottom: 1px dashed #ababab;
   background-color: #f6f6f6;
 }
 /* line 27, ../development/jquery/_autocomplete.scss */
@@ -1867,7 +1867,6 @@ button.ui-corner-right,
 /* line 57, ../development/jquery/_autocomplete.scss */
 .ui-autocomplete.ui-menu.ui-widget.ui-widget-content {
   color: #243314;
-  border: 2px solid #2F2F2F;
 }
 
 /* line 2, ../development/jquery/_button.scss */

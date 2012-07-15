@@ -19,7 +19,7 @@
 		width: 100%;
 		margin: 0px;
 		border-top: 1px solid $default-state-bg;
-		border-bottom: 1px solid $default-state-border;
+		border-bottom: 1px dashed $default-state-border;
 		background-color: $default-state-bg;
 		//@include gradientTopToBottom($default-state-bg, darken($default-state-bg, $gradient));
 		
@@ -56,6 +56,4 @@
 .ui-autocomplete.ui-menu.ui-widget.ui-widget-content
 {
 	color: $default-state-text;
-	border: 2px solid #2F2F2F;
-	
 }
