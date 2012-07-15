@@ -2697,16 +2697,15 @@ button::-moz-focus-inner {
 .ui-dialog .ui-dialog-titlebar-close {
   position: absolute;
   right: .6em;
-  top: 50%;
-  width: 19px;
-  height: 18px;
+  top: -2px;
+  padding-top: 4px;
 }
-/* line 25, ../development/jquery/_dialog.scss */
+/* line 23, ../development/jquery/_dialog.scss */
 .ui-dialog .ui-dialog-titlebar-close span {
   display: block;
   margin: 1px;
 }
-/* line 32, ../development/jquery/_dialog.scss */
+/* line 30, ../development/jquery/_dialog.scss */
 .ui-dialog .ui-dialog-content {
   position: relative;
   border-width: 0px;
@@ -2714,18 +2713,18 @@ button::-moz-focus-inner {
   overflow: auto;
   zoom: 1;
 }
-/* line 40, ../development/jquery/_dialog.scss */
+/* line 38, ../development/jquery/_dialog.scss */
 .ui-dialog .ui-dialog-content .ui-tabs {
   margin: -1em;
   border: 0px;
 }
-/* line 46, ../development/jquery/_dialog.scss */
+/* line 44, ../development/jquery/_dialog.scss */
 .ui-dialog .ui-dialog-content hr {
   margin: 1em -1em 1em -1em;
   border: 0px;
   border-top: 1px solid #c1c1c1 !important;
 }
-/* line 54, ../development/jquery/_dialog.scss */
+/* line 52, ../development/jquery/_dialog.scss */
 .ui-dialog .ui-dialog-buttonpane {
   text-align: left;
   border-width: 1px 0 0 0;
@@ -2733,18 +2732,18 @@ button::-moz-focus-inner {
   padding: .6em;
   background: #f4f4f4;
 }
-/* line 62, ../development/jquery/_dialog.scss */
+/* line 60, ../development/jquery/_dialog.scss */
 .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {
   float: right;
 }
-/* line 67, ../development/jquery/_dialog.scss */
+/* line 65, ../development/jquery/_dialog.scss */
 .ui-dialog .ui-dialog-buttonpane button {
   margin: .5em .4em .5em 0;
   cursor: pointer;
   font-weight: normal;
   min-width: 7em;
 }
-/* line 76, ../development/jquery/_dialog.scss */
+/* line 74, ../development/jquery/_dialog.scss */
 .ui-dialog .ui-dialog-titlebar {
   padding: .6em 1.2em .6em;
   position: relative;
@@ -2758,11 +2757,6 @@ button::-moz-focus-inner {
   color: #243314;
 }
 /* line 87, ../development/jquery/_dialog.scss */
-.ui-dialog .ui-dialog-titlebar a {
-  margin-top: -1.3em;
-  padding-top: 4px;
-}
-/* line 92, ../development/jquery/_dialog.scss */
 .ui-dialog .ui-dialog-titlebar a .ui-icon {
   background-image: url(images/ui-icons_ffffff_256x240.png);
 }
@@ -2816,7 +2810,7 @@ button::-moz-focus-inner {
   background: -o-linear-gradient(0% 100% 90deg, #49a7db, #7cc0e5);
   background: -ms-linear-gradient(0% 100% 90deg, #49a7db, #7cc0e5);
 }
-/* line 102, ../development/jquery/_dialog.scss */
+/* line 97, ../development/jquery/_dialog.scss */
 .ui-dialog .ui-resizable-se {
   width: 14px;
   height: 14px;
@@ -2824,13 +2818,13 @@ button::-moz-focus-inner {
   bottom: 1px;
   display: none;
 }
-/* line 111, ../development/jquery/_dialog.scss */
+/* line 106, ../development/jquery/_dialog.scss */
 .ui-dialog .ui-icon-grip-diagonal-se {
   background-position: -64px -224px;
   display: none;
 }
 
-/* line 118, ../development/jquery/_dialog.scss */
+/* line 113, ../development/jquery/_dialog.scss */
 .ui-draggable .ui-dialog-titlebar {
   cursor: move;
 }

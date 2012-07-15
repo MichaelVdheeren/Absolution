@@ -17,10 +17,8 @@
 	{
 		position: absolute;
 		right: .6em;
-		top: 50%;
-		width: 19px;
-		height: 18px;
-		
+		top: -2px;
+		padding-top: 4px;
 		span
 		{
 			display: block;
@@ -85,9 +83,6 @@
 		
 		a
 		{		
-			margin-top: -1.3em;
-			padding-top: 4px;
-			
 			.ui-icon
 			{
 				background-image: url(images/ui-icons_ffffff_256x240.png);
