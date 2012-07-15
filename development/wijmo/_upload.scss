@@ -1,0 +1,44 @@
+.wijmo-wijupload ul
+{
+	margin: 0;
+	padding: 0;
+}
+
+.wijmo-wijupload li
+{
+	list-style: none outside none;
+	position: relative;
+	padding: 5px 110px 5px 5px;
+	width: 100%;
+}
+
+.wijmo-wijupload .wijmo-wijupload-buttonContainer
+{
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.wijmo-wijupload .wijmo-wijupload-file
+{
+	display: block;
+	padding: 0.4em;
+	line-height: 1.4
+}
+
+.wijmo-wijupload .wijmo-wijupload-loading
+{
+	width: 16px;
+	height: 16px;
+	background-image: url("images/ui-anim_basic_16x16.gif");
+	display: block;
+	float: left;
+	top: 25%;
+	left: -10px;
+	position: relative;
+}
+
+.wijmo-wijupload .ui-button
+{
+	margin: 2px;
+}

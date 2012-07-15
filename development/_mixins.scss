@@ -1,0 +1,52 @@
+@mixin border-radius ($radius: $border-radius) {
+	border-radius: $radius;
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+}
+
+@mixin box-shadow ($x: 0, $y: 0, $d: 1px, $color: #000) {
+	-webkit-box-shadow: $x $y $d $color;
+	-moz-box-shadow: $x $y $d $color;
+	box-shadow: $x $y $d $color;
+}
+
+@mixin box-shadow-inset ($x: 0, $y: 0, $d: 1px, $color: #000) {
+	-webkit-box-shadow: inset $x $y $d $color;
+	-moz-box-shadow: inset $x $y $d $color;
+	box-shadow: inset $x $y $d $color;
+}
+
+@mixin text-shadow ($x: 0, $y: 0, $color: #000) {
+	text-shadow: $x $y $color;
+	-webkit-text-shadow: $x $y $color;
+	-moz-text-shadow: $x $y $color;
+	filter: "progid:DXImageTransform.Microsoft.DropShadow(OffX='#{$x}', OffY='#{$y}', Color='#{$color}')";
+	-ms-filter: "progid:DXImageTransform.Microsoft.DropShadow(OffX='#{$x}', OffY='#{$y}', Color='#{$color}')";
+}
+
+@mixin rotate-text() {
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	filter:"progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
+}
+	
+@mixin gradientTopToBottom ($from, $to) {
+	background: $from + $to;
+	filter:expression("progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$from}',endColorstr='#{$to}')");
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$from}',endColorstr='#{$to}')";
+	background: -moz-linear-gradient(0% 100% 90deg, $to, $from);
+	background: -webkit-gradient(linear, left top, left bottom, from($from), to($to));
+	background: -o-linear-gradient(0% 100% 90deg, $to, $from);
+	background: -ms-linear-gradient(0% 100% 90deg, $to, $from);
+}
+
+@mixin gradientLeftToRight ($from, $to) {
+	background: $from + $to;
+	filter:expression("progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$from}',endColorstr='#{$to}',GradientType=1)");
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$from}',endColorstr='#{$to}',GradientType=1)";
+	background: -moz-linear-gradient(0% 100% 180deg, $to, $from);
+	background: -webkit-gradient(linear, left top, right top, from($from), to($to));
+	background: -o-linear-gradient(0% 100% 180deg, $to, $from);
+	background: -ms-linear-gradient(0% 100% 180deg, $to, $from);
+}

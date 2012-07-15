@@ -16,7 +16,7 @@
 		margin: 0; 
 		padding: -1px;
 		@include border-radius(0px);
-		border-bottom: 1px solid $defaultStateBorderColor; 
+		border-bottom: 1px solid $default-state-border; 
 		
 		li
 		{ 
@@ -28,7 +28,7 @@
 			padding: 0; 
 			white-space: nowrap;
 			border-width: 0px; 
-			border-right: 1px solid $defaultStateBorderColor;
+			border-right: 1px solid $default-state-border;
 			@include border-radius(0px);
 			
 			a
@@ -83,7 +83,7 @@
 .ui-tabs-bottom .ui-tabs-nav
 { 
 	border-bottom: 0 !important;
-	border-top: 1px solid $defaultStateBorderColor;
+	border-top: 1px solid $default-state-border;
 }
 
 /* LEFT */

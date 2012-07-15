@@ -1,0 +1,435 @@
+.wijmo-wijgrid
+{
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    overflow: hidden;
+    
+    .wijmo-wijsuperpanel
+    {
+        border: 0;
+    }
+    
+    .wijmo-wijgrid-table 
+    {
+    	.wijmo-wijgrid-filter-trigger
+    	{
+    	    position: absolute;
+    	    right: 0;
+    	    top: 0;
+    	    height: 16px;
+    	    width: 16px;
+    	    display: block;
+    	    padding: 5px 3px;
+    	    border-top: none;
+    	    border-right: none;
+    	    border-bottom: none;
+    	    -moz-border-radius: 0;
+    	    -webkit-border-radius: 0;
+    	    border-radius: 0;
+    	}
+    	
+    	.wijmo-wijgrid-filter-input
+    	{
+    	    width: auto;
+    	    height: 16px;
+    	    border: none;
+    	    padding: 5px 3px;
+    	    overflow: visible; /* ie6 padding issue fix */
+    	    color: inherit;
+    	    outline: none;
+    	    position: relative;
+    	    z-index: 5;
+    	    -moz-border-radius: 0;
+    	    -webkit-border-radius: 0;
+    	    border-radius: 0;
+    	    background: none;
+    	}
+    }
+    
+    .wijmo-wijgrid-filter
+    {
+        position: relative;
+        -moz-border-radius: 0;
+        -webkit-border-radius: 0;
+        border-radius: 0;
+        border-top: none;
+        border-left: none;
+        border-bottom: none;
+        
+        .wijmo-wijinput
+        {
+            border: none;
+            -moz-border-radius: 0;
+            -webkit-border-radius: 0;
+            border-radius: 0;
+        }
+    }
+    
+    .wijmo-wijgrid-header,
+    .wijmo-wijgrid-footer
+    {
+        border-left: none !important;
+        border-top: none !important;
+        border-bottom: none !important;
+        padding: 0.2em;
+        -moz-border-radius: 0;
+        -webkit-border-radius: 0;
+        border-radius: 0;
+    }
+}
+
+.wijmo-wijgrid-loading
+{
+    background: transparent url('images/ui-anim_basic_16x16.gif') left top no-repeat;
+    min-height: 16px;
+    min-width: 16px;
+}
+
+.wijmo-wijgrid-filtericon
+{
+    background: url('images/filterop.png') no-repeat;
+    text-indent: -9999px;
+    overflow: hidden;
+    height: 16px;
+    width: 16px;
+    display: none;
+}
+.filter-nofilter {background-position: 0 0px;}
+.filter-contains {background-position: 0 -16px;}
+.filter-notcontain {background-position: 0 -32px;}
+.filter-beginswith {background-position: 0 -48px;}
+.filter-endswith {background-position: 0 -64px;}
+.filter-equals {background-position: 0 -80px;}
+.filter-notequal {background-position: 0 -96px;}
+.filter-greater {background-position: 0 -112px;}
+.filter-less {background-position: 0 -128px;}
+.filter-greaterorequal {background-position: 0 -144px;}
+.filter-lessorequal {background-position: 0 -160px;}
+.filter-isempty {background-position: 0 -176px;}
+.filter-notisempty {background-position: 0 -192px;}
+.filter-isnull {background-position: 0 -208px;}
+.filter-notisnull {background-position: 0 -224px;}
+
+.wijmo-wijpager .ui-icon
+{
+    cursor: pointer;
+}
+
+.wijmo-wijgrid .wijmo-wijgrid-grouptogglebtn
+{
+    float: left;
+    cursor: pointer;
+    margin-top: 3px;
+}
+
+.wijmo-wijgrid .wijmo-wijgrid-table
+{
+    border-collapse: collapse;
+    outline: none;
+}
+
+.wijmo-wijgrid-rowheader
+{
+    width: 21px;
+}
+
+
+
+.wijmo-wijgrid tr.wijmo-wijgrid-row
+{
+    border-bottom: none;
+}
+
+.wijmo-wijgrid tr.wijmo-wijgrid-row td
+{
+    border: none;
+    border-right-color: inherit;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-top-color: inherit;
+    border-top-style: solid;
+    border-top-width: 1px;
+    text-align: left;
+    overflow: hidden;
+}
+
+.wijmo-wijgrid .wijgridtd
+{
+    font-weight: normal;
+    padding: 0px;
+}
+
+.wijmo-wijgrid .wijgridth
+{
+    padding: 0px;
+}
+
+.wijmo-wijgrid .wijmo-wijgrid-headerrow .wijmo-c1basefield
+{
+    zoom: 1;
+    overflow: hidden;
+    border-left: 0;
+    border-top: 0;
+    padding: 0px;
+    position: relative;
+}
+
+.wijmo-wijgrid .wijmo-wijgrid-headerrow .wijmo-wijgrid-headertext
+{
+    padding: 0.5em 1em;
+    display: block;
+    text-align: center;
+    position: relative;
+}
+.wijmo-wijgrid .wijmo-wijgrid-headerrow .ui-icon
+{
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -8px;
+    z-index: 99;
+}
+
+.wijmo-wijgrid .wijmo-wijgrid-filterrow
+{
+}
+
+.wijmo-wijgrid .wijmo-wijgrid-filterrow td
+{
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: inherit;
+}
+
+
+.wijmo-wijgrid .wijmo-wijpager
+{
+    display: block;
+    position: relative;
+}
+
+.wijmo-wijgrid-resizehandle
+{
+    position: absolute;
+    z-index: 99999;
+}
+
+/* 
+ *    Scrolling
+ */
+
+.wijmo-wijgrid-v-splitter, .wijmo-wijgrid-h-splitter
+{
+    background-color: white;
+    width: 4px;
+    height: 4px;
+    position: absolute;
+    z-index: 10;
+    display: none;
+}
+.wijmo-wijgrid-splits-enabled .wijmo-wijgrid-v-splitter
+{
+    border-right: 1px solid #000000;
+    display: block;
+    cursor: w-resize;
+}
+.wijmo-wijgrid-splits-enabled .wijmo-wijgrid-h-splitter
+{
+    border-bottom: 1px solid #000000;
+    display: block;
+    cursor: n-resize;
+}
+.wijmo-wijgrid-splits-enabled .wijmo-wijgrid-v-splitter.ui-draggable-dragging, .wijmo-wijgrid-splits-enabled .wijmo-wijgrid-h-splitter.ui-draggable-dragging
+{
+    background-color: #626262;
+}
+
+.wijmo-wijgrid-filterlist
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100;
+}
+.wijmo-wijgrid-scroller
+{
+    overflow: hidden;
+}
+.wijmo-wijgrid-fixedview
+{
+    position: relative;
+}
+
+.wijmo-wijgrid-scroller
+{
+    border: 0px;
+}
+
+.wijmo-wijgrid .wijmo-wijsuperpanel-vbar-buttontop
+{
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    top: -1px;
+}
+
+.wijmo-wijgrid .wijmo-wijsuperpanel-vbar-buttonbottom
+{
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    bottom: -1px;
+}
+
+.wijmo-wijgrid .wijgridinput
+{
+    width: 100%;
+    margin: 0;
+    border: none;
+    padding: 0;
+    text-align: inherit;
+}
+
+.wijmo-wijgrid tr.wijmo-wijgrid-row td.wijdata-type-currency, .wijmo-wijgrid tr.wijmo-wijgrid-row td.wijdata-type-number, .wijmo-wijgrid tr.wijmo-wijgrid-row td.wijdata-type-date
+{
+    text-align: right;
+}
+
+.wijmo-wijgrid tr.wijmo-wijgrid-row td.wijdata-type-boolean
+{
+    text-align: center;
+}
+
+.wijmo-wijgrid .wijmo-wijgrid-innercell
+{
+    padding: 1px 2px;
+}
+
+.wijmo-wijgrid .wijmo-wijcombobox-wrapper
+{
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    border-top: 0;
+    border-bottom: 0;
+    border-left: 0;
+}
+
+.wijmo-wijgrid .wijmo-wijcombobox .wijmo-wijcombobox-trigger
+{
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    border-top: 0;
+    border-bottom: 0;
+    border-right: 0;
+}
+
+.wijmo-wijgrid .wijmo-wijcombobox-input
+{
+    padding: 0;
+}
+
+.wijmo-wijgrid .ui-input-trigger-right .wijmo-wijinput-input, .wijmo-wijgrid .ui-input-spinner-right .wijmo-wijinput-input
+{
+    padding: 0px 25px 0px 5px;
+}
+
+.wijmo-wijgrid .wijmo-wijinput
+{
+    border: none;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+
+.wijmo-wijgrid .wijmo-wijinput-spinup
+{
+    height: 7px;
+}
+
+.wijmo-wijgrid .wijmo-wijinput-spindown
+{
+    height: 7px;
+}
+
+.wijmo-wijgrid .wijmo-wijinput-spinner .ui-icon-triangle-1-n
+{
+    background-position: 0 -20px;
+}
+
+.wijmo-wijgrid .wijmo-wijinput-spinner .ui-icon-triangle-1-s
+{
+    background-position: -64px -20px;
+}
+
+/* drag-n-drop *** */
+.wijmo-wijgrid-dnd-arrow-top, .wijmo-wijgrid-dnd-arrow-bottom
+{
+    z-index: 1000;
+    width: 16px;
+    height: 16px;
+}
+
+.wijmo-wijgrid-dnd-arrow-top .ui-icon
+{
+    position: absolute;
+    top: -4px;
+}
+
+.wijmo-wijgrid-dnd-arrow-bottom .ui-icon
+{
+    position: absolute;
+    top: 4px;
+}
+
+.wijmo-wijgrid-dnd-helper
+{
+    border: 1px solid #F0F0F0 !important;
+    filter: alpha(opacity=70) !important;
+    -moz-opacity: 0.7;
+    opacity: 0.7;
+    z-index: 1000;
+}
+
+.wijmo-wijgrid th.ui-draggable
+{
+    cursor: pointer;
+}
+/* *** drag-n-drop */
+
+.wijmo-wijgrid-footerrow
+{
+    text-align: right;
+}
+
+.wijmo-wijgrid-group-button
+{
+    float: left;
+    padding: 0.4em 1.4em 0.4em 0.4em;
+    position: relative;
+    margin: 0.4em;
+    text-decoration: none;
+}
+.wijmo-wijgrid-group-button-close
+{
+    float: right;
+    margin: 0 3px 0 24px;
+    padding: 1px;
+    position: absolute;
+    right: -14px;
+    top: -7px;
+    @include border-radius(15px);
+}
+.wijmo-wijgrid-group-button-sort {
+    position: absolute;
+    right: 3px;
+    top: 25%;
+}
+.wijmo-wijgrid-group-area
+{
+    height: 35px;
+}

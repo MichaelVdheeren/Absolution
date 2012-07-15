@@ -14,9 +14,7 @@ div.uploader.focus span.action, div.uploader.hover span.action, div.uploader:hov
 div.button.focus, div.button:focus, div.button:hover, div.button.hover,
 div.selector.focus span, div.selector.hover span, div.selector:hover span
 { 
-	color: $hoverStateTextColor;
-	border-color: $hoverStateBorderColor; 
-	@include gradientTopToBottom($hoverStateStartColor, $hoverStateEndColor);
+	@include ui-state-hover($default-state-text, darken($default-state-bg, 0.5*$gradient));
 }
 
 div.uploader.active span.action, div.uploader:active span.action,
@@ -25,9 +23,7 @@ div.selector:hover:active span,
 div.selector.active:hover span,
 div.selector.focus.active span
 {
-	color: $activeStateTextColor;
-	border-color: $activeStateBorderColor; 
-	@include gradientTopToBottom($activeStateStartColor, $activeStateEndColor);
+	@include ui-state-active($default-state-text, $default-state-bg);
 }
 
 
@@ -80,17 +76,17 @@ div.selector
 	
 	&:hover
 	{
-		background: $hover-state-bg url('images/selector.png') right center no-repeat;
+		background: darken($default-state-bg, 0.5*$gradient) url('images/selector.png') right center no-repeat;
 	}
 	
 	&:focus
 	{
-		background: $focus-state-bg url('images/selector.png') right center no-repeat;
+		background: darken($default-state-bg, 0.5*$gradient) url('images/selector.png') right center no-repeat;
 	}
 	
 	&:active
 	{
-		background: $active-state-bg url('images/selector.png') right center no-repeat;
+		background: $default-state-bg url('images/selector.png') right center no-repeat;
 	}
 	
 	span
@@ -151,9 +147,7 @@ div.checker
 		display: -moz-inline-box;
 		display: inline-block;
 		text-align: center;
-		-moz-border-radius: 3px;
-		-webkit-border-radius: 3px;
-		border-radius: 3px;
+		@include border-radius(3px);
 	}
 	
 	&.focus span,
@@ -169,6 +163,11 @@ div.checker
 		@include box-shadow-inset(0 -6px 5px rgba(0,0,0,.2));
 		background-image: url(images/ui-icons_ffffff_256x240.png);
 		background-position: -66px -147px;
+	}
+	
+	&:hover, &:focus
+	{
+		@include box-shadow (0,0,3px,#49A7DB);
 	}
 }
 
@@ -187,12 +186,11 @@ div.radio
 	
 	border: 1px solid $default-state-border;
 	background-color: $input-bg;
-	@include gradientTopToBottom($input-bg,lighten($input-bg, $gradient-percentage));
+	@include gradientTopToBottom($input-bg,lighten($input-bg, $gradient));
 	
 	&:hover, &:focus
 	{
-		@include box-shadow(0 0 3px #49A7DB);
-		//.gradientTopToBottom(#F8F8F8,#FEFEFE);
+		@include box-shadow(0,0,3px,$highlight-state-bg);
 	}
 	
 	input
@@ -216,7 +214,7 @@ div.radio
 		&.checked
 		{
 			background: $highlight-state-bg;
-			@include box-shadow-inset(0 -6px 5px rgba(0,0,0,.2));
+			@include box-shadow-inset(0,-6px,5px,rgba(0,0,0,.2));
 		}
 	}
 } 

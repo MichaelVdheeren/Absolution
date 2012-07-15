@@ -14,7 +14,7 @@
 		position: relative; 
 		margin-top: 1px; 
 		zoom: 1;
-		border: solid 1px $defaultStateBorderColor;
+		border: solid 1px $default-state-border;
 		@include border-radius;
 		font:  inherit;
 		
@@ -32,7 +32,7 @@
 			top: 50%; 
 			margin-top: -7px;
 			width: 13px; height: 13px;
-			border: 1px solid $defaultStateBorderColor; 
+			border: 1px solid $default-state-border; 
 			background: #ffffff url(images/ui-icons_222222_256x240.png);
 			background-position: -34px -2px;
 			@include border-radius(7px);
@@ -78,9 +78,7 @@
 	.ui-accordion-header.ui-state-hover,
 	.ui-accordion-header.ui-state-focus
 	{
-		color: $defaultStateTextColor;
-		border-color: $defaultStateBorderColor; 
-		@include gradientTopToBottom($defaultStateStartColor, $defaultStateEndColor);
+		@extend .ui-state-default;
 	}
 }
 
@@ -90,7 +88,7 @@
 	.ui-accordion-header.ui-state-hover .ui-icon {
 		background: #5e9ae2 url(images/ui-icons_ffffff_256x240.png);
 		background-position: -34px -2px;
-		border: 1px solid $hoverStateBorderColor; 
+		border: 1px solid $default-state-bg; 
 	}
 	
 	.ui-accordion-header.ui-state-active .ui-icon, 
@@ -144,16 +142,14 @@
 	.ui-accordion-header.ui-state-hover,
 	.ui-accordion-header.ui-state-focus
 	{
-		color: $defaultStateTextColor;
-		border-color: $defaultStateBorderColor; 
-		@include gradientLeftToRight($defaultStateStartColor, $defaultStateEndColor);
+		@extend .ui-state-default;
 	}
 	
 	.ui-accordion-header.ui-state-hover .ui-icon
 	{
 		background: #5e9ae2 url(images/ui-icons_ffffff_256x240.png);
 		background-position: -66px -1px;
-		border: 1px solid $hoverStateBorderColor;
+		border: 1px solid $default-state-border;
 	}
 	
 	.ui-accordion-header.ui-state-active .ui-icon,
