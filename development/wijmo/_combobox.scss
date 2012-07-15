@@ -1,0 +1,118 @@
+/* wijcombobox
+ ----------------------------------*/
+.wijmo-wijcombobox
+{
+    position: relative;
+}
+.wijmo-wijcombobox-wrapper
+{
+    float: left;
+}
+
+/* wijcombobox textbox
+ ----------------------------------*/
+.wijmo-wijcombobox-input
+{
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    color: inherit;
+    padding: 3px 5px 3px 5px;
+    outline: none;
+}
+
+.wijmo-wijcombobox .wijmo-wijcombobox-label
+{
+    background: transparent;
+    border: none;
+    font-weight: normal;
+    position: absolute;
+    white-space: nowrap;
+}
+.wijmo-wijcombobox-loading
+{
+    background: transparent url('images/ui-anim_basic_16x16.gif') right center no-repeat;
+}
+/* dropdown list trigger
+ ----------------------------------*/
+.wijmo-wijcombobox .wijmo-wijcombobox-trigger
+{
+    position: absolute;
+    top: 0px;
+    font-size: 0px;
+    width: 20px;
+    cursor: pointer;
+}
+/* dropdown list
+----------------------------------*/
+.wijmo-wijcombobox-list
+{
+    position: absolute;
+    overflow: hidden;
+}
+.wijmo-wijcombobox-ul .wijmo-wijcombobox-item
+{
+    margin: 0;
+    padding: .2em .4em;
+    line-height: 1.5;
+    white-space: nowrap;
+}
+.wijmo-wijcombobox-ul .wijmo-wijcombobox-item.ui-state-hover, .wijmo-wijcombobox-ul .wijmo-wijcombobox-item.ui-state-active
+{
+    font-weight: normal;
+    margin: -1px;
+}
+
+.wijmo-wijcombobox-ul .wijmo-wijlist-item-selected
+{
+    font-style: italic;
+}
+/* multiple columns
+----------------------------------*/
+.wijmo-wijcombobox-multicolumn .wijmo-wijcombobox-row, .wijmo-wijcombobox-multicolumn .wijmo-wijcombobox-rowheader
+{
+    list-style: none none outside;
+    padding: 0px;
+    margin: 0;
+    border: 0px;
+    overflow: hidden;
+    width: 10000px;
+}
+.wijmo-wijcombobox-multicolumn .wijmo-wijcombobox-cell
+{
+    float: left;
+    overflow: hidden;
+    border-width: 0;
+    text-align: center;
+    width: 100px;
+}
+.wijmo-wijcombobox-multicolumn .wijmo-wijcombobox-rowheader .wijmo-wijcombobox-cell
+{
+    border-right-width: 1px;
+}
+.wijmo-wijcombobox-multicolumn .wijmo-wijcombobox-row .wijmo-wijcombobox-cell
+{
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+}
+.wijmo-wijcombobox-multicolumn .wijmo-wijsuperpanel-header
+{
+    border-width: 0px;
+    border-bottom-width: 1px;
+}
+.wijmo-wijcombobox-multicolumn .wijmo-wijlist-item, .wijmo-wijcombobox-multicolumn .wijmo-wijlist-ul
+{
+    padding: 0px;
+    border: 0px;
+}
+.wijmo-wijcombobox-multicolumn .wijmo-wijcombobox-active-prev .wijmo-wijcombobox-cell
+{
+    border-bottom-width: 0px;
+}
+.wijmo-wijcombobox-multicolumn .wijmo-wijcombobox-row .ui-state-hover
+{
+    border-top-width: 1px;
+}
+.wijmo-wijcombobox-multicolumn .wijmo-wijlist-item-first .ui-state-hover
+{
+    border-top-width: 0px;
+}

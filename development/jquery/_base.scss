@@ -29,7 +29,7 @@
 	color: $default-state-text;
 	border: 1px solid $default-state-border;
 	background-color: $default-state-bg;
-	@include gradientTopToBottom($default-state-bg, darken($default-state-bg, $gradient-percentage));
+	@include gradientTopToBottom($default-state-bg, darken($default-state-bg, $gradient));
 }
 
 @import "interaction";
@@ -38,12 +38,12 @@
 .ui-widget-content .ui-priority-primary,
 .ui-widget-header .ui-priority-primary
 {
-	text-shadow: 0 -1px 1px darken($highlight-state-border, $gradient-percentage);
+	text-shadow: 0 -1px 1px darken($highlight-state-border, $gradient);
 	
 	color: $highlight-state-text;
 	border: 1px solid $highlight-state-border;
 	background: $highlight-state-bg;
-	@include gradientTopToBottom($highlight-state-bg, darken($highlight-state-bg, $gradient-percentage));
+	@include gradientTopToBottom($highlight-state-bg, darken($highlight-state-bg, $gradient));
 	a { color: inherit }
 }
 

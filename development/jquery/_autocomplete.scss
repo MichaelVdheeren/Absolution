@@ -21,7 +21,7 @@
 		border-top: 1px solid $default-state-bg;
 		border-bottom: 1px solid $default-state-border;
 		background-color: $default-state-bg;
-		//@include gradientTopToBottom($default-state-bg, darken($default-state-bg, $gradient-percentage));
+		//@include gradientTopToBottom($default-state-bg, darken($default-state-bg, $gradient));
 		
 		&:hover
 		{

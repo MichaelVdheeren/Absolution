@@ -1,0 +1,44 @@
+/* Color information */
+$font-family:				Trebuchet MS, Tahoma, Verdana, Arial, sans-serif;
+$font-size:					1.1em;
+$font-color:				#243314;
+
+
+$border-radius:				3px;
+$border-color:				15%;
+$gradient:					12%;
+
+
+$widget-content-bg:			#FAFAFA;
+
+$dialog-title-bg:			#f4f4f4;//#404040;
+$dialog-title-text:			$font-color; //#FFFFFF;
+$dialog-border:				#ABABAB;
+
+$default-state-bg:			#f6f6f6;
+$default-state-text:		$font-color;
+$default-state-border:		#ABABAB;
+
+$success-state-bg:			#90A960;	
+$success-state-text:		#FFFFFF;
+$success-state-border:		#627D3F;
+
+$warning-state-bg:			#DAB151;	
+$warning-state-text:		#FFFFFF;
+$warning-state-border:		#997233;
+
+$highlight-state-bg:		#49A7DB;	
+$highlight-state-text:		#FFFFFF;
+$highlight-state-border:	#2E63A5;
+
+$error-state-bg:			#D8717B;
+$error-state-text:			#FFFFFF;
+$error-state-border:		#A1474B;
+
+$progressbar-front-top:		#49A7DB;
+$progressbar-front-bottom:	darken($progressbar-front-top, $gradient);
+$progressbar-front-border:	#2E63A5;
+$progressbar-back-top:		#D4D4D4;
+$progressbar-back-bottom:	lighten($progressbar-back-top, $gradient);
+
+$input-bg:					#F8F8F8;

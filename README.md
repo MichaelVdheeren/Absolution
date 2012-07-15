@@ -20,11 +20,11 @@ I designed and coded this theme in my spare time, which I now and then like to s
 ## Q&A ##
 
 **How do I install the theme?**  
-Download the latest version from the gitHub repository and add a text/css type link in the pages where you want to use the theme. You should set the href to the *absolution.blue.css* file! Do not forget the images folder!  
-Example: <link type="text/css" href="absolution.blue.css" rel="stylesheet" />  
+Download the latest version from the gitHub repository and add a text/css type link in the pages where you want to use the theme. You should set the href to the *absolution.css* file! Do not forget the images folder!  
+Example: <link type="text/css" href="absolution.css" rel="stylesheet" />  
 
 **But I want a different color!**  
-No problem! Thanks to the Sass language you can easily make a copy of the absolution.blue.scss file, rename it, and change the color variables within that file. The only remaining step is to compile the file again using the sass compiler.
+No problem! Thanks to the Sass language you can easily change the colors in the _settings.scss file, rename it. The only remaining step is to compile the absolution.scss file again using the sass compiler.
 
 **What about Wijmo support?**  
 There is no need anymore to include the Wijmo css stylesheets as they are the foundation for our Wijmo support. We are working hard to make sure that every widget in Wijmo receives the full support it deserves!

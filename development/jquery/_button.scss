@@ -19,7 +19,7 @@
 	color: $default-state-text;
 	border-color: $default-state-border;
 	background-color: $default-state-bg;
-	@include gradientTopToBottom($default-state-bg, darken($default-state-bg, $gradient-percentage));
+	@include gradientTopToBottom($default-state-bg, darken($default-state-bg, $gradient));
 	@include ui-state-interactions($default-state-text, $default-state-bg);
 	
 	&.ui-state-success
@@ -117,6 +117,7 @@ button.ui-button-icons-only { width: 3.7em; }
 		margin-left: 0;
 		margin-right: -.4em;
 		@include border-radius(0px);
+		border-right-width: 0px;
 	}
 	
 	.ui-button.ui-corner-left {
@@ -127,6 +128,9 @@ button.ui-button-icons-only { width: 3.7em; }
 		@extend .ui-corner-right;
 	}
 	
+	.ui-button:last-child {
+		border-right-width: 1px;
+	}
 }
 
 /* workarounds */
