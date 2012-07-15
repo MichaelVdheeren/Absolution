@@ -44,7 +44,7 @@
         
         border: 1px solid $default-state-border;
         background-color: $input-bg;
-        @include gradientTopToBottom($input-bg,lighten($input-bg, $gradient-percentage));
+        @include gradientTopToBottom($input-bg,lighten($input-bg, $gradient));
         
         &:hover, &:focus, &.ui-state-hover, &.ui-state-focus
         {

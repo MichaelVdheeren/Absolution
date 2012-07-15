@@ -19,7 +19,7 @@
 	color: $default-state-text;
 	border-color: $default-state-border;
 	background-color: $default-state-bg;
-	@include gradientTopToBottom($default-state-bg, darken($default-state-bg, $gradient-percentage));
+	@include gradientTopToBottom($default-state-bg, darken($default-state-bg, $gradient));
 	@include ui-state-interactions($default-state-text, $default-state-bg);
 	
 	&.ui-state-success

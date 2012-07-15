@@ -5,7 +5,7 @@
 	{
 		color: $text;
 		background-color: $bg;
-		@include gradientTopToBottom($bg, darken($bg, $gradient-percentage));
+		@include gradientTopToBottom($bg, darken($bg, $gradient));
 	}
 }
 
@@ -16,7 +16,7 @@
 	{ 
 		color: $text;
 		background-color: $bg;
-		@include gradientTopToBottom($bg, darken($bg, $gradient-percentage));
+		@include gradientTopToBottom($bg, darken($bg, $gradient));
 	}
 }
 
@@ -28,7 +28,7 @@
 		text-shadow: none;
 		color: $text;
 		background-color: $bg;
-		@include gradientTopToBottom(darken($bg, $gradient-percentage), $bg);
+		@include gradientTopToBottom(darken($bg, $gradient), $bg);
 	}
 }
 
@@ -38,15 +38,15 @@
 	{
 		border-color: $default-state-border;
 		text-shadow: none;
-		background-color: lighten($bg,$gradient-percentage);
-		@include gradientTopToBottom(lighten($bg,$gradient-percentage), $bg);
+		background-color: lighten($bg,$gradient);
+		@include gradientTopToBottom(lighten($bg,$gradient), $bg);
 	}
 }
 
 @mixin ui-state-interactions($text,$bg)
 {
-	@include ui-state-hover($text, darken($bg, 0.5*$gradient-percentage));
-	@include ui-state-focus($text, darken($bg, 0.5*$gradient-percentage));
+	@include ui-state-hover($text, darken($bg, 0.5*$gradient));
+	@include ui-state-focus($text, darken($bg, 0.5*$gradient));
 	@include ui-state-active($text, $bg);
 	@include ui-state-disabled($text, $bg);
 }
@@ -89,46 +89,46 @@
 {
 	color: $default-state-text;
 	border-color: $default-state-border;
-	@include gradientTopToBottom($default-state-bg, darken($default-state-bg, $gradient-percentage));
+	@include gradientTopToBottom($default-state-bg, darken($default-state-bg, $gradient));
 }
 
 .ui-state-success
 {
-	text-shadow: 0 -1px 1px darken($success-state-border, $gradient-percentage);
+	text-shadow: 0 -1px 1px darken($success-state-border, $gradient);
 	
 	color: $success-state-text;
 	border: 1px solid $success-state-border;
-	@include gradientTopToBottom($success-state-bg, darken($success-state-bg, $gradient-percentage));
+	@include gradientTopToBottom($success-state-bg, darken($success-state-bg, $gradient));
 	a { color: inherit }
 }
 
 .ui-state-warning
 {
-	text-shadow: 0 -1px 1px darken($warning-state-border, $gradient-percentage);
+	text-shadow: 0 -1px 1px darken($warning-state-border, $gradient);
 	
 	color: $warning-state-text;
 	border: 1px solid $warning-state-border;
-	@include gradientTopToBottom($warning-state-bg, darken($warning-state-bg, $gradient-percentage));
+	@include gradientTopToBottom($warning-state-bg, darken($warning-state-bg, $gradient));
 	a { color: inherit }
 }
 
 .ui-state-highlight
 {
-	text-shadow: 0 -1px 1px darken($highlight-state-border, $gradient-percentage);
+	text-shadow: 0 -1px 1px darken($highlight-state-border, $gradient);
 	
 	color: $highlight-state-text;
 	border: 1px solid $highlight-state-border;
-	@include gradientTopToBottom($highlight-state-bg, darken($highlight-state-bg, $gradient-percentage));
+	@include gradientTopToBottom($highlight-state-bg, darken($highlight-state-bg, $gradient));
 	a { color: inherit }
 }
 
 .ui-state-error
 {
-	text-shadow: 0 -1px 1px darken($error-state-border, $gradient-percentage);
+	text-shadow: 0 -1px 1px darken($error-state-border, $gradient);
 	
 	color: $error-state-text;
 	border: 1px solid $error-state-border;
-	@include gradientTopToBottom($error-state-bg, darken($error-state-bg, $gradient-percentage));
+	@include gradientTopToBottom($error-state-bg, darken($error-state-bg, $gradient));
 	a { color: inherit }
 }
 

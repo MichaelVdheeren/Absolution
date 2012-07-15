@@ -14,9 +14,7 @@ div.uploader.focus span.action, div.uploader.hover span.action, div.uploader:hov
 div.button.focus, div.button:focus, div.button:hover, div.button.hover,
 div.selector.focus span, div.selector.hover span, div.selector:hover span
 { 
-	color: $hoverStateTextColor;
-	border-color: $hoverStateBorderColor; 
-	@include gradientTopToBottom($hoverStateStartColor, $hoverStateEndColor);
+	@include ui-state-hover($default-state-text, darken($default-state-bg, 0.5*$gradient));
 }
 
 div.uploader.active span.action, div.uploader:active span.action,
@@ -25,9 +23,7 @@ div.selector:hover:active span,
 div.selector.active:hover span,
 div.selector.focus.active span
 {
-	color: $activeStateTextColor;
-	border-color: $activeStateBorderColor; 
-	@include gradientTopToBottom($activeStateStartColor, $activeStateEndColor);
+	@include ui-state-active($default-state-text, $default-state-bg);
 }
 
 
@@ -80,17 +76,17 @@ div.selector
 	
 	&:hover
 	{
-		background: $hover-state-bg url('images/selector.png') right center no-repeat;
+		background: darken($default-state-bg, 0.5*$gradient) url('images/selector.png') right center no-repeat;
 	}
 	
 	&:focus
 	{
-		background: $focus-state-bg url('images/selector.png') right center no-repeat;
+		background: darken($default-state-bg, 0.5*$gradient) url('images/selector.png') right center no-repeat;
 	}
 	
 	&:active
 	{
-		background: $active-state-bg url('images/selector.png') right center no-repeat;
+		background: $default-state-bg url('images/selector.png') right center no-repeat;
 	}
 	
 	span
@@ -190,7 +186,7 @@ div.radio
 	
 	border: 1px solid $default-state-border;
 	background-color: $input-bg;
-	@include gradientTopToBottom($input-bg,lighten($input-bg, $gradient-percentage));
+	@include gradientTopToBottom($input-bg,lighten($input-bg, $gradient));
 	
 	&:hover, &:focus
 	{

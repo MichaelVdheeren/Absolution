@@ -10,7 +10,7 @@
 		padding:.5em 0.2em;
 		border: none;
 		@include border-radius(0px);
-		@include gradientTopToBottom($dialog-title-bg, darken($dialog-title-bg,$gradient-percentage));
+		@include gradientTopToBottom($dialog-title-bg, darken($dialog-title-bg,$gradient));
 		color: $dialog-title-text;
 		
 		.ui-icon {
@@ -28,12 +28,12 @@
 		border-style: solid;
 		cursor: pointer;
 		
-		text-shadow: 0 -1px 1px darken($highlight-state-border, $gradient-percentage);
+		text-shadow: 0 -1px 1px darken($highlight-state-border, $gradient);
 		
 		color: $highlight-state-text;
 		border: 1px solid $highlight-state-border;
 		background: $highlight-state-bg;
-		@include gradientTopToBottom($highlight-state-bg, darken($highlight-state-bg, $gradient-percentage));
+		@include gradientTopToBottom($highlight-state-bg, darken($highlight-state-bg, $gradient));
 		a { color: inherit }
 		@include ui-state-interactions($highlight-state-text, $highlight-state-bg);
 		border-color: #000000;
@@ -66,7 +66,7 @@
 		&.ui-datepicker-today
 		{
 			background-color: $default-state-bg;
-			@include gradientTopToBottom($default-state-bg, darken($default-state-bg, $gradient-percentage));
+			@include gradientTopToBottom($default-state-bg, darken($default-state-bg, $gradient));
 			
 			a
 			{
@@ -90,11 +90,11 @@
 			
 			&.ui-state-active,
 			&.ui-state-active.ui-state-hover {
-				text-shadow: 0 -1px 1px darken($highlight-state-border, $gradient-percentage);
+				text-shadow: 0 -1px 1px darken($highlight-state-border, $gradient);
 				color: $highlight-state-text;
 				border: 1px solid $highlight-state-border;
 				background: $highlight-state-bg;
-				@include gradientTopToBottom($highlight-state-bg, darken($highlight-state-bg, $gradient-percentage));
+				@include gradientTopToBottom($highlight-state-bg, darken($highlight-state-bg, $gradient));
 				a { color: inherit }
 				
 				@include border-radius();

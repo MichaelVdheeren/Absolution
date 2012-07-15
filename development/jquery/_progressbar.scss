@@ -24,7 +24,7 @@
 	
 	.ui-widget-header
 	{
-		color: $hoverStateTextColor;
+		color: $default-state-text;
 		border-color: $progressbar-front-border;
 		@include gradientTopToBottom($progressbar-front-top, $progressbar-front-bottom);
 	}
@@ -75,7 +75,7 @@ div.wijmo-wijprogressbar-west
     
     .ui-widget-header
     {
-    	color: $hoverStateTextColor;
+    	color: $default-state-text;
     	border-color: $progressbar-front-border;
     	@include gradientTopToBottom($progressbar-front-top, $progressbar-front-bottom);
     }
@@ -92,7 +92,7 @@ div.wijmo-wijprogressbar-north
     
     .ui-widget-header
     {
-    	color: $hoverStateTextColor;
+    	color: $default-state-text;
 		border-color: $progressbar-front-border;
 		@include gradientLeftToRight($progressbar-front-top, $progressbar-front-bottom);
     }

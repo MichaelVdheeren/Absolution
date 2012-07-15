@@ -32,7 +32,7 @@ input[type='file']
 	border: 1px solid $default-state-border;
 	@include border-radius;
 	background-color: $input-bg;
-	@include gradientTopToBottom($input-bg,lighten($input-bg, $gradient-percentage));
+	@include gradientTopToBottom($input-bg,lighten($input-bg, $gradient));
 	
 	&:hover, &:focus
 	{
