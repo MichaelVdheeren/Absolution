@@ -4,38 +4,27 @@
 	padding: 0.0em;
 	width: 300px;
 	overflow: hidden;
-	border: 2px solid #2F2F2F;
+	border: 1px solid $dialog-border;
 	@include box-shadow(0px,0px,5px,#282425);
 	
 	.ui-dialog-title
 	{
 		float: left;
 		margin: 0 1em 0 0;
-		@include text-shadow(-1px -1px);
 	}
 	
 	.ui-dialog-titlebar-close
 	{
 		position: absolute;
-		right: .4em;
+		right: .6em;
 		top: 50%;
 		width: 19px;
-		margin: -11px 0 0 0;
-		padding: 0px;
 		height: 18px;
-		border-width: 1px;
-		border-style: solid;
 		
 		span
 		{
 			display: block;
 			margin: 1px;
-		}
-		
-		&:hover, 
-		&:focus
-		{
-			padding: 0;
 		}
 	}
 	
@@ -66,7 +55,7 @@
 		text-align: left;
 		border-width: 1px 0 0 0;
 		margin: .5em 0 0 0;
-		padding: .3em .3em .6em .4em;
+		padding: .6em;
 		background: #f4f4f4;
 		
 		.ui-dialog-buttonset
@@ -85,34 +74,27 @@
 	
 	.ui-dialog-titlebar
 	{
-		padding: .3em 0.6em .3em;
+		padding: .6em 1.2em .6em;
 		position: relative;
 		@include border-radius(0px);
-		border-width: 0px;
 		font-size: 1.5em;
 		font-weight: normal;
-		background-color: #e3e3e3;
-		
-		@include gradientTopToBottom($dialog-title-bg, darken($dialog-title-bg,$gradient));
+		background:  #f4f4f4;
+		border-width: 0 0 1px 0;
 		color: $dialog-title-text;
 		
 		a
 		{		
+			margin-top: -1.3em;
+			padding-top: 4px;
+			
 			.ui-icon
 			{
 				background-image: url(images/ui-icons_ffffff_256x240.png);
 			}
 			
-			text-shadow: 0 -1px 1px darken($highlight-state-border, $gradient);
-			
-			color: $highlight-state-text;
-			border: 1px solid $highlight-state-border;
-			background: $highlight-state-bg;
-			@include gradientTopToBottom($highlight-state-bg, darken($highlight-state-bg, $gradient));
-			a { color: inherit }
+			@extend .ui-state-highlight;
 			@include ui-state-interactions($highlight-state-text, $highlight-state-bg);
-			
-			border-color: #000000;
 		}
 	}
 	

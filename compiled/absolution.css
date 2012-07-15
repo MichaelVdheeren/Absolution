@@ -323,7 +323,8 @@ button.ui-state-warning a {
 input.ui-state-highlight[type='reset'],
 input.ui-state-highlight[type='submit'],
 div.ui-state-highlight.button,
-button.ui-state-highlight, .wijmo-wijdialog-captionbutton {
+button.ui-state-highlight, .ui-dialog .ui-dialog-titlebar a, .ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-next, .wijmo-wijdialog-captionbutton {
   text-shadow: 0 -1px 1px #214675;
   color: white;
   border: 1px solid #2e63a5;
@@ -340,7 +341,8 @@ button.ui-state-highlight, .wijmo-wijdialog-captionbutton {
 input.ui-state-highlight[type='reset'] a,
 input.ui-state-highlight[type='submit'] a,
 div.ui-state-highlight.button a,
-button.ui-state-highlight a, .wijmo-wijdialog-captionbutton a {
+button.ui-state-highlight a, .ui-dialog .ui-dialog-titlebar a a, .ui-datepicker .ui-datepicker-prev a,
+.ui-datepicker .ui-datepicker-next a, .wijmo-wijdialog-captionbutton a {
   color: inherit;
 }
 
@@ -459,7 +461,8 @@ button.ui-state-error a {
 input.ui-state-highlight[type='reset'] .ui-icon,
 input.ui-state-highlight[type='submit'] .ui-icon,
 div.ui-state-highlight.button .ui-icon,
-button.ui-state-highlight .ui-icon, .wijmo-wijdialog-captionbutton .ui-icon {
+button.ui-state-highlight .ui-icon, .ui-dialog .ui-dialog-titlebar a .ui-icon, .ui-datepicker .ui-datepicker-prev .ui-icon,
+.ui-datepicker .ui-datepicker-next .ui-icon, .wijmo-wijdialog-captionbutton .ui-icon {
   background-image: url(images/ui-icons_ffffff_256x240.png);
 }
 
@@ -2197,15 +2200,25 @@ button.ui-menu-item:hover, .ui-button.ui-state-highlight:hover, input.ui-state-h
 input.ui-state-highlight[type='reset']:hover,
 input.ui-state-highlight[type='submit']:hover,
 div.ui-state-highlight.button:hover,
-button.ui-state-highlight:hover, input[type='button'].ui-button.ui-state-highlight:hover, input[type='button'].wijmo-wijdialog-captionbutton:hover,
+button.ui-state-highlight:hover, input[type='button'].ui-button.ui-state-highlight:hover, .ui-datepicker input[type='button'].ui-datepicker-prev:hover,
+.ui-datepicker input[type='button'].ui-datepicker-next:hover, input[type='button'].wijmo-wijdialog-captionbutton:hover,
 input[type='reset'].ui-button.ui-state-highlight:hover,
+.ui-datepicker input[type='reset'].ui-datepicker-prev:hover,
+.ui-datepicker input[type='reset'].ui-datepicker-next:hover,
 input[type='reset'].wijmo-wijdialog-captionbutton:hover,
 input[type='submit'].ui-button.ui-state-highlight:hover,
+.ui-datepicker input[type='submit'].ui-datepicker-prev:hover,
+.ui-datepicker input[type='submit'].ui-datepicker-next:hover,
 input[type='submit'].wijmo-wijdialog-captionbutton:hover,
 div.button.ui-button.ui-state-highlight:hover,
+.ui-datepicker div.button.ui-datepicker-prev:hover,
+.ui-datepicker div.button.ui-datepicker-next:hover,
 div.button.wijmo-wijdialog-captionbutton:hover,
 button.ui-button.ui-state-highlight:hover,
-button.wijmo-wijdialog-captionbutton:hover, .ui-button.wijmo-wijdialog-captionbutton:hover, .ui-menu .ui-button.ui-state-hover.ui-menu-item:hover, .ui-menu input.ui-state-hover.ui-menu-item[type='button']:hover, .ui-menu
+.ui-datepicker button.ui-datepicker-prev:hover,
+.ui-datepicker button.ui-datepicker-next:hover,
+button.wijmo-wijdialog-captionbutton:hover, .ui-dialog .ui-dialog-titlebar a.ui-button:hover, .ui-datepicker .ui-button.ui-datepicker-prev:hover,
+.ui-datepicker .ui-button.ui-datepicker-next:hover, .ui-button.wijmo-wijdialog-captionbutton:hover, .ui-menu .ui-button.ui-state-hover.ui-menu-item:hover, .ui-menu input.ui-state-hover.ui-menu-item[type='button']:hover, .ui-menu
 input.ui-state-hover.ui-menu-item[type='reset']:hover, .ui-menu
 input.ui-state-hover.ui-menu-item[type='submit']:hover, .ui-menu
 div.ui-state-hover.ui-menu-item.button:hover, .ui-menu
@@ -2213,15 +2226,25 @@ button.ui-state-hover.ui-menu-item:hover, .ui-button.ui-state-hover.ui-state-hig
 input.ui-state-hover.ui-state-highlight[type='reset'],
 input.ui-state-hover.ui-state-highlight[type='submit'],
 div.ui-state-hover.ui-state-highlight.button,
-button.ui-state-hover.ui-state-highlight, input.ui-state-hover[type='button'].ui-button.ui-state-highlight, input.ui-state-hover[type='button'].wijmo-wijdialog-captionbutton,
+button.ui-state-hover.ui-state-highlight, input.ui-state-hover[type='button'].ui-button.ui-state-highlight, .ui-datepicker input.ui-state-hover[type='button'].ui-datepicker-prev,
+.ui-datepicker input.ui-state-hover[type='button'].ui-datepicker-next, input.ui-state-hover[type='button'].wijmo-wijdialog-captionbutton,
 input.ui-state-hover[type='reset'].ui-button.ui-state-highlight,
+.ui-datepicker input.ui-state-hover[type='reset'].ui-datepicker-prev,
+.ui-datepicker input.ui-state-hover[type='reset'].ui-datepicker-next,
 input.ui-state-hover[type='reset'].wijmo-wijdialog-captionbutton,
 input.ui-state-hover[type='submit'].ui-button.ui-state-highlight,
+.ui-datepicker input.ui-state-hover[type='submit'].ui-datepicker-prev,
+.ui-datepicker input.ui-state-hover[type='submit'].ui-datepicker-next,
 input.ui-state-hover[type='submit'].wijmo-wijdialog-captionbutton,
 div.ui-state-hover.button.ui-button.ui-state-highlight,
+.ui-datepicker div.ui-state-hover.button.ui-datepicker-prev,
+.ui-datepicker div.ui-state-hover.button.ui-datepicker-next,
 div.ui-state-hover.button.wijmo-wijdialog-captionbutton,
 button.ui-state-hover.ui-button.ui-state-highlight,
-button.ui-state-hover.wijmo-wijdialog-captionbutton, .ui-button.ui-state-hover.wijmo-wijdialog-captionbutton {
+.ui-datepicker button.ui-state-hover.ui-datepicker-prev,
+.ui-datepicker button.ui-state-hover.ui-datepicker-next,
+button.ui-state-hover.wijmo-wijdialog-captionbutton, .ui-dialog .ui-dialog-titlebar a.ui-button.ui-state-hover, .ui-datepicker .ui-button.ui-state-hover.ui-datepicker-prev,
+.ui-datepicker .ui-button.ui-state-hover.ui-datepicker-next, .ui-button.ui-state-hover.wijmo-wijdialog-captionbutton {
   color: white;
   background-color: #2f9bd6;
   background: #50ffff;
@@ -2241,15 +2264,25 @@ button.ui-menu-item:focus:hover, .ui-button.ui-state-highlight:focus, input.ui-s
 input.ui-state-highlight[type='reset']:focus,
 input.ui-state-highlight[type='submit']:focus,
 div.ui-state-highlight.button:focus,
-button.ui-state-highlight:focus, input[type='button'].ui-button.ui-state-highlight:focus, input[type='button'].wijmo-wijdialog-captionbutton:focus,
+button.ui-state-highlight:focus, input[type='button'].ui-button.ui-state-highlight:focus, .ui-datepicker input[type='button'].ui-datepicker-prev:focus,
+.ui-datepicker input[type='button'].ui-datepicker-next:focus, input[type='button'].wijmo-wijdialog-captionbutton:focus,
 input[type='reset'].ui-button.ui-state-highlight:focus,
+.ui-datepicker input[type='reset'].ui-datepicker-prev:focus,
+.ui-datepicker input[type='reset'].ui-datepicker-next:focus,
 input[type='reset'].wijmo-wijdialog-captionbutton:focus,
 input[type='submit'].ui-button.ui-state-highlight:focus,
+.ui-datepicker input[type='submit'].ui-datepicker-prev:focus,
+.ui-datepicker input[type='submit'].ui-datepicker-next:focus,
 input[type='submit'].wijmo-wijdialog-captionbutton:focus,
 div.button.ui-button.ui-state-highlight:focus,
+.ui-datepicker div.button.ui-datepicker-prev:focus,
+.ui-datepicker div.button.ui-datepicker-next:focus,
 div.button.wijmo-wijdialog-captionbutton:focus,
 button.ui-button.ui-state-highlight:focus,
-button.wijmo-wijdialog-captionbutton:focus, .ui-button.wijmo-wijdialog-captionbutton:focus, .ui-menu .ui-button.ui-state-focus.ui-menu-item:hover, .ui-menu input.ui-state-focus.ui-menu-item[type='button']:hover, .ui-menu
+.ui-datepicker button.ui-datepicker-prev:focus,
+.ui-datepicker button.ui-datepicker-next:focus,
+button.wijmo-wijdialog-captionbutton:focus, .ui-dialog .ui-dialog-titlebar a.ui-button:focus, .ui-datepicker .ui-button.ui-datepicker-prev:focus,
+.ui-datepicker .ui-button.ui-datepicker-next:focus, .ui-button.wijmo-wijdialog-captionbutton:focus, .ui-menu .ui-button.ui-state-focus.ui-menu-item:hover, .ui-menu input.ui-state-focus.ui-menu-item[type='button']:hover, .ui-menu
 input.ui-state-focus.ui-menu-item[type='reset']:hover, .ui-menu
 input.ui-state-focus.ui-menu-item[type='submit']:hover, .ui-menu
 div.ui-state-focus.ui-menu-item.button:hover, .ui-menu
@@ -2257,15 +2290,25 @@ button.ui-state-focus.ui-menu-item:hover, .ui-button.ui-state-focus.ui-state-hig
 input.ui-state-focus.ui-state-highlight[type='reset'],
 input.ui-state-focus.ui-state-highlight[type='submit'],
 div.ui-state-focus.ui-state-highlight.button,
-button.ui-state-focus.ui-state-highlight, input.ui-state-focus[type='button'].ui-button.ui-state-highlight, input.ui-state-focus[type='button'].wijmo-wijdialog-captionbutton,
+button.ui-state-focus.ui-state-highlight, input.ui-state-focus[type='button'].ui-button.ui-state-highlight, .ui-datepicker input.ui-state-focus[type='button'].ui-datepicker-prev,
+.ui-datepicker input.ui-state-focus[type='button'].ui-datepicker-next, input.ui-state-focus[type='button'].wijmo-wijdialog-captionbutton,
 input.ui-state-focus[type='reset'].ui-button.ui-state-highlight,
+.ui-datepicker input.ui-state-focus[type='reset'].ui-datepicker-prev,
+.ui-datepicker input.ui-state-focus[type='reset'].ui-datepicker-next,
 input.ui-state-focus[type='reset'].wijmo-wijdialog-captionbutton,
 input.ui-state-focus[type='submit'].ui-button.ui-state-highlight,
+.ui-datepicker input.ui-state-focus[type='submit'].ui-datepicker-prev,
+.ui-datepicker input.ui-state-focus[type='submit'].ui-datepicker-next,
 input.ui-state-focus[type='submit'].wijmo-wijdialog-captionbutton,
 div.ui-state-focus.button.ui-button.ui-state-highlight,
+.ui-datepicker div.ui-state-focus.button.ui-datepicker-prev,
+.ui-datepicker div.ui-state-focus.button.ui-datepicker-next,
 div.ui-state-focus.button.wijmo-wijdialog-captionbutton,
 button.ui-state-focus.ui-button.ui-state-highlight,
-button.ui-state-focus.wijmo-wijdialog-captionbutton, .ui-button.ui-state-focus.wijmo-wijdialog-captionbutton {
+.ui-datepicker button.ui-state-focus.ui-datepicker-prev,
+.ui-datepicker button.ui-state-focus.ui-datepicker-next,
+button.ui-state-focus.wijmo-wijdialog-captionbutton, .ui-dialog .ui-dialog-titlebar a.ui-button.ui-state-focus, .ui-datepicker .ui-button.ui-state-focus.ui-datepicker-prev,
+.ui-datepicker .ui-button.ui-state-focus.ui-datepicker-next, .ui-button.ui-state-focus.wijmo-wijdialog-captionbutton {
   color: white;
   background-color: #2f9bd6;
   background: #50ffff;
@@ -2285,15 +2328,25 @@ button.ui-menu-item:active:hover, .ui-button.ui-state-highlight:active, input.ui
 input.ui-state-highlight[type='reset']:active,
 input.ui-state-highlight[type='submit']:active,
 div.ui-state-highlight.button:active,
-button.ui-state-highlight:active, input[type='button'].ui-button.ui-state-highlight:active, input[type='button'].wijmo-wijdialog-captionbutton:active,
+button.ui-state-highlight:active, input[type='button'].ui-button.ui-state-highlight:active, .ui-datepicker input[type='button'].ui-datepicker-prev:active,
+.ui-datepicker input[type='button'].ui-datepicker-next:active, input[type='button'].wijmo-wijdialog-captionbutton:active,
 input[type='reset'].ui-button.ui-state-highlight:active,
+.ui-datepicker input[type='reset'].ui-datepicker-prev:active,
+.ui-datepicker input[type='reset'].ui-datepicker-next:active,
 input[type='reset'].wijmo-wijdialog-captionbutton:active,
 input[type='submit'].ui-button.ui-state-highlight:active,
+.ui-datepicker input[type='submit'].ui-datepicker-prev:active,
+.ui-datepicker input[type='submit'].ui-datepicker-next:active,
 input[type='submit'].wijmo-wijdialog-captionbutton:active,
 div.button.ui-button.ui-state-highlight:active,
+.ui-datepicker div.button.ui-datepicker-prev:active,
+.ui-datepicker div.button.ui-datepicker-next:active,
 div.button.wijmo-wijdialog-captionbutton:active,
 button.ui-button.ui-state-highlight:active,
-button.wijmo-wijdialog-captionbutton:active, .ui-button.wijmo-wijdialog-captionbutton:active, .ui-menu .ui-button.ui-state-active.ui-menu-item:hover, .ui-menu input.ui-state-active.ui-menu-item[type='button']:hover, .ui-menu
+.ui-datepicker button.ui-datepicker-prev:active,
+.ui-datepicker button.ui-datepicker-next:active,
+button.wijmo-wijdialog-captionbutton:active, .ui-dialog .ui-dialog-titlebar a.ui-button:active, .ui-datepicker .ui-button.ui-datepicker-prev:active,
+.ui-datepicker .ui-button.ui-datepicker-next:active, .ui-button.wijmo-wijdialog-captionbutton:active, .ui-menu .ui-button.ui-state-active.ui-menu-item:hover, .ui-menu input.ui-state-active.ui-menu-item[type='button']:hover, .ui-menu
 input.ui-state-active.ui-menu-item[type='reset']:hover, .ui-menu
 input.ui-state-active.ui-menu-item[type='submit']:hover, .ui-menu
 div.ui-state-active.ui-menu-item.button:hover, .ui-menu
@@ -2301,15 +2354,25 @@ button.ui-state-active.ui-menu-item:hover, .ui-button.ui-state-active.ui-state-h
 input.ui-state-active.ui-state-highlight[type='reset'],
 input.ui-state-active.ui-state-highlight[type='submit'],
 div.ui-state-active.ui-state-highlight.button,
-button.ui-state-active.ui-state-highlight, input.ui-state-active[type='button'].ui-button.ui-state-highlight, input.ui-state-active[type='button'].wijmo-wijdialog-captionbutton,
+button.ui-state-active.ui-state-highlight, input.ui-state-active[type='button'].ui-button.ui-state-highlight, .ui-datepicker input.ui-state-active[type='button'].ui-datepicker-prev,
+.ui-datepicker input.ui-state-active[type='button'].ui-datepicker-next, input.ui-state-active[type='button'].wijmo-wijdialog-captionbutton,
 input.ui-state-active[type='reset'].ui-button.ui-state-highlight,
+.ui-datepicker input.ui-state-active[type='reset'].ui-datepicker-prev,
+.ui-datepicker input.ui-state-active[type='reset'].ui-datepicker-next,
 input.ui-state-active[type='reset'].wijmo-wijdialog-captionbutton,
 input.ui-state-active[type='submit'].ui-button.ui-state-highlight,
+.ui-datepicker input.ui-state-active[type='submit'].ui-datepicker-prev,
+.ui-datepicker input.ui-state-active[type='submit'].ui-datepicker-next,
 input.ui-state-active[type='submit'].wijmo-wijdialog-captionbutton,
 div.ui-state-active.button.ui-button.ui-state-highlight,
+.ui-datepicker div.ui-state-active.button.ui-datepicker-prev,
+.ui-datepicker div.ui-state-active.button.ui-datepicker-next,
 div.ui-state-active.button.wijmo-wijdialog-captionbutton,
 button.ui-state-active.ui-button.ui-state-highlight,
-button.ui-state-active.wijmo-wijdialog-captionbutton, .ui-button.ui-state-active.wijmo-wijdialog-captionbutton {
+.ui-datepicker button.ui-state-active.ui-datepicker-prev,
+.ui-datepicker button.ui-state-active.ui-datepicker-next,
+button.ui-state-active.wijmo-wijdialog-captionbutton, .ui-dialog .ui-dialog-titlebar a.ui-button.ui-state-active, .ui-datepicker .ui-button.ui-state-active.ui-datepicker-prev,
+.ui-datepicker .ui-button.ui-state-active.ui-datepicker-next, .ui-button.ui-state-active.wijmo-wijdialog-captionbutton {
   text-shadow: none;
   color: white;
   background-color: #49a7db;
@@ -2330,15 +2393,25 @@ button.ui-state-disabled.ui-menu-item:hover, .ui-button.ui-state-disabled.ui-sta
 input.ui-state-disabled.ui-state-highlight[type='reset'],
 input.ui-state-disabled.ui-state-highlight[type='submit'],
 div.ui-state-disabled.ui-state-highlight.button,
-button.ui-state-disabled.ui-state-highlight, input.ui-state-disabled[type='button'].ui-button.ui-state-highlight, input.ui-state-disabled[type='button'].wijmo-wijdialog-captionbutton,
+button.ui-state-disabled.ui-state-highlight, input.ui-state-disabled[type='button'].ui-button.ui-state-highlight, .ui-datepicker input.ui-state-disabled[type='button'].ui-datepicker-prev,
+.ui-datepicker input.ui-state-disabled[type='button'].ui-datepicker-next, input.ui-state-disabled[type='button'].wijmo-wijdialog-captionbutton,
 input.ui-state-disabled[type='reset'].ui-button.ui-state-highlight,
+.ui-datepicker input.ui-state-disabled[type='reset'].ui-datepicker-prev,
+.ui-datepicker input.ui-state-disabled[type='reset'].ui-datepicker-next,
 input.ui-state-disabled[type='reset'].wijmo-wijdialog-captionbutton,
 input.ui-state-disabled[type='submit'].ui-button.ui-state-highlight,
+.ui-datepicker input.ui-state-disabled[type='submit'].ui-datepicker-prev,
+.ui-datepicker input.ui-state-disabled[type='submit'].ui-datepicker-next,
 input.ui-state-disabled[type='submit'].wijmo-wijdialog-captionbutton,
 div.ui-state-disabled.button.ui-button.ui-state-highlight,
+.ui-datepicker div.ui-state-disabled.button.ui-datepicker-prev,
+.ui-datepicker div.ui-state-disabled.button.ui-datepicker-next,
 div.ui-state-disabled.button.wijmo-wijdialog-captionbutton,
 button.ui-state-disabled.ui-button.ui-state-highlight,
-button.ui-state-disabled.wijmo-wijdialog-captionbutton, .ui-button.ui-state-disabled.wijmo-wijdialog-captionbutton {
+.ui-datepicker button.ui-state-disabled.ui-datepicker-prev,
+.ui-datepicker button.ui-state-disabled.ui-datepicker-next,
+button.ui-state-disabled.wijmo-wijdialog-captionbutton, .ui-dialog .ui-dialog-titlebar a.ui-button.ui-state-disabled, .ui-datepicker .ui-button.ui-state-disabled.ui-datepicker-prev,
+.ui-datepicker .ui-button.ui-state-disabled.ui-datepicker-next, .ui-button.ui-state-disabled.wijmo-wijdialog-captionbutton {
   border-color: #ababab;
   text-shadow: none;
   background-color: #7cc0e5;
@@ -2611,7 +2684,7 @@ button::-moz-focus-inner {
   padding: 0.0em;
   width: 300px;
   overflow: hidden;
-  border: 2px solid #2F2F2F;
+  border: 1px solid #ababab;
   -webkit-box-shadow: 0px 0px 5px #282425;
   -moz-box-shadow: 0px 0px 5px #282425;
   box-shadow: 0px 0px 5px #282425;
@@ -2620,34 +2693,21 @@ button::-moz-focus-inner {
 .ui-dialog .ui-dialog-title {
   float: left;
   margin: 0 1em 0 0;
-  text-shadow: -1px -1px 0 black;
-  -webkit-text-shadow: -1px -1px 0 black;
-  -moz-text-shadow: -1px -1px 0 black;
-  filter: "progid:DXImageTransform.Microsoft.DropShadow(OffX='-1px -1px', OffY='0', Color='black')";
-  -ms-filter: "progid:DXImageTransform.Microsoft.DropShadow(OffX='-1px -1px', OffY='0', Color='black')";
 }
-/* line 18, ../development/jquery/_dialog.scss */
+/* line 17, ../development/jquery/_dialog.scss */
 .ui-dialog .ui-dialog-titlebar-close {
   position: absolute;
-  right: .4em;
+  right: .6em;
   top: 50%;
   width: 19px;
-  margin: -11px 0 0 0;
-  padding: 0px;
   height: 18px;
-  border-width: 1px;
-  border-style: solid;
 }
-/* line 30, ../development/jquery/_dialog.scss */
+/* line 25, ../development/jquery/_dialog.scss */
 .ui-dialog .ui-dialog-titlebar-close span {
   display: block;
   margin: 1px;
 }
-/* line 37, ../development/jquery/_dialog.scss */
-.ui-dialog .ui-dialog-titlebar-close:hover, .ui-dialog .ui-dialog-titlebar-close:focus {
-  padding: 0;
-}
-/* line 43, ../development/jquery/_dialog.scss */
+/* line 32, ../development/jquery/_dialog.scss */
 .ui-dialog .ui-dialog-content {
   position: relative;
   border-width: 0px;
@@ -2655,78 +2715,57 @@ button::-moz-focus-inner {
   overflow: auto;
   zoom: 1;
 }
-/* line 51, ../development/jquery/_dialog.scss */
+/* line 40, ../development/jquery/_dialog.scss */
 .ui-dialog .ui-dialog-content .ui-tabs {
   margin: -1em;
   border: 0px;
 }
-/* line 57, ../development/jquery/_dialog.scss */
+/* line 46, ../development/jquery/_dialog.scss */
 .ui-dialog .ui-dialog-content hr {
   margin: 1em -1em 1em -1em;
   border: 0px;
   border-top: 1px solid #c1c1c1 !important;
 }
-/* line 65, ../development/jquery/_dialog.scss */
+/* line 54, ../development/jquery/_dialog.scss */
 .ui-dialog .ui-dialog-buttonpane {
   text-align: left;
   border-width: 1px 0 0 0;
   margin: .5em 0 0 0;
-  padding: .3em .3em .6em .4em;
+  padding: .6em;
   background: #f4f4f4;
 }
-/* line 73, ../development/jquery/_dialog.scss */
+/* line 62, ../development/jquery/_dialog.scss */
 .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {
   float: right;
 }
-/* line 78, ../development/jquery/_dialog.scss */
+/* line 67, ../development/jquery/_dialog.scss */
 .ui-dialog .ui-dialog-buttonpane button {
   margin: .5em .4em .5em 0;
   cursor: pointer;
   font-weight: normal;
   min-width: 7em;
 }
-/* line 87, ../development/jquery/_dialog.scss */
+/* line 76, ../development/jquery/_dialog.scss */
 .ui-dialog .ui-dialog-titlebar {
-  padding: .3em 0.6em .3em;
+  padding: .6em 1.2em .6em;
   position: relative;
   border-radius: 0px;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
-  border-width: 0px;
   font-size: 1.5em;
   font-weight: normal;
-  background-color: #e3e3e3;
-  background: #616161;
-  filter: expression("progid:DXImageTransform.Microsoft.gradient(startColorstr='#404040',endColorstr='#212121')");
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#404040',endColorstr='#212121')";
-  background: -moz-linear-gradient(0% 100% 90deg, #212121, #404040);
-  background: -webkit-gradient(linear, left top, left bottom, from(#404040), to(#212121));
-  background: -o-linear-gradient(0% 100% 90deg, #212121, #404040);
-  background: -ms-linear-gradient(0% 100% 90deg, #212121, #404040);
-  color: white;
+  background: #f4f4f4;
+  border-width: 0 0 1px 0;
+  color: #243314;
 }
-/* line 100, ../development/jquery/_dialog.scss */
+/* line 87, ../development/jquery/_dialog.scss */
 .ui-dialog .ui-dialog-titlebar a {
-  text-shadow: 0 -1px 1px #214675;
-  color: white;
-  border: 1px solid #2e63a5;
-  background: #49a7db;
-  background: #6fffff;
-  filter: expression("progid:DXImageTransform.Microsoft.gradient(startColorstr='#49a7db',endColorstr='#268ac1')");
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#49a7db',endColorstr='#268ac1')";
-  background: -moz-linear-gradient(0% 100% 90deg, #268ac1, #49a7db);
-  background: -webkit-gradient(linear, left top, left bottom, from(#49a7db), to(#268ac1));
-  background: -o-linear-gradient(0% 100% 90deg, #268ac1, #49a7db);
-  background: -ms-linear-gradient(0% 100% 90deg, #268ac1, #49a7db);
-  border-color: #000000;
+  margin-top: -1.3em;
+  padding-top: 4px;
 }
-/* line 102, ../development/jquery/_dialog.scss */
+/* line 92, ../development/jquery/_dialog.scss */
 .ui-dialog .ui-dialog-titlebar a .ui-icon {
   background-image: url(images/ui-icons_ffffff_256x240.png);
-}
-/* line 112, ../development/jquery/_dialog.scss */
-.ui-dialog .ui-dialog-titlebar a a {
-  color: inherit;
 }
 /* line 5, ../development/_interaction.scss */
 .ui-dialog .ui-dialog-titlebar a:hover, .ui-dialog .ui-dialog-titlebar a.ui-state-hover {
@@ -2778,7 +2817,7 @@ button::-moz-focus-inner {
   background: -o-linear-gradient(0% 100% 90deg, #49a7db, #7cc0e5);
   background: -ms-linear-gradient(0% 100% 90deg, #49a7db, #7cc0e5);
 }
-/* line 120, ../development/jquery/_dialog.scss */
+/* line 102, ../development/jquery/_dialog.scss */
 .ui-dialog .ui-resizable-se {
   width: 14px;
   height: 14px;
@@ -2786,13 +2825,13 @@ button::-moz-focus-inner {
   bottom: 1px;
   display: none;
 }
-/* line 129, ../development/jquery/_dialog.scss */
+/* line 111, ../development/jquery/_dialog.scss */
 .ui-dialog .ui-icon-grip-diagonal-se {
   background-position: -64px -224px;
   display: none;
 }
 
-/* line 136, ../development/jquery/_dialog.scss */
+/* line 118, ../development/jquery/_dialog.scss */
 .ui-draggable .ui-dialog-titlebar {
   cursor: move;
 }
@@ -3219,13 +3258,12 @@ button::-moz-focus-inner {
 .ui-datepicker {
   width: 17em;
   padding: 0;
-  border-color: #2F2F2F;
-  border-width: 2px;
-  -webkit-box-shadow: 0px 0px 5px #282425 0 1px black;
-  -moz-box-shadow: 0px 0px 5px #282425 0 1px black;
-  box-shadow: 0px 0px 5px #282425 0 1px black;
+  border: 1px solid #ababab;
+  -webkit-box-shadow: 0px 0px 5px #282425;
+  -moz-box-shadow: 0px 0px 5px #282425;
+  box-shadow: 0px 0px 5px #282425;
 }
-/* line 8, ../development/jquery/_datepicker.scss */
+/* line 7, ../development/jquery/_datepicker.scss */
 .ui-datepicker .ui-datepicker-header {
   position: relative;
   padding: .5em 0.2em;
@@ -3233,20 +3271,14 @@ button::-moz-focus-inner {
   border-radius: 0px;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
-  background: #616161;
-  filter: expression("progid:DXImageTransform.Microsoft.gradient(startColorstr='#404040',endColorstr='#212121')");
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#404040',endColorstr='#212121')";
-  background: -moz-linear-gradient(0% 100% 90deg, #212121, #404040);
-  background: -webkit-gradient(linear, left top, left bottom, from(#404040), to(#212121));
-  background: -o-linear-gradient(0% 100% 90deg, #212121, #404040);
-  background: -ms-linear-gradient(0% 100% 90deg, #212121, #404040);
-  color: white;
+  background: #f4f4f4;
+  color: #243314;
 }
-/* line 16, ../development/jquery/_datepicker.scss */
-.ui-datepicker .ui-datepicker-header .ui-icon {
+/* line 15, ../development/jquery/_datepicker.scss */
+.ui-datepicker .ui-datepicker-header a .ui-icon {
   background-image: url(images/ui-icons_ffffff_256x240.png);
 }
-/* line 22, ../development/jquery/_datepicker.scss */
+/* line 21, ../development/jquery/_datepicker.scss */
 .ui-datepicker .ui-datepicker-prev,
 .ui-datepicker .ui-datepicker-next {
   position: absolute;
@@ -3256,23 +3288,6 @@ button::-moz-focus-inner {
   border-width: 1px;
   border-style: solid;
   cursor: pointer;
-  text-shadow: 0 -1px 1px #214675;
-  color: white;
-  border: 1px solid #2e63a5;
-  background: #49a7db;
-  background: #6fffff;
-  filter: expression("progid:DXImageTransform.Microsoft.gradient(startColorstr='#49a7db',endColorstr='#268ac1')");
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#49a7db',endColorstr='#268ac1')";
-  background: -moz-linear-gradient(0% 100% 90deg, #268ac1, #49a7db);
-  background: -webkit-gradient(linear, left top, left bottom, from(#49a7db), to(#268ac1));
-  background: -o-linear-gradient(0% 100% 90deg, #268ac1, #49a7db);
-  background: -ms-linear-gradient(0% 100% 90deg, #268ac1, #49a7db);
-  border-color: #000000;
-}
-/* line 37, ../development/jquery/_datepicker.scss */
-.ui-datepicker .ui-datepicker-prev a,
-.ui-datepicker .ui-datepicker-next a {
-  color: inherit;
 }
 /* line 5, ../development/_interaction.scss */
 .ui-datepicker .ui-datepicker-prev:hover, .ui-datepicker .ui-datepicker-prev.ui-state-hover,
@@ -3331,26 +3346,26 @@ button::-moz-focus-inner {
   background: -o-linear-gradient(0% 100% 90deg, #49a7db, #7cc0e5);
   background: -ms-linear-gradient(0% 100% 90deg, #49a7db, #7cc0e5);
 }
-/* line 42, ../development/jquery/_datepicker.scss */
+/* line 34, ../development/jquery/_datepicker.scss */
 .ui-datepicker .ui-datepicker-prev .ui-icon {
   background-position: -96px 0;
 }
-/* line 46, ../development/jquery/_datepicker.scss */
+/* line 38, ../development/jquery/_datepicker.scss */
 .ui-datepicker .ui-datepicker-next .ui-icon {
   background-position: -32px 0;
 }
 
-/* line 52, ../development/jquery/_datepicker.scss */
+/* line 44, ../development/jquery/_datepicker.scss */
 .ui-datepicker table {
   border-collapse: collapse;
 }
-/* line 55, ../development/jquery/_datepicker.scss */
+/* line 47, ../development/jquery/_datepicker.scss */
 .ui-datepicker table th {
   border: 1px solid #E0DCE0;
   border-bottom: 1px solid #a9a9a9;
   background: #E0DCE0;
 }
-/* line 61, ../development/jquery/_datepicker.scss */
+/* line 53, ../development/jquery/_datepicker.scss */
 .ui-datepicker table td {
   border: 1px solid #ababab;
 }
@@ -3367,7 +3382,7 @@ button::-moz-focus-inner {
   background: -o-linear-gradient(0% 100% 90deg, #f6f6f6, white);
   background: -ms-linear-gradient(0% 100% 90deg, #f6f6f6, white);
 }
-/* line 67, ../development/jquery/_datepicker.scss */
+/* line 59, ../development/jquery/_datepicker.scss */
 .ui-datepicker table td.ui-datepicker-today {
   background-color: #f6f6f6;
   background: white;
@@ -3378,8 +3393,11 @@ button::-moz-focus-inner {
   background: -o-linear-gradient(0% 100% 90deg, #d7d7d7, #f6f6f6);
   background: -ms-linear-gradient(0% 100% 90deg, #d7d7d7, #f6f6f6);
 }
-/* line 74, ../development/jquery/_datepicker.scss */
-.ui-datepicker table td.ui-datepicker-today a.ui-state-default.ui-state-highlight:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-accordion a.ui-state-highlight.ui-accordion-header:not(.ui-state-active), .ui-accordion .ui-datepicker table td.ui-datepicker-today a.ui-state-highlight.ui-accordion-header:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-accordion .ui-menu a.ui-accordion-header.ui-menu-item:not(.ui-state-active):hover, .ui-accordion .ui-menu .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-menu-item:not(.ui-state-active):hover, .ui-datepicker table td.ui-datepicker-today .ui-menu .ui-accordion a.ui-accordion-header.ui-menu-item:not(.ui-state-active):hover, .ui-menu .ui-accordion .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-menu-item:not(.ui-state-active):hover, .ui-datepicker table td.ui-datepicker-today .ui-accordion a.ui-accordion-header.ui-button.ui-state-highlight:not(.ui-state-active), .ui-accordion .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-button.ui-state-highlight:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-accordion a.ui-accordion-header.wijmo-wijdialog-captionbutton:not(.ui-state-active), .ui-accordion .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.wijmo-wijdialog-captionbutton:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today
+/* line 66, ../development/jquery/_datepicker.scss */
+.ui-datepicker table td.ui-datepicker-today a.ui-state-default.ui-state-highlight:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-accordion a.ui-state-highlight.ui-accordion-header:not(.ui-state-active), .ui-accordion .ui-datepicker table td.ui-datepicker-today a.ui-state-highlight.ui-accordion-header:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-accordion .ui-menu a.ui-accordion-header.ui-menu-item:not(.ui-state-active):hover, .ui-accordion .ui-menu .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-menu-item:not(.ui-state-active):hover, .ui-datepicker table td.ui-datepicker-today .ui-menu .ui-accordion a.ui-accordion-header.ui-menu-item:not(.ui-state-active):hover, .ui-menu .ui-accordion .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-menu-item:not(.ui-state-active):hover, .ui-datepicker table td.ui-datepicker-today .ui-accordion a.ui-accordion-header.ui-button.ui-state-highlight:not(.ui-state-active), .ui-accordion .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-button.ui-state-highlight:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-accordion .ui-dialog .ui-dialog-titlebar a.ui-accordion-header:not(.ui-state-active), .ui-accordion .ui-dialog .ui-dialog-titlebar .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-dialog .ui-dialog-titlebar .ui-accordion a.ui-accordion-header:not(.ui-state-active), .ui-dialog .ui-dialog-titlebar .ui-accordion .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header:not(.ui-state-active), .ui-accordion .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-datepicker-prev:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-accordion a.ui-accordion-header.ui-datepicker-prev:not(.ui-state-active), .ui-datepicker .ui-accordion table td.ui-datepicker-today a.ui-accordion-header.ui-datepicker-prev:not(.ui-state-active), .ui-accordion
+.ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-datepicker-next:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today
+.ui-datepicker .ui-accordion a.ui-accordion-header.ui-datepicker-next:not(.ui-state-active),
+.ui-datepicker .ui-accordion .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-datepicker-next:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-accordion a.ui-accordion-header.wijmo-wijdialog-captionbutton:not(.ui-state-active), .ui-accordion .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.wijmo-wijdialog-captionbutton:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today
 .ui-accordion a.ui-state-highlight.ui-accordion-header.ui-state-active:not(.ui-state-active),
 .ui-accordion .ui-datepicker table td.ui-datepicker-today a.ui-state-highlight.ui-accordion-header.ui-state-active:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today
 .ui-accordion .ui-menu a.ui-accordion-header.ui-state-active.ui-menu-item:not(.ui-state-active):hover,
@@ -3388,6 +3406,21 @@ button::-moz-focus-inner {
 .ui-accordion .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-state-active.ui-menu-item:not(.ui-state-active):hover, .ui-datepicker table td.ui-datepicker-today
 .ui-accordion a.ui-accordion-header.ui-state-active.ui-button.ui-state-highlight:not(.ui-state-active),
 .ui-accordion .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-state-active.ui-button.ui-state-highlight:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today
+.ui-accordion .ui-dialog .ui-dialog-titlebar a.ui-accordion-header.ui-state-active:not(.ui-state-active),
+.ui-accordion .ui-dialog .ui-dialog-titlebar .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-state-active:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-dialog .ui-dialog-titlebar
+.ui-accordion a.ui-accordion-header.ui-state-active:not(.ui-state-active), .ui-dialog .ui-dialog-titlebar
+.ui-accordion .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-state-active:not(.ui-state-active),
+.ui-accordion .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-state-active.ui-datepicker-prev:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-datepicker
+.ui-accordion a.ui-accordion-header.ui-state-active.ui-datepicker-prev:not(.ui-state-active), .ui-datepicker
+.ui-accordion .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-state-active.ui-datepicker-prev:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today
+.ui-accordion
+.ui-datepicker a.ui-accordion-header.ui-state-active.ui-datepicker-next:not(.ui-state-active),
+.ui-accordion
+.ui-datepicker .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-state-active.ui-datepicker-next:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today
+.ui-datepicker
+.ui-accordion a.ui-accordion-header.ui-state-active.ui-datepicker-next:not(.ui-state-active),
+.ui-datepicker
+.ui-accordion .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-state-active.ui-datepicker-next:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today
 .ui-accordion a.ui-accordion-header.ui-state-active.wijmo-wijdialog-captionbutton:not(.ui-state-active),
 .ui-accordion .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-state-active.wijmo-wijdialog-captionbutton:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today
 .ui-accordion a.ui-state-highlight.ui-accordion-header.ui-state-hover:not(.ui-state-active),
@@ -3398,6 +3431,21 @@ button::-moz-focus-inner {
 .ui-accordion .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-state-hover.ui-menu-item:not(.ui-state-active):hover, .ui-datepicker table td.ui-datepicker-today
 .ui-accordion a.ui-accordion-header.ui-state-hover.ui-button.ui-state-highlight:not(.ui-state-active),
 .ui-accordion .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-state-hover.ui-button.ui-state-highlight:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today
+.ui-accordion .ui-dialog .ui-dialog-titlebar a.ui-accordion-header.ui-state-hover:not(.ui-state-active),
+.ui-accordion .ui-dialog .ui-dialog-titlebar .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-state-hover:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-dialog .ui-dialog-titlebar
+.ui-accordion a.ui-accordion-header.ui-state-hover:not(.ui-state-active), .ui-dialog .ui-dialog-titlebar
+.ui-accordion .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-state-hover:not(.ui-state-active),
+.ui-accordion .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-state-hover.ui-datepicker-prev:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-datepicker
+.ui-accordion a.ui-accordion-header.ui-state-hover.ui-datepicker-prev:not(.ui-state-active), .ui-datepicker
+.ui-accordion .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-state-hover.ui-datepicker-prev:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today
+.ui-accordion
+.ui-datepicker a.ui-accordion-header.ui-state-hover.ui-datepicker-next:not(.ui-state-active),
+.ui-accordion
+.ui-datepicker .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-state-hover.ui-datepicker-next:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today
+.ui-datepicker
+.ui-accordion a.ui-accordion-header.ui-state-hover.ui-datepicker-next:not(.ui-state-active),
+.ui-datepicker
+.ui-accordion .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-state-hover.ui-datepicker-next:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today
 .ui-accordion a.ui-accordion-header.ui-state-hover.wijmo-wijdialog-captionbutton:not(.ui-state-active),
 .ui-accordion .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-state-hover.wijmo-wijdialog-captionbutton:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today
 .ui-accordion a.ui-state-highlight.ui-accordion-header.ui-state-focus:not(.ui-state-active),
@@ -3408,8 +3456,29 @@ button::-moz-focus-inner {
 .ui-accordion .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-state-focus.ui-menu-item:not(.ui-state-active):hover, .ui-datepicker table td.ui-datepicker-today
 .ui-accordion a.ui-accordion-header.ui-state-focus.ui-button.ui-state-highlight:not(.ui-state-active),
 .ui-accordion .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-state-focus.ui-button.ui-state-highlight:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today
+.ui-accordion .ui-dialog .ui-dialog-titlebar a.ui-accordion-header.ui-state-focus:not(.ui-state-active),
+.ui-accordion .ui-dialog .ui-dialog-titlebar .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-state-focus:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-dialog .ui-dialog-titlebar
+.ui-accordion a.ui-accordion-header.ui-state-focus:not(.ui-state-active), .ui-dialog .ui-dialog-titlebar
+.ui-accordion .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-state-focus:not(.ui-state-active),
+.ui-accordion .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-state-focus.ui-datepicker-prev:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-datepicker
+.ui-accordion a.ui-accordion-header.ui-state-focus.ui-datepicker-prev:not(.ui-state-active), .ui-datepicker
+.ui-accordion .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-state-focus.ui-datepicker-prev:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today
+.ui-accordion
+.ui-datepicker a.ui-accordion-header.ui-state-focus.ui-datepicker-next:not(.ui-state-active),
+.ui-accordion
+.ui-datepicker .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-state-focus.ui-datepicker-next:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today
+.ui-datepicker
+.ui-accordion a.ui-accordion-header.ui-state-focus.ui-datepicker-next:not(.ui-state-active),
+.ui-datepicker
+.ui-accordion .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-state-focus.ui-datepicker-next:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today
 .ui-accordion a.ui-accordion-header.ui-state-focus.wijmo-wijdialog-captionbutton:not(.ui-state-active),
-.ui-accordion .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-state-focus.wijmo-wijdialog-captionbutton:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-accordion-right a.ui-state-highlight.ui-accordion-header:not(.ui-state-active), .ui-accordion-right .ui-datepicker table td.ui-datepicker-today a.ui-state-highlight.ui-accordion-header:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-accordion-left a.ui-state-highlight.ui-accordion-header:not(.ui-state-active), .ui-accordion-left .ui-datepicker table td.ui-datepicker-today a.ui-state-highlight.ui-accordion-header:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-accordion-right .ui-menu a.ui-accordion-header.ui-menu-item:not(.ui-state-active):hover, .ui-accordion-right .ui-menu .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-menu-item:not(.ui-state-active):hover, .ui-datepicker table td.ui-datepicker-today .ui-menu .ui-accordion-right a.ui-accordion-header.ui-menu-item:not(.ui-state-active):hover, .ui-menu .ui-accordion-right .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-menu-item:not(.ui-state-active):hover, .ui-datepicker table td.ui-datepicker-today .ui-accordion-left .ui-menu a.ui-accordion-header.ui-menu-item:not(.ui-state-active):hover, .ui-accordion-left .ui-menu .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-menu-item:not(.ui-state-active):hover, .ui-datepicker table td.ui-datepicker-today .ui-menu .ui-accordion-left a.ui-accordion-header.ui-menu-item:not(.ui-state-active):hover, .ui-menu .ui-accordion-left .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-menu-item:not(.ui-state-active):hover, .ui-datepicker table td.ui-datepicker-today .ui-accordion-right a.ui-accordion-header.ui-button.ui-state-highlight:not(.ui-state-active), .ui-accordion-right .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-button.ui-state-highlight:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-accordion-left a.ui-accordion-header.ui-button.ui-state-highlight:not(.ui-state-active), .ui-accordion-left .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-button.ui-state-highlight:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-accordion-right a.ui-accordion-header.wijmo-wijdialog-captionbutton:not(.ui-state-active), .ui-accordion-right .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.wijmo-wijdialog-captionbutton:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-accordion-left a.ui-accordion-header.wijmo-wijdialog-captionbutton:not(.ui-state-active), .ui-accordion-left .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.wijmo-wijdialog-captionbutton:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today
+.ui-accordion .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-state-focus.wijmo-wijdialog-captionbutton:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-accordion-right a.ui-state-highlight.ui-accordion-header:not(.ui-state-active), .ui-accordion-right .ui-datepicker table td.ui-datepicker-today a.ui-state-highlight.ui-accordion-header:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-accordion-left a.ui-state-highlight.ui-accordion-header:not(.ui-state-active), .ui-accordion-left .ui-datepicker table td.ui-datepicker-today a.ui-state-highlight.ui-accordion-header:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-accordion-right .ui-menu a.ui-accordion-header.ui-menu-item:not(.ui-state-active):hover, .ui-accordion-right .ui-menu .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-menu-item:not(.ui-state-active):hover, .ui-datepicker table td.ui-datepicker-today .ui-menu .ui-accordion-right a.ui-accordion-header.ui-menu-item:not(.ui-state-active):hover, .ui-menu .ui-accordion-right .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-menu-item:not(.ui-state-active):hover, .ui-datepicker table td.ui-datepicker-today .ui-accordion-left .ui-menu a.ui-accordion-header.ui-menu-item:not(.ui-state-active):hover, .ui-accordion-left .ui-menu .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-menu-item:not(.ui-state-active):hover, .ui-datepicker table td.ui-datepicker-today .ui-menu .ui-accordion-left a.ui-accordion-header.ui-menu-item:not(.ui-state-active):hover, .ui-menu .ui-accordion-left .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-menu-item:not(.ui-state-active):hover, .ui-datepicker table td.ui-datepicker-today .ui-accordion-right a.ui-accordion-header.ui-button.ui-state-highlight:not(.ui-state-active), .ui-accordion-right .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-button.ui-state-highlight:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-accordion-left a.ui-accordion-header.ui-button.ui-state-highlight:not(.ui-state-active), .ui-accordion-left .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-button.ui-state-highlight:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-accordion-right .ui-dialog .ui-dialog-titlebar a.ui-accordion-header:not(.ui-state-active), .ui-accordion-right .ui-dialog .ui-dialog-titlebar .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-dialog .ui-dialog-titlebar .ui-accordion-right a.ui-accordion-header:not(.ui-state-active), .ui-dialog .ui-dialog-titlebar .ui-accordion-right .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-accordion-left .ui-dialog .ui-dialog-titlebar a.ui-accordion-header:not(.ui-state-active), .ui-accordion-left .ui-dialog .ui-dialog-titlebar .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-dialog .ui-dialog-titlebar .ui-accordion-left a.ui-accordion-header:not(.ui-state-active), .ui-dialog .ui-dialog-titlebar .ui-accordion-left .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header:not(.ui-state-active), .ui-accordion-right .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-datepicker-prev:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-accordion-right a.ui-accordion-header.ui-datepicker-prev:not(.ui-state-active), .ui-datepicker .ui-accordion-right table td.ui-datepicker-today a.ui-accordion-header.ui-datepicker-prev:not(.ui-state-active), .ui-accordion-left .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-datepicker-prev:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-accordion-left a.ui-accordion-header.ui-datepicker-prev:not(.ui-state-active), .ui-datepicker .ui-accordion-left table td.ui-datepicker-today a.ui-accordion-header.ui-datepicker-prev:not(.ui-state-active), .ui-accordion-right
+.ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-datepicker-next:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today
+.ui-datepicker .ui-accordion-right a.ui-accordion-header.ui-datepicker-next:not(.ui-state-active),
+.ui-datepicker .ui-accordion-right .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-datepicker-next:not(.ui-state-active), .ui-accordion-left
+.ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-datepicker-next:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today
+.ui-datepicker .ui-accordion-left a.ui-accordion-header.ui-datepicker-next:not(.ui-state-active),
+.ui-datepicker .ui-accordion-left .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-datepicker-next:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-accordion-right a.ui-accordion-header.wijmo-wijdialog-captionbutton:not(.ui-state-active), .ui-accordion-right .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.wijmo-wijdialog-captionbutton:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-accordion-left a.ui-accordion-header.wijmo-wijdialog-captionbutton:not(.ui-state-active), .ui-accordion-left .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.wijmo-wijdialog-captionbutton:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today
 .ui-accordion-right a.ui-state-highlight.ui-accordion-header.ui-state-active:not(.ui-state-active),
 .ui-accordion-right .ui-datepicker table td.ui-datepicker-today a.ui-state-highlight.ui-accordion-header.ui-state-active:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today
 .ui-accordion-left a.ui-state-highlight.ui-accordion-header.ui-state-active:not(.ui-state-active),
@@ -3426,6 +3495,36 @@ button::-moz-focus-inner {
 .ui-accordion-right .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-state-active.ui-button.ui-state-highlight:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today
 .ui-accordion-left a.ui-accordion-header.ui-state-active.ui-button.ui-state-highlight:not(.ui-state-active),
 .ui-accordion-left .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-state-active.ui-button.ui-state-highlight:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today
+.ui-accordion-right .ui-dialog .ui-dialog-titlebar a.ui-accordion-header.ui-state-active:not(.ui-state-active),
+.ui-accordion-right .ui-dialog .ui-dialog-titlebar .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-state-active:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-dialog .ui-dialog-titlebar
+.ui-accordion-right a.ui-accordion-header.ui-state-active:not(.ui-state-active), .ui-dialog .ui-dialog-titlebar
+.ui-accordion-right .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-state-active:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today
+.ui-accordion-left .ui-dialog .ui-dialog-titlebar a.ui-accordion-header.ui-state-active:not(.ui-state-active),
+.ui-accordion-left .ui-dialog .ui-dialog-titlebar .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-state-active:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-dialog .ui-dialog-titlebar
+.ui-accordion-left a.ui-accordion-header.ui-state-active:not(.ui-state-active), .ui-dialog .ui-dialog-titlebar
+.ui-accordion-left .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-state-active:not(.ui-state-active),
+.ui-accordion-right .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-state-active.ui-datepicker-prev:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-datepicker
+.ui-accordion-right a.ui-accordion-header.ui-state-active.ui-datepicker-prev:not(.ui-state-active), .ui-datepicker
+.ui-accordion-right .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-state-active.ui-datepicker-prev:not(.ui-state-active),
+.ui-accordion-left .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-state-active.ui-datepicker-prev:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-datepicker
+.ui-accordion-left a.ui-accordion-header.ui-state-active.ui-datepicker-prev:not(.ui-state-active), .ui-datepicker
+.ui-accordion-left .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-state-active.ui-datepicker-prev:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today
+.ui-accordion-right
+.ui-datepicker a.ui-accordion-header.ui-state-active.ui-datepicker-next:not(.ui-state-active),
+.ui-accordion-right
+.ui-datepicker .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-state-active.ui-datepicker-next:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today
+.ui-datepicker
+.ui-accordion-right a.ui-accordion-header.ui-state-active.ui-datepicker-next:not(.ui-state-active),
+.ui-datepicker
+.ui-accordion-right .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-state-active.ui-datepicker-next:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today
+.ui-accordion-left
+.ui-datepicker a.ui-accordion-header.ui-state-active.ui-datepicker-next:not(.ui-state-active),
+.ui-accordion-left
+.ui-datepicker .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-state-active.ui-datepicker-next:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today
+.ui-datepicker
+.ui-accordion-left a.ui-accordion-header.ui-state-active.ui-datepicker-next:not(.ui-state-active),
+.ui-datepicker
+.ui-accordion-left .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-state-active.ui-datepicker-next:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today
 .ui-accordion-right a.ui-accordion-header.ui-state-active.wijmo-wijdialog-captionbutton:not(.ui-state-active),
 .ui-accordion-right .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-state-active.wijmo-wijdialog-captionbutton:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today
 .ui-accordion-left a.ui-accordion-header.ui-state-active.wijmo-wijdialog-captionbutton:not(.ui-state-active),
@@ -3446,6 +3545,36 @@ button::-moz-focus-inner {
 .ui-accordion-right .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-state-hover.ui-button.ui-state-highlight:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today
 .ui-accordion-left a.ui-accordion-header.ui-state-hover.ui-button.ui-state-highlight:not(.ui-state-active),
 .ui-accordion-left .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-state-hover.ui-button.ui-state-highlight:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today
+.ui-accordion-right .ui-dialog .ui-dialog-titlebar a.ui-accordion-header.ui-state-hover:not(.ui-state-active),
+.ui-accordion-right .ui-dialog .ui-dialog-titlebar .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-state-hover:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-dialog .ui-dialog-titlebar
+.ui-accordion-right a.ui-accordion-header.ui-state-hover:not(.ui-state-active), .ui-dialog .ui-dialog-titlebar
+.ui-accordion-right .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-state-hover:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today
+.ui-accordion-left .ui-dialog .ui-dialog-titlebar a.ui-accordion-header.ui-state-hover:not(.ui-state-active),
+.ui-accordion-left .ui-dialog .ui-dialog-titlebar .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-state-hover:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-dialog .ui-dialog-titlebar
+.ui-accordion-left a.ui-accordion-header.ui-state-hover:not(.ui-state-active), .ui-dialog .ui-dialog-titlebar
+.ui-accordion-left .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-state-hover:not(.ui-state-active),
+.ui-accordion-right .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-state-hover.ui-datepicker-prev:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-datepicker
+.ui-accordion-right a.ui-accordion-header.ui-state-hover.ui-datepicker-prev:not(.ui-state-active), .ui-datepicker
+.ui-accordion-right .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-state-hover.ui-datepicker-prev:not(.ui-state-active),
+.ui-accordion-left .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-state-hover.ui-datepicker-prev:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-datepicker
+.ui-accordion-left a.ui-accordion-header.ui-state-hover.ui-datepicker-prev:not(.ui-state-active), .ui-datepicker
+.ui-accordion-left .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-state-hover.ui-datepicker-prev:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today
+.ui-accordion-right
+.ui-datepicker a.ui-accordion-header.ui-state-hover.ui-datepicker-next:not(.ui-state-active),
+.ui-accordion-right
+.ui-datepicker .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-state-hover.ui-datepicker-next:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today
+.ui-datepicker
+.ui-accordion-right a.ui-accordion-header.ui-state-hover.ui-datepicker-next:not(.ui-state-active),
+.ui-datepicker
+.ui-accordion-right .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-state-hover.ui-datepicker-next:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today
+.ui-accordion-left
+.ui-datepicker a.ui-accordion-header.ui-state-hover.ui-datepicker-next:not(.ui-state-active),
+.ui-accordion-left
+.ui-datepicker .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-state-hover.ui-datepicker-next:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today
+.ui-datepicker
+.ui-accordion-left a.ui-accordion-header.ui-state-hover.ui-datepicker-next:not(.ui-state-active),
+.ui-datepicker
+.ui-accordion-left .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-state-hover.ui-datepicker-next:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today
 .ui-accordion-right a.ui-accordion-header.ui-state-hover.wijmo-wijdialog-captionbutton:not(.ui-state-active),
 .ui-accordion-right .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-state-hover.wijmo-wijdialog-captionbutton:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today
 .ui-accordion-left a.ui-accordion-header.ui-state-hover.wijmo-wijdialog-captionbutton:not(.ui-state-active),
@@ -3466,10 +3595,84 @@ button::-moz-focus-inner {
 .ui-accordion-right .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-state-focus.ui-button.ui-state-highlight:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today
 .ui-accordion-left a.ui-accordion-header.ui-state-focus.ui-button.ui-state-highlight:not(.ui-state-active),
 .ui-accordion-left .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-state-focus.ui-button.ui-state-highlight:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today
+.ui-accordion-right .ui-dialog .ui-dialog-titlebar a.ui-accordion-header.ui-state-focus:not(.ui-state-active),
+.ui-accordion-right .ui-dialog .ui-dialog-titlebar .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-state-focus:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-dialog .ui-dialog-titlebar
+.ui-accordion-right a.ui-accordion-header.ui-state-focus:not(.ui-state-active), .ui-dialog .ui-dialog-titlebar
+.ui-accordion-right .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-state-focus:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today
+.ui-accordion-left .ui-dialog .ui-dialog-titlebar a.ui-accordion-header.ui-state-focus:not(.ui-state-active),
+.ui-accordion-left .ui-dialog .ui-dialog-titlebar .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-state-focus:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-dialog .ui-dialog-titlebar
+.ui-accordion-left a.ui-accordion-header.ui-state-focus:not(.ui-state-active), .ui-dialog .ui-dialog-titlebar
+.ui-accordion-left .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-state-focus:not(.ui-state-active),
+.ui-accordion-right .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-state-focus.ui-datepicker-prev:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-datepicker
+.ui-accordion-right a.ui-accordion-header.ui-state-focus.ui-datepicker-prev:not(.ui-state-active), .ui-datepicker
+.ui-accordion-right .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-state-focus.ui-datepicker-prev:not(.ui-state-active),
+.ui-accordion-left .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-state-focus.ui-datepicker-prev:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-datepicker
+.ui-accordion-left a.ui-accordion-header.ui-state-focus.ui-datepicker-prev:not(.ui-state-active), .ui-datepicker
+.ui-accordion-left .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-state-focus.ui-datepicker-prev:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today
+.ui-accordion-right
+.ui-datepicker a.ui-accordion-header.ui-state-focus.ui-datepicker-next:not(.ui-state-active),
+.ui-accordion-right
+.ui-datepicker .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-state-focus.ui-datepicker-next:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today
+.ui-datepicker
+.ui-accordion-right a.ui-accordion-header.ui-state-focus.ui-datepicker-next:not(.ui-state-active),
+.ui-datepicker
+.ui-accordion-right .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-state-focus.ui-datepicker-next:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today
+.ui-accordion-left
+.ui-datepicker a.ui-accordion-header.ui-state-focus.ui-datepicker-next:not(.ui-state-active),
+.ui-accordion-left
+.ui-datepicker .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-state-focus.ui-datepicker-next:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today
+.ui-datepicker
+.ui-accordion-left a.ui-accordion-header.ui-state-focus.ui-datepicker-next:not(.ui-state-active),
+.ui-datepicker
+.ui-accordion-left .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-state-focus.ui-datepicker-next:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today
 .ui-accordion-right a.ui-accordion-header.ui-state-focus.wijmo-wijdialog-captionbutton:not(.ui-state-active),
 .ui-accordion-right .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-state-focus.wijmo-wijdialog-captionbutton:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today
 .ui-accordion-left a.ui-accordion-header.ui-state-focus.wijmo-wijdialog-captionbutton:not(.ui-state-active),
-.ui-accordion-left .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-state-focus.wijmo-wijdialog-captionbutton:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-menu a.ui-state-default.ui-menu-item:not(.ui-state-active):hover, .ui-menu .ui-datepicker table td.ui-datepicker-today a.ui-state-default.ui-menu-item:not(.ui-state-active):hover, .ui-datepicker table td.ui-datepicker-today .ui-menu .ui-slider a.ui-menu-item.ui-slider-handle:not(.ui-state-active):hover, .ui-menu .ui-slider .ui-datepicker table td.ui-datepicker-today a.ui-menu-item.ui-slider-handle:not(.ui-state-active):hover, .ui-datepicker table td.ui-datepicker-today .ui-slider .ui-menu a.ui-menu-item.ui-slider-handle:not(.ui-state-active):hover, .ui-slider .ui-menu .ui-datepicker table td.ui-datepicker-today a.ui-menu-item.ui-slider-handle:not(.ui-state-active):hover, .ui-datepicker table td.ui-datepicker-today .ui-menu .ui-tabs a.ui-menu-item.ui-widget-header:not(.ui-state-active):hover, .ui-menu .ui-tabs .ui-datepicker table td.ui-datepicker-today a.ui-menu-item.ui-widget-header:not(.ui-state-active):hover, .ui-datepicker table td.ui-datepicker-today .ui-tabs .ui-menu a.ui-menu-item.ui-widget-header:not(.ui-state-active):hover, .ui-tabs .ui-menu .ui-datepicker table td.ui-datepicker-today a.ui-menu-item.ui-widget-header:not(.ui-state-active):hover, .ui-datepicker table td.ui-datepicker-today .ui-menu .ui-expander a.ui-menu-item.ui-expander-header:not(.ui-state-active):hover, .ui-menu .ui-expander .ui-datepicker table td.ui-datepicker-today a.ui-menu-item.ui-expander-header:not(.ui-state-active):hover, .ui-datepicker table td.ui-datepicker-today .ui-expander .ui-menu a.ui-menu-item.ui-expander-header:not(.ui-state-active):hover, .ui-expander .ui-menu .ui-datepicker table td.ui-datepicker-today a.ui-menu-item.ui-expander-header:not(.ui-state-active):hover, .ui-datepicker table td.ui-datepicker-today .ui-menu .ui-expander a.ui-menu-item.ui-expander-header.ui-state-active:not(.ui-state-active):hover, .ui-menu .ui-expander .ui-datepicker table td.ui-datepicker-today a.ui-menu-item.ui-expander-header.ui-state-active:not(.ui-state-active):hover, .ui-datepicker table td.ui-datepicker-today .ui-expander .ui-menu a.ui-menu-item.ui-expander-header.ui-state-active:not(.ui-state-active):hover, .ui-expander .ui-menu .ui-datepicker table td.ui-datepicker-today a.ui-menu-item.ui-expander-header.ui-state-active:not(.ui-state-active):hover, .ui-datepicker table td.ui-datepicker-today .ui-menu .ui-expander a.ui-menu-item.ui-expander-header.ui-state-hover:not(.ui-state-active):hover, .ui-menu .ui-expander .ui-datepicker table td.ui-datepicker-today a.ui-menu-item.ui-expander-header.ui-state-hover:not(.ui-state-active):hover, .ui-datepicker table td.ui-datepicker-today .ui-expander .ui-menu a.ui-menu-item.ui-expander-header.ui-state-hover:not(.ui-state-active):hover, .ui-expander .ui-menu .ui-datepicker table td.ui-datepicker-today a.ui-menu-item.ui-expander-header.ui-state-hover:not(.ui-state-active):hover, .ui-datepicker table td.ui-datepicker-today .ui-menu .ui-expander a.ui-menu-item.ui-expander-header.ui-state-focus:not(.ui-state-active):hover, .ui-menu .ui-expander .ui-datepicker table td.ui-datepicker-today a.ui-menu-item.ui-expander-header.ui-state-focus:not(.ui-state-active):hover, .ui-datepicker table td.ui-datepicker-today .ui-expander .ui-menu a.ui-menu-item.ui-expander-header.ui-state-focus:not(.ui-state-active):hover, .ui-expander .ui-menu .ui-datepicker table td.ui-datepicker-today a.ui-menu-item.ui-expander-header.ui-state-focus:not(.ui-state-active):hover, .ui-datepicker table td.ui-datepicker-today .ui-menu .ui-expander-left a.ui-menu-item.ui-expander-header:not(.ui-state-active):hover, .ui-menu .ui-expander-left .ui-datepicker table td.ui-datepicker-today a.ui-menu-item.ui-expander-header:not(.ui-state-active):hover, .ui-datepicker table td.ui-datepicker-today .ui-expander-left .ui-menu a.ui-menu-item.ui-expander-header:not(.ui-state-active):hover, .ui-expander-left .ui-menu .ui-datepicker table td.ui-datepicker-today a.ui-menu-item.ui-expander-header:not(.ui-state-active):hover, .ui-datepicker table td.ui-datepicker-today .ui-menu .ui-expander-left a.ui-menu-item.ui-expander-header.ui-state-active:not(.ui-state-active):hover, .ui-menu .ui-expander-left .ui-datepicker table td.ui-datepicker-today a.ui-menu-item.ui-expander-header.ui-state-active:not(.ui-state-active):hover, .ui-datepicker table td.ui-datepicker-today .ui-expander-left .ui-menu a.ui-menu-item.ui-expander-header.ui-state-active:not(.ui-state-active):hover, .ui-expander-left .ui-menu .ui-datepicker table td.ui-datepicker-today a.ui-menu-item.ui-expander-header.ui-state-active:not(.ui-state-active):hover, .ui-datepicker table td.ui-datepicker-today .ui-menu .ui-expander-left a.ui-menu-item.ui-expander-header.ui-state-hover:not(.ui-state-active):hover, .ui-menu .ui-expander-left .ui-datepicker table td.ui-datepicker-today a.ui-menu-item.ui-expander-header.ui-state-hover:not(.ui-state-active):hover, .ui-datepicker table td.ui-datepicker-today .ui-expander-left .ui-menu a.ui-menu-item.ui-expander-header.ui-state-hover:not(.ui-state-active):hover, .ui-expander-left .ui-menu .ui-datepicker table td.ui-datepicker-today a.ui-menu-item.ui-expander-header.ui-state-hover:not(.ui-state-active):hover, .ui-datepicker table td.ui-datepicker-today .ui-menu .ui-expander-left a.ui-menu-item.ui-expander-header.ui-state-focus:not(.ui-state-active):hover, .ui-menu .ui-expander-left .ui-datepicker table td.ui-datepicker-today a.ui-menu-item.ui-expander-header.ui-state-focus:not(.ui-state-active):hover, .ui-datepicker table td.ui-datepicker-today .ui-expander-left .ui-menu a.ui-menu-item.ui-expander-header.ui-state-focus:not(.ui-state-active):hover, .ui-expander-left .ui-menu .ui-datepicker table td.ui-datepicker-today a.ui-menu-item.ui-expander-header.ui-state-focus:not(.ui-state-active):hover, .ui-datepicker table td.ui-datepicker-today .ui-menu .ui-expander-right a.ui-menu-item.ui-expander-header:not(.ui-state-active):hover, .ui-menu .ui-expander-right .ui-datepicker table td.ui-datepicker-today a.ui-menu-item.ui-expander-header:not(.ui-state-active):hover, .ui-datepicker table td.ui-datepicker-today .ui-expander-right .ui-menu a.ui-menu-item.ui-expander-header:not(.ui-state-active):hover, .ui-expander-right .ui-menu .ui-datepicker table td.ui-datepicker-today a.ui-menu-item.ui-expander-header:not(.ui-state-active):hover, .ui-datepicker table td.ui-datepicker-today .ui-menu .ui-expander-right a.ui-menu-item.ui-expander-header.ui-state-active:not(.ui-state-active):hover, .ui-menu .ui-expander-right .ui-datepicker table td.ui-datepicker-today a.ui-menu-item.ui-expander-header.ui-state-active:not(.ui-state-active):hover, .ui-datepicker table td.ui-datepicker-today .ui-expander-right .ui-menu a.ui-menu-item.ui-expander-header.ui-state-active:not(.ui-state-active):hover, .ui-expander-right .ui-menu .ui-datepicker table td.ui-datepicker-today a.ui-menu-item.ui-expander-header.ui-state-active:not(.ui-state-active):hover, .ui-datepicker table td.ui-datepicker-today .ui-menu .ui-expander-right a.ui-menu-item.ui-expander-header.ui-state-hover:not(.ui-state-active):hover, .ui-menu .ui-expander-right .ui-datepicker table td.ui-datepicker-today a.ui-menu-item.ui-expander-header.ui-state-hover:not(.ui-state-active):hover, .ui-datepicker table td.ui-datepicker-today .ui-expander-right .ui-menu a.ui-menu-item.ui-expander-header.ui-state-hover:not(.ui-state-active):hover, .ui-expander-right .ui-menu .ui-datepicker table td.ui-datepicker-today a.ui-menu-item.ui-expander-header.ui-state-hover:not(.ui-state-active):hover, .ui-datepicker table td.ui-datepicker-today .ui-menu .ui-expander-right a.ui-menu-item.ui-expander-header.ui-state-focus:not(.ui-state-active):hover, .ui-menu .ui-expander-right .ui-datepicker table td.ui-datepicker-today a.ui-menu-item.ui-expander-header.ui-state-focus:not(.ui-state-active):hover, .ui-datepicker table td.ui-datepicker-today .ui-expander-right .ui-menu a.ui-menu-item.ui-expander-header.ui-state-focus:not(.ui-state-active):hover, .ui-expander-right .ui-menu .ui-datepicker table td.ui-datepicker-today a.ui-menu-item.ui-expander-header.ui-state-focus:not(.ui-state-active):hover, .ui-datepicker table td.ui-datepicker-today a.ui-state-default.ui-button.ui-state-highlight:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-slider a.ui-button.ui-state-highlight.ui-slider-handle:not(.ui-state-active), .ui-slider .ui-datepicker table td.ui-datepicker-today a.ui-button.ui-state-highlight.ui-slider-handle:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-tabs a.ui-button.ui-state-highlight.ui-widget-header:not(.ui-state-active), .ui-tabs .ui-datepicker table td.ui-datepicker-today a.ui-button.ui-state-highlight.ui-widget-header:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander a.ui-button.ui-state-highlight.ui-expander-header:not(.ui-state-active), .ui-expander .ui-datepicker table td.ui-datepicker-today a.ui-button.ui-state-highlight.ui-expander-header:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander a.ui-button.ui-state-highlight.ui-expander-header.ui-state-active:not(.ui-state-active), .ui-expander .ui-datepicker table td.ui-datepicker-today a.ui-button.ui-state-highlight.ui-expander-header.ui-state-active:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander a.ui-button.ui-state-highlight.ui-expander-header.ui-state-hover:not(.ui-state-active), .ui-expander .ui-datepicker table td.ui-datepicker-today a.ui-button.ui-state-highlight.ui-expander-header.ui-state-hover:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander a.ui-button.ui-state-highlight.ui-expander-header.ui-state-focus:not(.ui-state-active), .ui-expander .ui-datepicker table td.ui-datepicker-today a.ui-button.ui-state-highlight.ui-expander-header.ui-state-focus:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander-left a.ui-button.ui-state-highlight.ui-expander-header:not(.ui-state-active), .ui-expander-left .ui-datepicker table td.ui-datepicker-today a.ui-button.ui-state-highlight.ui-expander-header:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander-left a.ui-button.ui-state-highlight.ui-expander-header.ui-state-active:not(.ui-state-active), .ui-expander-left .ui-datepicker table td.ui-datepicker-today a.ui-button.ui-state-highlight.ui-expander-header.ui-state-active:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander-left a.ui-button.ui-state-highlight.ui-expander-header.ui-state-hover:not(.ui-state-active), .ui-expander-left .ui-datepicker table td.ui-datepicker-today a.ui-button.ui-state-highlight.ui-expander-header.ui-state-hover:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander-left a.ui-button.ui-state-highlight.ui-expander-header.ui-state-focus:not(.ui-state-active), .ui-expander-left .ui-datepicker table td.ui-datepicker-today a.ui-button.ui-state-highlight.ui-expander-header.ui-state-focus:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander-right a.ui-button.ui-state-highlight.ui-expander-header:not(.ui-state-active), .ui-expander-right .ui-datepicker table td.ui-datepicker-today a.ui-button.ui-state-highlight.ui-expander-header:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander-right a.ui-button.ui-state-highlight.ui-expander-header.ui-state-active:not(.ui-state-active), .ui-expander-right .ui-datepicker table td.ui-datepicker-today a.ui-button.ui-state-highlight.ui-expander-header.ui-state-active:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander-right a.ui-button.ui-state-highlight.ui-expander-header.ui-state-hover:not(.ui-state-active), .ui-expander-right .ui-datepicker table td.ui-datepicker-today a.ui-button.ui-state-highlight.ui-expander-header.ui-state-hover:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander-right a.ui-button.ui-state-highlight.ui-expander-header.ui-state-focus:not(.ui-state-active), .ui-expander-right .ui-datepicker table td.ui-datepicker-today a.ui-button.ui-state-highlight.ui-expander-header.ui-state-focus:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-slider a.ui-state-highlight.ui-slider-handle:not(.ui-state-active), .ui-slider .ui-datepicker table td.ui-datepicker-today a.ui-state-highlight.ui-slider-handle:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-slider a.ui-slider-handle.wijmo-wijdialog-captionbutton:not(.ui-state-active), .ui-slider .ui-datepicker table td.ui-datepicker-today a.ui-slider-handle.wijmo-wijdialog-captionbutton:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-tabs a.ui-state-highlight.ui-widget-header:not(.ui-state-active), .ui-tabs .ui-datepicker table td.ui-datepicker-today a.ui-state-highlight.ui-widget-header:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-tabs a.ui-widget-header.wijmo-wijdialog-captionbutton:not(.ui-state-active), .ui-tabs .ui-datepicker table td.ui-datepicker-today a.ui-widget-header.wijmo-wijdialog-captionbutton:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander a.ui-state-highlight.ui-expander-header:not(.ui-state-active), .ui-expander .ui-datepicker table td.ui-datepicker-today a.ui-state-highlight.ui-expander-header:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander a.ui-expander-header.wijmo-wijdialog-captionbutton:not(.ui-state-active), .ui-expander .ui-datepicker table td.ui-datepicker-today a.ui-expander-header.wijmo-wijdialog-captionbutton:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander a.ui-state-highlight.ui-expander-header.ui-state-active:not(.ui-state-active), .ui-expander .ui-datepicker table td.ui-datepicker-today a.ui-state-highlight.ui-expander-header.ui-state-active:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander a.ui-expander-header.ui-state-active.wijmo-wijdialog-captionbutton:not(.ui-state-active), .ui-expander .ui-datepicker table td.ui-datepicker-today a.ui-expander-header.ui-state-active.wijmo-wijdialog-captionbutton:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander a.ui-state-highlight.ui-expander-header.ui-state-hover:not(.ui-state-active), .ui-expander .ui-datepicker table td.ui-datepicker-today a.ui-state-highlight.ui-expander-header.ui-state-hover:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander a.ui-expander-header.ui-state-hover.wijmo-wijdialog-captionbutton:not(.ui-state-active), .ui-expander .ui-datepicker table td.ui-datepicker-today a.ui-expander-header.ui-state-hover.wijmo-wijdialog-captionbutton:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander a.ui-state-highlight.ui-expander-header.ui-state-focus:not(.ui-state-active), .ui-expander .ui-datepicker table td.ui-datepicker-today a.ui-state-highlight.ui-expander-header.ui-state-focus:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander a.ui-expander-header.ui-state-focus.wijmo-wijdialog-captionbutton:not(.ui-state-active), .ui-expander .ui-datepicker table td.ui-datepicker-today a.ui-expander-header.ui-state-focus.wijmo-wijdialog-captionbutton:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander-left a.ui-state-highlight.ui-expander-header:not(.ui-state-active), .ui-expander-left .ui-datepicker table td.ui-datepicker-today a.ui-state-highlight.ui-expander-header:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander-left a.ui-expander-header.wijmo-wijdialog-captionbutton:not(.ui-state-active), .ui-expander-left .ui-datepicker table td.ui-datepicker-today a.ui-expander-header.wijmo-wijdialog-captionbutton:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander-left a.ui-state-highlight.ui-expander-header.ui-state-active:not(.ui-state-active), .ui-expander-left .ui-datepicker table td.ui-datepicker-today a.ui-state-highlight.ui-expander-header.ui-state-active:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander-left a.ui-expander-header.ui-state-active.wijmo-wijdialog-captionbutton:not(.ui-state-active), .ui-expander-left .ui-datepicker table td.ui-datepicker-today a.ui-expander-header.ui-state-active.wijmo-wijdialog-captionbutton:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander-left a.ui-state-highlight.ui-expander-header.ui-state-hover:not(.ui-state-active), .ui-expander-left .ui-datepicker table td.ui-datepicker-today a.ui-state-highlight.ui-expander-header.ui-state-hover:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander-left a.ui-expander-header.ui-state-hover.wijmo-wijdialog-captionbutton:not(.ui-state-active), .ui-expander-left .ui-datepicker table td.ui-datepicker-today a.ui-expander-header.ui-state-hover.wijmo-wijdialog-captionbutton:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander-left a.ui-state-highlight.ui-expander-header.ui-state-focus:not(.ui-state-active), .ui-expander-left .ui-datepicker table td.ui-datepicker-today a.ui-state-highlight.ui-expander-header.ui-state-focus:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander-left a.ui-expander-header.ui-state-focus.wijmo-wijdialog-captionbutton:not(.ui-state-active), .ui-expander-left .ui-datepicker table td.ui-datepicker-today a.ui-expander-header.ui-state-focus.wijmo-wijdialog-captionbutton:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander-right a.ui-state-highlight.ui-expander-header:not(.ui-state-active), .ui-expander-right .ui-datepicker table td.ui-datepicker-today a.ui-state-highlight.ui-expander-header:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander-right a.ui-expander-header.wijmo-wijdialog-captionbutton:not(.ui-state-active), .ui-expander-right .ui-datepicker table td.ui-datepicker-today a.ui-expander-header.wijmo-wijdialog-captionbutton:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander-right a.ui-state-highlight.ui-expander-header.ui-state-active:not(.ui-state-active), .ui-expander-right .ui-datepicker table td.ui-datepicker-today a.ui-state-highlight.ui-expander-header.ui-state-active:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander-right a.ui-expander-header.ui-state-active.wijmo-wijdialog-captionbutton:not(.ui-state-active), .ui-expander-right .ui-datepicker table td.ui-datepicker-today a.ui-expander-header.ui-state-active.wijmo-wijdialog-captionbutton:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander-right a.ui-state-highlight.ui-expander-header.ui-state-hover:not(.ui-state-active), .ui-expander-right .ui-datepicker table td.ui-datepicker-today a.ui-state-highlight.ui-expander-header.ui-state-hover:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander-right a.ui-expander-header.ui-state-hover.wijmo-wijdialog-captionbutton:not(.ui-state-active), .ui-expander-right .ui-datepicker table td.ui-datepicker-today a.ui-expander-header.ui-state-hover.wijmo-wijdialog-captionbutton:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander-right a.ui-state-highlight.ui-expander-header.ui-state-focus:not(.ui-state-active), .ui-expander-right .ui-datepicker table td.ui-datepicker-today a.ui-state-highlight.ui-expander-header.ui-state-focus:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander-right a.ui-expander-header.ui-state-focus.wijmo-wijdialog-captionbutton:not(.ui-state-active), .ui-expander-right .ui-datepicker table td.ui-datepicker-today a.ui-expander-header.ui-state-focus.wijmo-wijdialog-captionbutton:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today a.ui-state-default.wijmo-wijdialog-captionbutton:not(.ui-state-active) {
+.ui-accordion-left .ui-datepicker table td.ui-datepicker-today a.ui-accordion-header.ui-state-focus.wijmo-wijdialog-captionbutton:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-menu a.ui-state-default.ui-menu-item:not(.ui-state-active):hover, .ui-menu .ui-datepicker table td.ui-datepicker-today a.ui-state-default.ui-menu-item:not(.ui-state-active):hover, .ui-datepicker table td.ui-datepicker-today .ui-menu .ui-slider a.ui-menu-item.ui-slider-handle:not(.ui-state-active):hover, .ui-menu .ui-slider .ui-datepicker table td.ui-datepicker-today a.ui-menu-item.ui-slider-handle:not(.ui-state-active):hover, .ui-datepicker table td.ui-datepicker-today .ui-slider .ui-menu a.ui-menu-item.ui-slider-handle:not(.ui-state-active):hover, .ui-slider .ui-menu .ui-datepicker table td.ui-datepicker-today a.ui-menu-item.ui-slider-handle:not(.ui-state-active):hover, .ui-datepicker table td.ui-datepicker-today .ui-menu .ui-tabs a.ui-menu-item.ui-widget-header:not(.ui-state-active):hover, .ui-menu .ui-tabs .ui-datepicker table td.ui-datepicker-today a.ui-menu-item.ui-widget-header:not(.ui-state-active):hover, .ui-datepicker table td.ui-datepicker-today .ui-tabs .ui-menu a.ui-menu-item.ui-widget-header:not(.ui-state-active):hover, .ui-tabs .ui-menu .ui-datepicker table td.ui-datepicker-today a.ui-menu-item.ui-widget-header:not(.ui-state-active):hover, .ui-datepicker table td.ui-datepicker-today .ui-menu .ui-expander a.ui-menu-item.ui-expander-header:not(.ui-state-active):hover, .ui-menu .ui-expander .ui-datepicker table td.ui-datepicker-today a.ui-menu-item.ui-expander-header:not(.ui-state-active):hover, .ui-datepicker table td.ui-datepicker-today .ui-expander .ui-menu a.ui-menu-item.ui-expander-header:not(.ui-state-active):hover, .ui-expander .ui-menu .ui-datepicker table td.ui-datepicker-today a.ui-menu-item.ui-expander-header:not(.ui-state-active):hover, .ui-datepicker table td.ui-datepicker-today .ui-menu .ui-expander a.ui-menu-item.ui-expander-header.ui-state-active:not(.ui-state-active):hover, .ui-menu .ui-expander .ui-datepicker table td.ui-datepicker-today a.ui-menu-item.ui-expander-header.ui-state-active:not(.ui-state-active):hover, .ui-datepicker table td.ui-datepicker-today .ui-expander .ui-menu a.ui-menu-item.ui-expander-header.ui-state-active:not(.ui-state-active):hover, .ui-expander .ui-menu .ui-datepicker table td.ui-datepicker-today a.ui-menu-item.ui-expander-header.ui-state-active:not(.ui-state-active):hover, .ui-datepicker table td.ui-datepicker-today .ui-menu .ui-expander a.ui-menu-item.ui-expander-header.ui-state-hover:not(.ui-state-active):hover, .ui-menu .ui-expander .ui-datepicker table td.ui-datepicker-today a.ui-menu-item.ui-expander-header.ui-state-hover:not(.ui-state-active):hover, .ui-datepicker table td.ui-datepicker-today .ui-expander .ui-menu a.ui-menu-item.ui-expander-header.ui-state-hover:not(.ui-state-active):hover, .ui-expander .ui-menu .ui-datepicker table td.ui-datepicker-today a.ui-menu-item.ui-expander-header.ui-state-hover:not(.ui-state-active):hover, .ui-datepicker table td.ui-datepicker-today .ui-menu .ui-expander a.ui-menu-item.ui-expander-header.ui-state-focus:not(.ui-state-active):hover, .ui-menu .ui-expander .ui-datepicker table td.ui-datepicker-today a.ui-menu-item.ui-expander-header.ui-state-focus:not(.ui-state-active):hover, .ui-datepicker table td.ui-datepicker-today .ui-expander .ui-menu a.ui-menu-item.ui-expander-header.ui-state-focus:not(.ui-state-active):hover, .ui-expander .ui-menu .ui-datepicker table td.ui-datepicker-today a.ui-menu-item.ui-expander-header.ui-state-focus:not(.ui-state-active):hover, .ui-datepicker table td.ui-datepicker-today .ui-menu .ui-expander-left a.ui-menu-item.ui-expander-header:not(.ui-state-active):hover, .ui-menu .ui-expander-left .ui-datepicker table td.ui-datepicker-today a.ui-menu-item.ui-expander-header:not(.ui-state-active):hover, .ui-datepicker table td.ui-datepicker-today .ui-expander-left .ui-menu a.ui-menu-item.ui-expander-header:not(.ui-state-active):hover, .ui-expander-left .ui-menu .ui-datepicker table td.ui-datepicker-today a.ui-menu-item.ui-expander-header:not(.ui-state-active):hover, .ui-datepicker table td.ui-datepicker-today .ui-menu .ui-expander-left a.ui-menu-item.ui-expander-header.ui-state-active:not(.ui-state-active):hover, .ui-menu .ui-expander-left .ui-datepicker table td.ui-datepicker-today a.ui-menu-item.ui-expander-header.ui-state-active:not(.ui-state-active):hover, .ui-datepicker table td.ui-datepicker-today .ui-expander-left .ui-menu a.ui-menu-item.ui-expander-header.ui-state-active:not(.ui-state-active):hover, .ui-expander-left .ui-menu .ui-datepicker table td.ui-datepicker-today a.ui-menu-item.ui-expander-header.ui-state-active:not(.ui-state-active):hover, .ui-datepicker table td.ui-datepicker-today .ui-menu .ui-expander-left a.ui-menu-item.ui-expander-header.ui-state-hover:not(.ui-state-active):hover, .ui-menu .ui-expander-left .ui-datepicker table td.ui-datepicker-today a.ui-menu-item.ui-expander-header.ui-state-hover:not(.ui-state-active):hover, .ui-datepicker table td.ui-datepicker-today .ui-expander-left .ui-menu a.ui-menu-item.ui-expander-header.ui-state-hover:not(.ui-state-active):hover, .ui-expander-left .ui-menu .ui-datepicker table td.ui-datepicker-today a.ui-menu-item.ui-expander-header.ui-state-hover:not(.ui-state-active):hover, .ui-datepicker table td.ui-datepicker-today .ui-menu .ui-expander-left a.ui-menu-item.ui-expander-header.ui-state-focus:not(.ui-state-active):hover, .ui-menu .ui-expander-left .ui-datepicker table td.ui-datepicker-today a.ui-menu-item.ui-expander-header.ui-state-focus:not(.ui-state-active):hover, .ui-datepicker table td.ui-datepicker-today .ui-expander-left .ui-menu a.ui-menu-item.ui-expander-header.ui-state-focus:not(.ui-state-active):hover, .ui-expander-left .ui-menu .ui-datepicker table td.ui-datepicker-today a.ui-menu-item.ui-expander-header.ui-state-focus:not(.ui-state-active):hover, .ui-datepicker table td.ui-datepicker-today .ui-menu .ui-expander-right a.ui-menu-item.ui-expander-header:not(.ui-state-active):hover, .ui-menu .ui-expander-right .ui-datepicker table td.ui-datepicker-today a.ui-menu-item.ui-expander-header:not(.ui-state-active):hover, .ui-datepicker table td.ui-datepicker-today .ui-expander-right .ui-menu a.ui-menu-item.ui-expander-header:not(.ui-state-active):hover, .ui-expander-right .ui-menu .ui-datepicker table td.ui-datepicker-today a.ui-menu-item.ui-expander-header:not(.ui-state-active):hover, .ui-datepicker table td.ui-datepicker-today .ui-menu .ui-expander-right a.ui-menu-item.ui-expander-header.ui-state-active:not(.ui-state-active):hover, .ui-menu .ui-expander-right .ui-datepicker table td.ui-datepicker-today a.ui-menu-item.ui-expander-header.ui-state-active:not(.ui-state-active):hover, .ui-datepicker table td.ui-datepicker-today .ui-expander-right .ui-menu a.ui-menu-item.ui-expander-header.ui-state-active:not(.ui-state-active):hover, .ui-expander-right .ui-menu .ui-datepicker table td.ui-datepicker-today a.ui-menu-item.ui-expander-header.ui-state-active:not(.ui-state-active):hover, .ui-datepicker table td.ui-datepicker-today .ui-menu .ui-expander-right a.ui-menu-item.ui-expander-header.ui-state-hover:not(.ui-state-active):hover, .ui-menu .ui-expander-right .ui-datepicker table td.ui-datepicker-today a.ui-menu-item.ui-expander-header.ui-state-hover:not(.ui-state-active):hover, .ui-datepicker table td.ui-datepicker-today .ui-expander-right .ui-menu a.ui-menu-item.ui-expander-header.ui-state-hover:not(.ui-state-active):hover, .ui-expander-right .ui-menu .ui-datepicker table td.ui-datepicker-today a.ui-menu-item.ui-expander-header.ui-state-hover:not(.ui-state-active):hover, .ui-datepicker table td.ui-datepicker-today .ui-menu .ui-expander-right a.ui-menu-item.ui-expander-header.ui-state-focus:not(.ui-state-active):hover, .ui-menu .ui-expander-right .ui-datepicker table td.ui-datepicker-today a.ui-menu-item.ui-expander-header.ui-state-focus:not(.ui-state-active):hover, .ui-datepicker table td.ui-datepicker-today .ui-expander-right .ui-menu a.ui-menu-item.ui-expander-header.ui-state-focus:not(.ui-state-active):hover, .ui-expander-right .ui-menu .ui-datepicker table td.ui-datepicker-today a.ui-menu-item.ui-expander-header.ui-state-focus:not(.ui-state-active):hover, .ui-datepicker table td.ui-datepicker-today a.ui-state-default.ui-button.ui-state-highlight:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-slider a.ui-button.ui-state-highlight.ui-slider-handle:not(.ui-state-active), .ui-slider .ui-datepicker table td.ui-datepicker-today a.ui-button.ui-state-highlight.ui-slider-handle:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-tabs a.ui-button.ui-state-highlight.ui-widget-header:not(.ui-state-active), .ui-tabs .ui-datepicker table td.ui-datepicker-today a.ui-button.ui-state-highlight.ui-widget-header:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander a.ui-button.ui-state-highlight.ui-expander-header:not(.ui-state-active), .ui-expander .ui-datepicker table td.ui-datepicker-today a.ui-button.ui-state-highlight.ui-expander-header:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander a.ui-button.ui-state-highlight.ui-expander-header.ui-state-active:not(.ui-state-active), .ui-expander .ui-datepicker table td.ui-datepicker-today a.ui-button.ui-state-highlight.ui-expander-header.ui-state-active:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander a.ui-button.ui-state-highlight.ui-expander-header.ui-state-hover:not(.ui-state-active), .ui-expander .ui-datepicker table td.ui-datepicker-today a.ui-button.ui-state-highlight.ui-expander-header.ui-state-hover:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander a.ui-button.ui-state-highlight.ui-expander-header.ui-state-focus:not(.ui-state-active), .ui-expander .ui-datepicker table td.ui-datepicker-today a.ui-button.ui-state-highlight.ui-expander-header.ui-state-focus:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander-left a.ui-button.ui-state-highlight.ui-expander-header:not(.ui-state-active), .ui-expander-left .ui-datepicker table td.ui-datepicker-today a.ui-button.ui-state-highlight.ui-expander-header:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander-left a.ui-button.ui-state-highlight.ui-expander-header.ui-state-active:not(.ui-state-active), .ui-expander-left .ui-datepicker table td.ui-datepicker-today a.ui-button.ui-state-highlight.ui-expander-header.ui-state-active:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander-left a.ui-button.ui-state-highlight.ui-expander-header.ui-state-hover:not(.ui-state-active), .ui-expander-left .ui-datepicker table td.ui-datepicker-today a.ui-button.ui-state-highlight.ui-expander-header.ui-state-hover:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander-left a.ui-button.ui-state-highlight.ui-expander-header.ui-state-focus:not(.ui-state-active), .ui-expander-left .ui-datepicker table td.ui-datepicker-today a.ui-button.ui-state-highlight.ui-expander-header.ui-state-focus:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander-right a.ui-button.ui-state-highlight.ui-expander-header:not(.ui-state-active), .ui-expander-right .ui-datepicker table td.ui-datepicker-today a.ui-button.ui-state-highlight.ui-expander-header:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander-right a.ui-button.ui-state-highlight.ui-expander-header.ui-state-active:not(.ui-state-active), .ui-expander-right .ui-datepicker table td.ui-datepicker-today a.ui-button.ui-state-highlight.ui-expander-header.ui-state-active:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander-right a.ui-button.ui-state-highlight.ui-expander-header.ui-state-hover:not(.ui-state-active), .ui-expander-right .ui-datepicker table td.ui-datepicker-today a.ui-button.ui-state-highlight.ui-expander-header.ui-state-hover:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander-right a.ui-button.ui-state-highlight.ui-expander-header.ui-state-focus:not(.ui-state-active), .ui-expander-right .ui-datepicker table td.ui-datepicker-today a.ui-button.ui-state-highlight.ui-expander-header.ui-state-focus:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-dialog .ui-dialog-titlebar a.ui-state-default:not(.ui-state-active), .ui-dialog .ui-dialog-titlebar .ui-datepicker table td.ui-datepicker-today a.ui-state-default:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-dialog .ui-dialog-titlebar .ui-slider a.ui-slider-handle:not(.ui-state-active), .ui-dialog .ui-dialog-titlebar .ui-slider .ui-datepicker table td.ui-datepicker-today a.ui-slider-handle:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-slider .ui-dialog .ui-dialog-titlebar a.ui-slider-handle:not(.ui-state-active), .ui-slider .ui-dialog .ui-dialog-titlebar .ui-datepicker table td.ui-datepicker-today a.ui-slider-handle:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-dialog .ui-dialog-titlebar .ui-tabs a.ui-widget-header:not(.ui-state-active), .ui-dialog .ui-dialog-titlebar .ui-tabs .ui-datepicker table td.ui-datepicker-today a.ui-widget-header:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-tabs .ui-dialog .ui-dialog-titlebar a.ui-widget-header:not(.ui-state-active), .ui-tabs .ui-dialog .ui-dialog-titlebar .ui-datepicker table td.ui-datepicker-today a.ui-widget-header:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-dialog .ui-dialog-titlebar .ui-expander a.ui-expander-header:not(.ui-state-active), .ui-dialog .ui-dialog-titlebar .ui-expander .ui-datepicker table td.ui-datepicker-today a.ui-expander-header:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander .ui-dialog .ui-dialog-titlebar a.ui-expander-header:not(.ui-state-active), .ui-expander .ui-dialog .ui-dialog-titlebar .ui-datepicker table td.ui-datepicker-today a.ui-expander-header:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-dialog .ui-dialog-titlebar .ui-expander a.ui-expander-header.ui-state-active:not(.ui-state-active), .ui-dialog .ui-dialog-titlebar .ui-expander .ui-datepicker table td.ui-datepicker-today a.ui-expander-header.ui-state-active:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander .ui-dialog .ui-dialog-titlebar a.ui-expander-header.ui-state-active:not(.ui-state-active), .ui-expander .ui-dialog .ui-dialog-titlebar .ui-datepicker table td.ui-datepicker-today a.ui-expander-header.ui-state-active:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-dialog .ui-dialog-titlebar .ui-expander a.ui-expander-header.ui-state-hover:not(.ui-state-active), .ui-dialog .ui-dialog-titlebar .ui-expander .ui-datepicker table td.ui-datepicker-today a.ui-expander-header.ui-state-hover:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander .ui-dialog .ui-dialog-titlebar a.ui-expander-header.ui-state-hover:not(.ui-state-active), .ui-expander .ui-dialog .ui-dialog-titlebar .ui-datepicker table td.ui-datepicker-today a.ui-expander-header.ui-state-hover:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-dialog .ui-dialog-titlebar .ui-expander a.ui-expander-header.ui-state-focus:not(.ui-state-active), .ui-dialog .ui-dialog-titlebar .ui-expander .ui-datepicker table td.ui-datepicker-today a.ui-expander-header.ui-state-focus:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander .ui-dialog .ui-dialog-titlebar a.ui-expander-header.ui-state-focus:not(.ui-state-active), .ui-expander .ui-dialog .ui-dialog-titlebar .ui-datepicker table td.ui-datepicker-today a.ui-expander-header.ui-state-focus:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-dialog .ui-dialog-titlebar .ui-expander-left a.ui-expander-header:not(.ui-state-active), .ui-dialog .ui-dialog-titlebar .ui-expander-left .ui-datepicker table td.ui-datepicker-today a.ui-expander-header:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander-left .ui-dialog .ui-dialog-titlebar a.ui-expander-header:not(.ui-state-active), .ui-expander-left .ui-dialog .ui-dialog-titlebar .ui-datepicker table td.ui-datepicker-today a.ui-expander-header:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-dialog .ui-dialog-titlebar .ui-expander-left a.ui-expander-header.ui-state-active:not(.ui-state-active), .ui-dialog .ui-dialog-titlebar .ui-expander-left .ui-datepicker table td.ui-datepicker-today a.ui-expander-header.ui-state-active:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander-left .ui-dialog .ui-dialog-titlebar a.ui-expander-header.ui-state-active:not(.ui-state-active), .ui-expander-left .ui-dialog .ui-dialog-titlebar .ui-datepicker table td.ui-datepicker-today a.ui-expander-header.ui-state-active:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-dialog .ui-dialog-titlebar .ui-expander-left a.ui-expander-header.ui-state-hover:not(.ui-state-active), .ui-dialog .ui-dialog-titlebar .ui-expander-left .ui-datepicker table td.ui-datepicker-today a.ui-expander-header.ui-state-hover:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander-left .ui-dialog .ui-dialog-titlebar a.ui-expander-header.ui-state-hover:not(.ui-state-active), .ui-expander-left .ui-dialog .ui-dialog-titlebar .ui-datepicker table td.ui-datepicker-today a.ui-expander-header.ui-state-hover:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-dialog .ui-dialog-titlebar .ui-expander-left a.ui-expander-header.ui-state-focus:not(.ui-state-active), .ui-dialog .ui-dialog-titlebar .ui-expander-left .ui-datepicker table td.ui-datepicker-today a.ui-expander-header.ui-state-focus:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander-left .ui-dialog .ui-dialog-titlebar a.ui-expander-header.ui-state-focus:not(.ui-state-active), .ui-expander-left .ui-dialog .ui-dialog-titlebar .ui-datepicker table td.ui-datepicker-today a.ui-expander-header.ui-state-focus:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-dialog .ui-dialog-titlebar .ui-expander-right a.ui-expander-header:not(.ui-state-active), .ui-dialog .ui-dialog-titlebar .ui-expander-right .ui-datepicker table td.ui-datepicker-today a.ui-expander-header:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander-right .ui-dialog .ui-dialog-titlebar a.ui-expander-header:not(.ui-state-active), .ui-expander-right .ui-dialog .ui-dialog-titlebar .ui-datepicker table td.ui-datepicker-today a.ui-expander-header:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-dialog .ui-dialog-titlebar .ui-expander-right a.ui-expander-header.ui-state-active:not(.ui-state-active), .ui-dialog .ui-dialog-titlebar .ui-expander-right .ui-datepicker table td.ui-datepicker-today a.ui-expander-header.ui-state-active:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander-right .ui-dialog .ui-dialog-titlebar a.ui-expander-header.ui-state-active:not(.ui-state-active), .ui-expander-right .ui-dialog .ui-dialog-titlebar .ui-datepicker table td.ui-datepicker-today a.ui-expander-header.ui-state-active:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-dialog .ui-dialog-titlebar .ui-expander-right a.ui-expander-header.ui-state-hover:not(.ui-state-active), .ui-dialog .ui-dialog-titlebar .ui-expander-right .ui-datepicker table td.ui-datepicker-today a.ui-expander-header.ui-state-hover:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander-right .ui-dialog .ui-dialog-titlebar a.ui-expander-header.ui-state-hover:not(.ui-state-active), .ui-expander-right .ui-dialog .ui-dialog-titlebar .ui-datepicker table td.ui-datepicker-today a.ui-expander-header.ui-state-hover:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-dialog .ui-dialog-titlebar .ui-expander-right a.ui-expander-header.ui-state-focus:not(.ui-state-active), .ui-dialog .ui-dialog-titlebar .ui-expander-right .ui-datepicker table td.ui-datepicker-today a.ui-expander-header.ui-state-focus:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander-right .ui-dialog .ui-dialog-titlebar a.ui-expander-header.ui-state-focus:not(.ui-state-active), .ui-expander-right .ui-dialog .ui-dialog-titlebar .ui-datepicker table td.ui-datepicker-today a.ui-expander-header.ui-state-focus:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-slider a.ui-state-highlight.ui-slider-handle:not(.ui-state-active), .ui-slider .ui-datepicker table td.ui-datepicker-today a.ui-state-highlight.ui-slider-handle:not(.ui-state-active), .ui-slider .ui-datepicker table td.ui-datepicker-today a.ui-slider-handle.ui-datepicker-prev:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-slider a.ui-slider-handle.ui-datepicker-prev:not(.ui-state-active), .ui-datepicker .ui-slider table td.ui-datepicker-today a.ui-slider-handle.ui-datepicker-prev:not(.ui-state-active), .ui-slider
+.ui-datepicker table td.ui-datepicker-today a.ui-slider-handle.ui-datepicker-next:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today
+.ui-datepicker .ui-slider a.ui-slider-handle.ui-datepicker-next:not(.ui-state-active),
+.ui-datepicker .ui-slider .ui-datepicker table td.ui-datepicker-today a.ui-slider-handle.ui-datepicker-next:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-slider a.ui-slider-handle.wijmo-wijdialog-captionbutton:not(.ui-state-active), .ui-slider .ui-datepicker table td.ui-datepicker-today a.ui-slider-handle.wijmo-wijdialog-captionbutton:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-tabs a.ui-state-highlight.ui-widget-header:not(.ui-state-active), .ui-tabs .ui-datepicker table td.ui-datepicker-today a.ui-state-highlight.ui-widget-header:not(.ui-state-active), .ui-tabs .ui-datepicker table td.ui-datepicker-today a.ui-widget-header.ui-datepicker-prev:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-tabs a.ui-widget-header.ui-datepicker-prev:not(.ui-state-active), .ui-datepicker .ui-tabs table td.ui-datepicker-today a.ui-widget-header.ui-datepicker-prev:not(.ui-state-active), .ui-tabs
+.ui-datepicker table td.ui-datepicker-today a.ui-widget-header.ui-datepicker-next:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today
+.ui-datepicker .ui-tabs a.ui-widget-header.ui-datepicker-next:not(.ui-state-active),
+.ui-datepicker .ui-tabs .ui-datepicker table td.ui-datepicker-today a.ui-widget-header.ui-datepicker-next:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-tabs a.ui-widget-header.wijmo-wijdialog-captionbutton:not(.ui-state-active), .ui-tabs .ui-datepicker table td.ui-datepicker-today a.ui-widget-header.wijmo-wijdialog-captionbutton:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today a.ui-state-default.ui-datepicker-prev:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander a.ui-datepicker-prev.ui-expander-header:not(.ui-state-active), .ui-datepicker .ui-expander table td.ui-datepicker-today a.ui-datepicker-prev.ui-expander-header:not(.ui-state-active), .ui-expander .ui-datepicker table td.ui-datepicker-today a.ui-datepicker-prev.ui-expander-header:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander a.ui-datepicker-prev.ui-expander-header.ui-state-active:not(.ui-state-active), .ui-datepicker .ui-expander table td.ui-datepicker-today a.ui-datepicker-prev.ui-expander-header.ui-state-active:not(.ui-state-active), .ui-expander .ui-datepicker table td.ui-datepicker-today a.ui-datepicker-prev.ui-expander-header.ui-state-active:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander a.ui-datepicker-prev.ui-expander-header.ui-state-hover:not(.ui-state-active), .ui-datepicker .ui-expander table td.ui-datepicker-today a.ui-datepicker-prev.ui-expander-header.ui-state-hover:not(.ui-state-active), .ui-expander .ui-datepicker table td.ui-datepicker-today a.ui-datepicker-prev.ui-expander-header.ui-state-hover:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander a.ui-datepicker-prev.ui-expander-header.ui-state-focus:not(.ui-state-active), .ui-datepicker .ui-expander table td.ui-datepicker-today a.ui-datepicker-prev.ui-expander-header.ui-state-focus:not(.ui-state-active), .ui-expander .ui-datepicker table td.ui-datepicker-today a.ui-datepicker-prev.ui-expander-header.ui-state-focus:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander-left a.ui-datepicker-prev.ui-expander-header:not(.ui-state-active), .ui-datepicker .ui-expander-left table td.ui-datepicker-today a.ui-datepicker-prev.ui-expander-header:not(.ui-state-active), .ui-expander-left .ui-datepicker table td.ui-datepicker-today a.ui-datepicker-prev.ui-expander-header:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander-left a.ui-datepicker-prev.ui-expander-header.ui-state-active:not(.ui-state-active), .ui-datepicker .ui-expander-left table td.ui-datepicker-today a.ui-datepicker-prev.ui-expander-header.ui-state-active:not(.ui-state-active), .ui-expander-left .ui-datepicker table td.ui-datepicker-today a.ui-datepicker-prev.ui-expander-header.ui-state-active:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander-left a.ui-datepicker-prev.ui-expander-header.ui-state-hover:not(.ui-state-active), .ui-datepicker .ui-expander-left table td.ui-datepicker-today a.ui-datepicker-prev.ui-expander-header.ui-state-hover:not(.ui-state-active), .ui-expander-left .ui-datepicker table td.ui-datepicker-today a.ui-datepicker-prev.ui-expander-header.ui-state-hover:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander-left a.ui-datepicker-prev.ui-expander-header.ui-state-focus:not(.ui-state-active), .ui-datepicker .ui-expander-left table td.ui-datepicker-today a.ui-datepicker-prev.ui-expander-header.ui-state-focus:not(.ui-state-active), .ui-expander-left .ui-datepicker table td.ui-datepicker-today a.ui-datepicker-prev.ui-expander-header.ui-state-focus:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander-right a.ui-datepicker-prev.ui-expander-header:not(.ui-state-active), .ui-datepicker .ui-expander-right table td.ui-datepicker-today a.ui-datepicker-prev.ui-expander-header:not(.ui-state-active), .ui-expander-right .ui-datepicker table td.ui-datepicker-today a.ui-datepicker-prev.ui-expander-header:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander-right a.ui-datepicker-prev.ui-expander-header.ui-state-active:not(.ui-state-active), .ui-datepicker .ui-expander-right table td.ui-datepicker-today a.ui-datepicker-prev.ui-expander-header.ui-state-active:not(.ui-state-active), .ui-expander-right .ui-datepicker table td.ui-datepicker-today a.ui-datepicker-prev.ui-expander-header.ui-state-active:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander-right a.ui-datepicker-prev.ui-expander-header.ui-state-hover:not(.ui-state-active), .ui-datepicker .ui-expander-right table td.ui-datepicker-today a.ui-datepicker-prev.ui-expander-header.ui-state-hover:not(.ui-state-active), .ui-expander-right .ui-datepicker table td.ui-datepicker-today a.ui-datepicker-prev.ui-expander-header.ui-state-hover:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander-right a.ui-datepicker-prev.ui-expander-header.ui-state-focus:not(.ui-state-active), .ui-datepicker .ui-expander-right table td.ui-datepicker-today a.ui-datepicker-prev.ui-expander-header.ui-state-focus:not(.ui-state-active), .ui-expander-right .ui-datepicker table td.ui-datepicker-today a.ui-datepicker-prev.ui-expander-header.ui-state-focus:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today
+.ui-datepicker a.ui-state-default.ui-datepicker-next:not(.ui-state-active),
+.ui-datepicker .ui-datepicker table td.ui-datepicker-today a.ui-state-default.ui-datepicker-next:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today
+.ui-datepicker .ui-expander a.ui-datepicker-next.ui-expander-header:not(.ui-state-active),
+.ui-datepicker .ui-expander .ui-datepicker table td.ui-datepicker-today a.ui-datepicker-next.ui-expander-header:not(.ui-state-active), .ui-expander
+.ui-datepicker table td.ui-datepicker-today a.ui-datepicker-next.ui-expander-header:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today
+.ui-datepicker .ui-expander a.ui-datepicker-next.ui-expander-header.ui-state-active:not(.ui-state-active),
+.ui-datepicker .ui-expander .ui-datepicker table td.ui-datepicker-today a.ui-datepicker-next.ui-expander-header.ui-state-active:not(.ui-state-active), .ui-expander
+.ui-datepicker table td.ui-datepicker-today a.ui-datepicker-next.ui-expander-header.ui-state-active:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today
+.ui-datepicker .ui-expander a.ui-datepicker-next.ui-expander-header.ui-state-hover:not(.ui-state-active),
+.ui-datepicker .ui-expander .ui-datepicker table td.ui-datepicker-today a.ui-datepicker-next.ui-expander-header.ui-state-hover:not(.ui-state-active), .ui-expander
+.ui-datepicker table td.ui-datepicker-today a.ui-datepicker-next.ui-expander-header.ui-state-hover:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today
+.ui-datepicker .ui-expander a.ui-datepicker-next.ui-expander-header.ui-state-focus:not(.ui-state-active),
+.ui-datepicker .ui-expander .ui-datepicker table td.ui-datepicker-today a.ui-datepicker-next.ui-expander-header.ui-state-focus:not(.ui-state-active), .ui-expander
+.ui-datepicker table td.ui-datepicker-today a.ui-datepicker-next.ui-expander-header.ui-state-focus:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today
+.ui-datepicker .ui-expander-left a.ui-datepicker-next.ui-expander-header:not(.ui-state-active),
+.ui-datepicker .ui-expander-left .ui-datepicker table td.ui-datepicker-today a.ui-datepicker-next.ui-expander-header:not(.ui-state-active), .ui-expander-left
+.ui-datepicker table td.ui-datepicker-today a.ui-datepicker-next.ui-expander-header:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today
+.ui-datepicker .ui-expander-left a.ui-datepicker-next.ui-expander-header.ui-state-active:not(.ui-state-active),
+.ui-datepicker .ui-expander-left .ui-datepicker table td.ui-datepicker-today a.ui-datepicker-next.ui-expander-header.ui-state-active:not(.ui-state-active), .ui-expander-left
+.ui-datepicker table td.ui-datepicker-today a.ui-datepicker-next.ui-expander-header.ui-state-active:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today
+.ui-datepicker .ui-expander-left a.ui-datepicker-next.ui-expander-header.ui-state-hover:not(.ui-state-active),
+.ui-datepicker .ui-expander-left .ui-datepicker table td.ui-datepicker-today a.ui-datepicker-next.ui-expander-header.ui-state-hover:not(.ui-state-active), .ui-expander-left
+.ui-datepicker table td.ui-datepicker-today a.ui-datepicker-next.ui-expander-header.ui-state-hover:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today
+.ui-datepicker .ui-expander-left a.ui-datepicker-next.ui-expander-header.ui-state-focus:not(.ui-state-active),
+.ui-datepicker .ui-expander-left .ui-datepicker table td.ui-datepicker-today a.ui-datepicker-next.ui-expander-header.ui-state-focus:not(.ui-state-active), .ui-expander-left
+.ui-datepicker table td.ui-datepicker-today a.ui-datepicker-next.ui-expander-header.ui-state-focus:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today
+.ui-datepicker .ui-expander-right a.ui-datepicker-next.ui-expander-header:not(.ui-state-active),
+.ui-datepicker .ui-expander-right .ui-datepicker table td.ui-datepicker-today a.ui-datepicker-next.ui-expander-header:not(.ui-state-active), .ui-expander-right
+.ui-datepicker table td.ui-datepicker-today a.ui-datepicker-next.ui-expander-header:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today
+.ui-datepicker .ui-expander-right a.ui-datepicker-next.ui-expander-header.ui-state-active:not(.ui-state-active),
+.ui-datepicker .ui-expander-right .ui-datepicker table td.ui-datepicker-today a.ui-datepicker-next.ui-expander-header.ui-state-active:not(.ui-state-active), .ui-expander-right
+.ui-datepicker table td.ui-datepicker-today a.ui-datepicker-next.ui-expander-header.ui-state-active:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today
+.ui-datepicker .ui-expander-right a.ui-datepicker-next.ui-expander-header.ui-state-hover:not(.ui-state-active),
+.ui-datepicker .ui-expander-right .ui-datepicker table td.ui-datepicker-today a.ui-datepicker-next.ui-expander-header.ui-state-hover:not(.ui-state-active), .ui-expander-right
+.ui-datepicker table td.ui-datepicker-today a.ui-datepicker-next.ui-expander-header.ui-state-hover:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today
+.ui-datepicker .ui-expander-right a.ui-datepicker-next.ui-expander-header.ui-state-focus:not(.ui-state-active),
+.ui-datepicker .ui-expander-right .ui-datepicker table td.ui-datepicker-today a.ui-datepicker-next.ui-expander-header.ui-state-focus:not(.ui-state-active), .ui-expander-right
+.ui-datepicker table td.ui-datepicker-today a.ui-datepicker-next.ui-expander-header.ui-state-focus:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander a.ui-state-highlight.ui-expander-header:not(.ui-state-active), .ui-expander .ui-datepicker table td.ui-datepicker-today a.ui-state-highlight.ui-expander-header:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander a.ui-expander-header.wijmo-wijdialog-captionbutton:not(.ui-state-active), .ui-expander .ui-datepicker table td.ui-datepicker-today a.ui-expander-header.wijmo-wijdialog-captionbutton:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander a.ui-state-highlight.ui-expander-header.ui-state-active:not(.ui-state-active), .ui-expander .ui-datepicker table td.ui-datepicker-today a.ui-state-highlight.ui-expander-header.ui-state-active:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander a.ui-expander-header.ui-state-active.wijmo-wijdialog-captionbutton:not(.ui-state-active), .ui-expander .ui-datepicker table td.ui-datepicker-today a.ui-expander-header.ui-state-active.wijmo-wijdialog-captionbutton:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander a.ui-state-highlight.ui-expander-header.ui-state-hover:not(.ui-state-active), .ui-expander .ui-datepicker table td.ui-datepicker-today a.ui-state-highlight.ui-expander-header.ui-state-hover:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander a.ui-expander-header.ui-state-hover.wijmo-wijdialog-captionbutton:not(.ui-state-active), .ui-expander .ui-datepicker table td.ui-datepicker-today a.ui-expander-header.ui-state-hover.wijmo-wijdialog-captionbutton:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander a.ui-state-highlight.ui-expander-header.ui-state-focus:not(.ui-state-active), .ui-expander .ui-datepicker table td.ui-datepicker-today a.ui-state-highlight.ui-expander-header.ui-state-focus:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander a.ui-expander-header.ui-state-focus.wijmo-wijdialog-captionbutton:not(.ui-state-active), .ui-expander .ui-datepicker table td.ui-datepicker-today a.ui-expander-header.ui-state-focus.wijmo-wijdialog-captionbutton:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander-left a.ui-state-highlight.ui-expander-header:not(.ui-state-active), .ui-expander-left .ui-datepicker table td.ui-datepicker-today a.ui-state-highlight.ui-expander-header:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander-left a.ui-expander-header.wijmo-wijdialog-captionbutton:not(.ui-state-active), .ui-expander-left .ui-datepicker table td.ui-datepicker-today a.ui-expander-header.wijmo-wijdialog-captionbutton:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander-left a.ui-state-highlight.ui-expander-header.ui-state-active:not(.ui-state-active), .ui-expander-left .ui-datepicker table td.ui-datepicker-today a.ui-state-highlight.ui-expander-header.ui-state-active:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander-left a.ui-expander-header.ui-state-active.wijmo-wijdialog-captionbutton:not(.ui-state-active), .ui-expander-left .ui-datepicker table td.ui-datepicker-today a.ui-expander-header.ui-state-active.wijmo-wijdialog-captionbutton:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander-left a.ui-state-highlight.ui-expander-header.ui-state-hover:not(.ui-state-active), .ui-expander-left .ui-datepicker table td.ui-datepicker-today a.ui-state-highlight.ui-expander-header.ui-state-hover:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander-left a.ui-expander-header.ui-state-hover.wijmo-wijdialog-captionbutton:not(.ui-state-active), .ui-expander-left .ui-datepicker table td.ui-datepicker-today a.ui-expander-header.ui-state-hover.wijmo-wijdialog-captionbutton:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander-left a.ui-state-highlight.ui-expander-header.ui-state-focus:not(.ui-state-active), .ui-expander-left .ui-datepicker table td.ui-datepicker-today a.ui-state-highlight.ui-expander-header.ui-state-focus:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander-left a.ui-expander-header.ui-state-focus.wijmo-wijdialog-captionbutton:not(.ui-state-active), .ui-expander-left .ui-datepicker table td.ui-datepicker-today a.ui-expander-header.ui-state-focus.wijmo-wijdialog-captionbutton:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander-right a.ui-state-highlight.ui-expander-header:not(.ui-state-active), .ui-expander-right .ui-datepicker table td.ui-datepicker-today a.ui-state-highlight.ui-expander-header:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander-right a.ui-expander-header.wijmo-wijdialog-captionbutton:not(.ui-state-active), .ui-expander-right .ui-datepicker table td.ui-datepicker-today a.ui-expander-header.wijmo-wijdialog-captionbutton:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander-right a.ui-state-highlight.ui-expander-header.ui-state-active:not(.ui-state-active), .ui-expander-right .ui-datepicker table td.ui-datepicker-today a.ui-state-highlight.ui-expander-header.ui-state-active:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander-right a.ui-expander-header.ui-state-active.wijmo-wijdialog-captionbutton:not(.ui-state-active), .ui-expander-right .ui-datepicker table td.ui-datepicker-today a.ui-expander-header.ui-state-active.wijmo-wijdialog-captionbutton:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander-right a.ui-state-highlight.ui-expander-header.ui-state-hover:not(.ui-state-active), .ui-expander-right .ui-datepicker table td.ui-datepicker-today a.ui-state-highlight.ui-expander-header.ui-state-hover:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander-right a.ui-expander-header.ui-state-hover.wijmo-wijdialog-captionbutton:not(.ui-state-active), .ui-expander-right .ui-datepicker table td.ui-datepicker-today a.ui-expander-header.ui-state-hover.wijmo-wijdialog-captionbutton:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander-right a.ui-state-highlight.ui-expander-header.ui-state-focus:not(.ui-state-active), .ui-expander-right .ui-datepicker table td.ui-datepicker-today a.ui-state-highlight.ui-expander-header.ui-state-focus:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today .ui-expander-right a.ui-expander-header.ui-state-focus.wijmo-wijdialog-captionbutton:not(.ui-state-active), .ui-expander-right .ui-datepicker table td.ui-datepicker-today a.ui-expander-header.ui-state-focus.wijmo-wijdialog-captionbutton:not(.ui-state-active), .ui-datepicker table td.ui-datepicker-today a.ui-state-default.wijmo-wijdialog-captionbutton:not(.ui-state-active) {
   background: url(images/corner.png) top right no-repeat;
 }
 /* line 5, ../development/_interaction.scss */
@@ -3522,7 +3725,7 @@ button::-moz-focus-inner {
   background: -o-linear-gradient(0% 100% 90deg, #f6f6f6, white);
   background: -ms-linear-gradient(0% 100% 90deg, #f6f6f6, white);
 }
-/* line 83, ../development/jquery/_datepicker.scss */
+/* line 75, ../development/jquery/_datepicker.scss */
 .ui-datepicker table td a.ui-state-default, .ui-datepicker table td .ui-accordion a.ui-accordion-header, .ui-accordion .ui-datepicker table td a.ui-accordion-header, .ui-datepicker table td
 .ui-accordion a.ui-accordion-header.ui-state-active,
 .ui-accordion .ui-datepicker table td a.ui-accordion-header.ui-state-active, .ui-datepicker table td
@@ -3550,7 +3753,7 @@ button::-moz-focus-inner {
   -moz-border-radius: 0px;
   text-shadow: none;
 }
-/* line 92, ../development/jquery/_datepicker.scss */
+/* line 84, ../development/jquery/_datepicker.scss */
 .ui-datepicker table td a.ui-state-active, .ui-datepicker table td a.ui-state-active.ui-state-hover {
   text-shadow: 0 -1px 1px #214675;
   color: white;
@@ -3574,22 +3777,22 @@ button::-moz-focus-inner {
   -moz-box-shadow: 0px 0px 4px #ababab 0 1px black;
   box-shadow: 0px 0px 4px #ababab 0 1px black;
 }
-/* line 98, ../development/jquery/_datepicker.scss */
+/* line 90, ../development/jquery/_datepicker.scss */
 .ui-datepicker table td a.ui-state-active a, .ui-datepicker table td a.ui-state-active.ui-state-hover a {
   color: inherit;
 }
 
-/* line 111, ../development/jquery/_datepicker.scss */
+/* line 103, ../development/jquery/_datepicker.scss */
 .ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-prev:hover {
   left: 4px;
 }
 
-/* line 112, ../development/jquery/_datepicker.scss */
+/* line 104, ../development/jquery/_datepicker.scss */
 .ui-datepicker .ui-datepicker-next, .ui-datepicker .ui-datepicker-next:hover {
   right: 4px;
 }
 
-/* line 113, ../development/jquery/_datepicker.scss */
+/* line 105, ../development/jquery/_datepicker.scss */
 .ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span {
   display: block;
   position: absolute;
@@ -3599,7 +3802,7 @@ button::-moz-focus-inner {
   margin-top: -8px;
 }
 
-/* line 114, ../development/jquery/_datepicker.scss */
+/* line 106, ../development/jquery/_datepicker.scss */
 .ui-datepicker .ui-datepicker-title {
   margin: 0 2.3em;
   line-height: 1.8em;
@@ -3607,24 +3810,24 @@ button::-moz-focus-inner {
   font-weight: normal;
 }
 
-/* line 115, ../development/jquery/_datepicker.scss */
+/* line 107, ../development/jquery/_datepicker.scss */
 .ui-datepicker .ui-datepicker-title select {
   font-size: 1em;
   margin: 1px 0;
 }
 
-/* line 116, ../development/jquery/_datepicker.scss */
+/* line 108, ../development/jquery/_datepicker.scss */
 .ui-datepicker select.ui-datepicker-month-year {
   width: 100%;
 }
 
-/* line 118, ../development/jquery/_datepicker.scss */
+/* line 110, ../development/jquery/_datepicker.scss */
 .ui-datepicker select.ui-datepicker-month,
 .ui-datepicker select.ui-datepicker-year {
   width: 49%;
 }
 
-/* line 119, ../development/jquery/_datepicker.scss */
+/* line 111, ../development/jquery/_datepicker.scss */
 .ui-datepicker table {
   width: 100%;
   font-size: .9em;
@@ -3632,20 +3835,20 @@ button::-moz-focus-inner {
   margin: 0;
 }
 
-/* line 120, ../development/jquery/_datepicker.scss */
+/* line 112, ../development/jquery/_datepicker.scss */
 .ui-datepicker th {
   padding: .7em .3em;
   text-align: center;
   font-weight: bold;
 }
 
-/* line 121, ../development/jquery/_datepicker.scss */
+/* line 113, ../development/jquery/_datepicker.scss */
 .ui-datepicker td {
   border: 0;
   padding: 0px;
 }
 
-/* line 122, ../development/jquery/_datepicker.scss */
+/* line 114, ../development/jquery/_datepicker.scss */
 .ui-datepicker td span, .ui-datepicker td a {
   display: block;
   padding: .6em;
@@ -3653,14 +3856,14 @@ button::-moz-focus-inner {
   text-decoration: none;
 }
 
-/* line 123, ../development/jquery/_datepicker.scss */
+/* line 115, ../development/jquery/_datepicker.scss */
 .ui-datepicker .ui-datepicker-buttonpane {
   margin: 0 0 0 0;
   padding: 0 .2em;
   border: 0px;
 }
 
-/* line 124, ../development/jquery/_datepicker.scss */
+/* line 116, ../development/jquery/_datepicker.scss */
 .ui-datepicker .ui-datepicker-buttonpane button {
   float: right;
   margin: .5em .2em .4em;
@@ -3670,128 +3873,128 @@ button::-moz-focus-inner {
   overflow: visible;
 }
 
-/* line 125, ../development/jquery/_datepicker.scss */
+/* line 117, ../development/jquery/_datepicker.scss */
 .ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current {
   float: left;
 }
 
 /* with multiple calendars */
-/* line 128, ../development/jquery/_datepicker.scss */
+/* line 120, ../development/jquery/_datepicker.scss */
 .ui-datepicker.ui-datepicker-multi {
   width: auto;
 }
 
-/* line 129, ../development/jquery/_datepicker.scss */
+/* line 121, ../development/jquery/_datepicker.scss */
 .ui-datepicker-multi .ui-datepicker-group {
   float: left;
 }
 
-/* line 130, ../development/jquery/_datepicker.scss */
+/* line 122, ../development/jquery/_datepicker.scss */
 .ui-datepicker-multi .ui-datepicker-group table {
   width: 100%;
   margin: 0 auto 0;
 }
 
-/* line 131, ../development/jquery/_datepicker.scss */
+/* line 123, ../development/jquery/_datepicker.scss */
 .ui-datepicker-multi-2 .ui-datepicker-group {
   width: 50%;
 }
 
-/* line 132, ../development/jquery/_datepicker.scss */
+/* line 124, ../development/jquery/_datepicker.scss */
 .ui-datepicker-multi-3 .ui-datepicker-group {
   width: 33.4%;
 }
 
-/* line 133, ../development/jquery/_datepicker.scss */
+/* line 125, ../development/jquery/_datepicker.scss */
 .ui-datepicker-multi-4 .ui-datepicker-group {
   width: 25%;
 }
 
-/* line 134, ../development/jquery/_datepicker.scss */
+/* line 126, ../development/jquery/_datepicker.scss */
 .ui-datepicker-multi .ui-datepicker-group-last .ui-datepicker-header {
   border-left-width: 0;
 }
 
-/* line 135, ../development/jquery/_datepicker.scss */
+/* line 127, ../development/jquery/_datepicker.scss */
 .ui-datepicker-multi .ui-datepicker-group-middle .ui-datepicker-header {
   border-left-width: 0;
 }
 
-/* line 136, ../development/jquery/_datepicker.scss */
+/* line 128, ../development/jquery/_datepicker.scss */
 .ui-datepicker-multi .ui-datepicker-buttonpane {
   clear: left;
 }
 
-/* line 137, ../development/jquery/_datepicker.scss */
+/* line 129, ../development/jquery/_datepicker.scss */
 .ui-datepicker-row-break {
   clear: both;
   width: 100%;
 }
 
 /* RTL support */
-/* line 140, ../development/jquery/_datepicker.scss */
+/* line 132, ../development/jquery/_datepicker.scss */
 .ui-datepicker-rtl {
   direction: rtl;
 }
 
-/* line 141, ../development/jquery/_datepicker.scss */
+/* line 133, ../development/jquery/_datepicker.scss */
 .ui-datepicker-rtl .ui-datepicker-prev {
   right: 4px;
   left: auto;
 }
 
-/* line 142, ../development/jquery/_datepicker.scss */
+/* line 134, ../development/jquery/_datepicker.scss */
 .ui-datepicker-rtl .ui-datepicker-next {
   left: 4px;
   right: auto;
 }
 
-/* line 143, ../development/jquery/_datepicker.scss */
+/* line 135, ../development/jquery/_datepicker.scss */
 .ui-datepicker-rtl .ui-datepicker-prev:hover {
   right: 4px;
   left: auto;
 }
 
-/* line 144, ../development/jquery/_datepicker.scss */
+/* line 136, ../development/jquery/_datepicker.scss */
 .ui-datepicker-rtl .ui-datepicker-next:hover {
   left: 4px;
   right: auto;
 }
 
-/* line 145, ../development/jquery/_datepicker.scss */
+/* line 137, ../development/jquery/_datepicker.scss */
 .ui-datepicker-rtl .ui-datepicker-buttonpane {
   clear: right;
 }
 
-/* line 146, ../development/jquery/_datepicker.scss */
+/* line 138, ../development/jquery/_datepicker.scss */
 .ui-datepicker-rtl .ui-datepicker-buttonpane button {
   float: left;
 }
 
-/* line 147, ../development/jquery/_datepicker.scss */
+/* line 139, ../development/jquery/_datepicker.scss */
 .ui-datepicker-rtl .ui-datepicker-buttonpane button.ui-datepicker-current {
   float: right;
 }
 
-/* line 148, ../development/jquery/_datepicker.scss */
+/* line 140, ../development/jquery/_datepicker.scss */
 .ui-datepicker-rtl .ui-datepicker-group {
   float: right;
 }
 
-/* line 149, ../development/jquery/_datepicker.scss */
+/* line 141, ../development/jquery/_datepicker.scss */
 .ui-datepicker-rtl .ui-datepicker-group-last .ui-datepicker-header {
   border-right-width: 0;
   border-left-width: 1px;
 }
 
-/* line 150, ../development/jquery/_datepicker.scss */
+/* line 142, ../development/jquery/_datepicker.scss */
 .ui-datepicker-rtl .ui-datepicker-group-middle .ui-datepicker-header {
   border-right-width: 0;
   border-left-width: 1px;
 }
 
 /* IE6 IFRAME FIX (taken from datepicker 1.5.3 */
-/* line 153, ../development/jquery/_datepicker.scss */
+/* line 145, ../development/jquery/_datepicker.scss */
 .ui-datepicker-cover {
   position: absolute;
   /*must have*/
@@ -6577,9 +6780,9 @@ wijmo-wijtree a.ui-state-active:active {
   outline: none;
   float: right;
   margin-left: 3px;
-  border-color: #000000;
+  margin-top: -0.7em !important;
 }
-/* line 26, ../development/wijmo/_dialog.scss */
+/* line 27, ../development/wijmo/_dialog.scss */
 .wijmo-wijdialog-captionbutton a {
   color: inherit;
 }
@@ -6635,14 +6838,14 @@ wijmo-wijtree a.ui-state-active:active {
   border-radius: 0px;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
-  background: #616161;
-  filter: expression("progid:DXImageTransform.Microsoft.gradient(startColorstr='#404040',endColorstr='#212121')");
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#404040',endColorstr='#212121')";
-  background: -moz-linear-gradient(0% 100% 90deg, #212121, #404040);
-  background: -webkit-gradient(linear, left top, left bottom, from(#404040), to(#212121));
-  background: -o-linear-gradient(0% 100% 90deg, #212121, #404040);
-  background: -ms-linear-gradient(0% 100% 90deg, #212121, #404040);
-  color: white;
+  background: white;
+  filter: expression("progid:DXImageTransform.Microsoft.gradient(startColorstr='#f4f4f4',endColorstr='#d5d5d5')");
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#f4f4f4',endColorstr='#d5d5d5')";
+  background: -moz-linear-gradient(0% 100% 90deg, #d5d5d5, #f4f4f4);
+  background: -webkit-gradient(linear, left top, left bottom, from(#f4f4f4), to(#d5d5d5));
+  background: -o-linear-gradient(0% 100% 90deg, #d5d5d5, #f4f4f4);
+  background: -ms-linear-gradient(0% 100% 90deg, #d5d5d5, #f4f4f4);
+  color: #243314;
   /*
   .ui-icon-seek-next { background-position: -32px -160px; }
   .ui-icon-seek-prev { background-position: -48px -160px; }
