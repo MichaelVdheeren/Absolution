@@ -28,16 +28,17 @@
 		.ui-icon
 		{
 			position: absolute;
-			left: .5em;
+			left: .4em;
 			top: 50%;
-			margin-top: -0.9em;
-			line-height: 1em;
+			margin-top: -8px;
+			line-height: 15px;
 			border: 1px solid $default-state-border;
 			background: #ffffff url(images/ui-icons_222222_256x240.png);
 			background-position: -33px -1px;
-			height: 1.6em;
-			width: 1.6em;
-			@include border-radius(2em);
+			height: 15px;
+			width: 15px;
+			font-size: 15px;
+			@include border-radius(15px);
 			@include box-shadow-inset(0,-6px,5px,rgba(0,0,0,.1));
 		}
 	}

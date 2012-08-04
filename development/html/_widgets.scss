@@ -1,23 +1,25 @@
 fieldset
 {
-	padding: 5px;
+	padding: 10px;
 	text-shadow: 0px 1px 0px #fff;
 	outline: none;
-	border: 1px solid $default-state-border;
+	border: 1px dashed $default-state-border;
 	@include border-radius;
 	margin: 0px;
+	font-size: inherit;
 }
 
 legend
 {
-	font-size: 1.1em;
+	font-size: inherit;
+	padding: 0px 10px;
 }
 
 div.uploader,
 .ui-autocomplete-input,
 .wijmo-wijtextbox.ui-widget,
 input.text,
-input.email, 
+input.email,
 input.password,
 textarea.uniform,
 textarea,
@@ -28,12 +30,12 @@ input[type='file']
 	padding: 5px;
 	text-shadow: 0px 1px 0px #fff;
 	outline: none;
-	
+
 	border: 1px solid $default-state-border;
 	@include border-radius;
 	background-color: $input-bg;
 	@include gradientTopToBottom($input-bg,lighten($input-bg, $gradient));
-	
+
 	&:hover, &:focus
 	{
 		@include box-shadow (0,0,3px,#49A7DB);

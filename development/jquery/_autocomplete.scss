@@ -6,7 +6,7 @@
 .ui-menu
 {
 	list-style:none;
-	padding: 0px;
+	padding: 0px 10px;
 	float: left;
 	top: 15px;
 	border-top: 3px solid darken($highlight-state-bg,$gradient);
@@ -19,12 +19,20 @@
 		clear: left;
 		width: 100%;
 		margin: 0px;
-		border-bottom: 1px dotted $default-state-border;
-		background-color: $default-state-bg;
+		border-top: 1px dashed $default-state-border;
 
 		&:hover
 		{
 			background-color: darken($default-state-bg, $gradient);
+			border-top: 1px solid darken($default-state-bg, $gradient);
+			margin: 0px -10px;
+			padding: 0px 10px;
+			cursor: pointer;
+		}
+
+		&:hover + .ui-menu-item
+		{
+    		border-top: 1px solid transparent;
 		}
 
 		a
@@ -40,9 +48,9 @@
 		}
 	}
 
-	:last-child.ui-menu-item
+	:first-child.ui-menu-item
 	{
-		border-bottom: none;
+		border-top: none;
 	}
 }
 
