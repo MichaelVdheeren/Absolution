@@ -1,40 +1,40 @@
-.ui-datepicker { 
+.ui-datepicker {
 	width: 17em;
 	padding: 0;
 	border: 1px solid $dialog-border;
 	@include box-shadow(0px,0px,5px,#282425);
-	
-	.ui-datepicker-header { 
-		position:relative; 
+
+	.ui-datepicker-header {
+		position:relative;
 		padding:.5em 0.2em;
 		border: none;
-		@include border-radius(0px);
+		@include border-radius();
 		background: $dialog-title-bg;
 		color: $dialog-title-text;
-		
+
 		a .ui-icon {
 			background-image: url(images/ui-icons_ffffff_256x240.png);
 		}
 	}
-	
+
 	.ui-datepicker-prev,
-	.ui-datepicker-next { 
-		position:absolute; 
-		top: 4px; 
-		width: 1.8em; 
+	.ui-datepicker-next {
+		position:absolute;
+		top: 4px;
+		width: 1.8em;
 		height: 1.8em;
 		border-width: 1px;
 		border-style: solid;
 		cursor: pointer;
-		
+
 		@extend .ui-state-highlight;
 		@include ui-state-interactions($highlight-state-text, $highlight-state-bg);
 	}
-	
+
 	.ui-datepicker-prev .ui-icon {
 		background-position: -96px 0;
 	}
-	
+
 	.ui-datepicker-next .ui-icon {
 		background-position: -32px 0;
 	}
@@ -43,23 +43,23 @@
 .ui-datepicker table
 {
 	border-collapse:collapse;
-	
+
 	th {
 		border: 1px solid #E0DCE0;
 		border-bottom: 1px solid #a9a9a9;
 		background: #E0DCE0;
 	}
-	
+
 	td {
 		border: 1px solid $default-state-border;
-		
+		height: 2.6em;
 		@include ui-state-disabled($default-state-text, $default-state-bg);
 
 		&.ui-datepicker-today
 		{
 			background-color: $default-state-bg;
 			@include gradientTopToBottom($default-state-bg, darken($default-state-bg, $gradient));
-			
+
 			a
 			{
 				&.ui-state-default.ui-state-highlight:not(.ui-state-active)
@@ -68,18 +68,19 @@
 				}
 			}
 		}
-		
-		a {
+
+		a
+		{
 			@include ui-state-interactions($default-state-text, $default-state-bg);
-		
+
 			&.ui-state-default {
-				padding-top: 6px;
-				padding-bottom: 6px;
+				padding-top: 0.7em;
+				padding-bottom: 0.7em;
 				border: none;
-				@include border-radius(0px);
 				text-shadow: none;
+				@include border-radius(0px);
 			}
-			
+
 			&.ui-state-active,
 			&.ui-state-active.ui-state-hover {
 				text-shadow: 0 -1px 1px darken($highlight-state-border, $gradient);
@@ -88,7 +89,7 @@
 				background: $highlight-state-bg;
 				@include gradientTopToBottom($highlight-state-bg, darken($highlight-state-bg, $gradient));
 				a { color: inherit }
-				
+
 				@include border-radius();
 				position:relative;
 				margin: -2px;
@@ -106,7 +107,7 @@
 .ui-datepicker .ui-datepicker-title { margin: 0 2.3em; line-height: 1.8em; text-align: center; font-weight: normal; }
 .ui-datepicker .ui-datepicker-title select { font-size:1em; margin:1px 0; }
 .ui-datepicker select.ui-datepicker-month-year {width: 100%;}
-.ui-datepicker select.ui-datepicker-month, 
+.ui-datepicker select.ui-datepicker-month,
 .ui-datepicker select.ui-datepicker-year { width: 49%;}
 .ui-datepicker table {width: 100%; font-size: .9em; border-collapse: collapse; margin:0; }
 .ui-datepicker th { padding: .7em .3em; text-align: center; font-weight: bold; }
@@ -123,6 +124,8 @@
 .ui-datepicker-multi-2 .ui-datepicker-group { width:50%; }
 .ui-datepicker-multi-3 .ui-datepicker-group { width:33.4%; }
 .ui-datepicker-multi-4 .ui-datepicker-group { width:25%; }
+.ui-datepicker-multi .ui-datepicker-group-first { border-top-left-radius: $border-radius; }
+.ui-datepicker-multi .ui-datepicker-group-last { border-top-right-radius: $border-radius; }
 .ui-datepicker-multi .ui-datepicker-group-last .ui-datepicker-header { border-left-width:0; }
 .ui-datepicker-multi .ui-datepicker-group-middle .ui-datepicker-header { border-left-width:0; }
 .ui-datepicker-multi .ui-datepicker-buttonpane { clear:left; }

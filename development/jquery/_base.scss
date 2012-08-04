@@ -1,29 +1,24 @@
 /* Component containers
 ----------------------------------*/
 .ui-widget
-{ 
-	font-family: $font-family; 
+{
 	font-size: $font-size;
 	color: $font-color;
-	
+
 	a { color: inherit; }
-	.ui-widget { font-size: 1em; }
-	
-	input,
-	select,
-	textarea,
-	button { 
+
+	& * {
 		font-family: inherit;
-		font-size: 1em;
+		font-size: inherit;
 	}
 }
-	
+
 .ui-widget-content
 {
-	border: 1px solid $default-state-border; 
+	border: 1px solid $default-state-border;
 	background: $widget-content-bg;
 }
-	
+
 .ui-widget-header
 {
 	color: $default-state-text;
@@ -39,7 +34,7 @@
 .ui-widget-header .ui-priority-primary
 {
 	text-shadow: 0 -1px 1px darken($highlight-state-border, $gradient);
-	
+
 	color: $highlight-state-text;
 	border: 1px solid $highlight-state-border;
 	background: $highlight-state-bg;
@@ -99,7 +94,7 @@
 }
 
 /* Overlays */
-.ui-widget-overlay { 
-	background: #999999; 
+.ui-widget-overlay {
+	background: #999999;
 	opacity: .50;filter:Alpha(Opacity=50);
 }

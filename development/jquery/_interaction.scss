@@ -13,7 +13,7 @@
 {
 	&:focus,
 	&.ui-state-focus
-	{ 
+	{
 		color: $text;
 		background-color: $bg;
 		@include gradientTopToBottom($bg, darken($bg, $gradient));
@@ -24,7 +24,7 @@
 {
 	&:active,
 	&.ui-state-active
-	{ 
+	{
 		text-shadow: none;
 		color: $text;
 		background-color: $bg;
@@ -53,40 +53,42 @@
 
 /* Interaction states
 ----------------------------------*/
-.ui-state-default, 
-.ui-widget-content .ui-state-default, 
+.ui-state-default,
+.ui-widget-content .ui-state-default,
 .ui-widget-header .ui-state-default,
-.ui-state-hover, 
-.ui-widget-content .ui-state-hover, 
-.ui-widget-header .ui-state-hover, 
-.ui-state-focus, 
-.ui-widget-content .ui-state-focus, 
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
 .ui-widget-header .ui-state-focus,
-.ui-state-active, 
-.ui-widget-content .ui-state-active, 
+.ui-state-active,
+.ui-widget-content .ui-state-active,
 .ui-widget-header .ui-state-active
-{ 
+{
 	border-style: solid;
 	border-width: 1px;
 }
 
-.ui-state-default a, 
-.ui-state-hover a, 
+.ui-state-default a,
+.ui-state-hover a,
 .ui-state-active a
 {
-	color: inherit; 
+	color: inherit;
 	text-decoration: none;
 }
 
 .ui-widget:active
-{ 
-	outline: none; 
+{
+	outline: none;
 }
 
 /* Interaction Cues
 ----------------------------------*/
 .ui-state-default
 {
+	text-shadow: 0px 1px 0px #fff;
+
 	color: $default-state-text;
 	border-color: $default-state-border;
 	@include gradientTopToBottom($default-state-bg, darken($default-state-bg, $gradient));
@@ -94,8 +96,8 @@
 
 .ui-state-success
 {
-	text-shadow: 0 -1px 1px darken($success-state-border, $gradient);
-	
+	text-shadow: 0px -1px 0px darken($success-state-border, $gradient);
+
 	color: $success-state-text;
 	border: 1px solid $success-state-border;
 	@include gradientTopToBottom($success-state-bg, darken($success-state-bg, $gradient));
@@ -104,8 +106,8 @@
 
 .ui-state-warning
 {
-	text-shadow: 0 -1px 1px darken($warning-state-border, $gradient);
-	
+	text-shadow: 0px -1px 0px darken($warning-state-border, $gradient);
+
 	color: $warning-state-text;
 	border: 1px solid $warning-state-border;
 	@include gradientTopToBottom($warning-state-bg, darken($warning-state-bg, $gradient));
@@ -114,8 +116,8 @@
 
 .ui-state-highlight
 {
-	text-shadow: 0 -1px 1px darken($highlight-state-border, $gradient);
-	
+	text-shadow: 0px -1px 0px darken($highlight-state-border, $gradient);
+
 	color: $highlight-state-text;
 	border: 1px solid $highlight-state-border;
 	@include gradientTopToBottom($highlight-state-bg, darken($highlight-state-bg, $gradient));
@@ -124,15 +126,15 @@
 
 .ui-state-error
 {
-	text-shadow: 0 -1px 1px darken($error-state-border, $gradient);
-	
+	text-shadow: 0px -1px 0px darken($error-state-border, $gradient);
+
 	color: $error-state-text;
 	border: 1px solid $error-state-border;
 	@include gradientTopToBottom($error-state-bg, darken($error-state-bg, $gradient));
 	a { color: inherit }
 }
 
-.ui-state-error-text, 
-.ui-widget-content .ui-state-error-text, 
+.ui-state-error-text,
+.ui-widget-content .ui-state-error-text,
 .ui-widget-header .ui-state-error-text { color: #363636; }
 .ui-state-disabled { cursor: default !important; }
